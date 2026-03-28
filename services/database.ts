@@ -1,0 +1,471 @@
+import * as SQLite from 'expo-sqlite';
+import { Recipe, NewRecipe, UpdateRecipe, SelectionHistory, RecipeStats, Season, RecipeType, WeekHistory } from '@/types/recipe';
+
+export type { WeekHistory };
+
+const DB_NAME = 'recettes.db';
+
+let db: SQLite.SQLiteDatabase | null = null;
+
+// Initialisation de la base de données
+export async function initDatabase(): Promise<void> {
+  db = await SQLite.openDatabaseAsync(DB_NAME);
+  
+  await db.execAsync(`
+    PRAGMA journal_mode = WAL;
+
+    CREATE TABLE IF NOT EXISTS app_settings (
+      key TEXT PRIMARY KEY,
+      value TEXT NOT NULL
+    );
+
+    CREATE TABLE IF NOT EXISTS recipes (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      season TEXT CHECK(season IN ('hiver', 'ete', 'mixte')) NOT NULL,
+      type TEXT CHECK(type IN ('entree', 'plat', 'dessert')) NOT NULL,
+      frequency TEXT CHECK(frequency IN ('rare', 'normal', 'frequent')) DEFAULT 'normal',
+      main_ingredient TEXT,
+      ingredients TEXT,
+      comment TEXT,
+      recipe_link TEXT,
+      times_used INTEGER DEFAULT 0,
+      last_selected TEXT,
+      rating INTEGER CHECK(rating IS NULL OR (rating >= 1 AND rating <= 5)),
+      is_favorite INTEGER DEFAULT 0,
+      image_path TEXT,
+      created_at TEXT DEFAULT (datetime('now')),
+      updated_at TEXT DEFAULT (datetime('now'))
+    );
+    
+    CREATE TABLE IF NOT EXISTS selection_history (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      recipe_id INTEGER REFERENCES recipes(id) ON DELETE CASCADE,
+      selected_at TEXT DEFAULT (date('now'))
+    );
+    
+    CREATE INDEX IF NOT EXISTS idx_recipes_season ON recipes(season);
+    CREATE INDEX IF NOT EXISTS idx_recipes_type ON recipes(type);
+    CREATE INDEX IF NOT EXISTS idx_recipes_last_selected ON recipes(last_selected);
+    CREATE INDEX IF NOT EXISTS idx_history_recipe ON selection_history(recipe_id);
+    CREATE INDEX IF NOT EXISTS idx_history_date ON selection_history(selected_at);
+  `);
+}
+
+// Obtenir l'instance de la DB
+function getDb(): SQLite.SQLiteDatabase {
+  if (!db) throw new Error('Database not initialized. Call initDatabase() first.');
+  return db;
+}
+
+// ============ CRUD Recettes ============
+
+export async function getAllRecipes(): Promise<Recipe[]> {
+  const rows = await getDb().getAllAsync<any>('SELECT * FROM recipes ORDER BY name');
+  return rows.map(mapRowToRecipe);
+}
+
+export async function getRecipeById(id: number): Promise<Recipe | null> {
+  const row = await getDb().getFirstAsync<any>('SELECT * FROM recipes WHERE id = ?', [id]);
+  return row ? mapRowToRecipe(row) : null;
+}
+
+export async function createRecipe(recipe: NewRecipe): Promise<number> {
+  const result = await getDb().runAsync(
+    `INSERT INTO recipes (name, season, type, frequency, main_ingredient, ingredients, comment, recipe_link, rating, is_favorite, image_path)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    [
+      recipe.name,
+      recipe.season,
+      recipe.type,
+      recipe.frequency,
+      recipe.mainIngredient,
+      JSON.stringify(recipe.ingredients),
+      recipe.comment,
+      recipe.recipeLink,
+      recipe.rating,
+      recipe.isFavorite ? 1 : 0,
+      recipe.imagePath,
+    ]
+  );
+  return result.lastInsertRowId;
+}
+
+export async function updateRecipe(id: number, updates: UpdateRecipe): Promise<void> {
+  const fields: string[] = [];
+  const values: any[] = [];
+  
+  if (updates.name !== undefined) { fields.push('name = ?'); values.push(updates.name); }
+  if (updates.season !== undefined) { fields.push('season = ?'); values.push(updates.season); }
+  if (updates.type !== undefined) { fields.push('type = ?'); values.push(updates.type); }
+  if (updates.frequency !== undefined) { fields.push('frequency = ?'); values.push(updates.frequency); }
+  if (updates.mainIngredient !== undefined) { fields.push('main_ingredient = ?'); values.push(updates.mainIngredient); }
+  if (updates.ingredients !== undefined) { fields.push('ingredients = ?'); values.push(JSON.stringify(updates.ingredients)); }
+  if (updates.comment !== undefined) { fields.push('comment = ?'); values.push(updates.comment); }
+  if (updates.recipeLink !== undefined) { fields.push('recipe_link = ?'); values.push(updates.recipeLink); }
+  if (updates.timesUsed !== undefined) { fields.push('times_used = ?'); values.push(updates.timesUsed); }
+  if (updates.lastSelected !== undefined) { fields.push('last_selected = ?'); values.push(updates.lastSelected); }
+  if (updates.rating !== undefined) { fields.push('rating = ?'); values.push(updates.rating); }
+  if (updates.isFavorite !== undefined) { fields.push('is_favorite = ?'); values.push(updates.isFavorite ? 1 : 0); }
+  if (updates.imagePath !== undefined) { fields.push('image_path = ?'); values.push(updates.imagePath); }
+  
+  fields.push("updated_at = datetime('now')");
+  values.push(id);
+  
+  await getDb().runAsync(`UPDATE recipes SET ${fields.join(', ')} WHERE id = ?`, values);
+}
+
+export async function deleteRecipe(id: number): Promise<void> {
+  await getDb().runAsync('DELETE FROM recipes WHERE id = ?', [id]);
+}
+
+export async function removeRecipeFromCurrentWeek(recipeId: number): Promise<void> {
+  const today = new Date();
+  const dayOfWeek = today.getDay();
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - (dayOfWeek === 0 ? 6 : dayOfWeek - 1));
+  const mondayStr = monday.toISOString().split('T')[0];
+
+  await getDb().runAsync(
+    'DELETE FROM selection_history WHERE recipe_id = ? AND selected_at >= ?',
+    [recipeId, mondayStr]
+  );
+}
+
+export async function removeAllHistoryForRecipe(recipeId: number): Promise<void> {
+  await getDb().runAsync(
+    'DELETE FROM selection_history WHERE recipe_id = ?',
+    [recipeId]
+  );
+}
+
+export async function getUsedImagePaths(): Promise<string[]> {
+  const rows = await getDb().getAllAsync<{ image_path: string }>(
+    'SELECT image_path FROM recipes WHERE image_path IS NOT NULL'
+  );
+  return rows.map(r => r.image_path);
+}
+
+// ============ Génération aléatoire ============
+
+export async function getRandomRecipes(
+  count: number,
+  seasons: Season[],
+  types: RecipeType[],
+  ingredient: string = ''
+): Promise<Recipe[]> {
+  const twoWeeksAgo = new Date();
+  twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+  const excludeDate = twoWeeksAgo.toISOString().split('T')[0];
+
+  let query = `
+    SELECT * FROM recipes
+    WHERE (last_selected IS NULL OR last_selected < ?)
+  `;
+  const params: any[] = [excludeDate];
+
+  if (seasons.length > 0) {
+    const placeholders = seasons.map(() => '?').join(', ');
+    query += ` AND (season IN (${placeholders}) OR season = 'mixte')`;
+    params.push(...seasons);
+  }
+
+  if (types.length > 0) {
+    const placeholders = types.map(() => '?').join(', ');
+    query += ` AND type IN (${placeholders})`;
+    params.push(...types);
+  }
+
+  if (ingredient.trim()) {
+    const like = `%${ingredient.trim().toLowerCase()}%`;
+    query += ` AND (LOWER(main_ingredient) LIKE ? OR LOWER(ingredients) LIKE ?)`;
+    params.push(like, like);
+  }
+
+  query += `
+    ORDER BY
+      CASE frequency
+        WHEN 'frequent' THEN RANDOM() * 3
+        WHEN 'normal' THEN RANDOM() * 2
+        WHEN 'rare' THEN RANDOM()
+      END DESC
+    LIMIT ?
+  `;
+  params.push(count);
+
+  const rows = await getDb().getAllAsync<any>(query, params);
+  return rows.map(mapRowToRecipe);
+}
+
+// Marquer des recettes comme sélectionnées
+export async function markRecipesSelected(recipeIds: number[]): Promise<void> {
+  const today = new Date().toISOString().split('T')[0];
+  const db = getDb();
+  
+  for (const id of recipeIds) {
+    // Mise à jour recette
+    await db.runAsync(
+      `UPDATE recipes SET times_used = times_used + 1, last_selected = ?, updated_at = datetime('now') WHERE id = ?`,
+      [today, id]
+    );
+    // Historique
+    await db.runAsync(
+      `INSERT INTO selection_history (recipe_id, selected_at) VALUES (?, ?)`,
+      [id, today]
+    );
+  }
+}
+
+// ============ Statistiques ============
+
+export async function getRecipeStats(): Promise<RecipeStats> {
+  const db = getDb();
+  
+  // Total recettes
+  const totalRow = await db.getFirstAsync<{ count: number }>('SELECT COUNT(*) as count FROM recipes');
+  const totalRecipes = totalRow?.count ?? 0;
+  
+  // Total sélections
+  const selectionsRow = await db.getFirstAsync<{ count: number }>('SELECT COUNT(*) as count FROM selection_history');
+  const totalSelections = selectionsRow?.count ?? 0;
+  
+  // Par saison
+  const seasonRows = await db.getAllAsync<{ season: Season; count: number }>(
+    'SELECT season, COUNT(*) as count FROM recipes GROUP BY season'
+  );
+  const bySeason: Record<Season, number> = { hiver: 0, ete: 0, mixte: 0 };
+  seasonRows.forEach(r => { bySeason[r.season] = r.count; });
+  
+  // Par type
+  const typeRows = await db.getAllAsync<{ type: RecipeType; count: number }>(
+    'SELECT type, COUNT(*) as count FROM recipes GROUP BY type'
+  );
+  const byType: Record<RecipeType, number> = { entree: 0, plat: 0, dessert: 0 };
+  typeRows.forEach(r => { byType[r.type] = r.count; });
+  
+  // Top utilisées
+  const topUsedRows = await db.getAllAsync<any>(
+    'SELECT * FROM recipes ORDER BY times_used DESC LIMIT 5'
+  );
+  const topUsed = topUsedRows.map(mapRowToRecipe);
+  
+  // Récemment utilisées
+  const recentRows = await db.getAllAsync<any>(
+    'SELECT * FROM recipes WHERE last_selected IS NOT NULL ORDER BY last_selected DESC LIMIT 5'
+  );
+  const recentlyUsed = recentRows.map(mapRowToRecipe);
+  
+  // Jamais utilisées
+  const neverRows = await db.getAllAsync<any>(
+    'SELECT * FROM recipes WHERE times_used = 0 ORDER BY name LIMIT 10'
+  );
+  const neverUsed = neverRows.map(mapRowToRecipe);
+  
+  // Favoris
+  const favRows = await db.getAllAsync<any>(
+    'SELECT * FROM recipes WHERE is_favorite = 1 ORDER BY name'
+  );
+  const favorites = favRows.map(mapRowToRecipe);
+  
+  // Moyenne des notes
+  const avgRow = await db.getFirstAsync<{ avg: number }>(
+    'SELECT AVG(rating) as avg FROM recipes WHERE rating IS NOT NULL'
+  );
+  const averageRating = avgRow?.avg ?? 0;
+  
+  // Sélections par mois (12 derniers mois)
+  const monthRows = await db.getAllAsync<{ month: string; count: number }>(`
+    SELECT strftime('%Y-%m', selected_at) as month, COUNT(*) as count 
+    FROM selection_history 
+    WHERE selected_at >= date('now', '-12 months')
+    GROUP BY month 
+    ORDER BY month
+  `);
+  const selectionsByMonth = monthRows.map(r => ({ month: r.month, count: r.count }));
+  
+  return {
+    totalRecipes,
+    totalSelections,
+    bySeason,
+    byType,
+    topUsed,
+    recentlyUsed,
+    neverUsed,
+    favorites,
+    averageRating,
+    selectionsByMonth,
+  };
+}
+
+// ============ Export / Import ============
+
+export async function exportToJson(): Promise<string> {
+  const recipes = await getAllRecipes();
+  const history = await getDb().getAllAsync<SelectionHistory>('SELECT * FROM selection_history');
+  return JSON.stringify({ recipes, history, exportedAt: new Date().toISOString() }, null, 2);
+}
+
+export async function importFromJson(jsonData: string): Promise<number> {
+  const data = JSON.parse(jsonData);
+  const recipes: Recipe[] = data.recipes || [];
+  
+  let imported = 0;
+  for (const recipe of recipes) {
+    // Vérifier si la recette existe déjà (par nom)
+    const existing = await getDb().getFirstAsync<{ id: number }>(
+      'SELECT id FROM recipes WHERE name = ?',
+      [recipe.name]
+    );
+    
+    if (!existing) {
+      await createRecipe({
+        name: recipe.name,
+        season: recipe.season,
+        type: recipe.type,
+        frequency: recipe.frequency,
+        mainIngredient: recipe.mainIngredient,
+        ingredients: recipe.ingredients,
+        comment: recipe.comment,
+        recipeLink: recipe.recipeLink,
+        rating: recipe.rating,
+        isFavorite: recipe.isFavorite,
+        imagePath: recipe.imagePath,
+      });
+      imported++;
+    }
+  }
+  
+  return imported;
+}
+
+// ============ Utilitaires ============
+
+function mapRowToRecipe(row: any): Recipe {
+  return {
+    id: row.id,
+    name: row.name,
+    season: row.season,
+    type: row.type,
+    frequency: row.frequency,
+    mainIngredient: row.main_ingredient || '',
+    ingredients: row.ingredients ? JSON.parse(row.ingredients) : [],
+    comment: row.comment || '',
+    recipeLink: row.recipe_link || '',
+    timesUsed: row.times_used || 0,
+    lastSelected: row.last_selected,
+    rating: row.rating,
+    isFavorite: row.is_favorite === 1,
+    imagePath: row.image_path,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+  };
+}
+// ============ Paramètres ============
+
+export async function getSetting(key: string, defaultValue: string): Promise<string> {
+  const row = await getDb().getFirstAsync<{ value: string }>(
+    'SELECT value FROM app_settings WHERE key = ?', [key]
+  );
+  return row?.value ?? defaultValue;
+}
+
+export async function setSetting(key: string, value: string): Promise<void> {
+  await getDb().runAsync(
+    'INSERT OR REPLACE INTO app_settings (key, value) VALUES (?, ?)',
+    [key, value]
+  );
+}
+
+// ============ Historique par semaine ============
+
+export async function getHistoryByWeek(weeksCount: number = 12): Promise<WeekHistory[]> {
+  const db = getDb();
+  
+  // Récupérer toutes les sélections des X dernières semaines
+  const rows = await db.getAllAsync<{ recipe_id: number; selected_at: string }>(`
+    SELECT recipe_id, selected_at 
+    FROM selection_history 
+    WHERE selected_at >= date('now', '-${weeksCount * 7} days')
+    ORDER BY selected_at DESC
+  `);
+  
+  // Grouper par semaine
+  const weekMap = new Map<string, { start: string; end: string; recipeIds: Set<number> }>();
+  
+  for (const row of rows) {
+    const date = new Date(row.selected_at);
+    const dayOfWeek = date.getDay();
+    const monday = new Date(date);
+    monday.setDate(date.getDate() - (dayOfWeek === 0 ? 6 : dayOfWeek - 1));
+    const sunday = new Date(monday);
+    sunday.setDate(monday.getDate() + 6);
+    
+    const weekKey = monday.toISOString().split('T')[0];
+    
+    if (!weekMap.has(weekKey)) {
+      weekMap.set(weekKey, {
+        start: monday.toISOString().split('T')[0],
+        end: sunday.toISOString().split('T')[0],
+        recipeIds: new Set(),
+      });
+    }
+    weekMap.get(weekKey)!.recipeIds.add(row.recipe_id);
+  }
+  
+  // Récupérer les recettes pour chaque semaine
+  const result: WeekHistory[] = [];
+  
+  for (const [weekKey, weekData] of weekMap) {
+    const ids = Array.from(weekData.recipeIds);
+    if (ids.length === 0) continue;
+    
+    const placeholders = ids.map(() => '?').join(',');
+    const recipes = await db.getAllAsync<any>(
+      `SELECT * FROM recipes WHERE id IN (${placeholders})`,
+      ids
+    );
+    
+    const startDate = new Date(weekData.start);
+    const endDate = new Date(weekData.end);
+    const options: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short' };
+    
+    result.push({
+      weekStart: weekData.start,
+      weekEnd: weekData.end,
+      weekLabel: `${startDate.toLocaleDateString('fr-FR', options)} - ${endDate.toLocaleDateString('fr-FR', options)}`,
+      recipes: recipes.map(mapRowToRecipe),
+    });
+  }
+  
+  // Trier par date décroissante
+  result.sort((a, b) => b.weekStart.localeCompare(a.weekStart));
+  
+  return result;
+}
+
+export async function getCurrentWeekRecipes(): Promise<Recipe[]> {
+  const db = getDb();
+  
+  const today = new Date();
+  const dayOfWeek = today.getDay();
+  const monday = new Date(today);
+  monday.setDate(today.getDate() - (dayOfWeek === 0 ? 6 : dayOfWeek - 1));
+  const mondayStr = monday.toISOString().split('T')[0];
+  
+  const rows = await db.getAllAsync<{ recipe_id: number }>(`
+    SELECT DISTINCT recipe_id 
+    FROM selection_history 
+    WHERE selected_at >= ?
+  `, [mondayStr]);
+  
+  if (rows.length === 0) return [];
+  
+  const ids = rows.map(r => r.recipe_id);
+  const placeholders = ids.map(() => '?').join(',');
+  const recipes = await db.getAllAsync<any>(
+    `SELECT * FROM recipes WHERE id IN (${placeholders})`,
+    ids
+  );
+  
+  return recipes.map(mapRowToRecipe);
+}
