@@ -25,9 +25,10 @@
       },
       "package": "com.hebdomiam.recettes",
       "permissions": [
-        "CAMERA",
-        "READ_EXTERNAL_STORAGE",
-        "WRITE_EXTERNAL_STORAGE"
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECORD_AUDIO"
       ]
     },
     "plugins": [
@@ -46,6 +47,12 @@
     "experiments": {
       "typedRoutes": true
     },
-    "scheme": "recettes"
+    "scheme": "recettes",
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "dc9aa55c-3667-40d4-bbc3-55fdeb1d1f30"
+      }
+    }
   }
 }
