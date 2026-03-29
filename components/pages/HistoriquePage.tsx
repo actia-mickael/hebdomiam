@@ -17,9 +17,10 @@ import CourseModal from '@/components/CourseModal';
 
 interface Props {
   isActive: boolean;
+  preload?: boolean;
 }
 
-export default function HistoriquePage({ isActive }: Props) {
+export default function HistoriquePage({ isActive, preload }: Props) {
   const [currentWeek, setCurrentWeek] = useState<Recipe[]>([]);
   const [history, setHistory] = useState<WeekHistory[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -28,10 +29,18 @@ export default function HistoriquePage({ isActive }: Props) {
   const [deleteFromHistory, setDeleteFromHistory] = useState(false);
   // IDs retirés visuellement cette session (option OFF : sans toucher à la DB)
   const removedIds = useRef<Set<number>>(new Set());
+  const hasPreloaded = useRef(false);
 
   useEffect(() => {
     if (isActive) loadData();
   }, [isActive]);
+
+  useEffect(() => {
+    if (preload && !hasPreloaded.current && !isActive) {
+      hasPreloaded.current = true;
+      loadData();
+    }
+  }, [preload]);
 
   const loadData = async () => {
     setIsLoading(true);

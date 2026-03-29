@@ -1,4 +1,4 @@
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 import PagerView from 'react-native-pager-view';
 import { Stack, router, useFocusEffect } from 'expo-router';
@@ -14,6 +14,14 @@ export default function MainScreen() {
   const pagerRef = useRef<PagerView>(null);
   const [currentPage, setCurrentPage] = useState(0);
   const [recipeCount, setRecipeCount] = useState(3);
+  const [preloadedUpTo, setPreloadedUpTo] = useState(-1);
+
+  useEffect(() => {
+    const t1 = setTimeout(() => setPreloadedUpTo(1), 300);
+    const t2 = setTimeout(() => setPreloadedUpTo(2), 600);
+    const t3 = setTimeout(() => setPreloadedUpTo(3), 900);
+    return () => { clearTimeout(t1); clearTimeout(t2); clearTimeout(t3); };
+  }, []);
 
   useFocusEffect(
     useCallback(() => {
@@ -56,13 +64,13 @@ export default function MainScreen() {
           <GeneratorPage count={recipeCount} />
         </View>
         <View key="2" style={styles.page}>
-          <HistoriquePage isActive={currentPage === 1} />
+          <HistoriquePage isActive={currentPage === 1} preload={preloadedUpTo >= 1} />
         </View>
         <View key="3" style={styles.page}>
-          <LivrePage isActive={currentPage === 2} />
+          <LivrePage isActive={currentPage === 2} preload={preloadedUpTo >= 2} />
         </View>
         <View key="4" style={styles.page}>
-          <StatsPage isActive={currentPage === 3} />
+          <StatsPage isActive={currentPage === 3} preload={preloadedUpTo >= 3} />
         </View>
       </PagerView>
       

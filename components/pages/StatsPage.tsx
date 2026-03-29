@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   View,
   Text,
@@ -18,15 +18,24 @@ const { width } = Dimensions.get('window');
 
 interface Props {
   isActive: boolean;
+  preload?: boolean;
 }
 
-export default function StatsPage({ isActive }: Props) {
+export default function StatsPage({ isActive, preload }: Props) {
   const [stats, setStats] = useState<RecipeStats | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const hasPreloaded = useRef(false);
 
   useEffect(() => {
     if (isActive) loadStats();
   }, [isActive]);
+
+  useEffect(() => {
+    if (preload && !hasPreloaded.current && !isActive) {
+      hasPreloaded.current = true;
+      loadStats();
+    }
+  }, [preload]);
 
   const loadStats = async () => {
     setIsLoading(true);

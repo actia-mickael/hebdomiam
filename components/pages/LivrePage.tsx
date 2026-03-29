@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import {
   View,
   Text,
@@ -14,34 +14,50 @@ import * as FileSystem from 'expo-file-system/legacy';
 import * as Sharing from 'expo-sharing';
 import * as DocumentPicker from 'expo-document-picker';
 import { Recipe, Season, RecipeType } from '@/types/recipe';
-import { getAllRecipes, exportToJson, importFromJson } from '@/services/database';
+import { getAllRecipes, exportToJson, importFromJson, getSetting } from '@/services/database';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import RecipeCard from '@/components/RecipeCard';
 import FilterBar from '@/components/FilterBar';
 
 interface Props {
   isActive: boolean;
+  preload?: boolean;
 }
 
-export default function LivrePage({ isActive }: Props) {
+export default function LivrePage({ isActive, preload }: Props) {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
-  const [seasonFilter, setSeasonFilter] = useState<Season | 'all'>('all');
-  const [typeFilter, setTypeFilter] = useState<RecipeType | 'all'>('all');
+  const [seasonFilter, setSeasonFilter] = useState<Season[]>([]);
+  const [typeFilter, setTypeFilter] = useState<RecipeType[]>([]);
+  const [ingredientFilter, setIngredientFilter] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
+  const [persistFilters, setPersistFilters] = useState(false);
+  const hasPreloaded = useRef(false);
 
   useEffect(() => {
-    if (isActive) loadRecipes();
+    if (isActive) {
+      loadRecipes();
+      getSetting('persist_filters', 'false').then(v => setPersistFilters(v === 'true'));
+    }
   }, [isActive]);
+
+  useEffect(() => {
+    if (preload && !hasPreloaded.current && !isActive) {
+      hasPreloaded.current = true;
+      loadRecipes();
+      getSetting('persist_filters', 'false').then(v => setPersistFilters(v === 'true'));
+    }
+  }, [preload]);
 
   const loadRecipes = async () => {
     setIsLoading(true);
     try {
       const all = await getAllRecipes();
       setRecipes(all);
-      applyFilters(all, searchQuery, seasonFilter, typeFilter);
+      applyFilters(all, searchQuery, seasonFilter, typeFilter, ingredientFilter);
+
     } catch (error) {
       Alert.alert('Erreur', 'Impossible de charger les recettes');
     } finally {
@@ -52,8 +68,9 @@ export default function LivrePage({ isActive }: Props) {
   const applyFilters = (
     all: Recipe[],
     search: string,
-    season: Season | 'all',
-    type: RecipeType | 'all'
+    seasons: Season[],
+    types: RecipeType[],
+    ingredient: string
   ) => {
     let filtered = all;
 
@@ -67,12 +84,21 @@ export default function LivrePage({ isActive }: Props) {
       );
     }
 
-    if (season !== 'all') {
-      filtered = filtered.filter((r) => r.season === season || r.season === 'mixte');
+    if (seasons.length > 0) {
+      filtered = filtered.filter((r) => seasons.includes(r.season) || r.season === 'mixte');
     }
 
-    if (type !== 'all') {
-      filtered = filtered.filter((r) => r.type === type);
+    if (types.length > 0) {
+      filtered = filtered.filter((r) => types.includes(r.type));
+    }
+
+    if (ingredient.trim()) {
+      const ing = ingredient.trim().toLowerCase();
+      filtered = filtered.filter(
+        (r) =>
+          r.mainIngredient.toLowerCase().includes(ing) ||
+          r.ingredients.some((i) => i.toLowerCase().includes(ing))
+      );
     }
 
     setFilteredRecipes(filtered);
@@ -80,19 +106,30 @@ export default function LivrePage({ isActive }: Props) {
 
   const handleSearch = (text: string) => {
     setSearchQuery(text);
-    applyFilters(recipes, text, seasonFilter, typeFilter);
+    applyFilters(recipes, text, seasonFilter, typeFilter, ingredientFilter);
   };
 
-  const handleSeasonFilter = (season: string) => {
-    const s = season as Season | 'all';
-    setSeasonFilter(s);
-    applyFilters(recipes, searchQuery, s, typeFilter);
+  const toggleSeasonFilter = (season: string) => {
+    const s = season as Season;
+    const next = seasonFilter.includes(s)
+      ? seasonFilter.filter(x => x !== s)
+      : [...seasonFilter, s];
+    setSeasonFilter(next);
+    applyFilters(recipes, searchQuery, next, typeFilter, ingredientFilter);
   };
 
-  const handleTypeFilter = (type: string) => {
-    const t = type as RecipeType | 'all';
-    setTypeFilter(t);
-    applyFilters(recipes, searchQuery, seasonFilter, t);
+  const toggleTypeFilter = (type: string) => {
+    const t = type as RecipeType;
+    const next = typeFilter.includes(t)
+      ? typeFilter.filter(x => x !== t)
+      : [...typeFilter, t];
+    setTypeFilter(next);
+    applyFilters(recipes, searchQuery, seasonFilter, next, ingredientFilter);
+  };
+
+  const handleIngredientFilter = (text: string) => {
+    setIngredientFilter(text);
+    applyFilters(recipes, searchQuery, seasonFilter, typeFilter, text);
   };
 
   const handleExport = async () => {
@@ -153,7 +190,17 @@ export default function LivrePage({ isActive }: Props) {
         />
         <TouchableOpacity
           style={[styles.filterToggle, showFilters && styles.filterToggleActive]}
-          onPress={() => setShowFilters(!showFilters)}
+          onPress={() => {
+            if (showFilters) {
+              setIngredientFilter('');
+              if (!persistFilters) {
+                setSeasonFilter([]);
+                setTypeFilter([]);
+              }
+              applyFilters(recipes, searchQuery, persistFilters ? seasonFilter : [], persistFilters ? typeFilter : [], '');
+            }
+            setShowFilters(!showFilters);
+          }}
         >
           <Text style={styles.filterToggleText}>⚙️</Text>
         </TouchableOpacity>
@@ -163,27 +210,47 @@ export default function LivrePage({ isActive }: Props) {
       {showFilters && (
         <View style={styles.filtersContainer}>
           <FilterBar
-            label="Saison"
+            label={`Saison${seasonFilter.length === 0 ? ' — toutes' : ''}`}
             options={[
-              { value: 'all', label: 'Toutes' },
               { value: 'hiver', label: '❄️ Hiver' },
               { value: 'ete', label: '☀️ Été' },
               { value: 'mixte', label: '🍂 Mixte' },
             ]}
-            selected={seasonFilter}
-            onSelect={handleSeasonFilter}
+            selectedValues={seasonFilter}
+            onToggle={toggleSeasonFilter}
           />
           <FilterBar
-            label="Type"
+            label={`Type${typeFilter.length === 0 ? ' — tous' : ''}`}
             options={[
-              { value: 'all', label: 'Tous' },
               { value: 'entree', label: '🥗 Entrée' },
               { value: 'plat', label: '🍽️ Plat' },
               { value: 'dessert', label: '🍰 Dessert' },
             ]}
-            selected={typeFilter}
-            onSelect={handleTypeFilter}
+            selectedValues={typeFilter}
+            onToggle={toggleTypeFilter}
           />
+          <View style={styles.ingredientSection}>
+            <Text style={styles.ingredientLabel}>Ingrédient</Text>
+            <View style={styles.ingredientRow}>
+              <TextInput
+                style={styles.ingredientInput}
+                value={ingredientFilter}
+                onChangeText={handleIngredientFilter}
+                placeholder="Ex : poulet, tomate..."
+                placeholderTextColor={Colors.textLight}
+                autoCapitalize="none"
+                returnKeyType="done"
+              />
+              {ingredientFilter.length > 0 && (
+                <TouchableOpacity
+                  style={styles.ingredientClear}
+                  onPress={() => handleIngredientFilter('')}
+                >
+                  <Text style={styles.ingredientClearText}>✕</Text>
+                </TouchableOpacity>
+              )}
+            </View>
+          </View>
         </View>
       )}
 
@@ -272,6 +339,38 @@ const styles = StyleSheet.create({
     borderRadius: BorderRadius.lg,
     marginBottom: Spacing.sm,
     ...Shadows.small,
+  },
+  ingredientSection: {
+    marginBottom: Spacing.xs,
+  },
+  ingredientLabel: {
+    fontSize: 14,
+    color: Colors.textSecondary,
+    marginBottom: Spacing.sm,
+    fontWeight: '500',
+  },
+  ingredientRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    backgroundColor: Colors.backgroundAlt,
+    borderRadius: BorderRadius.md,
+    borderWidth: 1,
+    borderColor: Colors.border,
+    paddingHorizontal: Spacing.md,
+  },
+  ingredientInput: {
+    flex: 1,
+    paddingVertical: Spacing.sm,
+    fontSize: 15,
+    color: Colors.text,
+  },
+  ingredientClear: {
+    padding: Spacing.xs,
+  },
+  ingredientClearText: {
+    fontSize: 14,
+    color: Colors.textLight,
+    fontWeight: '600',
   },
   actionsBar: {
     flexDirection: 'row',

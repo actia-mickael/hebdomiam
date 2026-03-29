@@ -11,6 +11,7 @@ export default function ParametresScreen() {
   const [recipeCount, setRecipeCount] = useState(3);
   const [deleteFromHistory, setDeleteFromHistory] = useState(false);
   const [defaultSeasons, setDefaultSeasons] = useState<Season[]>([]);
+  const [persistFilters, setPersistFilters] = useState(false);
 
   useEffect(() => {
     getSetting('recipe_count', '3').then(v => setRecipeCount(Number(v)));
@@ -18,7 +19,13 @@ export default function ParametresScreen() {
     getSetting('default_seasons', '').then(v => {
       setDefaultSeasons(v ? (v.split(',') as Season[]) : []);
     });
+    getSetting('persist_filters', 'false').then(v => setPersistFilters(v === 'true'));
   }, []);
+
+  const handlePersistFiltersChange = async (value: boolean) => {
+    setPersistFilters(value);
+    await setSetting('persist_filters', value ? 'true' : 'false');
+  };
 
   const toggleDefaultSeason = async (season: Season) => {
     const next = defaultSeasons.includes(season)
@@ -100,6 +107,27 @@ export default function ParametresScreen() {
           <Text style={styles.resetHint}>
             Aucune sélection = toutes les saisons
           </Text>
+        </View>
+
+        <View style={[styles.section, styles.sectionGap]}>
+          <Text style={styles.sectionTitle}>📖 Livre de recettes</Text>
+
+          <View style={styles.row}>
+            <View style={styles.rowLeft}>
+              <Text style={styles.rowLabel}>Permanence des filtres de recherche</Text>
+              <Text style={styles.rowHint}>
+                {persistFilters
+                  ? 'Les filtres saison et type sont conservés à la fermeture'
+                  : 'Les filtres saison et type sont réinitialisés à la fermeture'}
+              </Text>
+            </View>
+            <Switch
+              value={persistFilters}
+              onValueChange={handlePersistFiltersChange}
+              trackColor={{ false: Colors.border, true: Colors.success }}
+              thumbColor={persistFilters ? '#fff' : Colors.surface}
+            />
+          </View>
         </View>
 
         <View style={[styles.section, styles.sectionGap]}>
