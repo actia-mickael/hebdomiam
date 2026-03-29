@@ -10,16 +10,22 @@ interface RecipeCardProps {
   compact?: boolean;
 }
 
-const seasonColors: Record<string, string> = {
+const seasonAccent: Record<string, string> = {
   hiver: Colors.seasonHiver,
   ete: Colors.seasonEte,
   mixte: Colors.seasonMixte,
 };
 
-const typeColors: Record<string, string> = {
-  entree: Colors.typeEntree,
-  plat: Colors.typePlat,
-  dessert: Colors.typeDessert,
+const typePlaceholderBg: Record<string, string> = {
+  entree: Colors.typeBgEntree,
+  plat: Colors.typeBgPlat,
+  dessert: Colors.typeBgDessert,
+};
+
+const typeEmoji: Record<string, string> = {
+  entree: '🥗',
+  plat: '🍽️',
+  dessert: '🍰',
 };
 
 export default function RecipeCard({ recipe, index, onPress, compact = false }: RecipeCardProps) {
@@ -27,45 +33,34 @@ export default function RecipeCard({ recipe, index, onPress, compact = false }: 
 
   if (compact) {
     return (
-      <TouchableOpacity style={styles.compactCard} onPress={onPress}>
+      <TouchableOpacity style={styles.compactCard} onPress={onPress} activeOpacity={0.75}>
+        <View style={[styles.compactAccent, { backgroundColor: seasonAccent[recipe.season] }]} />
         <View style={styles.compactContent}>
-          <Text style={styles.compactName} numberOfLines={1}>
-            {recipe.name}
-          </Text>
-          <View style={styles.compactBadges}>
-            <View style={[styles.badgeMini, { backgroundColor: seasonColors[recipe.season] }]}>
-              <Text style={styles.badgeMiniText}>{recipe.season.charAt(0).toUpperCase()}</Text>
-            </View>
-            <View style={[styles.badgeMini, { backgroundColor: typeColors[recipe.type] }]}>
-              <Text style={styles.badgeMiniText}>{recipe.type.charAt(0).toUpperCase()}</Text>
-            </View>
+          <Text style={styles.compactName} numberOfLines={1}>{recipe.name}</Text>
+          <View style={[styles.compactBadge, { backgroundColor: typePlaceholderBg[recipe.type] }]}>
+            <Text style={styles.compactBadgeText}>{TypeLabels[recipe.type]}</Text>
           </View>
         </View>
-        {recipe.isFavorite && <Text style={styles.favoriteIcon}>❤️</Text>}
+        {recipe.isFavorite && <Text style={styles.compactFav}>❤️</Text>}
       </TouchableOpacity>
     );
   }
 
   return (
-    <TouchableOpacity
-      style={styles.card}
-      onPress={onPress}
-      activeOpacity={0.8}
-    >
-      {/* Image ou placeholder */}
-      <View style={styles.imageContainer}>
+    <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.8}>
+      {/* Barre d'accent saison */}
+      <View style={[styles.accentBar, { backgroundColor: seasonAccent[recipe.season] }]} />
+
+      {/* Zone image */}
+      <View style={[styles.imageContainer, { backgroundColor: typePlaceholderBg[recipe.type] }]}>
         {hasImage ? (
           <Image source={{ uri: recipe.imagePath! }} style={styles.image} />
         ) : (
-          <View style={styles.imagePlaceholder}>
-            <Text style={styles.placeholderEmoji}>
-              {recipe.type === 'entree' ? '🥗' : recipe.type === 'plat' ? '🍽️' : '🍰'}
-            </Text>
-          </View>
+          <Text style={styles.placeholderEmoji}>{typeEmoji[recipe.type]}</Text>
         )}
         {recipe.isFavorite && (
           <View style={styles.favoriteBadge}>
-            <Text>❤️</Text>
+            <Text style={styles.favoriteText}>❤️</Text>
           </View>
         )}
         {typeof index === 'number' && (
@@ -77,32 +72,28 @@ export default function RecipeCard({ recipe, index, onPress, compact = false }: 
 
       {/* Contenu */}
       <View style={styles.content}>
-        <Text style={styles.name} numberOfLines={2}>
-          {recipe.name}
-        </Text>
+        <Text style={styles.name} numberOfLines={2}>{recipe.name}</Text>
 
         <View style={styles.badges}>
-          <View style={[styles.badge, { backgroundColor: seasonColors[recipe.season] }]}>
-            <Text style={styles.badgeText}>{SeasonLabels[recipe.season]}</Text>
-          </View>
-          <View style={[styles.badge, { backgroundColor: typeColors[recipe.type] }]}>
+          <View style={[styles.badge, { backgroundColor: typePlaceholderBg[recipe.type] }]}>
             <Text style={styles.badgeText}>{TypeLabels[recipe.type]}</Text>
+          </View>
+          <View style={[styles.badge, { backgroundColor: seasonAccent[recipe.season] + '40' }]}>
+            <Text style={styles.badgeText}>{SeasonLabels[recipe.season]}</Text>
           </View>
         </View>
 
-        {recipe.mainIngredient && (
-          <Text style={styles.ingredient} numberOfLines={1}>
-            🥄 {recipe.mainIngredient}
-          </Text>
-        )}
+        {recipe.mainIngredient ? (
+          <Text style={styles.ingredient} numberOfLines={1}>🥄 {recipe.mainIngredient}</Text>
+        ) : null}
 
         <View style={styles.footer}>
-          {recipe.rating && (
-            <StarRating rating={recipe.rating} size={14} readonly />
+          {recipe.rating ? (
+            <StarRating rating={recipe.rating} size={13} readonly />
+          ) : (
+            <View />
           )}
-          <Text style={styles.usageText}>
-            📊 {recipe.timesUsed}x
-          </Text>
+          <Text style={styles.usageText}>{recipe.timesUsed}× utilisée</Text>
         </View>
       </View>
     </TouchableOpacity>
@@ -118,9 +109,15 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
     ...Shadows.medium,
   },
+  accentBar: {
+    width: 4,
+    alignSelf: 'stretch',
+  },
   imageContainer: {
-    width: 100,
-    height: 120,
+    width: 96,
+    height: 110,
+    justifyContent: 'center',
+    alignItems: 'center',
     position: 'relative',
   },
   image: {
@@ -128,23 +125,22 @@ const styles = StyleSheet.create({
     height: '100%',
     resizeMode: 'cover',
   },
-  imagePlaceholder: {
-    width: '100%',
-    height: '100%',
-    backgroundColor: Colors.backgroundAlt,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
   placeholderEmoji: {
-    fontSize: 36,
+    fontSize: 38,
   },
   favoriteBadge: {
     position: 'absolute',
     top: Spacing.xs,
     right: Spacing.xs,
-    backgroundColor: 'rgba(255,255,255,0.9)',
+    backgroundColor: 'rgba(255,255,255,0.92)',
     borderRadius: BorderRadius.full,
-    padding: 4,
+    width: 26,
+    height: 26,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  favoriteText: {
+    fontSize: 12,
   },
   indexBadge: {
     position: 'absolute',
@@ -157,34 +153,37 @@ const styles = StyleSheet.create({
   },
   indexText: {
     color: '#fff',
-    fontSize: 12,
-    fontWeight: 'bold',
+    fontSize: 11,
+    fontWeight: '700',
   },
   content: {
     flex: 1,
-    padding: Spacing.sm,
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.sm,
     justifyContent: 'space-between',
   },
   name: {
-    fontSize: 16,
-    fontWeight: '600',
+    fontSize: 15,
+    fontWeight: '700',
     color: Colors.text,
+    lineHeight: 20,
     marginBottom: Spacing.xs,
   },
   badges: {
     flexDirection: 'row',
     gap: Spacing.xs,
     marginBottom: Spacing.xs,
+    flexWrap: 'wrap',
   },
   badge: {
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 2,
+    paddingHorizontal: 8,
+    paddingVertical: 3,
     borderRadius: BorderRadius.full,
   },
   badgeText: {
     fontSize: 11,
     color: Colors.text,
-    fontWeight: '500',
+    fontWeight: '600',
   },
   ingredient: {
     fontSize: 12,
@@ -199,45 +198,48 @@ const styles = StyleSheet.create({
   usageText: {
     fontSize: 11,
     color: Colors.textLight,
+    fontStyle: 'italic',
   },
-  // Compact styles
+  // Compact
   compactCard: {
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: Colors.surface,
-    padding: Spacing.sm,
     borderRadius: BorderRadius.md,
     marginBottom: Spacing.sm,
+    overflow: 'hidden',
     ...Shadows.small,
+  },
+  compactAccent: {
+    width: 4,
+    alignSelf: 'stretch',
   },
   compactContent: {
     flex: 1,
     flexDirection: 'row',
     alignItems: 'center',
+    paddingVertical: Spacing.sm,
+    paddingHorizontal: Spacing.sm,
     gap: Spacing.sm,
   },
   compactName: {
     flex: 1,
     fontSize: 14,
+    fontWeight: '600',
     color: Colors.text,
   },
-  compactBadges: {
-    flexDirection: 'row',
-    gap: 4,
-  },
-  badgeMini: {
-    width: 22,
-    height: 22,
+  compactBadge: {
+    paddingHorizontal: 7,
+    paddingVertical: 3,
     borderRadius: BorderRadius.full,
-    justifyContent: 'center',
-    alignItems: 'center',
   },
-  badgeMiniText: {
-    fontSize: 10,
-    fontWeight: 'bold',
+  compactBadgeText: {
+    fontSize: 11,
+    fontWeight: '600',
     color: Colors.text,
   },
-  favoriteIcon: {
-    marginLeft: Spacing.sm,
+  compactFav: {
+    marginRight: Spacing.sm,
+    fontSize: 14,
   },
 });

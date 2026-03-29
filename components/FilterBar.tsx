@@ -6,7 +6,6 @@ interface FilterOption {
   label: string;
 }
 
-// Mode sélection unique (usage existant dans LivrePage)
 interface SingleProps {
   label: string;
   options: FilterOption[];
@@ -16,7 +15,6 @@ interface SingleProps {
   onToggle?: never;
 }
 
-// Mode sélection multiple (GeneratorPage)
 interface MultiProps {
   label: string;
   options: FilterOption[];
@@ -45,17 +43,21 @@ export default function FilterBar(props: FilterBarProps) {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={styles.optionsContainer}
       >
-        {props.options.map((option) => (
-          <TouchableOpacity
-            key={option.value}
-            style={[styles.option, isActive(option.value) && styles.optionActive]}
-            onPress={() => handlePress(option.value)}
-          >
-            <Text style={[styles.optionText, isActive(option.value) && styles.optionTextActive]}>
-              {option.label}
-            </Text>
-          </TouchableOpacity>
-        ))}
+        {props.options.map((option) => {
+          const active = isActive(option.value);
+          return (
+            <TouchableOpacity
+              key={option.value}
+              style={[styles.option, active && styles.optionActive]}
+              onPress={() => handlePress(option.value)}
+              activeOpacity={0.7}
+            >
+              <Text style={[styles.optionText, active && styles.optionTextActive]}>
+                {option.label}
+              </Text>
+            </TouchableOpacity>
+          );
+        })}
       </ScrollView>
     </View>
   );
@@ -66,34 +68,41 @@ const styles = StyleSheet.create({
     marginBottom: Spacing.md,
   },
   label: {
-    fontSize: 14,
+    fontSize: 12,
     color: Colors.textSecondary,
     marginBottom: Spacing.sm,
-    fontWeight: '500',
+    fontWeight: '600',
+    textTransform: 'uppercase',
+    letterSpacing: 0.6,
   },
   optionsContainer: {
     flexDirection: 'row',
     gap: Spacing.sm,
   },
   option: {
-    paddingVertical: Spacing.sm,
+    paddingVertical: 7,
     paddingHorizontal: Spacing.md,
     borderRadius: BorderRadius.full,
     backgroundColor: Colors.backgroundAlt,
-    borderWidth: 1,
+    borderWidth: 1.5,
     borderColor: Colors.border,
   },
   optionActive: {
-    backgroundColor: Colors.primary,
+    backgroundColor: Colors.primaryDark,
     borderColor: Colors.primaryDark,
+    shadowColor: Colors.primaryDark,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 3,
   },
   optionText: {
-    fontSize: 14,
-    color: Colors.text,
+    fontSize: 13,
+    color: Colors.textSecondary,
     fontWeight: '500',
   },
   optionTextActive: {
     color: '#fff',
-    fontWeight: '600',
+    fontWeight: '700',
   },
 });
