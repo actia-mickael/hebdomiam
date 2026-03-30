@@ -1,0 +1,3992 @@
+{
+  "bookName": "Je fais attention",
+  "bookDescription": "Recettes légères, à base de légumes et cuissons saines",
+  "recipes": [
+    {
+      "name": "Gaspacho de Tomates",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Concombre",
+        "Poivron",
+        "Ail",
+        "Vinaigre",
+        "Huile d'olive"
+      ],
+      "comment": "Soupe froide sans cuisson. Très rafraîchissant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Courgettes Light",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Oignon",
+        "Bouillon de légumes",
+        "Basilic",
+        "Fromage frais 0%"
+      ],
+      "comment": "Sans crème, onctueux grâce au fromage frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Carottes au Gingembre",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Carottes",
+      "ingredients": [
+        "Gingembre",
+        "Oignon",
+        "Bouillon",
+        "Coriandre"
+      ],
+      "comment": "Le gingembre booste le métabolisme.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bouillon de Légumes Détox",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Légumes variés",
+      "ingredients": [
+        "Poireaux",
+        "Céleri",
+        "Carottes",
+        "Thym",
+        "Laurier"
+      ],
+      "comment": "Réconfortant et zéro calorie.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Brocoli",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Brocoli",
+      "ingredients": [
+        "Oignon",
+        "Bouillon",
+        "Muscade",
+        "Persil"
+      ],
+      "comment": "Riche en fibres et vitamines.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Miso Légère",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Miso",
+      "ingredients": [
+        "Tofu soyeux",
+        "Algues wakame",
+        "Oignons verts"
+      ],
+      "comment": "Probiotiques naturels. Très digeste.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gaspacho de Concombre",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Concombre",
+      "ingredients": [
+        "Yaourt 0%",
+        "Menthe",
+        "Ail",
+        "Citron"
+      ],
+      "comment": "Ultra frais et hydratant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Poireaux",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poireaux",
+      "ingredients": [
+        "Pomme de terre",
+        "Bouillon",
+        "Ciboulette"
+      ],
+      "comment": "Diurétique naturel.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Potimarron",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Potimarron",
+      "ingredients": [
+        "Oignon",
+        "Bouillon",
+        "Cannelle",
+        "Graines de courge"
+      ],
+      "comment": "Naturellement sucrée, sans ajout.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bouillon Thaï aux Crevettes",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citronnelle",
+        "Gingembre",
+        "Champignons",
+        "Coriandre"
+      ],
+      "comment": "Léger et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Concombre à la Menthe",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Concombre",
+      "ingredients": [
+        "Menthe",
+        "Yaourt 0%",
+        "Citron",
+        "Ail"
+      ],
+      "comment": "Façon tzatziki allégé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Tomates Multicolores",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Basilic",
+        "Oignon rouge",
+        "Huile d'olive",
+        "Vinaigre balsamique"
+      ],
+      "comment": "Variétés anciennes de préférence.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Fenouil à l'Orange",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Fenouil",
+      "ingredients": [
+        "Orange",
+        "Olives noires",
+        "Huile d'olive",
+        "Aneth"
+      ],
+      "comment": "Croquant et vitaminé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Radis Croquants",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Radis",
+      "ingredients": [
+        "Fromage frais",
+        "Ciboulette",
+        "Citron"
+      ],
+      "comment": "Piquant et frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade d'Endives aux Noix",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Endives",
+      "ingredients": [
+        "Noix",
+        "Roquefort light",
+        "Pomme",
+        "Vinaigre de cidre"
+      ],
+      "comment": "Amertume équilibrée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Chou Rouge",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Chou rouge",
+      "ingredients": [
+        "Pomme",
+        "Raisins secs",
+        "Vinaigre",
+        "Huile de noix"
+      ],
+      "comment": "Croquant et coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Courgettes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Parmesan",
+        "Citron",
+        "Menthe",
+        "Huile d'olive"
+      ],
+      "comment": "Courgettes crues très fines.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Betteraves",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Betteraves",
+      "ingredients": [
+        "Chèvre frais",
+        "Noix",
+        "Roquette",
+        "Vinaigre balsamique"
+      ],
+      "comment": "Couleur et saveur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Champignons",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Champignons de Paris",
+      "ingredients": [
+        "Parmesan",
+        "Citron",
+        "Roquette",
+        "Huile d'olive"
+      ],
+      "comment": "Champignons crus émincés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare d'Algues",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Algues",
+      "ingredients": [
+        "Échalotes",
+        "Câpres",
+        "Cornichons",
+        "Huile d'olive"
+      ],
+      "comment": "Iodé et riche en minéraux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Taboulé de Chou-fleur",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Chou-fleur",
+      "ingredients": [
+        "Tomates",
+        "Concombre",
+        "Menthe",
+        "Citron"
+      ],
+      "comment": "Sans semoule, très léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Grecque Light",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Concombre",
+      "ingredients": [
+        "Tomates",
+        "Feta allégée",
+        "Olives",
+        "Origan"
+      ],
+      "comment": "Classique méditerranéen.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Lentilles",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Lentilles vertes",
+      "ingredients": [
+        "Échalotes",
+        "Persil",
+        "Vinaigre",
+        "Moutarde"
+      ],
+      "comment": "Protéines végétales.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Pois Chiches",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pois chiches",
+      "ingredients": [
+        "Tomates",
+        "Oignon rouge",
+        "Persil",
+        "Cumin"
+      ],
+      "comment": "Rassasiante et saine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Haricots Verts",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Haricots verts",
+      "ingredients": [
+        "Échalotes",
+        "Persil",
+        "Huile d'olive",
+        "Vinaigre"
+      ],
+      "comment": "Cuits al dente.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Asperges Vapeur",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Asperges",
+      "ingredients": [
+        "Citron",
+        "Huile d'olive",
+        "Fleur de sel"
+      ],
+      "comment": "Cuisson vapeur préserve les nutriments.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Artichauts Poivrade",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Artichauts",
+      "ingredients": [
+        "Citron",
+        "Huile d'olive",
+        "Poivre"
+      ],
+      "comment": "À croquer crus ou juste saisis.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cœurs de Palmier en Salade",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Cœurs de palmier",
+      "ingredients": [
+        "Tomates",
+        "Avocat",
+        "Citron",
+        "Ciboulette"
+      ],
+      "comment": "Léger et exotique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Crevettes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Pamplemousse",
+        "Avocat",
+        "Salade",
+        "Aneth"
+      ],
+      "comment": "Fraîche et protéinée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Tomates",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Échalotes",
+        "Basilic",
+        "Huile d'olive",
+        "Vinaigre balsamique"
+      ],
+      "comment": "En dés, comme un tartare.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Houmous Léger",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pois chiches",
+      "ingredients": [
+        "Tahini allégé",
+        "Citron",
+        "Ail",
+        "Cumin"
+      ],
+      "comment": "Moins de tahini, plus de citron.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Caviar d'Aubergines",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Aubergines",
+      "ingredients": [
+        "Ail",
+        "Citron",
+        "Tahini",
+        "Persil"
+      ],
+      "comment": "Baba ganoush allégé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mousse de Poivrons",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poivrons",
+      "ingredients": [
+        "Fromage frais 0%",
+        "Ail",
+        "Basilic",
+        "Paprika"
+      ],
+      "comment": "Poivrons grillés mixés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Roulés de Courgettes au Chèvre",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Chèvre frais",
+        "Menthe",
+        "Citron"
+      ],
+      "comment": "Courgettes en fines lamelles.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rouleaux de Printemps Light",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Feuilles de riz",
+      "ingredients": [
+        "Crevettes",
+        "Vermicelles",
+        "Salade",
+        "Menthe",
+        "Carottes"
+      ],
+      "comment": "Sans friture, très frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Thaï de Papaye Verte",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Papaye verte",
+      "ingredients": [
+        "Tomates cerises",
+        "Cacahuètes",
+        "Citron vert",
+        "Nuoc mam"
+      ],
+      "comment": "Som tam allégé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Vietnamienne",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Chou blanc",
+        "Carottes",
+        "Menthe",
+        "Cacahuètes",
+        "Nuoc mam"
+      ],
+      "comment": "Croquante et parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Mimosa Light",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Yaourt 0%",
+        "Moutarde",
+        "Ciboulette"
+      ],
+      "comment": "Sans mayonnaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tomates Farcies au Thon",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Thon au naturel",
+        "Fromage frais",
+        "Ciboulette",
+        "Citron"
+      ],
+      "comment": "Froides, sans cuisson.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Champignons Farcis Légers",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Champignons",
+      "ingredients": [
+        "Fromage frais",
+        "Ail",
+        "Persil",
+        "Échalotes"
+      ],
+      "comment": "Four ou vapeur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Verrine de Concombre au Saumon",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Concombre",
+      "ingredients": [
+        "Saumon fumé",
+        "Fromage frais 0%",
+        "Aneth",
+        "Citron"
+      ],
+      "comment": "Présentation élégante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Verrine Avocat Crevettes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Avocat",
+      "ingredients": [
+        "Crevettes",
+        "Citron vert",
+        "Coriandre",
+        "Tomates"
+      ],
+      "comment": "En couches colorées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Quinoa",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Quinoa",
+      "ingredients": [
+        "Concombre",
+        "Tomates",
+        "Menthe",
+        "Citron"
+      ],
+      "comment": "Protéines complètes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Edamame au Sel",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Edamame",
+      "ingredients": [
+        "Fleur de sel",
+        "Piment d'Espelette"
+      ],
+      "comment": "Snack protéiné japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Wakame",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Algue wakame",
+      "ingredients": [
+        "Sésame",
+        "Vinaigre de riz",
+        "Huile de sésame",
+        "Gingembre"
+      ],
+      "comment": "Riche en iode.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pavé de Saumon Vapeur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Citron",
+        "Aneth",
+        "Légumes vapeur"
+      ],
+      "comment": "Cuisson douce qui préserve les oméga-3.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon en Papillote",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Courgettes",
+        "Citron",
+        "Herbes",
+        "Vin blanc"
+      ],
+      "comment": "Cuisson sans matière grasse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cabillaud Vapeur aux Herbes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Persil",
+        "Ciboulette",
+        "Citron",
+        "Huile d'olive"
+      ],
+      "comment": "Poisson maigre par excellence.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dos de Cabillaud aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Tomates",
+        "Courgettes",
+        "Oignons",
+        "Thym"
+      ],
+      "comment": "En papillote au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Colin au Court-Bouillon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Colin",
+      "ingredients": [
+        "Carottes",
+        "Poireaux",
+        "Bouquet garni",
+        "Vin blanc"
+      ],
+      "comment": "Cuisson pochée légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lieu Noir Grillé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lieu noir",
+      "ingredients": [
+        "Citron",
+        "Herbes de Provence",
+        "Ail"
+      ],
+      "comment": "Poisson économique et maigre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sole Grillée",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Sole",
+      "ingredients": [
+        "Citron",
+        "Persil",
+        "Huile d'olive"
+      ],
+      "comment": "Simplement grillée, un délice.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dorade au Four",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dorade",
+      "ingredients": [
+        "Citron",
+        "Fenouil",
+        "Tomates cerises",
+        "Huile d'olive"
+      ],
+      "comment": "Poisson entier rôti.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bar en Papillote",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bar",
+      "ingredients": [
+        "Julienne de légumes",
+        "Gingembre",
+        "Sauce soja light"
+      ],
+      "comment": "Façon asiatique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Truite au Four",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Truite",
+      "ingredients": [
+        "Citron",
+        "Amandes effilées",
+        "Persil"
+      ],
+      "comment": "Amandes légèrement grillées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Thon Grillé aux Herbes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Herbes de Provence",
+        "Citron",
+        "Huile d'olive"
+      ],
+      "comment": "Cuisson rosée au centre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Thon Léger",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Avocat",
+        "Sésame",
+        "Sauce soja light",
+        "Gingembre"
+      ],
+      "comment": "Cru et frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes Sautées à l'Ail",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Ail",
+        "Persil",
+        "Piment",
+        "Citron"
+      ],
+      "comment": "Cuisson rapide au wok.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes Vapeur Citronnelle",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citronnelle",
+        "Gingembre",
+        "Coriandre",
+        "Citron vert"
+      ],
+      "comment": "Parfums d'Asie.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Crevettes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citron",
+        "Ail",
+        "Paprika",
+        "Persil"
+      ],
+      "comment": "Grillées au barbecue.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Jacques Poêlées Light",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Huile d'olive",
+        "Citron",
+        "Ciboulette"
+      ],
+      "comment": "Juste snackées, sans beurre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Moules Marinières Light",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Moules",
+      "ingredients": [
+        "Vin blanc",
+        "Échalotes",
+        "Persil"
+      ],
+      "comment": "Sans crème ajoutée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Calamars Grillés",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Calamars",
+      "ingredients": [
+        "Ail",
+        "Persil",
+        "Citron",
+        "Huile d'olive"
+      ],
+      "comment": "Sans friture, à la plancha.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulpe Grillé",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulpe",
+      "ingredients": [
+        "Huile d'olive",
+        "Citron",
+        "Paprika",
+        "Ail"
+      ],
+      "comment": "Précuit puis grillé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poké Bowl Saumon",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Riz",
+        "Avocat",
+        "Edamame",
+        "Concombre",
+        "Algues"
+      ],
+      "comment": "Bowl hawaiien équilibré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poké Bowl Thon",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Riz",
+        "Mangue",
+        "Concombre",
+        "Sésame",
+        "Sauce soja"
+      ],
+      "comment": "Frais et coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Blanc de Poulet Grillé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Herbes de Provence",
+        "Citron",
+        "Ail"
+      ],
+      "comment": "Basique et efficace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Vapeur au Gingembre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Gingembre",
+        "Ciboule",
+        "Sauce soja light"
+      ],
+      "comment": "Cuisson douce, chair tendre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Escalope de Poulet aux Champignons",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Champignons",
+        "Échalotes",
+        "Bouillon",
+        "Persil"
+      ],
+      "comment": "Sans crème, juste du bouillon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Tandoori Light",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Yaourt 0%",
+        "Épices tandoori",
+        "Citron",
+        "Gingembre"
+      ],
+      "comment": "Mariné au yaourt allégé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Poulet Satay Light",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco light",
+        "Curcuma",
+        "Citronnelle",
+        "Cacahuètes"
+      ],
+      "comment": "Sauce cacahuète allégée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet au Citron",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Citrons",
+        "Olives",
+        "Oignons",
+        "Thym"
+      ],
+      "comment": "Tajine light sans huile.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Basquaise Light",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Poivrons",
+        "Tomates",
+        "Oignons",
+        "Piment d'Espelette"
+      ],
+      "comment": "Mijoté aux légumes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Émincé de Poulet aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Courgettes",
+        "Poivrons",
+        "Oignons",
+        "Sauce soja light"
+      ],
+      "comment": "Sauté rapide au wok.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Teriyaki Light",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce soja",
+        "Miel",
+        "Gingembre",
+        "Sésame"
+      ],
+      "comment": "Moins de sucre que l'original.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Poulet Grillé",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Salade",
+        "Tomates",
+        "Concombre",
+        "Vinaigrette légère"
+      ],
+      "comment": "Repas complet et frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Wrap de Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Tortilla complète",
+        "Salade",
+        "Tomates",
+        "Yaourt"
+      ],
+      "comment": "Sauce yaourt au lieu de mayo.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Escalope de Dinde Grillée",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Herbes",
+        "Citron",
+        "Moutarde"
+      ],
+      "comment": "Très maigre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dinde aux Légumes d'Été",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Courgettes",
+        "Aubergines",
+        "Tomates",
+        "Basilic"
+      ],
+      "comment": "Ratatouille de dinde.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Émincé de Dinde au Curry",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Curry",
+        "Lait de coco light",
+        "Oignons",
+        "Poivrons"
+      ],
+      "comment": "Exotique et léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Dinde Marinée",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Yaourt",
+        "Paprika",
+        "Cumin",
+        "Citron"
+      ],
+      "comment": "Marinée puis grillée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aiguillettes de Canard aux Figues",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Figues",
+        "Vinaigre balsamique",
+        "Miel"
+      ],
+      "comment": "Sans peau, moins gras.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet Mignon de Porc aux Pommes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Pommes",
+        "Oignons",
+        "Cidre",
+        "Thym"
+      ],
+      "comment": "Viande maigre, sucré-salé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rôti de Porc aux Légumes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Carottes",
+        "Navets",
+        "Oignons",
+        "Bouillon"
+      ],
+      "comment": "Sans matière grasse ajoutée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Médaillons de Porc aux Champignons",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Champignons",
+        "Échalotes",
+        "Bouillon",
+        "Persil"
+      ],
+      "comment": "Sauce au bouillon, pas de crème.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Escalope de Veau Grillée",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Citron",
+        "Sauge",
+        "Huile d'olive"
+      ],
+      "comment": "Viande tendre et maigre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Veau aux Légumes Printaniers",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Petits pois",
+        "Carottes",
+        "Asperges",
+        "Bouillon"
+      ],
+      "comment": "Blanquette légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Grillé aux Herbes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Herbes fraîches",
+        "Ail",
+        "Huile d'olive"
+      ],
+      "comment": "Morceaux maigres : filet, rumsteck.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Bœuf Allégé",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Câpres",
+        "Cornichons",
+        "Échalotes",
+        "Moutarde"
+      ],
+      "comment": "Sans jaune d'œuf, ou avec un seul.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Bœuf",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Roquette",
+        "Parmesan",
+        "Citron",
+        "Huile d'olive"
+      ],
+      "comment": "Très fin, peu de matière grasse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Bœuf aux Légumes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Poivrons",
+        "Oignons",
+        "Courgettes",
+        "Épices"
+      ],
+      "comment": "Barbecue sain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Sauté aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Brocoli",
+        "Carottes",
+        "Sauce soja light",
+        "Gingembre"
+      ],
+      "comment": "Façon wok, rapide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Buddha Bowl",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Quinoa",
+      "ingredients": [
+        "Pois chiches",
+        "Avocat",
+        "Légumes variés",
+        "Houmous"
+      ],
+      "comment": "Équilibré et coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bowl Végétarien Complet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Riz complet",
+      "ingredients": [
+        "Tofu",
+        "Edamame",
+        "Carottes",
+        "Chou rouge",
+        "Sésame"
+      ],
+      "comment": "Protéines végétales.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Courgettes Farcies Végétariennes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Quinoa",
+        "Tomates",
+        "Feta light",
+        "Menthe"
+      ],
+      "comment": "Sans viande, plein de saveurs.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poivrons Farcis au Riz",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poivrons",
+      "ingredients": [
+        "Riz complet",
+        "Tomates",
+        "Olives",
+        "Herbes"
+      ],
+      "comment": "Végétarien et coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tomates Farcies Végétariennes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Quinoa",
+        "Courgettes",
+        "Basilic",
+        "Parmesan"
+      ],
+      "comment": "Légères et parfumées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aubergines Grillées",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Aubergines",
+      "ingredients": [
+        "Ail",
+        "Huile d'olive",
+        "Herbes de Provence"
+      ],
+      "comment": "Au four ou au barbecue.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aubergines Farcies au Boulgour",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Aubergines",
+      "ingredients": [
+        "Boulgour",
+        "Tomates",
+        "Menthe",
+        "Pignons"
+      ],
+      "comment": "Inspiration libanaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ratatouille",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Courgettes",
+        "Aubergines",
+        "Poivrons",
+        "Tomates",
+        "Oignons"
+      ],
+      "comment": "Classique provençal léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tian de Légumes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Courgettes",
+        "Tomates",
+        "Aubergines",
+        "Huile d'olive",
+        "Thym"
+      ],
+      "comment": "Gratin sans fromage.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Légumes Rôtis au Four",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Légumes variés",
+      "ingredients": [
+        "Huile d'olive",
+        "Herbes",
+        "Ail",
+        "Sel"
+      ],
+      "comment": "Caramélisation naturelle.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Légumes Vapeur Assortis",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Légumes variés",
+      "ingredients": [
+        "Brocoli",
+        "Carottes",
+        "Haricots verts",
+        "Chou-fleur"
+      ],
+      "comment": "Cuisson la plus saine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Wok de Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Légumes variés",
+      "ingredients": [
+        "Poivrons",
+        "Brocoli",
+        "Carottes",
+        "Sauce soja light",
+        "Gingembre"
+      ],
+      "comment": "Croquants et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry de Légumes Light",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Lait de coco light",
+        "Curry",
+        "Courgettes",
+        "Poivrons",
+        "Pois chiches"
+      ],
+      "comment": "Réconfortant sans lourdeur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tofu Grillé aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Légumes de saison",
+        "Sauce soja",
+        "Gingembre",
+        "Sésame"
+      ],
+      "comment": "Protéines végétales.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tofu Teriyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Sauce teriyaki light",
+        "Sésame",
+        "Brocoli"
+      ],
+      "comment": "Alternative végétale.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tofu Vapeur Sauce Gingembre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Gingembre",
+        "Ciboule",
+        "Sauce soja light",
+        "Huile de sésame"
+      ],
+      "comment": "Très délicat.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galettes de Lentilles",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lentilles",
+      "ingredients": [
+        "Oignons",
+        "Œuf",
+        "Épices",
+        "Persil"
+      ],
+      "comment": "Riches en protéines.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dahl de Lentilles Corail",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lentilles corail",
+      "ingredients": [
+        "Lait de coco light",
+        "Curry",
+        "Tomates",
+        "Coriandre"
+      ],
+      "comment": "Indien et réconfortant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Falafel au Four",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pois chiches",
+      "ingredients": [
+        "Coriandre",
+        "Cumin",
+        "Ail",
+        "Oignons"
+      ],
+      "comment": "Au four, pas frits.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chili Sin Carne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Haricots rouges",
+      "ingredients": [
+        "Tomates",
+        "Maïs",
+        "Poivrons",
+        "Épices chili"
+      ],
+      "comment": "Version végétarienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto aux Champignons Light",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Champignons",
+        "Bouillon",
+        "Parmesan",
+        "Échalotes"
+      ],
+      "comment": "Moins de beurre, plus de bouillon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto aux Asperges",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Asperges",
+        "Bouillon",
+        "Parmesan",
+        "Citron"
+      ],
+      "comment": "Printanier et léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Complet aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Riz complet",
+      "ingredients": [
+        "Petits pois",
+        "Carottes",
+        "Oignons",
+        "Curcuma"
+      ],
+      "comment": "Plus de fibres que le riz blanc.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Quinoa aux Légumes Grillés",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Quinoa",
+      "ingredients": [
+        "Courgettes",
+        "Poivrons",
+        "Oignons",
+        "Feta light"
+      ],
+      "comment": "Complet et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Boulgour aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Boulgour",
+      "ingredients": [
+        "Tomates",
+        "Concombre",
+        "Persil",
+        "Menthe",
+        "Citron"
+      ],
+      "comment": "Façon taboulé libanais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Spaghetti de Courgettes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Sauce tomate",
+        "Ail",
+        "Basilic",
+        "Parmesan"
+      ],
+      "comment": "Alternative sans glucides.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Spaghetti de Courgettes Carbonara",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Œuf",
+        "Parmesan",
+        "Bacon maigre",
+        "Poivre"
+      ],
+      "comment": "Version légère du classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nouilles de Konjac Sautées",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Konjac",
+      "ingredients": [
+        "Légumes",
+        "Sauce soja",
+        "Gingembre",
+        "Sésame"
+      ],
+      "comment": "Quasi zéro calorie.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz de Chou-Fleur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Chou-fleur",
+      "ingredients": [
+        "Oignons",
+        "Épices",
+        "Herbes"
+      ],
+      "comment": "Alternative low-carb au riz.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pizza sur Base Chou-Fleur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Chou-fleur",
+      "ingredients": [
+        "Œuf",
+        "Parmesan",
+        "Sauce tomate",
+        "Garniture au choix"
+      ],
+      "comment": "Sans pâte traditionnelle.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Omelette aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Tomates",
+        "Courgettes",
+        "Oignons",
+        "Herbes"
+      ],
+      "comment": "Simple et protéinée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Omelette Blanche aux Champignons",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Blancs d'œufs",
+      "ingredients": [
+        "Champignons",
+        "Ciboulette",
+        "Fromage frais"
+      ],
+      "comment": "Sans jaune, moins de cholestérol.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Cocotte aux Épinards",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Épinards",
+        "Crème légère",
+        "Muscade"
+      ],
+      "comment": "Rapide et élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Shakshuka Light",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Tomates",
+        "Poivrons",
+        "Oignons",
+        "Cumin",
+        "Paprika"
+      ],
+      "comment": "Œufs pochés en sauce tomate.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Frittata aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Courgettes",
+        "Poivrons",
+        "Oignons",
+        "Herbes"
+      ],
+      "comment": "Omelette italienne au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Niçoise Light",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Tomates",
+        "Œufs",
+        "Haricots verts",
+        "Olives",
+        "Anchois"
+      ],
+      "comment": "Sans pommes de terre pour alléger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade César Light",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Romaine",
+        "Parmesan",
+        "Croutons complets",
+        "Sauce yaourt"
+      ],
+      "comment": "Sauce au yaourt au lieu de mayo.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Quinoa Complète",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Quinoa",
+      "ingredients": [
+        "Poulet",
+        "Avocat",
+        "Tomates",
+        "Concombre",
+        "Feta"
+      ],
+      "comment": "Repas complet en salade.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Lentilles au Saumon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lentilles",
+      "ingredients": [
+        "Saumon fumé",
+        "Œuf poché",
+        "Roquette",
+        "Vinaigrette"
+      ],
+      "comment": "Riche en protéines.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Thaï au Bœuf",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Salade",
+        "Menthe",
+        "Coriandre",
+        "Cacahuètes",
+        "Sauce nuoc mam"
+      ],
+      "comment": "Fraîche et relevée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bo Bun Light",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Vermicelles",
+        "Salade",
+        "Carottes",
+        "Menthe",
+        "Cacahuètes"
+      ],
+      "comment": "Sans nems pour alléger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Méditerranéenne",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Tomates",
+        "Concombre",
+        "Poivrons",
+        "Olives",
+        "Feta light"
+      ],
+      "comment": "Colorée et saine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Pâtes Complètes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes complètes",
+      "ingredients": [
+        "Tomates",
+        "Mozzarella light",
+        "Basilic",
+        "Olives"
+      ],
+      "comment": "Pâtes al dente, servies froides.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Riz Complet",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz complet",
+      "ingredients": [
+        "Thon",
+        "Maïs",
+        "Tomates",
+        "Haricots verts"
+      ],
+      "comment": "Équilibrée et nourrissante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Poulet aux Légumes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Carottes",
+        "Poireaux",
+        "Céleri",
+        "Vermicelles"
+      ],
+      "comment": "Réconfortante et légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Pho Light",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Nouilles de riz",
+        "Bouillon",
+        "Herbes fraîches",
+        "Germes de soja"
+      ],
+      "comment": "Vietnamienne, riche en saveurs.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Ramen Légère",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Bouillon",
+        "Poulet",
+        "Œuf",
+        "Oignons verts",
+        "Algues"
+      ],
+      "comment": "Bouillon dégraissé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Minestrone",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Haricots",
+        "Pâtes",
+        "Tomates",
+        "Courgettes",
+        "Carottes"
+      ],
+      "comment": "Soupe-repas italienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Tom Yum",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citronnelle",
+        "Galanga",
+        "Champignons",
+        "Citron vert"
+      ],
+      "comment": "Thaïe, épicée et légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Poisson",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Tomates",
+        "Fenouil",
+        "Safran",
+        "Ail"
+      ],
+      "comment": "Façon bouillabaisse légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sauté de Légumes Asiatique",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Brocoli",
+        "Carottes",
+        "Champignons",
+        "Sauce soja light",
+        "Gingembre"
+      ],
+      "comment": "Wok rapide et sain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Sauté aux Brocolis",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Brocoli",
+        "Ail",
+        "Gingembre",
+        "Sauce soja light"
+      ],
+      "comment": "Classique chinois allégé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes Sautées aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Poivrons",
+        "Courgettes",
+        "Sauce soja",
+        "Gingembre"
+      ],
+      "comment": "Rapide et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf aux Brocolis",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Brocoli",
+        "Ail",
+        "Sauce soja light",
+        "Huile de sésame"
+      ],
+      "comment": "Peu de sauce, beaucoup de légumes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet aux Noix de Cajou Light",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Noix de cajou",
+        "Poivrons",
+        "Oignons",
+        "Sauce soja light"
+      ],
+      "comment": "Moins de noix, plus de légumes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pad Thaï Léger",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles de riz",
+      "ingredients": [
+        "Crevettes",
+        "Œuf",
+        "Germes de soja",
+        "Cacahuètes",
+        "Citron vert"
+      ],
+      "comment": "Moins d'huile que l'original.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Vert Léger",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco light",
+        "Pâte curry vert",
+        "Légumes",
+        "Basilic thaï"
+      ],
+      "comment": "Lait de coco allégé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sushi Bowl",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz à sushi",
+      "ingredients": [
+        "Saumon",
+        "Avocat",
+        "Concombre",
+        "Algues",
+        "Sésame"
+      ],
+      "comment": "Chirashi déstructuré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bibimbap Light",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Légumes variés",
+        "Œuf",
+        "Bœuf maigre",
+        "Gochujang"
+      ],
+      "comment": "Moins de riz, plus de légumes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Donburi au Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Riz",
+        "Œuf",
+        "Oignons",
+        "Sauce soja"
+      ],
+      "comment": "Oyakodon japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Papillote de Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Courgettes",
+        "Poivrons",
+        "Tomates",
+        "Herbes",
+        "Huile d'olive"
+      ],
+      "comment": "Cuisson vapeur dans le papier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Légumes Light",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Courgettes",
+        "Tomates",
+        "Oignons",
+        "Chapelure",
+        "Parmesan"
+      ],
+      "comment": "Sans béchamel.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Courgettes au Chèvre",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Chèvre frais",
+        "Œufs",
+        "Herbes"
+      ],
+      "comment": "Léger et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Clafoutis Salé aux Légumes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Œufs",
+        "Lait écrémé",
+        "Tomates cerises",
+        "Feta light"
+      ],
+      "comment": "Version salée légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Quiche Sans Pâte",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Légumes",
+        "Fromage light",
+        "Crème légère"
+      ],
+      "comment": "Économise les calories de la pâte.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Flan de Courgettes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Œufs",
+        "Crème légère",
+        "Herbes",
+        "Parmesan"
+      ],
+      "comment": "Moelleux et léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Terrine de Légumes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Courgettes",
+        "Poivrons",
+        "Aubergines",
+        "Œufs"
+      ],
+      "comment": "Froide ou tiède.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Légumes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Tomates",
+        "Concombre",
+        "Poivrons",
+        "Herbes",
+        "Huile d'olive"
+      ],
+      "comment": "Comme un tartare, version végétale.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galettes de Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes râpés",
+      "ingredients": [
+        "Courgettes",
+        "Carottes",
+        "Œuf",
+        "Farine complète"
+      ],
+      "comment": "Cuites au four, pas frites.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rösti de Légumes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Pommes de terre",
+        "Carottes",
+        "Courgettes",
+        "Œuf"
+      ],
+      "comment": "Mélange de légumes râpés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Fruits Frais",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "frequent",
+      "mainIngredient": "Fruits",
+      "ingredients": [
+        "Fruits de saison",
+        "Menthe",
+        "Citron vert"
+      ],
+      "comment": "Sans sucre ajouté.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Fruits",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fruits",
+      "ingredients": [
+        "Ananas",
+        "Mangue",
+        "Fruits rouges",
+        "Menthe"
+      ],
+      "comment": "Tranches fines, présentation élégante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Fruits",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fruits",
+      "ingredients": [
+        "Fraises",
+        "Kiwi",
+        "Ananas",
+        "Raisin"
+      ],
+      "comment": "Ludique et sain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Compote de Pommes Sans Sucre",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "frequent",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Cannelle",
+        "Vanille"
+      ],
+      "comment": "Sucre naturel des fruits.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pommes au Four",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Cannelle",
+        "Miel",
+        "Noix"
+      ],
+      "comment": "Juste un filet de miel.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poires Pochées au Thé",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Poires",
+      "ingredients": [
+        "Thé",
+        "Vanille",
+        "Épices"
+      ],
+      "comment": "Pochées dans du thé, pas de sirop.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Yaourt Glacé aux Fruits",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Yaourt 0%",
+      "ingredients": [
+        "Fruits rouges",
+        "Miel"
+      ],
+      "comment": "Alternative légère à la glace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mousse de Fruits Rouges",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fruits rouges",
+      "ingredients": [
+        "Fromage blanc 0%",
+        "Gélatine",
+        "Édulcorant"
+      ],
+      "comment": "Légère et aérienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Panna Cotta Légère",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Lait écrémé",
+      "ingredients": [
+        "Gélatine",
+        "Vanille",
+        "Coulis de fruits"
+      ],
+      "comment": "Sans crème entière.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crème au Chocolat Light",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Chocolat noir",
+      "ingredients": [
+        "Lait écrémé",
+        "Maïzena",
+        "Édulcorant"
+      ],
+      "comment": "Chocolat noir 70% minimum.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tiramisu Léger",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fromage blanc",
+      "ingredients": [
+        "Café",
+        "Biscuits",
+        "Cacao",
+        "Édulcorant"
+      ],
+      "comment": "Fromage blanc au lieu de mascarpone.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gâteau au Yaourt Léger",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Yaourt 0%",
+      "ingredients": [
+        "Farine complète",
+        "Œufs",
+        "Compote",
+        "Levure"
+      ],
+      "comment": "Compote au lieu de sucre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mug Cake Protéiné",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Flocons d'avoine",
+      "ingredients": [
+        "Œuf",
+        "Banane",
+        "Cacao",
+        "Lait"
+      ],
+      "comment": "2 min au micro-ondes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Banana Bread Light",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Bananes",
+      "ingredients": [
+        "Farine complète",
+        "Œufs",
+        "Yaourt",
+        "Noix"
+      ],
+      "comment": "Sans sucre ajouté, sucré par les bananes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crumble aux Pommes Léger",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Flocons d'avoine",
+        "Amandes",
+        "Cannelle",
+        "Huile de coco"
+      ],
+      "comment": "Pâte aux flocons d'avoine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Merlan Vapeur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Merlan",
+      "ingredients": [
+        "Citron",
+        "Persil",
+        "Ail",
+        "Huile d'olive"
+      ],
+      "comment": "Poisson très maigre, cuisson douce.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Papillote de Cabillaud au Fenouil",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Fenouil",
+        "Tomates",
+        "Citron",
+        "Aneth"
+      ],
+      "comment": "Saveurs anisées et fraîches.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Lotte aux Légumes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Poivrons",
+        "Courgettes",
+        "Citron",
+        "Herbes"
+      ],
+      "comment": "Poisson ferme, idéal en brochette.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Limande Grillé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Limande",
+      "ingredients": [
+        "Citron",
+        "Persil",
+        "Câpres"
+      ],
+      "comment": "Poisson plat très léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry de Crevettes Léger",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Lait de coco light",
+        "Curry",
+        "Poivrons",
+        "Coriandre"
+      ],
+      "comment": "Exotique sans les calories.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Blanquette de Poulet Light",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Carottes",
+        "Champignons",
+        "Bouillon",
+        "Crème légère"
+      ],
+      "comment": "Version allégée du classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Grillé aux Herbes Fraîches",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Thym",
+        "Romarin",
+        "Citron",
+        "Ail"
+      ],
+      "comment": "Mariné puis grillé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Émincé de Dinde aux Poivrons",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Poivrons tricolores",
+        "Oignons",
+        "Paprika",
+        "Cumin"
+      ],
+      "comment": "Coloré et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Dinde aux Courgettes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Courgettes",
+        "Tomates cerises",
+        "Herbes de Provence"
+      ],
+      "comment": "Barbecue léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sauté de Porc aux Légumes Croquants",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Carottes",
+        "Pois gourmands",
+        "Gingembre",
+        "Sauce soja light"
+      ],
+      "comment": "Filet mignon émincé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Stroganoff Light",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Champignons",
+        "Oignons",
+        "Crème légère",
+        "Paprika"
+      ],
+      "comment": "Crème allégée, même saveur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Couscous de Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Semoule",
+      "ingredients": [
+        "Courgettes",
+        "Carottes",
+        "Pois chiches",
+        "Épices"
+      ],
+      "comment": "Végétarien, riche en fibres.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tajine de Légumes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Carottes",
+        "Navets",
+        "Courgettes",
+        "Épices",
+        "Citron confit"
+      ],
+      "comment": "Mijoté parfumé sans viande.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Detox Verte",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes verts",
+      "ingredients": [
+        "Épinards",
+        "Courgettes",
+        "Brocoli",
+        "Persil",
+        "Gingembre"
+      ],
+      "comment": "Purifiante et vitaminée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Repas aux Œufs Mollets",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Salade",
+        "Tomates",
+        "Avocat",
+        "Graines"
+      ],
+      "comment": "Protéines et crudités.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Wrap au Saumon Fumé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon fumé",
+      "ingredients": [
+        "Tortilla complète",
+        "Fromage frais",
+        "Concombre",
+        "Aneth"
+      ],
+      "comment": "Rapide et frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Boulgour aux Herbes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Boulgour",
+      "ingredients": [
+        "Persil",
+        "Menthe",
+        "Tomates",
+        "Oignons",
+        "Citron"
+      ],
+      "comment": "Taboulé libanais authentique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bol Poke Végétarien",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Edamame",
+        "Avocat",
+        "Concombre",
+        "Algues",
+        "Tofu"
+      ],
+      "comment": "Sans poisson, tout aussi bon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galettes de Quinoa aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Quinoa",
+      "ingredients": [
+        "Carottes",
+        "Courgettes",
+        "Œuf",
+        "Épices"
+      ],
+      "comment": "Cuites au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fondue de Poireaux au Poulet",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poireaux",
+      "ingredients": [
+        "Poulet",
+        "Crème légère",
+        "Muscade"
+      ],
+      "comment": "Onctueux et réconfortant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Chou-Fleur Light",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Chou-fleur",
+      "ingredients": [
+        "Béchamel légère",
+        "Parmesan",
+        "Muscade"
+      ],
+      "comment": "Béchamel au lait écrémé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poêlée de Champignons aux Herbes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Champignons",
+      "ingredients": [
+        "Ail",
+        "Persil",
+        "Échalotes",
+        "Huile d'olive"
+      ],
+      "comment": "Accompagnement ou plat léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Endives Braisées au Jambon",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Endives",
+      "ingredients": [
+        "Jambon blanc",
+        "Bouillon",
+        "Muscade"
+      ],
+      "comment": "Sans béchamel, juste braisées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    }
+  ],
+  "exportedAt": "2026-03-30T15:05:06.802Z"
+}

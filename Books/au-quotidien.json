@@ -1,0 +1,7891 @@
+{
+  "bookName": "Au quotidien",
+  "bookDescription": "Recettes de tous les jours",
+  "recipes": [
+    {
+      "name": "Bœuf Bourguignon",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Vin rouge",
+        "Carottes",
+        "Oignons",
+        "Champignons",
+        "Lardons"
+      ],
+      "comment": "Recette thermomix.",
+      "recipeLink": "https://www.cookomix.com/recettes/boeuf-bourguignon-thermomix/",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Niçoise",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Œufs",
+        "Tomates",
+        "Anchois",
+        "Olives",
+        "Haricots verts"
+      ],
+      "comment": "Servir bien frais. Assaisonnement à l'huile d'olive et vinaigre balsamique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Quiche Lorraine",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lardons",
+      "ingredients": [
+        "Crème",
+        "Œufs",
+        "Pâte brisée",
+        "Gruyère"
+      ],
+      "comment": "Précuire la pâte 10 minutes avant de garnir. Four à 180°C pendant 30 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ratatouille",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Courgettes",
+        "Aubergines",
+        "Poivrons",
+        "Oignons",
+        "Ail",
+        "Herbes de Provence",
+        "Mergez"
+      ],
+      "comment": "",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Blanquette de Veau",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Carottes",
+        "Poireaux",
+        "Champignons",
+        "Crème",
+        "Citron"
+      ],
+      "comment": "Ne pas faire bouillir après ajout de la crème. Servir avec du riz.",
+      "recipeLink": "https://www.marmiton.org/recettes/recette_blanquette-de-veau-facile_192",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gaspacho Andalou",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Tomates mûres",
+      "ingredients": [
+        "Poivrons rouges",
+        "Concombre",
+        "Pain rassis",
+        "Ail",
+        "Huile d'olive",
+        "Vinaigre de xérès"
+      ],
+      "comment": "Mixer tous les ingrédients. Servir très frais avec des croûtons.",
+      "recipeLink": "https://www.marmiton.org/recettes/recette_gaspacho-andalousie_16193.aspx",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Quinoa Méditerranéenne",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Quinoa",
+      "ingredients": [
+        "Tomates cerises",
+        "Feta",
+        "Olives noires",
+        "Concombre",
+        "Menthe fraîche",
+        "Citron"
+      ],
+      "comment": "Cuire le quinoa et laisser refroidir. Mélanger avec les légumes coupés en dés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Melon et Jambon",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Melon",
+      "ingredients": [
+        "Jambon de Parme",
+        "Roquette",
+        "Parmesan",
+        "Huile d'olive",
+        "Poivre noir"
+      ],
+      "comment": "Couper le melon en tranches fines. Alterner avec le jambon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ceviche de Poisson",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poisson blanc",
+      "ingredients": [
+        "Citrons verts",
+        "Oignon rouge",
+        "Coriandre",
+        "Piment",
+        "Avocat"
+      ],
+      "comment": "Mariner le poisson dans le jus de citron vert pendant 2h au frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte aux Tomates et Moutarde",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâte feuilletée",
+      "ingredients": [
+        "Tomates",
+        "Moutarde de Dijon",
+        "Herbes de Provence",
+        "Gruyère râpé"
+      ],
+      "comment": "Badigeonner la pâte de moutarde avant d'ajouter les tomates.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Smoothie Bowl Tropical",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Mangue",
+      "ingredients": [
+        "Ananas",
+        "Banane",
+        "Lait de coco",
+        "Granola",
+        "Fruits frais",
+        "Noix de coco râpée"
+      ],
+      "comment": "Mixer les fruits avec le lait de coco. Garnir de toppings.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Crevettes Marinées",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citron",
+        "Ail",
+        "Persil",
+        "Huile d'olive",
+        "Paprika"
+      ],
+      "comment": "Mariner les crevettes 1h. Griller 3 min de chaque côté.",
+      "recipeLink": "https://cuisine.journaldesfemmes.fr/recette/3097843-brochettes-de-crevettes-marinees",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Sorbet Maison aux Fruits",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fruits de saison",
+      "ingredients": [
+        "Sucre",
+        "Eau",
+        "Jus de citron"
+      ],
+      "comment": "Mixer les fruits avec le sirop. Turbiner ou congeler en remuant régulièrement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartiflette Savoyarde",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Reblochon",
+        "Lardons",
+        "Oignons",
+        "pomme de terre"
+      ],
+      "comment": "Alterner les couches de pommes de terre et reblochon. Four 200°C pendant 45 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe à l'Oignon Gratinée",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Oignons",
+      "ingredients": [
+        "Bouillon de bœuf",
+        "Vin blanc",
+        "Pain",
+        "Gruyère",
+        "Beurre"
+      ],
+      "comment": "Caraméliser les oignons lentement. Gratiner au four avec le fromage.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cassoulet Toulousain",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Haricots blancs",
+      "ingredients": [
+        "Confit de canard",
+        "Saucisse de Toulouse",
+        "Poitrine de porc",
+        "Tomates",
+        "Chapelure"
+      ],
+      "comment": "Cuisson lente au four pendant 3h. Arroser régulièrement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fondue Savoyarde",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Comté",
+      "ingredients": [
+        "Beaufort",
+        "Emmental",
+        "Vin blanc",
+        "Ail",
+        "Kirsch",
+        "Pain"
+      ],
+      "comment": "Frotter le caquelon avec l'ail. Faire fondre les fromages dans le vin.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Choucroute Alsacienne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Choucroute",
+      "ingredients": [
+        "Saucisses",
+        "Lard fumé",
+        "Jarret de porc",
+        "Pommes de terre"
+      ],
+      "comment": "",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Crozets",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Crozets",
+      "ingredients": [
+        "Beaufort",
+        "Crème",
+        "Lardons",
+        "Oignons"
+      ],
+      "comment": "Cuire les crozets al dente. Gratiner avec le beaufort.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poule au Pot",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poule",
+      "ingredients": [
+        "Poireaux",
+        "Carottes",
+        "Navets",
+        "Céleri",
+        "Bouquet garni",
+        "Riz"
+      ],
+      "comment": "Cuire la poule 2h30 dans le bouillon avec les légumes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte Tatin aux Pommes",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Beurre",
+        "Sucre",
+        "Cannelle"
+      ],
+      "comment": "Caraméliser les pommes dans le moule. Recouvrir de pâte et cuire 30 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes Carbonara",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Lardons",
+        "Œufs",
+        "Parmesan",
+        "Poivre"
+      ],
+      "comment": "Mélanger les œufs et le parmesan hors du feu pour éviter de les cuire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes Bolognaise",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Viande hachée",
+      "ingredients": [
+        "Viande hachée",
+        "Tomates",
+        "Oignons",
+        "Ail",
+        "Herbes"
+      ],
+      "comment": "Sauce simple, préparation 25 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes au Saumon Fumé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon fumé",
+      "ingredients": [
+        "Saumon fumé",
+        "Crème",
+        "Aneth",
+        "Citron"
+      ],
+      "comment": "Prêt en 15 minutes. Parfait pour un dîner rapide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Courgettes",
+        "Tomates cerises",
+        "Basilic",
+        "Parmesan"
+      ],
+      "comment": "Recette végétarienne rapide et saine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes au Pesto",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Pesto",
+        "Tomates cerises",
+        "Pignons",
+        "Parmesan"
+      ],
+      "comment": "Ultra rapide. 10 minutes chrono.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Cantonais",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Œufs",
+        "Petits pois",
+        "Jambon",
+        "Sauce soja"
+      ],
+      "comment": "Idéal pour utiliser les restes de riz.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto aux Champignons",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Champignons",
+        "Oignons",
+        "Vin blanc",
+        "Parmesan",
+        "Bouillon"
+      ],
+      "comment": "30 minutes de cuisson. Remuer régulièrement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes Aglio e Olio",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Ail",
+        "Huile d'olive",
+        "Piment",
+        "Persil"
+      ],
+      "comment": "Recette italienne simple. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Pilaf",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Oignons",
+        "Beurre",
+        "Bouillon",
+        "Épices"
+      ],
+      "comment": "Accompagnement simple et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Tomates Fraîches",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Tomates",
+        "Basilic",
+        "Ail",
+        "Huile d'olive"
+      ],
+      "comment": "Recette estivale fraîche et légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nouilles Sautées",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Légumes",
+        "Sauce soja",
+        "Ail",
+        "Gingembre"
+      ],
+      "comment": "Wok express. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes à la Crème de Courgettes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Courgettes",
+        "Crème",
+        "Menthe",
+        "Parmesan"
+      ],
+      "comment": "Sauce crémeuse et délicate. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz au Curry",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Curry",
+        "Lait de coco",
+        "Légumes",
+        "Raisins secs"
+      ],
+      "comment": "Accompagnement parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Courgettes et Citron",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Courgettes",
+        "Citron",
+        "Parmesan",
+        "Menthe"
+      ],
+      "comment": "Frais et léger. Parfait l'été.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Brocolis",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Brocolis",
+      "ingredients": [
+        "Brocolis",
+        "Ail",
+        "Anchois",
+        "Parmesan"
+      ],
+      "comment": "Sain et rapide. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Sauté aux Œufs",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Œufs",
+        "Oignons verts",
+        "Sauce soja",
+        "Huile de sésame"
+      ],
+      "comment": "Simple et économique. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Lardons et Champignons",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lardons",
+      "ingredients": [
+        "Lardons",
+        "Champignons",
+        "Crème",
+        "Persil"
+      ],
+      "comment": "Généreux et rapide. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes au Thon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Thon",
+        "Tomates",
+        "Olives",
+        "Câpres"
+      ],
+      "comment": "Recette de placard. Très pratique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz aux Petits Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Carottes",
+        "Petits pois",
+        "Maïs",
+        "Beurre"
+      ],
+      "comment": "Accompagnement coloré pour les enfants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Pâtes à l'Arrabiata",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Tomates",
+        "Piment",
+        "Ail",
+        "Basilic"
+      ],
+      "comment": "Sauce piquante. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes Primavera",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Légumes printaniers",
+      "ingredients": [
+        "Légumes printaniers",
+        "Crème",
+        "Parmesan",
+        "Basilic"
+      ],
+      "comment": "Légère et colorée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Riz Basmati Nature",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz basmati",
+      "ingredients": [
+        "Eau",
+        "Sel"
+      ],
+      "comment": "Accompagnement neutre et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes au Beurre et Parmesan",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Beurre",
+        "Parmesan"
+      ],
+      "comment": "Simple et efficace pour les enfants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Épinards",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Épinards",
+      "ingredients": [
+        "Épinards",
+        "Crème",
+        "Muscade",
+        "Parmesan"
+      ],
+      "comment": "Crémeux et réconfortant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Asperges",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Asperges",
+      "ingredients": [
+        "Asperges",
+        "Crème",
+        "Citron",
+        "Parmesan"
+      ],
+      "comment": "Recette de saison élégante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Complet aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz complet",
+      "ingredients": [
+        "Légumes variés",
+        "Sauce soja",
+        "Graines de sésame"
+      ],
+      "comment": "Sain et rassasiant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes Cacio e Pepe",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Pecorino",
+        "Poivre noir",
+        "Eau de cuisson"
+      ],
+      "comment": "Recette romaine authentique. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Artichauts",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Artichauts",
+      "ingredients": [
+        "Artichauts",
+        "Ail",
+        "Citron",
+        "Parmesan"
+      ],
+      "comment": "Recette méditerranéenne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz au Lait de Coco",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Lait de coco",
+        "Gingembre",
+        "Citronnelle"
+      ],
+      "comment": "Accompagnement asiatique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Petits Pois et Jambon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Petits pois",
+      "ingredients": [
+        "Petits pois",
+        "Jambon",
+        "Crème",
+        "Parmesan"
+      ],
+      "comment": "Recette familiale classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Rôti",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Citron",
+        "Herbes",
+        "Huile d'olive"
+      ],
+      "comment": "Four à 180°C pendant 1h. Simple et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Escalope Milanaise",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Escalope de veau",
+      "ingredients": [
+        "Chapelure",
+        "Œufs",
+        "Parmesan",
+        "Citron"
+      ],
+      "comment": "Panée et poêlée. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet au Curry",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Curry",
+        "Lait de coco",
+        "Oignons",
+        "Tomates"
+      ],
+      "comment": "Rapide et parfumé. 30 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Steak Frites",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Steak",
+      "ingredients": [
+        "Pommes de terre",
+        "Beurre",
+        "Sel",
+        "Poivre"
+      ],
+      "comment": "Classique indémodable.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Basquaise",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Poivrons",
+        "Tomates",
+        "Jambon",
+        "Piment d'Espelette"
+      ],
+      "comment": "Mijoté rapide. 40 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Escalope à la Crème",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Escalope de dinde",
+      "ingredients": [
+        "Crème",
+        "Champignons",
+        "Vin blanc"
+      ],
+      "comment": "Sauce onctueuse. 25 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Boulettes de Viande",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Viande hachée",
+      "ingredients": [
+        "Œuf",
+        "Chapelure",
+        "Sauce tomate",
+        "Herbes"
+      ],
+      "comment": "Enfants adorent. 30 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Grillé",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Marinade",
+        "Citron",
+        "Herbes"
+      ],
+      "comment": "BBQ ou plancha. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cordon Bleu Maison",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Escalope",
+      "ingredients": [
+        "Jambon",
+        "Fromage",
+        "Chapelure",
+        "Œufs"
+      ],
+      "comment": "Version maison. 25 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Moutarde",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Moutarde",
+        "Crème",
+        "Vin blanc"
+      ],
+      "comment": "Simple et goûteux. 35 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Sauté aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Légumes",
+        "Sauce soja",
+        "Ail",
+        "Gingembre"
+      ],
+      "comment": "Wok rapide. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saucisses Lentilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saucisses",
+      "ingredients": [
+        "Lentilles",
+        "Carottes",
+        "Oignons",
+        "Laurier"
+      ],
+      "comment": "Plat réconfortant d'hiver.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Citron",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Citron",
+        "Ail",
+        "Thym",
+        "Huile d'olive"
+      ],
+      "comment": "Frais et léger. 40 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Haché Parmentier",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Viande hachée",
+      "ingredients": [
+        "Purée",
+        "Oignons",
+        "Fromage râpé"
+      ],
+      "comment": "Gratiné au four. 45 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Tandoori",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Yaourt",
+        "Épices tandoori",
+        "Citron",
+        "Ail"
+      ],
+      "comment": "Marinade rapide. Grillé ou four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Côtelettes d'Agneau",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Côtelettes d'agneau",
+      "ingredients": [
+        "Ail",
+        "Romarin",
+        "Huile d'olive"
+      ],
+      "comment": "Grillées. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet aux Olives",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Olives",
+        "Tomates",
+        "Ail",
+        "Herbes"
+      ],
+      "comment": "Saveur méditerranéenne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Émincé de Dinde",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Crème",
+        "Champignons",
+        "Échalotes"
+      ],
+      "comment": "Poêlé rapide. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes de Poulet",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Poivrons",
+        "Oignons",
+        "Marinade",
+        "Tomates cerises"
+      ],
+      "comment": "BBQ parfait. 25 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Steaks Hachés",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Viande hachée",
+      "ingredients": [
+        "Œuf",
+        "Persil",
+        "Oignons"
+      ],
+      "comment": "Maison c'est meilleur. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Coco",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco",
+        "Curry",
+        "Poivrons",
+        "Oignons"
+      ],
+      "comment": "Exotique et crémeux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Jambon à l'Os",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Jambon",
+      "ingredients": [
+        "Miel",
+        "Moutarde",
+        "Clous de girofle"
+      ],
+      "comment": "Four à 160°C. 1h30.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Sauce Soja",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce soja",
+        "Miel",
+        "Ail",
+        "Gingembre"
+      ],
+      "comment": "Asiatique rapide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Escalope Normande",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Escalope",
+      "ingredients": [
+        "Pommes",
+        "Crème",
+        "Cidre",
+        "Calvados"
+      ],
+      "comment": "Recette du terroir normand.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nuggets Maison",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Chapelure",
+        "Œufs",
+        "Farine"
+      ],
+      "comment": "Meilleur que industriel. Enfants adorent.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rôti de Porc",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Rôti de porc",
+      "ingredients": [
+        "Moutarde",
+        "Herbes",
+        "Vin blanc"
+      ],
+      "comment": "Four à 180°C. 1h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Tikka Masala",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Yaourt",
+        "Épices",
+        "Tomates",
+        "Crème"
+      ],
+      "comment": "Saveurs indiennes. 45 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Travers de Porc",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Travers de porc",
+      "ingredients": [
+        "Sauce BBQ",
+        "Miel",
+        "Épices"
+      ],
+      "comment": "Four ou BBQ. Caramélisés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sauté de Veau",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Champignons",
+        "Crème",
+        "Vin blanc",
+        "Échalotes"
+      ],
+      "comment": "Mijoté tendre. 1h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Rôti Miel et Soja",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Miel",
+        "Sauce soja",
+        "Ail",
+        "Gingembre"
+      ],
+      "comment": "Caramélisé et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet Mignon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Filet mignon",
+      "ingredients": [
+        "Moutarde",
+        "Herbes",
+        "Crème"
+      ],
+      "comment": "Tendre et rapide. 30 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chili Con Carne",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Viande hachée",
+      "ingredients": [
+        "Haricots rouges",
+        "Tomates",
+        "Piment",
+        "Oignons"
+      ],
+      "comment": "Mijoté épicé. 40 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Yassa",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Oignons",
+        "Citron",
+        "Moutarde",
+        "Piment"
+      ],
+      "comment": "Recette africaine parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Blancs de Poulet Farcis",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Fromage frais",
+        "Épinards",
+        "Jambon"
+      ],
+      "comment": "Élégant et facile. 35 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Teriyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Sauce teriyaki",
+        "Légumes",
+        "Sésame"
+      ],
+      "comment": "Sauce sucrée-salée japonaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Merguez Frites",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Merguez",
+      "ingredients": [
+        "Pommes de terre",
+        "Salade"
+      ],
+      "comment": "Simple et efficace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Paprika",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Paprika",
+        "Crème",
+        "Poivrons",
+        "Oignons"
+      ],
+      "comment": "Crémeux et épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Andouillette Grillée",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Andouillette",
+      "ingredients": [
+        "Moutarde",
+        "Pommes de terre"
+      ],
+      "comment": "Classique bistrot.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Chasseur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Champignons",
+        "Tomates",
+        "Vin blanc",
+        "Échalotes"
+      ],
+      "comment": "Sauce forestière. 45 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tacos Viande Hachée",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Viande hachée",
+      "ingredients": [
+        "Tortillas",
+        "Tomates",
+        "Salade",
+        "Fromage",
+        "Épices"
+      ],
+      "comment": "Tex-Mex familial. 25 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon au Four",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Citron",
+        "Aneth",
+        "Huile d'olive"
+      ],
+      "comment": "Four à 180°C, 20 minutes. Simple et sain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filets de Cabillaud",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Tomates",
+        "Oignons",
+        "Herbes"
+      ],
+      "comment": "Poêlé ou au four. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson Pané",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson blanc",
+      "ingredients": [
+        "Chapelure",
+        "Œufs",
+        "Farine"
+      ],
+      "comment": "Enfants adorent. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pavé de Saumon Grillé",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Marinade",
+        "Citron",
+        "Herbes"
+      ],
+      "comment": "Plancha ou BBQ. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dos de Cabillaud Sauce Vierge",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Tomates",
+        "Basilic",
+        "Huile d'olive",
+        "Citron"
+      ],
+      "comment": "Frais et estival.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brandade de Morue",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Morue",
+      "ingredients": [
+        "Pommes de terre",
+        "Ail",
+        "Lait",
+        "Huile d'olive"
+      ],
+      "comment": "Recette du sud. Gratinée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filets de Lieu Citron",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lieu",
+      "ingredients": [
+        "Citron",
+        "Beurre",
+        "Persil"
+      ],
+      "comment": "Poêlé rapide. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Papillote de Poisson",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson blanc",
+      "ingredients": [
+        "Légumes",
+        "Citron",
+        "Herbes"
+      ],
+      "comment": "Sain et léger. Four 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson à la Provençale",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Tomates",
+        "Olives",
+        "Ail",
+        "Herbes"
+      ],
+      "comment": "Saveurs du sud.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Filet de Truite Amandine",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Truite",
+      "ingredients": [
+        "Amandes",
+        "Beurre",
+        "Citron"
+      ],
+      "comment": "Classique raffiné. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fish and Chips",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poisson blanc",
+      "ingredients": [
+        "Pommes de terre",
+        "Pâte à frire",
+        "Citron"
+      ],
+      "comment": "Version maison. 30 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon Teriyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Sauce teriyaki",
+        "Sésame",
+        "Oignons verts"
+      ],
+      "comment": "Asiatique rapide. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Colin à la Crème",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Colin",
+      "ingredients": [
+        "Crème",
+        "Vin blanc",
+        "Champignons"
+      ],
+      "comment": "Sauce onctueuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Acras de Morue",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Morue",
+      "ingredients": [
+        "Farine",
+        "Œufs",
+        "Piment",
+        "Oignons verts"
+      ],
+      "comment": "Antillais. Frits. Apéritif.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon Sauce Oseille",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Oseille",
+        "Crème",
+        "Vin blanc"
+      ],
+      "comment": "Recette élégante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson au Lait de Coco",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Lait de coco",
+        "Curry",
+        "Citron vert",
+        "Coriandre"
+      ],
+      "comment": "Exotique et crémeux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sardines Grillées",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Sardines",
+      "ingredients": [
+        "Citron",
+        "Herbes",
+        "Huile d'olive"
+      ],
+      "comment": "BBQ estival. 10 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson aux Légumes Vapeur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson blanc",
+      "ingredients": [
+        "Légumes",
+        "Citron",
+        "Huile d'olive"
+      ],
+      "comment": "Diététique. Cuisson vapeur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Maquereaux Vin Blanc",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Maquereaux",
+      "ingredients": [
+        "Vin blanc",
+        "Carottes",
+        "Oignons",
+        "Laurier"
+      ],
+      "comment": "Mariné. Froid ou chaud.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lotte à l'Armoricaine",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Tomates",
+        "Cognac",
+        "Vin blanc",
+        "Échalotes"
+      ],
+      "comment": "Sauce bretonne. 40 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Thon Mi-Cuit",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Thon frais",
+      "ingredients": [
+        "Sésame",
+        "Sauce soja",
+        "Gingembre"
+      ],
+      "comment": "Poêlé 2 min par face. Rosé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Raie au Beurre Noir",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Raie",
+      "ingredients": [
+        "Beurre",
+        "Câpres",
+        "Vinaigre",
+        "Persil"
+      ],
+      "comment": "Classique français.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bar Grillé",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bar",
+      "ingredients": [
+        "Fenouil",
+        "Citron",
+        "Huile d'olive"
+      ],
+      "comment": "BBQ ou four. Élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Parmentier de Poisson",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poisson blanc",
+      "ingredients": [
+        "Purée",
+        "Crème",
+        "Fromage râpé"
+      ],
+      "comment": "Gratiné. Réconfortant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Roulés de Sole",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Sole",
+      "ingredients": [
+        "Crème",
+        "Vin blanc",
+        "Champignons",
+        "Échalotes"
+      ],
+      "comment": "Raffiné. Four 25 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade César",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Salade romaine",
+      "ingredients": [
+        "Poulet",
+        "Parmesan",
+        "Croûtons",
+        "Sauce césar"
+      ],
+      "comment": "Classique indémodable.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Composée",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Salade",
+      "ingredients": [
+        "Tomates",
+        "Concombre",
+        "Œufs",
+        "Thon"
+      ],
+      "comment": "Fraîche et complète.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Taboulé",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Semoule",
+      "ingredients": [
+        "Tomates",
+        "Menthe",
+        "Persil",
+        "Citron"
+      ],
+      "comment": "Frais. Parfait l'été.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Pâtes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Tomates",
+        "Mozzarella",
+        "Basilic",
+        "Olives"
+      ],
+      "comment": "Complète. Pique-nique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Riz",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Thon",
+        "Maïs",
+        "Tomates",
+        "Poivrons"
+      ],
+      "comment": "Pratique et rassasiante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Mimosa",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Mayonnaise",
+        "Moutarde",
+        "Ciboulette"
+      ],
+      "comment": "Entrée classique. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Légumes",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Bouillon",
+        "Crème",
+        "Herbes"
+      ],
+      "comment": "Réconfortant. Variable selon saison.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Tomates",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Oignons",
+        "Basilic",
+        "Ail",
+        "Crème"
+      ],
+      "comment": "Chaude ou froide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Chèvre Chaud",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Chèvre",
+      "ingredients": [
+        "Chèvre",
+        "Pain",
+        "Miel",
+        "Noix"
+      ],
+      "comment": "Toast gratiné. Délicieux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Lentilles",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Lentilles",
+      "ingredients": [
+        "Tomates",
+        "Oignons",
+        "Vinaigrette",
+        "Persil"
+      ],
+      "comment": "Protéinée et saine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Potage Poireaux Pommes de Terre",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poireaux",
+      "ingredients": [
+        "Pommes de terre",
+        "Bouillon",
+        "Crème"
+      ],
+      "comment": "Classique hivernal.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Grecque",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Concombre",
+        "Feta",
+        "Olives",
+        "Oignons rouges"
+      ],
+      "comment": "Méditerranéenne. Fraîche.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Terrine de Légumes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Légumes variés",
+      "ingredients": [
+        "Œufs",
+        "Crème",
+        "Herbes"
+      ],
+      "comment": "Froide. À préparer la veille.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Avocat Crevettes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Avocat",
+      "ingredients": [
+        "Crevettes",
+        "Citron",
+        "Mayonnaise"
+      ],
+      "comment": "Chic et rapide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe à la Citrouille",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Citrouille",
+      "ingredients": [
+        "Oignons",
+        "Crème",
+        "Muscade",
+        "Bouillon"
+      ],
+      "comment": "Automnale. Douce.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade d'Endives",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Endives",
+      "ingredients": [
+        "Roquefort",
+        "Noix",
+        "Pommes",
+        "Vinaigrette"
+      ],
+      "comment": "Croquante et parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâté en Croûte",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Viande hachée",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Œufs",
+        "Échalotes"
+      ],
+      "comment": "Fait maison. Four 1h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carottes Râpées",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Carottes",
+      "ingredients": [
+        "Citron",
+        "Huile",
+        "Persil"
+      ],
+      "comment": "Simple et vitaminé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Betteraves",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Betteraves",
+      "ingredients": [
+        "Mâche",
+        "Chèvre",
+        "Noix",
+        "Vinaigrette"
+      ],
+      "comment": "Colorée et saine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Champignons",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Champignons",
+      "ingredients": [
+        "Pommes de terre",
+        "Crème",
+        "Bouillon"
+      ],
+      "comment": "Onctueux et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tomates Mozzarella",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Mozzarella",
+        "Basilic",
+        "Huile d'olive"
+      ],
+      "comment": "Caprese. Ultra simple.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Courge",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Courge",
+      "ingredients": [
+        "Oignons",
+        "Crème",
+        "Bouillon",
+        "Muscade"
+      ],
+      "comment": "Douce et réconfortante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Chou",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Chou blanc",
+      "ingredients": [
+        "Carottes",
+        "Mayonnaise",
+        "Moutarde"
+      ],
+      "comment": "Coleslaw. Croquant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Assiette de Crudités",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Légumes crus variés",
+      "ingredients": [
+        "Sauces",
+        "Herbes"
+      ],
+      "comment": "Fraîcheur garantie.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Mayonnaise",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Mayonnaise",
+        "Moutarde"
+      ],
+      "comment": "Bistrot français. Simplissime.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Haricots Verts",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Haricots verts",
+      "ingredients": [
+        "Tomates",
+        "Échalotes",
+        "Vinaigrette"
+      ],
+      "comment": "Légère et estivale.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Miso",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Miso",
+      "ingredients": [
+        "Tofu",
+        "Algues",
+        "Oignons verts"
+      ],
+      "comment": "Japonaise. Rapide. 10 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pamplemousse Crevettes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Pamplemousse",
+      "ingredients": [
+        "Crevettes",
+        "Avocat",
+        "Sauce cocktail"
+      ],
+      "comment": "Rafraîchissant et original.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Courgettes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Pommes de terre",
+        "Crème",
+        "Bouillon",
+        "Menthe"
+      ],
+      "comment": "Doux et léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Mexicaine",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Haricots rouges",
+      "ingredients": [
+        "Maïs",
+        "Tomates",
+        "Avocat",
+        "Coriandre",
+        "Citron vert"
+      ],
+      "comment": "Colorée et épicée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Omelette Nature",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Beurre",
+        "Sel",
+        "Poivre"
+      ],
+      "comment": "Basique. 10 minutes. Parfait repas rapide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Omelette au Fromage",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Fromage râpé",
+        "Beurre"
+      ],
+      "comment": "Simple et gourmand.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Croque-Monsieur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pain de mie",
+      "ingredients": [
+        "Jambon",
+        "Fromage",
+        "Béchamel"
+      ],
+      "comment": "Gratiné. Bistrot français.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pizza Maison",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à pizza",
+      "ingredients": [
+        "Sauce tomate",
+        "Fromage",
+        "Garniture au choix"
+      ],
+      "comment": "Famille adore. Personnalisable.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Courgettes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Béchamel",
+        "Fromage râpé",
+        "Ail"
+      ],
+      "comment": "Four 30 min. Gratiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin Dauphinois",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Crème",
+        "Lait",
+        "Ail",
+        "Muscade"
+      ],
+      "comment": "Classique savoyard. Accompagnement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Cocotte",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Crème",
+        "Fromage",
+        "Herbes"
+      ],
+      "comment": "Four 15 min. Délicat.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Légumes",
+        "Œufs",
+        "Crème",
+        "Fromage"
+      ],
+      "comment": "Variable selon saison.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galettes de Pommes de Terre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Œufs",
+        "Oignons",
+        "Farine"
+      ],
+      "comment": "Röstis. Poêlées. Croustillantes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Croque-Madame",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pain de mie",
+      "ingredients": [
+        "Jambon",
+        "Fromage",
+        "Œuf",
+        "Béchamel"
+      ],
+      "comment": "Croque + œuf au plat dessus.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Chou-fleur",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Chou-fleur",
+      "ingredients": [
+        "Béchamel",
+        "Fromage râpé",
+        "Muscade"
+      ],
+      "comment": "Réconfortant. Four 30 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Brouillés",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Beurre",
+        "Crème",
+        "Ciboulette"
+      ],
+      "comment": "Crémeux. 5 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte Poireaux Chèvre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poireaux",
+      "ingredients": [
+        "Poireaux",
+        "Chèvre",
+        "Œufs",
+        "Crème"
+      ],
+      "comment": "Association parfaite.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lasagnes aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pâtes à lasagnes",
+      "ingredients": [
+        "Légumes",
+        "Béchamel",
+        "Fromage râpé"
+      ],
+      "comment": "Végétarien. Four 40 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs à la Coque",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Mouillettes",
+        "Sel"
+      ],
+      "comment": "3 minutes. Simple et bon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Flan de Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Fromage"
+      ],
+      "comment": "Four 35 min. Moelleux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Tarte Épinards Ricotta",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Épinards",
+      "ingredients": [
+        "Épinards",
+        "Ricotta",
+        "Œufs",
+        "Muscade"
+      ],
+      "comment": "Italienne. Délicate.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pommes de Terre Sautées",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Beurre",
+        "Ail",
+        "Persil"
+      ],
+      "comment": "Accompagnement ou plat. Dorées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Courgettes Farcies Végé",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Riz",
+        "Tomates",
+        "Fromage",
+        "Herbes"
+      ],
+      "comment": "Four 40 min. Sans viande.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Durs Sauce Tomate",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Sauce tomate",
+        "Herbes",
+        "Ail"
+      ],
+      "comment": "Simple et économique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte Oignon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Oignons",
+      "ingredients": [
+        "Oignons",
+        "Lardons",
+        "Œufs",
+        "Crème"
+      ],
+      "comment": "Alsacienne. Caramélisée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Pâtes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Béchamel",
+        "Fromage râpé",
+        "Jambon"
+      ],
+      "comment": "Réconfortant. Enfants adorent.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tortilla Espagnole",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Pommes de terre",
+        "Oignons",
+        "Huile d'olive"
+      ],
+      "comment": "Omelette épaisse. Froide ou chaude.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poêlée de Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes variés",
+      "ingredients": [
+        "Ail",
+        "Herbes",
+        "Huile d'olive"
+      ],
+      "comment": "Rapide. Sain. Coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 1,
+      "lastSelected": "2025-11-23"
+    },
+    {
+      "name": "Gaufres Salées",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Fromage",
+        "Jambon"
+      ],
+      "comment": "Original. Gaufrier nécessaire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Purée de Pommes de Terre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Lait",
+        "Beurre",
+        "Muscade"
+      ],
+      "comment": "Accompagnement réconfortant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cake Salé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Fromage",
+        "Jambon",
+        "Olives"
+      ],
+      "comment": "Apéro ou pique-nique. Four 40 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Shakshuka",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Tomates",
+        "Poivrons",
+        "Oignons",
+        "Épices"
+      ],
+      "comment": "Œufs pochés sauce tomate. Moyen-Orient.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Clafoutis Salé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Lait",
+        "Farine",
+        "Tomates cerises",
+        "Fromage"
+      ],
+      "comment": "Four 30 min. Version salée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bricks aux Œufs",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Feuilles de brick",
+      "ingredients": [
+        "Œufs",
+        "Thon",
+        "Câpres",
+        "Persil"
+      ],
+      "comment": "Frits. Croustillants. 15 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soufflé au Fromage",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Fromage",
+        "Beurre",
+        "Farine",
+        "Lait"
+      ],
+      "comment": "Technique. Impressionnant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Quiche Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Légumes",
+        "Œufs",
+        "Crème",
+        "Fromage"
+      ],
+      "comment": "Version végétarienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry de Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Lait de coco",
+        "Curry",
+        "Riz"
+      ],
+      "comment": "Végétarien. Parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Welsh Rarebit",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Cheddar",
+      "ingredients": [
+        "Cheddar",
+        "Bière",
+        "Moutarde",
+        "Œuf"
+      ],
+      "comment": "Toast anglais. Gratiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Brocolis",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Brocolis",
+      "ingredients": [
+        "Béchamel",
+        "Fromage râpé",
+        "Muscade"
+      ],
+      "comment": "Sain et gratiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crêpes",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Sucre",
+        "Beurre"
+      ],
+      "comment": "Classique français. Garniture au choix.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mousse au Chocolat",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Œufs",
+        "Sucre"
+      ],
+      "comment": "Onctueux. À préparer 3h avant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Compote de Pommes",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Sucre",
+        "Cannelle"
+      ],
+      "comment": "Simple et sain. 20 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Yaourt Maison",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Lait",
+      "ingredients": [
+        "Yaourt",
+        "Sucre"
+      ],
+      "comment": "Yaourtière nécessaire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tiramisu",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Mascarpone",
+      "ingredients": [
+        "Biscuits",
+        "Café",
+        "Œufs",
+        "Cacao"
+      ],
+      "comment": "Repos 4h. Sans cuisson.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fondant au Chocolat",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Beurre",
+        "Œufs",
+        "Sucre",
+        "Farine"
+      ],
+      "comment": "Cœur coulant. Four 12 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte aux Pommes",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Pommes",
+        "Sucre",
+        "Cannelle"
+      ],
+      "comment": "Classique indémodable.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crème Brûlée",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Crème",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Vanille"
+      ],
+      "comment": "Élégant. Chalumeau nécessaire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gâteau au Yaourt",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Yaourt",
+      "ingredients": [
+        "Farine",
+        "Sucre",
+        "Œufs",
+        "Huile"
+      ],
+      "comment": "Enfants peuvent le faire. Facile.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crumble aux Fruits",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fruits",
+      "ingredients": [
+        "Farine",
+        "Beurre",
+        "Sucre"
+      ],
+      "comment": "Variable selon saison.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brownie",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Beurre",
+        "Sucre",
+        "Œufs",
+        "Farine",
+        "Noix"
+      ],
+      "comment": "Moelleux. Four 25 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Panna Cotta",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Crème",
+      "ingredients": [
+        "Sucre",
+        "Gélatine",
+        "Vanille",
+        "Coulis"
+      ],
+      "comment": "Italien. Repos 4h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Clafoutis aux Cerises",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Cerises",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Farine",
+        "Sucre"
+      ],
+      "comment": "Estival. Four 35 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz au Lait",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Lait",
+        "Sucre",
+        "Vanille",
+        "Cannelle"
+      ],
+      "comment": "Réconfortant. Onctueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cookies",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Beurre",
+        "Sucre",
+        "Œufs",
+        "Pépites de chocolat"
+      ],
+      "comment": "Fait maison c'est meilleur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Flan Pâtissier",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Lait",
+      "ingredients": [
+        "Lait",
+        "Œufs",
+        "Sucre",
+        "Vanille",
+        "Fécule"
+      ],
+      "comment": "Boulangerie maison.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Fruits",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fruits frais variés",
+      "ingredients": [
+        "Sucre",
+        "Citron",
+        "Menthe"
+      ],
+      "comment": "Frais et vitaminé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Îles Flottantes",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Sucre",
+        "Lait",
+        "Vanille",
+        "Caramel"
+      ],
+      "comment": "Œufs à la neige. Léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cake aux Fruits",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fruits confits",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Beurre",
+        "Fruits confits"
+      ],
+      "comment": "Four 45 min. Moelleux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte Citron Meringuée",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Citrons",
+      "ingredients": [
+        "Citrons",
+        "Œufs",
+        "Sucre",
+        "Beurre"
+      ],
+      "comment": "Acidulé. Meringue soufflée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gaufres",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Sucre",
+        "Beurre",
+        "Levure"
+      ],
+      "comment": "Gaufrier nécessaire. Goûter.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Madeleines",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Beurre",
+        "Miel"
+      ],
+      "comment": "Moule spécifique. Four 10 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mousse aux Fruits",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fruits",
+      "ingredients": [
+        "Crème",
+        "Sucre",
+        "Gélatine"
+      ],
+      "comment": "Légère et fruitée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Charlotte aux Fraises",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fraises",
+      "ingredients": [
+        "Biscuits",
+        "Crème",
+        "Sucre"
+      ],
+      "comment": "Estivale. Repos 4h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crème Caramel",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Lait",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Caramel"
+      ],
+      "comment": "Classique. Renversée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Financiers",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Amandes",
+      "ingredients": [
+        "Sucre",
+        "Blancs d'œufs",
+        "Beurre",
+        "Farine"
+      ],
+      "comment": "Petits gâteaux moelleux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Beignets",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Levure",
+        "Sucre"
+      ],
+      "comment": "Frits. Goûter ou fête.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte aux Fraises",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fraises",
+      "ingredients": [
+        "Fraises",
+        "Crème pâtissière"
+      ],
+      "comment": "Estivale. Colorée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Muffins",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Lait",
+        "Pépites chocolat"
+      ],
+      "comment": "Moules à muffins. Four 20 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pain Perdu",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pain rassis",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Sucre",
+        "Cannelle"
+      ],
+      "comment": "Anti-gaspi. Poêlé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cheesecake",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fromage frais",
+      "ingredients": [
+        "Biscuits",
+        "Sucre",
+        "Œufs",
+        "Crème"
+      ],
+      "comment": "New York style. Repos 6h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Far Breton",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pruneaux",
+      "ingredients": [
+        "Œufs",
+        "Lait",
+        "Sucre",
+        "Pruneaux"
+      ],
+      "comment": "Spécialité bretonne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gâteau Marbré",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Beurre",
+        "Cacao"
+      ],
+      "comment": "Chocolat-vanille. Goûter.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soufflé au Chocolat",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Beurre",
+        "Farine"
+      ],
+      "comment": "Impressionnant. Technique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte Abricots",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Abricots",
+      "ingredients": [
+        "Abricots",
+        "Sucre",
+        "Amandes"
+      ],
+      "comment": "Estivale. Four 35 min.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Quatre-Quarts",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Farine",
+        "Sucre",
+        "Beurre"
+      ],
+      "comment": "Simple. Poids égaux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Churros",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Eau",
+        "Beurre",
+        "Œufs",
+        "Sucre",
+        "Cannelle"
+      ],
+      "comment": "Frits. Poche à douille.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fruits au Sirop",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fruits",
+      "ingredients": [
+        "Sucre",
+        "Eau",
+        "Vanille"
+      ],
+      "comment": "Pochés. Légers.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bananes Flambées",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Bananes",
+      "ingredients": [
+        "Beurre",
+        "Sucre",
+        "Rhum"
+      ],
+      "comment": "Spectaculaire. 10 minutes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mousse de Citron",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Citrons",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Crème",
+        "Gélatine"
+      ],
+      "comment": "Acidulée. Légère.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet du Général Tao",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce soja",
+        "Miel",
+        "Gingembre",
+        "Ail",
+        "Piment",
+        "Sésame"
+      ],
+      "comment": "Poulet croustillant, sauce sucrée-épicée. Servir avec riz.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Won Ton",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Crevettes",
+        "Pâte à won ton",
+        "Bouillon",
+        "Ciboulette",
+        "Gingembre"
+      ],
+      "comment": "Raviolis chinois en bouillon clair.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Cantonais",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Œufs",
+        "Petits pois",
+        "Jambon",
+        "Crevettes",
+        "Oignons"
+      ],
+      "comment": "Utiliser du riz de la veille.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nouilles Sautées au Bœuf",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Nouilles",
+        "Sauce soja",
+        "Légumes",
+        "Sésame",
+        "Gingembre"
+      ],
+      "comment": "Rapide au wok.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet aux Noix de Cajou",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Noix de cajou",
+        "Poivrons",
+        "Sauce soja",
+        "Gingembre"
+      ],
+      "comment": "Croquant et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Porc au Caramel Vietnamien",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Nuoc mam",
+        "Sucre",
+        "Œufs durs",
+        "Oignons",
+        "Ail"
+      ],
+      "comment": "Thịt kho. Mijoté fondant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sushis Maison",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz à sushi",
+      "ingredients": [
+        "Saumon",
+        "Thon",
+        "Avocat",
+        "Nori",
+        "Wasabi"
+      ],
+      "comment": "Natte bambou nécessaire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Makis Saumon Avocat",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Riz à sushi",
+        "Avocat",
+        "Nori",
+        "Sésame"
+      ],
+      "comment": "Classique japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ramen au Porc",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Nouilles ramen",
+        "Bouillon",
+        "Œuf mollet",
+        "Nori",
+        "Oignons verts"
+      ],
+      "comment": "Bouillon maison idéal.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Teriyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Sauce teriyaki",
+        "Sésame",
+        "Gingembre",
+        "Ail"
+      ],
+      "comment": "Marinade 30 min minimum.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pad Thaï",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles de riz",
+      "ingredients": [
+        "Crevettes",
+        "Œufs",
+        "Cacahuètes",
+        "Germes de soja",
+        "Citron vert"
+      ],
+      "comment": "Classique thaïlandais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Vert Thaï",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte curry vert",
+        "Bambou",
+        "Basilic thaï"
+      ],
+      "comment": "Épicé et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bo Bun",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Vermicelles",
+        "Nems",
+        "Cacahuètes",
+        "Menthe",
+        "Nuoc mam"
+      ],
+      "comment": "Salade vietnamienne fraîche.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nems au Porc",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Vermicelles",
+        "Carottes",
+        "Champignons noirs",
+        "Feuilles de riz"
+      ],
+      "comment": "Frits et croustillants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rouleaux de Printemps",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Vermicelles",
+        "Salade",
+        "Menthe",
+        "Feuilles de riz"
+      ],
+      "comment": "Frais, non frits.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Satay",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce cacahuète",
+        "Lait de coco",
+        "Curcuma",
+        "Citronnelle"
+      ],
+      "comment": "Brochettes indonésiennes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Pho",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Nouilles de riz",
+        "Bouillon",
+        "Anis étoilé",
+        "Cannelle",
+        "Herbes fraîches"
+      ],
+      "comment": "Soupe vietnamienne parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bibimbap",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Bœuf",
+        "Légumes marinés",
+        "Œuf",
+        "Gochujang",
+        "Sésame"
+      ],
+      "comment": "Bol coréen coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Tandoori",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Yaourt",
+        "Épices tandoori",
+        "Citron",
+        "Gingembre",
+        "Ail"
+      ],
+      "comment": "Marinade longue pour tendreté.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry d'Agneau",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Lait de coco",
+        "Curry",
+        "Tomates",
+        "Oignons",
+        "Coriandre"
+      ],
+      "comment": "Mijoté indien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dahl de Lentilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lentilles corail",
+      "ingredients": [
+        "Lait de coco",
+        "Curcuma",
+        "Cumin",
+        "Tomates",
+        "Coriandre"
+      ],
+      "comment": "Plat végétarien indien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gyozas",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Chou",
+        "Gingembre",
+        "Ail",
+        "Pâte à gyoza",
+        "Sauce soja"
+      ],
+      "comment": "Raviolis japonais grillés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Yakitori",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce yakitori",
+        "Oignons verts",
+        "Sésame"
+      ],
+      "comment": "Brochettes japonaises.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Miso",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Miso",
+        "Algues wakame",
+        "Oignons verts",
+        "Dashi"
+      ],
+      "comment": "Classique japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Lok Lak",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Poivre Kampot",
+        "Sauce soja",
+        "Citron vert",
+        "Oignons"
+      ],
+      "comment": "Spécialité cambodgienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Banh Mi",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Baguette",
+        "Pickles",
+        "Coriandre",
+        "Pâté",
+        "Mayonnaise"
+      ],
+      "comment": "Sandwich vietnamien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tom Yum",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citronnelle",
+        "Galanga",
+        "Feuilles de combava",
+        "Piment",
+        "Champignons"
+      ],
+      "comment": "Soupe thaï épicée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canard Laqué",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Miel",
+        "Sauce soja",
+        "Cinq épices",
+        "Crêpes chinoises"
+      ],
+      "comment": "Plat de fête chinois.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chirashi",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poisson cru",
+      "ingredients": [
+        "Riz à sushi",
+        "Saumon",
+        "Thon",
+        "Avocat",
+        "Œufs de saumon"
+      ],
+      "comment": "Bol de sushi décomposé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Samossas",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Petits pois",
+        "Épices",
+        "Feuilles de brick",
+        "Oignons"
+      ],
+      "comment": "Beignets indiens épicés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Côte de Bœuf Grillée",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Beurre",
+        "Thym",
+        "Ail",
+        "Fleur de sel"
+      ],
+      "comment": "Repos 5 min avant découpe.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bavette à l'Échalote",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Échalotes",
+        "Vin rouge",
+        "Beurre",
+        "Persil"
+      ],
+      "comment": "Cuisson saignante recommandée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Steak au Poivre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Poivre",
+        "Crème",
+        "Cognac",
+        "Beurre"
+      ],
+      "comment": "Flamber au cognac.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Stroganoff",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Champignons",
+        "Crème",
+        "Oignons",
+        "Paprika"
+      ],
+      "comment": "Servir avec pâtes ou riz.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet Mignon en Croûte",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Champignons",
+        "Échalotes",
+        "Moutarde"
+      ],
+      "comment": "Façon Wellington.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rôti de Porc aux Pruneaux",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Pruneaux",
+        "Vin blanc",
+        "Crème",
+        "Oignons"
+      ],
+      "comment": "Spécialité du Val de Loire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Échine de Porc Confite",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Miel",
+        "Sauce soja",
+        "Ail",
+        "Romarin"
+      ],
+      "comment": "Cuisson basse température.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sauté de Veau Marengo",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Tomates",
+        "Champignons",
+        "Vin blanc",
+        "Olives"
+      ],
+      "comment": "Recette napoléonienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Escalope Milanaise",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Chapelure",
+        "Parmesan",
+        "Œufs",
+        "Citron"
+      ],
+      "comment": "Panée et dorée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Osso Buco",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Tomates",
+        "Vin blanc",
+        "Carottes",
+        "Céleri",
+        "Gremolata"
+      ],
+      "comment": "Jarret de veau braisé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gigot d'Agneau",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Ail",
+        "Romarin",
+        "Thym",
+        "Pommes de terre"
+      ],
+      "comment": "Classique pascal.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Souris d'Agneau Confite",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Miel",
+        "Épices",
+        "Abricots secs",
+        "Amandes"
+      ],
+      "comment": "7h de cuisson.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Navarin d'Agneau",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Navets",
+        "Carottes",
+        "Pommes de terre",
+        "Petits pois"
+      ],
+      "comment": "Ragoût printanier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Côtelettes d'Agneau Grillées",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Herbes de Provence",
+        "Ail",
+        "Huile d'olive"
+      ],
+      "comment": "Cuisson rosée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Magret de Canard",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Miel",
+        "Vinaigre balsamique",
+        "Thym"
+      ],
+      "comment": "Inciser le gras en croisillons.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Confit de Canard",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Graisse de canard",
+        "Ail",
+        "Thym",
+        "Pommes sarladaises"
+      ],
+      "comment": "Cuisson longue dans la graisse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aiguillettes de Canard",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Cerises",
+        "Vinaigre",
+        "Miel",
+        "Poivre"
+      ],
+      "comment": "Sauce aux cerises.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lapin à la Moutarde",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lapin",
+      "ingredients": [
+        "Moutarde",
+        "Crème",
+        "Vin blanc",
+        "Thym"
+      ],
+      "comment": "Classique bourguignon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lapin aux Olives",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lapin",
+      "ingredients": [
+        "Olives",
+        "Tomates",
+        "Vin blanc",
+        "Herbes de Provence"
+      ],
+      "comment": "Saveurs méditerranéennes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Civet de Lapin",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Lapin",
+      "ingredients": [
+        "Vin rouge",
+        "Lardons",
+        "Champignons",
+        "Oignons"
+      ],
+      "comment": "Marinade 24h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pintade aux Choux",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pintade",
+      "ingredients": [
+        "Chou",
+        "Lardons",
+        "Carottes",
+        "Vin blanc"
+      ],
+      "comment": "Gibier doux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Basquaise",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Poivrons",
+        "Tomates",
+        "Piment d'Espelette",
+        "Jambon de Bayonne"
+      ],
+      "comment": "Spécialité du Pays Basque.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet à la Crème",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Crème",
+        "Champignons",
+        "Vin blanc",
+        "Estragon"
+      ],
+      "comment": "Simple et délicieux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet aux Olives et Citron",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Olives",
+        "Citrons confits",
+        "Oignons",
+        "Épices"
+      ],
+      "comment": "Inspiration marocaine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Coq au Riesling",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Riesling",
+        "Crème",
+        "Champignons",
+        "Lardons"
+      ],
+      "comment": "Variante alsacienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Suprême de Volaille Farci",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Épinards",
+        "Ricotta",
+        "Tomates séchées",
+        "Pignons"
+      ],
+      "comment": "Élégant et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon en Croûte",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Épinards",
+        "Aneth",
+        "Crème"
+      ],
+      "comment": "Coulibiac revisité.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pavé de Saumon Grillé",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Citron",
+        "Aneth",
+        "Beurre",
+        "Câpres"
+      ],
+      "comment": "Cuisson à la plancha.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon Gravlax",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Aneth",
+        "Sucre",
+        "Sel",
+        "Poivre",
+        "Vodka"
+      ],
+      "comment": "Marinade 48h.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Saumon",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Avocat",
+        "Citron vert",
+        "Ciboulette",
+        "Sésame"
+      ],
+      "comment": "Très frais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dos de Cabillaud Rôti",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Beurre",
+        "Citron",
+        "Persil",
+        "Ail"
+      ],
+      "comment": "Chair fondante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cabillaud en Croûte d'Herbes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Chapelure",
+        "Herbes",
+        "Parmesan",
+        "Citron"
+      ],
+      "comment": "Croûte croustillante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fish and Chips",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Bière",
+        "Farine",
+        "Frites",
+        "Sauce tartare"
+      ],
+      "comment": "Classique britannique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brandade de Morue",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Morue",
+      "ingredients": [
+        "Pommes de terre",
+        "Huile d'olive",
+        "Ail",
+        "Lait"
+      ],
+      "comment": "Spécialité nîmoise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Thon Mi-Cuit",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Sésame",
+        "Sauce soja",
+        "Gingembre",
+        "Wasabi"
+      ],
+      "comment": "Saisir 1 min par face.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tataki de Thon",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Sésame",
+        "Sauce ponzu",
+        "Gingembre",
+        "Ciboulette"
+      ],
+      "comment": "Mariné et saisi.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sole Meunière",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Sole",
+      "ingredients": [
+        "Beurre",
+        "Citron",
+        "Persil",
+        "Farine"
+      ],
+      "comment": "Classique français.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filets de Dorade Grillés",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dorade",
+      "ingredients": [
+        "Huile d'olive",
+        "Citron",
+        "Herbes",
+        "Ail"
+      ],
+      "comment": "Barbecue idéal.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bar en Croûte de Sel",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bar",
+      "ingredients": [
+        "Gros sel",
+        "Blanc d'œuf",
+        "Thym",
+        "Laurier"
+      ],
+      "comment": "Spectaculaire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lotte à l'Américaine",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Tomates",
+        "Cognac",
+        "Vin blanc",
+        "Échalotes",
+        "Estragon"
+      ],
+      "comment": "Sauce homard facultative.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Blanquette de Lotte",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Crème",
+        "Champignons",
+        "Carottes",
+        "Vin blanc"
+      ],
+      "comment": "Comme une blanquette.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Moules Marinières",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Moules",
+      "ingredients": [
+        "Vin blanc",
+        "Échalotes",
+        "Persil",
+        "Crème"
+      ],
+      "comment": "Avec frites.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Moules au Curry",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Moules",
+      "ingredients": [
+        "Curry",
+        "Lait de coco",
+        "Coriandre",
+        "Oignons"
+      ],
+      "comment": "Variante exotique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Jacques Poêlées",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Beurre",
+        "Ail",
+        "Persil",
+        "Citron"
+      ],
+      "comment": "1 min par face.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Jacques au Beurre Blanc",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Beurre",
+        "Échalotes",
+        "Vin blanc",
+        "Crème"
+      ],
+      "comment": "Sauce nantaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes Sautées à l'Ail",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Ail",
+        "Persil",
+        "Huile d'olive",
+        "Piment"
+      ],
+      "comment": "Gambas al ajillo.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Paella",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Fruits de mer",
+        "Poulet",
+        "Chorizo",
+        "Safran",
+        "Poivrons"
+      ],
+      "comment": "Plat espagnol festif.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto aux Fruits de Mer",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Crevettes",
+        "Moules",
+        "Vin blanc",
+        "Parmesan"
+      ],
+      "comment": "Crémeux à souhait.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Calamars à la Romaine",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Calamars",
+      "ingredients": [
+        "Farine",
+        "Citron",
+        "Huile",
+        "Persil"
+      ],
+      "comment": "Frits et croustillants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Calamars Farcis",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Calamars",
+      "ingredients": [
+        "Chair à saucisse",
+        "Tomates",
+        "Ail",
+        "Persil"
+      ],
+      "comment": "Braisés au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Potimarron",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Potimarron",
+      "ingredients": [
+        "Crème",
+        "Châtaignes",
+        "Muscade"
+      ],
+      "comment": "Onctueux et réconfortant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Poissons",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poissons",
+      "ingredients": [
+        "Rouille",
+        "Croûtons",
+        "Gruyère",
+        "Safran"
+      ],
+      "comment": "Spécialité marseillaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté d'Asperges",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Asperges",
+      "ingredients": [
+        "Crème",
+        "Bouillon",
+        "Ciboulette"
+      ],
+      "comment": "Printanier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe à l'Oignon Gratinée",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Oignons",
+      "ingredients": [
+        "Bouillon",
+        "Pain",
+        "Gruyère",
+        "Vin blanc"
+      ],
+      "comment": "Classique bistrot.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Champignons",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Champignons",
+      "ingredients": [
+        "Crème",
+        "Échalotes",
+        "Thym",
+        "Vin blanc"
+      ],
+      "comment": "Saveur boisée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Minestrone",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Haricots",
+        "Pâtes",
+        "Parmesan",
+        "Basilic"
+      ],
+      "comment": "Soupe italienne aux légumes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Mimosa",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Mayonnaise",
+        "Ciboulette",
+        "Moutarde"
+      ],
+      "comment": "Classique des buffets.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs en Meurette",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Vin rouge",
+        "Lardons",
+        "Champignons",
+        "Oignons"
+      ],
+      "comment": "Spécialité bourguignonne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Asperges Sauce Mousseline",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Asperges",
+      "ingredients": [
+        "Beurre",
+        "Œufs",
+        "Citron",
+        "Crème fouettée"
+      ],
+      "comment": "Élégant et printanier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poireaux Vinaigrette",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poireaux",
+      "ingredients": [
+        "Moutarde",
+        "Vinaigre",
+        "Huile",
+        "Œuf dur"
+      ],
+      "comment": "Simple et bon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Terrine de Campagne",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Foie de volaille",
+        "Cognac",
+        "Échalotes",
+        "Thym"
+      ],
+      "comment": "Avec cornichons.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rillettes de Porc",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Saindoux",
+        "Thym",
+        "Laurier",
+        "Sel"
+      ],
+      "comment": "Spécialité du Mans.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rillettes de Saumon",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Crème",
+        "Citron",
+        "Aneth",
+        "Échalotes"
+      ],
+      "comment": "Fraîches et légères.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Foie Gras Maison",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Sel",
+        "Poivre",
+        "Porto",
+        "Armagnac"
+      ],
+      "comment": "Fêtes de fin d'année.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Chèvre Chaud",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Chèvre",
+      "ingredients": [
+        "Salade",
+        "Noix",
+        "Miel",
+        "Pain"
+      ],
+      "comment": "Incontournable.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Lyonnaise",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Œuf poché",
+      "ingredients": [
+        "Lardons",
+        "Croûtons",
+        "Frisée",
+        "Vinaigre"
+      ],
+      "comment": "Classique bouchon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade Landaise",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Magret fumé",
+      "ingredients": [
+        "Gésiers",
+        "Foie gras",
+        "Pignons",
+        "Salade"
+      ],
+      "comment": "Sud-Ouest.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade César",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Romaine",
+        "Parmesan",
+        "Croûtons",
+        "Sauce César"
+      ],
+      "comment": "Classique américain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Poulpe",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Poulpe",
+      "ingredients": [
+        "Pommes de terre",
+        "Citron",
+        "Persil",
+        "Huile d'olive"
+      ],
+      "comment": "Méditerranéenne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Avocat aux Crevettes",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Avocat",
+      "ingredients": [
+        "Crevettes",
+        "Mayonnaise",
+        "Citron",
+        "Ketchup"
+      ],
+      "comment": "Rétro et efficace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tomates Mozzarella",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Mozzarella",
+        "Basilic",
+        "Huile d'olive"
+      ],
+      "comment": "Caprese classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bruschetta",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pain",
+      "ingredients": [
+        "Tomates",
+        "Basilic",
+        "Ail",
+        "Huile d'olive"
+      ],
+      "comment": "Apéritif italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Bœuf",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Parmesan",
+        "Roquette",
+        "Huile d'olive",
+        "Citron"
+      ],
+      "comment": "Viande de qualité.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Bœuf",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Câpres",
+        "Cornichons",
+        "Échalotes",
+        "Jaune d'œuf"
+      ],
+      "comment": "Au couteau.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin Dauphinois",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Crème",
+        "Lait",
+        "Ail",
+        "Muscade"
+      ],
+      "comment": "Sans fromage traditionnellement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Courgettes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Crème",
+        "Gruyère",
+        "Œufs",
+        "Herbes"
+      ],
+      "comment": "Léger et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tian Provençal",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Tomates",
+        "Courgettes",
+        "Aubergines",
+        "Huile d'olive"
+      ],
+      "comment": "Gratin de légumes du soleil.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lasagnes aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Courgettes",
+        "Aubergines",
+        "Béchamel",
+        "Parmesan"
+      ],
+      "comment": "Version végétarienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto aux Champignons",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Champignons",
+        "Parmesan",
+        "Vin blanc",
+        "Bouillon"
+      ],
+      "comment": "Crémeux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto au Potiron",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Potiron",
+        "Parmesan",
+        "Sauge",
+        "Bouillon"
+      ],
+      "comment": "Automnal.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gnocchis à la Sorrentina",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Gnocchis",
+      "ingredients": [
+        "Sauce tomate",
+        "Mozzarella",
+        "Basilic",
+        "Parmesan"
+      ],
+      "comment": "Gratinés au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâtes aux Légumes Grillés",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Courgettes",
+        "Poivrons",
+        "Aubergines",
+        "Huile d'olive"
+      ],
+      "comment": "Méditerranéen.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Spaghetti alle Vongole",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Palourdes",
+        "Ail",
+        "Vin blanc",
+        "Persil"
+      ],
+      "comment": "Classique italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Penne à l'Arrabbiata",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Tomates",
+        "Piment",
+        "Ail",
+        "Basilic"
+      ],
+      "comment": "Épicé et rapide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tagliatelles à la Truffe",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Truffe",
+        "Crème",
+        "Parmesan",
+        "Beurre"
+      ],
+      "comment": "Luxueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Omelette aux Fines Herbes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Ciboulette",
+        "Persil",
+        "Cerfeuil",
+        "Beurre"
+      ],
+      "comment": "Baveuse au centre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Frittata aux Légumes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Courgettes",
+        "Poivrons",
+        "Oignons",
+        "Parmesan"
+      ],
+      "comment": "Omelette italienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soufflé au Fromage",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Fromage",
+      "ingredients": [
+        "Œufs",
+        "Gruyère",
+        "Beurre",
+        "Farine"
+      ],
+      "comment": "Servir immédiatement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Flamiche aux Poireaux",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poireaux",
+      "ingredients": [
+        "Pâte brisée",
+        "Crème",
+        "Œufs",
+        "Beurre"
+      ],
+      "comment": "Spécialité picarde.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pissaladière",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Oignons",
+      "ingredients": [
+        "Pâte à pain",
+        "Anchois",
+        "Olives noires"
+      ],
+      "comment": "Tarte niçoise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Socca",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Farine de pois chiches",
+      "ingredients": [
+        "Huile d'olive",
+        "Poivre"
+      ],
+      "comment": "Galette niçoise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Falafel",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pois chiches",
+      "ingredients": [
+        "Coriandre",
+        "Cumin",
+        "Ail",
+        "Oignons"
+      ],
+      "comment": "Avec sauce tahini.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Houmous Maison",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pois chiches",
+      "ingredients": [
+        "Tahini",
+        "Citron",
+        "Ail",
+        "Huile d'olive"
+      ],
+      "comment": "Onctueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte Tatin",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Beurre",
+        "Sucre",
+        "Caramel"
+      ],
+      "comment": "Renversée caramélisée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte au Citron Meringuée",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Citrons",
+      "ingredients": [
+        "Pâte sablée",
+        "Œufs",
+        "Sucre",
+        "Beurre"
+      ],
+      "comment": "Acidulée et douce.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte aux Poires Amandine",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Poires",
+      "ingredients": [
+        "Poudre d'amandes",
+        "Beurre",
+        "Sucre",
+        "Œufs"
+      ],
+      "comment": "Bourdaloue.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crumble aux Pommes",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "frequent",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Farine",
+        "Beurre",
+        "Sucre",
+        "Cannelle"
+      ],
+      "comment": "Tiède avec glace vanille.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Clafoutis aux Cerises",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Cerises",
+      "ingredients": [
+        "Œufs",
+        "Farine",
+        "Lait",
+        "Sucre"
+      ],
+      "comment": "Avec les noyaux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fondant au Chocolat",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Beurre",
+        "Œufs",
+        "Sucre",
+        "Farine"
+      ],
+      "comment": "Cœur coulant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Moelleux au Chocolat",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Beurre",
+        "Œufs",
+        "Sucre",
+        "Farine"
+      ],
+      "comment": "Texture moelleuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gâteau au Yaourt",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "frequent",
+      "mainIngredient": "Yaourt",
+      "ingredients": [
+        "Farine",
+        "Sucre",
+        "Œufs",
+        "Huile"
+      ],
+      "comment": "Basique et efficace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cake au Citron",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Citrons",
+      "ingredients": [
+        "Farine",
+        "Beurre",
+        "Sucre",
+        "Œufs"
+      ],
+      "comment": "Glaçage au citron.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brownie aux Noix",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Noix",
+        "Beurre",
+        "Œufs",
+        "Sucre"
+      ],
+      "comment": "Fondant et gourmand.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Panna Cotta",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Crème",
+      "ingredients": [
+        "Gélatine",
+        "Sucre",
+        "Vanille",
+        "Coulis fruits"
+      ],
+      "comment": "Dessert italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crème Brûlée",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Crème",
+      "ingredients": [
+        "Jaunes d'œufs",
+        "Sucre",
+        "Vanille"
+      ],
+      "comment": "Caraméliser au chalumeau.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Île Flottante",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Lait",
+        "Sucre",
+        "Vanille",
+        "Caramel"
+      ],
+      "comment": "Blancs pochés sur crème.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Profiteroles",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à choux",
+      "ingredients": [
+        "Glace vanille",
+        "Chocolat",
+        "Chantilly"
+      ],
+      "comment": "Classique français.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Éclairs au Chocolat",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à choux",
+      "ingredients": [
+        "Crème pâtissière",
+        "Chocolat",
+        "Fondant"
+      ],
+      "comment": "Pâtisserie française.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Paris-Brest",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pâte à choux",
+      "ingredients": [
+        "Crème pralinée",
+        "Amandes",
+        "Sucre glace"
+      ],
+      "comment": "En forme de roue.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Millefeuille",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pâte feuilletée",
+      "ingredients": [
+        "Crème pâtissière",
+        "Fondant",
+        "Chocolat"
+      ],
+      "comment": "Feuilletage croustillant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tiramisu",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Mascarpone",
+      "ingredients": [
+        "Café",
+        "Biscuits",
+        "Cacao",
+        "Œufs"
+      ],
+      "comment": "Classique italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mousse au Chocolat",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "frequent",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Œufs",
+        "Sucre",
+        "Crème"
+      ],
+      "comment": "Légère et aérienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz au Lait",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Lait",
+        "Sucre",
+        "Vanille",
+        "Cannelle"
+      ],
+      "comment": "Onctueux, tiède ou froid.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Semoule au Lait",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Semoule",
+      "ingredients": [
+        "Lait",
+        "Sucre",
+        "Vanille",
+        "Caramel"
+      ],
+      "comment": "Dessert d'enfance.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Compote de Pommes",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "frequent",
+      "mainIngredient": "Pommes",
+      "ingredients": [
+        "Sucre",
+        "Cannelle",
+        "Vanille"
+      ],
+      "comment": "Simple et sain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Fruits Frais",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "frequent",
+      "mainIngredient": "Fruits",
+      "ingredients": [
+        "Sucre",
+        "Citron",
+        "Menthe"
+      ],
+      "comment": "Variée et colorée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio d'Ananas",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Ananas",
+      "ingredients": [
+        "Menthe",
+        "Citron vert",
+        "Rhum"
+      ],
+      "comment": "Rafraîchissant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fraises Chantilly",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fraises",
+      "ingredients": [
+        "Crème",
+        "Sucre",
+        "Vanille"
+      ],
+      "comment": "Printanier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Fruits Rouges",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Fruits rouges",
+      "ingredients": [
+        "Sabayon",
+        "Sucre",
+        "Œufs"
+      ],
+      "comment": "Gratiné minute.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tarte aux Noix",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Noix",
+      "ingredients": [
+        "Pâte brisée",
+        "Miel",
+        "Crème",
+        "Œufs"
+      ],
+      "comment": "Périgord.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gâteau Basque",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Beurre",
+        "Œufs",
+        "Crème pâtissière",
+        "Cerise noire"
+      ],
+      "comment": "Spécialité basque.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cannelés Bordelais",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Lait",
+        "Rhum",
+        "Vanille",
+        "Œufs"
+      ],
+      "comment": "Croûte caramélisée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Kouign-Amann",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Beurre",
+      "ingredients": [
+        "Farine",
+        "Sucre",
+        "Levure"
+      ],
+      "comment": "Spécialité bretonne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galette des Rois",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pâte feuilletée",
+      "ingredients": [
+        "Frangipane",
+        "Amandes",
+        "Beurre",
+        "Œufs"
+      ],
+      "comment": "Épiphanie.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bûche de Noël",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Génoise",
+      "ingredients": [
+        "Crème au beurre",
+        "Chocolat",
+        "Café"
+      ],
+      "comment": "Fêtes de fin d'année.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Hachis Parmentier",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Bœuf haché",
+      "ingredients": [
+        "Pommes de terre",
+        "Oignons",
+        "Crème",
+        "Gruyère"
+      ],
+      "comment": "Gratiné au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Shepherd's Pie",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Pommes de terre",
+        "Carottes",
+        "Petits pois",
+        "Oignons"
+      ],
+      "comment": "Version à l'agneau.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Moussaka",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Aubergines",
+        "Tomates",
+        "Béchamel",
+        "Cannelle"
+      ],
+      "comment": "Gratin grec.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chili con Carne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf haché",
+      "ingredients": [
+        "Haricots rouges",
+        "Tomates",
+        "Piment",
+        "Cumin"
+      ],
+      "comment": "Épicé tex-mex.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Boulettes Sauce Tomate",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf haché",
+      "ingredients": [
+        "Tomates",
+        "Oignons",
+        "Herbes",
+        "Parmesan"
+      ],
+      "comment": "Avec spaghetti.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lasagnes Bolognaise",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf haché",
+      "ingredients": [
+        "Pâtes",
+        "Béchamel",
+        "Tomates",
+        "Parmesan"
+      ],
+      "comment": "Classique italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cannelloni Ricotta Épinards",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Ricotta",
+        "Épinards",
+        "Béchamel",
+        "Parmesan"
+      ],
+      "comment": "Gratinés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tomates Farcies",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tomates",
+      "ingredients": [
+        "Chair à saucisse",
+        "Riz",
+        "Oignons",
+        "Persil"
+      ],
+      "comment": "Plat familial.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poivrons Farcis",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poivrons",
+      "ingredients": [
+        "Viande hachée",
+        "Riz",
+        "Tomates",
+        "Oignons"
+      ],
+      "comment": "Coloré et complet.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Courgettes Farcies",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Courgettes",
+      "ingredients": [
+        "Chair à saucisse",
+        "Riz",
+        "Parmesan",
+        "Herbes"
+      ],
+      "comment": "Gratinées au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aubergines à la Parmigiana",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Aubergines",
+      "ingredients": [
+        "Tomates",
+        "Mozzarella",
+        "Parmesan",
+        "Basilic"
+      ],
+      "comment": "Gratin italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Pâtes au Jambon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Jambon",
+        "Crème",
+        "Gruyère",
+        "Œufs"
+      ],
+      "comment": "Plat familial.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Croque-Monsieur",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Pain de mie",
+      "ingredients": [
+        "Jambon",
+        "Gruyère",
+        "Béchamel"
+      ],
+      "comment": "Grillé et fondant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Croque-Madame",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Pain de mie",
+      "ingredients": [
+        "Jambon",
+        "Gruyère",
+        "Œuf",
+        "Béchamel"
+      ],
+      "comment": "Avec œuf sur le dessus.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Welsh",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cheddar",
+      "ingredients": [
+        "Bière",
+        "Pain",
+        "Jambon",
+        "Œuf"
+      ],
+      "comment": "Spécialité du Nord.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Flammekueche",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à pain",
+      "ingredients": [
+        "Crème",
+        "Lardons",
+        "Oignons"
+      ],
+      "comment": "Tarte alsacienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galette Complète",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Sarrasin",
+      "ingredients": [
+        "Jambon",
+        "Œuf",
+        "Gruyère"
+      ],
+      "comment": "Bretonne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galette Saucisse",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Sarrasin",
+      "ingredients": [
+        "Saucisse",
+        "Moutarde"
+      ],
+      "comment": "Street food breton.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pizza Margherita",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à pizza",
+      "ingredients": [
+        "Tomates",
+        "Mozzarella",
+        "Basilic",
+        "Huile d'olive"
+      ],
+      "comment": "Classique napolitaine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pizza Quatre Fromages",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à pizza",
+      "ingredients": [
+        "Mozzarella",
+        "Gorgonzola",
+        "Parmesan",
+        "Chèvre"
+      ],
+      "comment": "Pour les amateurs.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Focaccia",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à pain",
+      "ingredients": [
+        "Huile d'olive",
+        "Romarin",
+        "Sel",
+        "Tomates cerises"
+      ],
+      "comment": "Pain italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Fougasse aux Olives",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à pain",
+      "ingredients": [
+        "Olives",
+        "Huile d'olive",
+        "Herbes de Provence"
+      ],
+      "comment": "Pain provençal.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    }
+  ],
+  "history": [],
+  "exportedAt": "2026-03-16T17:12:26.904Z"
+}
