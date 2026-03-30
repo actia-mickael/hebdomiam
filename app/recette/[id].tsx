@@ -22,8 +22,9 @@ import {
   SeasonLabels,
   TypeLabels,
   FrequencyLabels,
+  RecipeBook,
 } from '@/types/recipe';
-import { getRecipeById, createRecipe, updateRecipe, deleteRecipe } from '@/services/database';
+import { getRecipeById, createRecipe, updateRecipe, deleteRecipe, getAllBooks, getBookIdsForRecipe, setRecipeBooks } from '@/services/database';
 import { takePhoto, pickImage, deleteImage } from '@/services/imageService';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import StarRating from '@/components/StarRating';
@@ -51,8 +52,11 @@ export default function RecipeDetailScreen() {
   });
   const [isEditing, setIsEditing] = useState(isNew);
   const [isSaving, setIsSaving] = useState(false);
+  const [books, setBooks] = useState<RecipeBook[]>([]);
+  const [selectedBookIds, setSelectedBookIds] = useState<number[]>([]);
 
   useEffect(() => {
+    getAllBooks().then(setBooks).catch(() => {});
     if (!isNew) {
       loadRecipe();
     }
@@ -60,12 +64,15 @@ export default function RecipeDetailScreen() {
 
   const loadRecipe = async () => {
     try {
-      const data = await getRecipeById(Number(id));
+      const [data, bookIds] = await Promise.all([
+        getRecipeById(Number(id)),
+        getBookIdsForRecipe(Number(id)),
+      ]);
       if (data) {
-        // S'assurer qu'on a toujours 9 ingrédients
         const ingredients = [...(data.ingredients || [])];
         while (ingredients.length < 9) ingredients.push('');
         setRecipe({ ...data, ingredients });
+        setSelectedBookIds(bookIds);
       } else {
         Alert.alert('Erreur', 'Recette introuvable');
         router.back();
@@ -98,7 +105,10 @@ export default function RecipeDetailScreen() {
           isFavorite: recipe.isFavorite || false,
           imagePath: recipe.imagePath || null,
         };
-        await createRecipe(newRecipe);
+        const newId = await createRecipe(newRecipe);
+        if (selectedBookIds.length > 0) {
+          await setRecipeBooks(newId, selectedBookIds);
+        }
         Alert.alert('✅ Succès', 'Recette créée !', [
           { text: 'OK', onPress: () => router.back() },
         ]);
@@ -116,6 +126,7 @@ export default function RecipeDetailScreen() {
           isFavorite: recipe.isFavorite,
           imagePath: recipe.imagePath,
         });
+        await setRecipeBooks(Number(id), selectedBookIds);
         setIsEditing(false);
         Alert.alert('✅ Succès', 'Recette mise à jour !');
       }
@@ -407,6 +418,41 @@ export default function RecipeDetailScreen() {
               numberOfLines={4}
             />
           </View>
+
+          {/* Livres */}
+          {books.length > 0 && (
+            <View style={styles.fieldGroup}>
+              <Text style={styles.label}>Livres de recettes</Text>
+              <View style={styles.selectorRow}>
+                {books.map(book => {
+                  const selected = selectedBookIds.includes(book.id);
+                  return (
+                    <TouchableOpacity
+                      key={book.id}
+                      style={[
+                        styles.selectorBtn,
+                        selected && styles.selectorBtnActive,
+                        selected && { backgroundColor: book.color + '33', borderColor: book.color },
+                      ]}
+                      onPress={() => {
+                        if (!isEditing) return;
+                        setSelectedBookIds(
+                          selected
+                            ? selectedBookIds.filter(id => id !== book.id)
+                            : [...selectedBookIds, book.id]
+                        );
+                      }}
+                      disabled={!isEditing}
+                    >
+                      <Text style={[styles.selectorBtnText, selected && styles.selectorBtnTextActive]}>
+                        {book.icon} {book.name}
+                      </Text>
+                    </TouchableOpacity>
+                  );
+                })}
+              </View>
+            </View>
+          )}
 
           {/* Stats (lecture seule) */}
           {!isNew && (

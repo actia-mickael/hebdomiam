@@ -106,6 +106,12 @@ export default function RootLayout() {
             title: 'Paramètres',
           }}
         />
+        <Stack.Screen
+          name="catalogue"
+          options={{
+            title: '📚 Catalogue',
+          }}
+        />
       </Stack>
     </SafeAreaProvider>
   );

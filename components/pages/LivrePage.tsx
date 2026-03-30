@@ -8,13 +8,14 @@ import {
   TextInput,
   Alert,
   RefreshControl,
+  ScrollView,
 } from 'react-native';
 import { router } from 'expo-router';
 import * as FileSystem from 'expo-file-system/legacy';
 import * as Sharing from 'expo-sharing';
 import * as DocumentPicker from 'expo-document-picker';
-import { Recipe, Season, RecipeType } from '@/types/recipe';
-import { getAllRecipes, exportToJson, importFromJson, getSetting } from '@/services/database';
+import { Recipe, Season, RecipeType, RecipeBook } from '@/types/recipe';
+import { getAllRecipes, getDisplayRecipes, exportToJson, importFromJson, getSetting, getAllBooks, getRecipesByBook } from '@/services/database';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import RecipeCard from '@/components/RecipeCard';
 import FilterBar from '@/components/FilterBar';
@@ -31,6 +32,8 @@ export default function LivrePage({ isActive, preload }: Props) {
   const [seasonFilter, setSeasonFilter] = useState<Season[]>([]);
   const [typeFilter, setTypeFilter] = useState<RecipeType[]>([]);
   const [ingredientFilter, setIngredientFilter] = useState('');
+  const [bookFilter, setBookFilter] = useState<number | null>(null);
+  const [books, setBooks] = useState<RecipeBook[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [showFilters, setShowFilters] = useState(false);
   const [persistFilters, setPersistFilters] = useState(false);
@@ -54,10 +57,10 @@ export default function LivrePage({ isActive, preload }: Props) {
   const loadRecipes = async () => {
     setIsLoading(true);
     try {
-      const all = await getAllRecipes();
+      const [all, allBooks] = await Promise.all([getDisplayRecipes(), getAllBooks()]);
       setRecipes(all);
-      applyFilters(all, searchQuery, seasonFilter, typeFilter, ingredientFilter);
-
+      setBooks(allBooks);
+      applyFilters(all, searchQuery, seasonFilter, typeFilter, ingredientFilter, bookFilter);
     } catch (error) {
       Alert.alert('Erreur', 'Impossible de charger les recettes');
     } finally {
@@ -65,14 +68,21 @@ export default function LivrePage({ isActive, preload }: Props) {
     }
   };
 
-  const applyFilters = (
+  const applyFilters = async (
     all: Recipe[],
     search: string,
     seasons: Season[],
     types: RecipeType[],
-    ingredient: string
+    ingredient: string,
+    bookId: number | null
   ) => {
     let filtered = all;
+
+    if (bookId !== null) {
+      const bookRecipes = await getRecipesByBook(bookId);
+      const bookIds = new Set(bookRecipes.map(r => r.id));
+      filtered = filtered.filter(r => bookIds.has(r.id));
+    }
 
     if (search.trim()) {
       const query = search.toLowerCase();
@@ -106,7 +116,7 @@ export default function LivrePage({ isActive, preload }: Props) {
 
   const handleSearch = (text: string) => {
     setSearchQuery(text);
-    applyFilters(recipes, text, seasonFilter, typeFilter, ingredientFilter);
+    applyFilters(recipes, text, seasonFilter, typeFilter, ingredientFilter, bookFilter);
   };
 
   const toggleSeasonFilter = (season: string) => {
@@ -115,7 +125,7 @@ export default function LivrePage({ isActive, preload }: Props) {
       ? seasonFilter.filter(x => x !== s)
       : [...seasonFilter, s];
     setSeasonFilter(next);
-    applyFilters(recipes, searchQuery, next, typeFilter, ingredientFilter);
+    applyFilters(recipes, searchQuery, next, typeFilter, ingredientFilter, bookFilter);
   };
 
   const toggleTypeFilter = (type: string) => {
@@ -124,12 +134,18 @@ export default function LivrePage({ isActive, preload }: Props) {
       ? typeFilter.filter(x => x !== t)
       : [...typeFilter, t];
     setTypeFilter(next);
-    applyFilters(recipes, searchQuery, seasonFilter, next, ingredientFilter);
+    applyFilters(recipes, searchQuery, seasonFilter, next, ingredientFilter, bookFilter);
   };
 
   const handleIngredientFilter = (text: string) => {
     setIngredientFilter(text);
-    applyFilters(recipes, searchQuery, seasonFilter, typeFilter, text);
+    applyFilters(recipes, searchQuery, seasonFilter, typeFilter, text, bookFilter);
+  };
+
+  const toggleBookFilter = (id: number) => {
+    const next = bookFilter === id ? null : id;
+    setBookFilter(next);
+    applyFilters(recipes, searchQuery, seasonFilter, typeFilter, ingredientFilter, next);
   };
 
   const handleExport = async () => {
@@ -197,7 +213,7 @@ export default function LivrePage({ isActive, preload }: Props) {
                 setSeasonFilter([]);
                 setTypeFilter([]);
               }
-              applyFilters(recipes, searchQuery, persistFilters ? seasonFilter : [], persistFilters ? typeFilter : [], '');
+              applyFilters(recipes, searchQuery, persistFilters ? seasonFilter : [], persistFilters ? typeFilter : [], '', bookFilter);
             }
             setShowFilters(!showFilters);
           }}
@@ -254,13 +270,43 @@ export default function LivrePage({ isActive, preload }: Props) {
         </View>
       )}
 
+      {/* Filtre par livre */}
+      {books.length > 0 && (
+        <View style={styles.booksFilterContainer}>
+          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.booksFilterScroll}>
+            <TouchableOpacity
+              style={[styles.bookChip, bookFilter === null && styles.bookChipActive]}
+              onPress={() => { setBookFilter(null); applyFilters(recipes, searchQuery, seasonFilter, typeFilter, ingredientFilter, null); }}
+            >
+              <Text style={[styles.bookChipText, bookFilter === null && styles.bookChipTextActive]}>
+                📚 Tous
+              </Text>
+            </TouchableOpacity>
+            {books.map(book => (
+              <TouchableOpacity
+                key={book.id}
+                style={[styles.bookChip, bookFilter === book.id && styles.bookChipActive, { borderColor: book.color }]}
+                onPress={() => toggleBookFilter(book.id)}
+              >
+                <Text style={[styles.bookChipText, bookFilter === book.id && styles.bookChipTextActive]}>
+                  {book.icon} {book.name}
+                </Text>
+              </TouchableOpacity>
+            ))}
+          </ScrollView>
+        </View>
+      )}
+
       {/* Actions */}
       <View style={styles.actionsBar}>
+        <TouchableOpacity style={styles.actionBtn} onPress={() => router.push('/catalogue')}>
+          <Text style={styles.actionBtnText}>📚 Catalogue</Text>
+        </TouchableOpacity>
         <TouchableOpacity style={styles.actionBtn} onPress={handleImport}>
-          <Text style={styles.actionBtnText}>📥 Import</Text>
+          <Text style={styles.actionBtnText}>📥</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.actionBtn} onPress={handleExport}>
-          <Text style={styles.actionBtnText}>📤 Export</Text>
+          <Text style={styles.actionBtnText}>📤</Text>
         </TouchableOpacity>
         <View style={styles.countBadge}>
           <Text style={styles.countText}>{filteredRecipes.length} recette(s)</Text>
@@ -371,6 +417,36 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: Colors.textLight,
     fontWeight: '600',
+  },
+  booksFilterContainer: {
+    marginHorizontal: Spacing.md,
+    marginBottom: Spacing.sm,
+  },
+  booksFilterScroll: {
+    gap: Spacing.sm,
+    paddingVertical: 2,
+  },
+  bookChip: {
+    paddingVertical: 6,
+    paddingHorizontal: Spacing.md,
+    borderRadius: BorderRadius.full,
+    backgroundColor: Colors.surface,
+    borderWidth: 1,
+    borderColor: Colors.border,
+    ...Shadows.small,
+  },
+  bookChipActive: {
+    backgroundColor: Colors.primarySurface,
+    borderColor: Colors.primary,
+  },
+  bookChipText: {
+    fontSize: 13,
+    color: Colors.textSecondary,
+    fontWeight: '500',
+  },
+  bookChipTextActive: {
+    color: Colors.primaryDark,
+    fontWeight: '700',
   },
   actionsBar: {
     flexDirection: 'row',

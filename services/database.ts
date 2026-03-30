@@ -1,5 +1,5 @@
 import * as SQLite from 'expo-sqlite';
-import { Recipe, NewRecipe, UpdateRecipe, SelectionHistory, RecipeStats, Season, RecipeType, WeekHistory } from '@/types/recipe';
+import { Recipe, NewRecipe, UpdateRecipe, SelectionHistory, RecipeStats, Season, RecipeType, WeekHistory, RecipeBook } from '@/types/recipe';
 
 export type { WeekHistory };
 
@@ -49,7 +49,39 @@ export async function initDatabase(): Promise<void> {
     CREATE INDEX IF NOT EXISTS idx_recipes_last_selected ON recipes(last_selected);
     CREATE INDEX IF NOT EXISTS idx_history_recipe ON selection_history(recipe_id);
     CREATE INDEX IF NOT EXISTS idx_history_date ON selection_history(selected_at);
+
+    CREATE TABLE IF NOT EXISTS recipe_books (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      cloud_id TEXT,
+      name TEXT NOT NULL,
+      description TEXT DEFAULT '',
+      icon TEXT DEFAULT '📖',
+      color TEXT DEFAULT '#6B8E6B',
+      source TEXT DEFAULT 'local',
+      cloud_version INTEGER,
+      is_modified INTEGER DEFAULT 0,
+      is_active INTEGER DEFAULT 1,
+      downloaded_at TEXT,
+      created_at TEXT DEFAULT (datetime('now')),
+      updated_at TEXT DEFAULT (datetime('now'))
+    );
+
+    CREATE TABLE IF NOT EXISTS recipe_book_assignments (
+      recipe_id INTEGER REFERENCES recipes(id) ON DELETE CASCADE,
+      book_id INTEGER REFERENCES recipe_books(id) ON DELETE CASCADE,
+      PRIMARY KEY (recipe_id, book_id)
+    );
+
+    CREATE INDEX IF NOT EXISTS idx_book_assign_recipe ON recipe_book_assignments(recipe_id);
+    CREATE INDEX IF NOT EXISTS idx_book_assign_book ON recipe_book_assignments(book_id);
   `);
+
+  // Migration : ajouter is_active si la colonne n'existe pas encore (installations existantes)
+  try {
+    await db.execAsync('ALTER TABLE recipe_books ADD COLUMN is_active INTEGER DEFAULT 1');
+  } catch {
+    // Colonne déjà présente, on ignore
+  }
 }
 
 // Obtenir l'instance de la DB
@@ -158,11 +190,31 @@ export async function getRandomRecipes(
   twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
   const excludeDate = twoWeeksAgo.toISOString().split('T')[0];
 
+  // Vérifier si des livres actifs existent
+  const activeCount = await getDb().getFirstAsync<{ count: number }>(
+    'SELECT COUNT(*) as count FROM recipe_books WHERE is_active = 1'
+  );
+  const hasActiveBooks = (activeCount?.count ?? 0) > 0;
+
   let query = `
     SELECT * FROM recipes
     WHERE (last_selected IS NULL OR last_selected < ?)
   `;
   const params: any[] = [excludeDate];
+
+  // Filtrer par livres actifs si applicable
+  if (hasActiveBooks) {
+    query += `
+      AND (
+        NOT EXISTS (SELECT 1 FROM recipe_book_assignments a WHERE a.recipe_id = recipes.id)
+        OR EXISTS (
+          SELECT 1 FROM recipe_book_assignments a
+          JOIN recipe_books b ON b.id = a.book_id
+          WHERE a.recipe_id = recipes.id AND b.is_active = 1
+        )
+      )
+    `;
+  }
 
   if (seasons.length > 0) {
     const placeholders = seasons.map(() => '?').join(', ');
@@ -373,6 +425,168 @@ export async function setSetting(key: string, value: string): Promise<void> {
   await getDb().runAsync(
     'INSERT OR REPLACE INTO app_settings (key, value) VALUES (?, ?)',
     [key, value]
+  );
+}
+
+// ============ Livres de recettes ============
+
+function mapRowToBook(row: any): RecipeBook {
+  return {
+    id: row.id,
+    cloudId: row.cloud_id ?? null,
+    name: row.name,
+    description: row.description ?? '',
+    icon: row.icon ?? '📖',
+    color: row.color ?? '#6B8E6B',
+    source: row.source ?? 'local',
+    cloudVersion: row.cloud_version ?? null,
+    isModified: row.is_modified === 1,
+    isActive: row.is_active !== 0,
+    downloadedAt: row.downloaded_at ?? null,
+    createdAt: row.created_at,
+    updatedAt: row.updated_at,
+  };
+}
+
+export async function getAllBooks(): Promise<RecipeBook[]> {
+  const rows = await getDb().getAllAsync<any>('SELECT * FROM recipe_books ORDER BY name');
+  return rows.map(mapRowToBook);
+}
+
+export async function getBookByCloudId(cloudId: string): Promise<RecipeBook | null> {
+  const row = await getDb().getFirstAsync<any>(
+    'SELECT * FROM recipe_books WHERE cloud_id = ?',
+    [cloudId]
+  );
+  return row ? mapRowToBook(row) : null;
+}
+
+export async function createBook(data: Omit<RecipeBook, 'id' | 'createdAt' | 'updatedAt'>): Promise<number> {
+  const result = await getDb().runAsync(
+    `INSERT INTO recipe_books (cloud_id, name, description, icon, color, source, cloud_version, is_modified, downloaded_at)
+     VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`,
+    [
+      data.cloudId,
+      data.name,
+      data.description,
+      data.icon,
+      data.color,
+      data.source,
+      data.cloudVersion,
+      data.isModified ? 1 : 0,
+      data.downloadedAt,
+    ]
+  );
+  return result.lastInsertRowId;
+}
+
+export async function deleteBook(id: number): Promise<void> {
+  await getDb().runAsync('DELETE FROM recipe_books WHERE id = ?', [id]);
+}
+
+export async function markBookModified(id: number): Promise<void> {
+  await getDb().runAsync(
+    `UPDATE recipe_books SET is_modified = 1, updated_at = datetime('now') WHERE id = ?`,
+    [id]
+  );
+}
+
+export async function toggleBookActive(id: number, active: boolean): Promise<void> {
+  await getDb().runAsync(
+    `UPDATE recipe_books SET is_active = ?, updated_at = datetime('now') WHERE id = ?`,
+    [active ? 1 : 0, id]
+  );
+}
+
+/**
+ * Retourne les recettes à afficher/utiliser en tenant compte des livres actifs.
+ * - Si au moins un livre est actif : retourne les recettes dans ces livres
+ *   + les recettes qui ne sont dans aucun livre.
+ * - Si aucun livre actif (ou aucun livre téléchargé) : retourne toutes les recettes.
+ */
+export async function getDisplayRecipes(): Promise<Recipe[]> {
+  const db = getDb();
+  const activeCount = await db.getFirstAsync<{ count: number }>(
+    'SELECT COUNT(*) as count FROM recipe_books WHERE is_active = 1'
+  );
+  if (!activeCount || activeCount.count === 0) {
+    return getAllRecipes();
+  }
+  const rows = await db.getAllAsync<any>(`
+    SELECT DISTINCT r.* FROM recipes r
+    WHERE
+      NOT EXISTS (SELECT 1 FROM recipe_book_assignments a WHERE a.recipe_id = r.id)
+      OR EXISTS (
+        SELECT 1 FROM recipe_book_assignments a
+        JOIN recipe_books b ON b.id = a.book_id
+        WHERE a.recipe_id = r.id AND b.is_active = 1
+      )
+    ORDER BY r.name
+  `);
+  return rows.map(mapRowToRecipe);
+}
+
+// ── Assignations recette ↔ livre ──────────────────────────────────────────
+
+export async function getBookIdsForRecipe(recipeId: number): Promise<number[]> {
+  const rows = await getDb().getAllAsync<{ book_id: number }>(
+    'SELECT book_id FROM recipe_book_assignments WHERE recipe_id = ?',
+    [recipeId]
+  );
+  return rows.map(r => r.book_id);
+}
+
+export async function setRecipeBooks(recipeId: number, bookIds: number[]): Promise<void> {
+  const db = getDb();
+  await db.runAsync('DELETE FROM recipe_book_assignments WHERE recipe_id = ?', [recipeId]);
+  for (const bookId of bookIds) {
+    await db.runAsync(
+      'INSERT OR IGNORE INTO recipe_book_assignments (recipe_id, book_id) VALUES (?, ?)',
+      [recipeId, bookId]
+    );
+    await db.runAsync(
+      `UPDATE recipe_books SET is_modified = 1, updated_at = datetime('now') WHERE id = ?`,
+      [bookId]
+    );
+  }
+}
+
+export async function getRecipesByBook(bookId: number): Promise<Recipe[]> {
+  const rows = await getDb().getAllAsync<any>(
+    `SELECT r.* FROM recipes r
+     JOIN recipe_book_assignments a ON a.recipe_id = r.id
+     WHERE a.book_id = ?
+     ORDER BY r.name`,
+    [bookId]
+  );
+  return rows.map(mapRowToRecipe);
+}
+
+// ── Export livre personnalisé ─────────────────────────────────────────────
+
+export async function exportBookToJson(bookId: number): Promise<string> {
+  const bookRow = await getDb().getFirstAsync<any>(
+    'SELECT * FROM recipe_books WHERE id = ?',
+    [bookId]
+  );
+  if (!bookRow) throw new Error('Livre introuvable');
+  const book = mapRowToBook(bookRow);
+  const recipes = await getRecipesByBook(bookId);
+  return JSON.stringify(
+    {
+      book: {
+        name: book.name,
+        description: book.description,
+        icon: book.icon,
+        color: book.color,
+        source: book.source,
+        cloudId: book.cloudId,
+        exportedAt: new Date().toISOString(),
+      },
+      recipes,
+    },
+    null,
+    2
   );
 }
 

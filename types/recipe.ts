@@ -87,3 +87,49 @@ export interface WeekHistory {
   weekLabel: string;
   recipes: Recipe[];
 }
+
+// ── Livres de recettes ──────────────────────────────────────────────────────
+
+/** Livre stocké localement (copie d'un livre cloud ou créé par l'utilisateur) */
+export interface RecipeBook {
+  id: number;
+  cloudId: string | null;       // ID du livre source sur Supabase (null si local pur)
+  name: string;
+  description: string;
+  icon: string;
+  color: string;
+  source: 'local' | 'cloud';   // Origine du livre
+  cloudVersion: number | null;  // Version au moment du téléchargement
+  isModified: boolean;          // Vrai si l'utilisateur a modifié la copie
+  isActive: boolean;            // Si coché : utilisé pour la génération et la recherche
+  downloadedAt: string | null;  // Date de téléchargement ISO
+  createdAt: string;
+  updatedAt: string;
+}
+
+/** Livre disponible sur Supabase (catalogue cloud) */
+export interface CloudBook {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  color: string;
+  version: number;
+  author: string;
+  recipe_count: number;
+  created_at: string;
+}
+
+/** Recette telle que stockée dans Supabase (book_recipes) */
+export interface CloudBookRecipe {
+  id: number;
+  book_id: string;
+  name: string;
+  season: Season;
+  type: RecipeType;
+  frequency: Frequency;
+  main_ingredient: string;
+  ingredients: string;   // JSON string
+  comment: string;
+  recipe_link: string;
+}
