@@ -1,17 +1,27 @@
 import { useEffect, useState } from 'react';
-import { Stack } from 'expo-router';
-import { View, Text, ActivityIndicator, StyleSheet, StatusBar, Platform, Animated } from 'react-native';
+import { Stack, useRouter, useSegments } from 'expo-router';
+import {
+  View, Text, ActivityIndicator, StyleSheet, StatusBar,
+  Platform, Animated, TouchableOpacity,
+} from 'react-native';
 import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-context';
+import { AuthProvider, useAuth } from '@/context/AuthContext';
 import { initDatabase, getUsedImagePaths } from '@/services/database';
+import { syncDown, syncDirty } from '@/services/syncService';
 import { initImageDirectory, cleanOrphanImages } from '@/services/imageService';
 import { Colors } from '@/constants/colors';
 
-export default function RootLayout() {
-  const [isReady, setIsReady] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+// ── Gate auth + sync ──────────────────────────────────────────────────────
+
+function RootLayoutNav() {
+  const { session, profile, isLoading, isEmailVerified, isAdmin } = useAuth();
+  const segments = useSegments();
+  const router = useRouter();
+  const [dbReady, setDbReady] = useState(false);
   const fadeAnim = useState(() => new Animated.Value(0))[0];
   const scaleAnim = useState(() => new Animated.Value(0.8))[0];
 
+  // Init DB locale
   useEffect(() => {
     if (Platform.OS === 'android') {
       StatusBar.setTranslucent(false);
@@ -24,95 +34,106 @@ export default function RootLayout() {
       Animated.spring(scaleAnim, { toValue: 1, tension: 60, friction: 8, useNativeDriver: true }),
     ]).start();
 
-    async function init() {
-      try {
-        const [_] = await Promise.all([
-          (async () => {
-            await initDatabase();
-            await initImageDirectory();
-            getUsedImagePaths().then(cleanOrphanImages).catch(() => {});
-          })(),
-          new Promise(resolve => setTimeout(resolve, 2000)),
-        ]);
-        setIsReady(true);
-      } catch (e) {
-        setError(e instanceof Error ? e.message : 'Erreur initialisation');
-      }
-    }
-    init();
+    Promise.all([
+      (async () => {
+        await initDatabase();
+        await initImageDirectory();
+        getUsedImagePaths().then(cleanOrphanImages).catch(() => {});
+      })(),
+      new Promise(resolve => setTimeout(resolve, 1500)),
+    ]).then(() => setDbReady(true)).catch(() => setDbReady(true));
   }, []);
 
-  if (error) {
-    return (
-      <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-        <View style={styles.splashContainer}>
-          <View style={styles.splashOverlay} />
-          <View style={styles.splashContent}>
-            <Text style={styles.splashEmoji}>⚠️</Text>
-            <Text style={styles.splashTitle}>HebdoMiam</Text>
-            <Text style={styles.errorText}>{error}</Text>
-          </View>
-        </View>
-      </SafeAreaProvider>
-    );
-  }
+  // Sync famille au démarrage
+  useEffect(() => {
+    if (!dbReady || !session || !isEmailVerified || !profile?.familyId) return;
+    const familyId = profile.familyId;
+    const userId = session.user.id;
+    // Sync en arrière-plan
+    syncDown(familyId).catch(() => {});
+    if (isAdmin) {
+      syncDirty(familyId, userId).catch(() => {});
+    }
+  }, [dbReady, session, isEmailVerified, profile?.familyId]);
 
-  if (!isReady) {
+  // Redirections auth
+  useEffect(() => {
+    if (isLoading || !dbReady) return;
+
+    const inAuth = segments[0] === 'auth';
+
+    if (!session) {
+      if (!inAuth) router.replace('/auth/login');
+    } else if (!isEmailVerified) {
+      if (!(segments[0] === 'auth' && segments[1] === 'verify-email')) {
+        router.replace('/auth/verify-email');
+      }
+    } else {
+      if (inAuth) router.replace('/');
+    }
+  }, [isLoading, dbReady, session, isEmailVerified, segments]);
+
+  // Splash screen
+  if (!dbReady || isLoading) {
     return (
-      <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-        <View style={styles.splashContainer}>
-          <View style={styles.splashOverlay} />
-          <Animated.View style={[styles.splashContent, { opacity: fadeAnim, transform: [{ scale: scaleAnim }] }]}>
-            <View style={styles.logoCircle}>
-              <Text style={styles.splashEmoji}>🍽️</Text>
-            </View>
-            <Text style={styles.splashTitle}>HebdoMiam</Text>
-            <Text style={styles.splashTagline}>Planifiez vos repas de la semaine</Text>
-            <View style={styles.splashDivider} />
-            <ActivityIndicator size="small" color="rgba(255,255,255,0.9)" style={styles.splashSpinner} />
-            <Text style={styles.splashLoadingText}>Initialisation...</Text>
-          </Animated.View>
-          <Text style={styles.splashVersion}>v1.0</Text>
-        </View>
-      </SafeAreaProvider>
+      <View style={styles.splashContainer}>
+        <View style={styles.splashOverlay} />
+        <Animated.View style={[styles.splashContent, { opacity: fadeAnim, transform: [{ scale: scaleAnim }] }]}>
+          <View style={styles.logoCircle}>
+            <Text style={styles.splashEmoji}>🍽️</Text>
+          </View>
+          <Text style={styles.splashTitle}>HebdoMiam</Text>
+          <Text style={styles.splashTagline}>Planifiez vos repas de la semaine</Text>
+          <View style={styles.splashDivider} />
+          <ActivityIndicator size="small" color="rgba(255,255,255,0.9)" style={styles.splashSpinner} />
+          <Text style={styles.splashLoadingText}>Initialisation...</Text>
+        </Animated.View>
+        <Text style={styles.splashVersion}>v1.1</Text>
+      </View>
     );
   }
 
   return (
-    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
-      <Stack
-        screenOptions={{
-          headerStyle: { backgroundColor: Colors.primary },
-          headerTintColor: '#fff',
-          headerTitleStyle: { fontWeight: 'bold' },
+    <Stack
+      screenOptions={{
+        headerStyle: { backgroundColor: Colors.primary },
+        headerTintColor: '#fff',
+        headerTitleStyle: { fontWeight: 'bold' },
+      }}
+    >
+      <Stack.Screen
+        name="index"
+        options={{
+          title: '🍽️ HebdoMiam',
+          headerRight: () => (
+            <TouchableOpacity
+              style={{ marginRight: 8, padding: 4 }}
+              onPress={() => router.push('/famille')}
+            >
+              <Text style={{ fontSize: 22 }}>👨‍👩‍👧</Text>
+            </TouchableOpacity>
+          ),
         }}
-      >
-        <Stack.Screen
-          name="index"
-          options={{
-            title: '🍽️ HebdoMiam',
-            headerShown: true,
-          }}
-        />
-        <Stack.Screen
-          name="recette/[id]"
-          options={{
-            title: 'Recette',
-          }}
-        />
-        <Stack.Screen
-          name="parametres"
-          options={{
-            title: 'Paramètres',
-          }}
-        />
-        <Stack.Screen
-          name="catalogue"
-          options={{
-            title: '📚 Catalogue',
-          }}
-        />
-      </Stack>
+      />
+      <Stack.Screen name="recette/[id]" options={{ title: 'Recette' }} />
+      <Stack.Screen name="parametres" options={{ title: 'Paramètres' }} />
+      <Stack.Screen name="catalogue" options={{ title: '📚 Catalogue' }} />
+      <Stack.Screen name="famille" options={{ title: '👨‍👩‍👧 Famille' }} />
+      <Stack.Screen name="auth/login" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/register" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/verify-email" options={{ headerShown: false }} />
+    </Stack>
+  );
+}
+
+// ── Root layout ───────────────────────────────────────────────────────────
+
+export default function RootLayout() {
+  return (
+    <SafeAreaProvider initialMetrics={initialWindowMetrics}>
+      <AuthProvider>
+        <RootLayoutNav />
+      </AuthProvider>
     </SafeAreaProvider>
   );
 }
@@ -129,65 +150,19 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.primaryDark,
     opacity: 0.92,
   },
-  splashContent: {
-    alignItems: 'center',
-    paddingHorizontal: 40,
-  },
+  splashContent: { alignItems: 'center', paddingHorizontal: 40 },
   logoCircle: {
-    width: 110,
-    height: 110,
-    borderRadius: 55,
+    width: 110, height: 110, borderRadius: 55,
     backgroundColor: 'rgba(255,255,255,0.15)',
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginBottom: 24,
-    borderWidth: 2,
+    justifyContent: 'center', alignItems: 'center',
+    marginBottom: 24, borderWidth: 2,
     borderColor: 'rgba(255,255,255,0.3)',
   },
-  splashEmoji: {
-    fontSize: 56,
-  },
-  splashTitle: {
-    fontSize: 36,
-    fontWeight: '800',
-    color: '#fff',
-    letterSpacing: 1,
-    marginBottom: 8,
-  },
-  splashTagline: {
-    fontSize: 15,
-    color: 'rgba(255,255,255,0.75)',
-    textAlign: 'center',
-    fontWeight: '400',
-    letterSpacing: 0.3,
-  },
-  splashDivider: {
-    width: 40,
-    height: 2,
-    backgroundColor: 'rgba(255,255,255,0.3)',
-    borderRadius: 2,
-    marginVertical: 28,
-  },
-  splashSpinner: {
-    marginBottom: 10,
-  },
-  splashLoadingText: {
-    fontSize: 13,
-    color: 'rgba(255,255,255,0.6)',
-    letterSpacing: 0.5,
-  },
-  splashVersion: {
-    position: 'absolute',
-    bottom: 32,
-    fontSize: 12,
-    color: 'rgba(255,255,255,0.4)',
-    letterSpacing: 0.5,
-  },
-  errorText: {
-    fontSize: 14,
-    color: 'rgba(255,200,200,1)',
-    textAlign: 'center',
-    marginTop: 16,
-    paddingHorizontal: 20,
-  },
+  splashEmoji: { fontSize: 56 },
+  splashTitle: { fontSize: 36, fontWeight: '800', color: '#fff', letterSpacing: 1, marginBottom: 8 },
+  splashTagline: { fontSize: 15, color: 'rgba(255,255,255,0.75)', textAlign: 'center', fontWeight: '400' },
+  splashDivider: { width: 40, height: 2, backgroundColor: 'rgba(255,255,255,0.3)', borderRadius: 2, marginVertical: 28 },
+  splashSpinner: { marginBottom: 10 },
+  splashLoadingText: { fontSize: 13, color: 'rgba(255,255,255,0.6)', letterSpacing: 0.5 },
+  splashVersion: { position: 'absolute', bottom: 32, fontSize: 12, color: 'rgba(255,255,255,0.4)' },
 });

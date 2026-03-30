@@ -17,9 +17,12 @@ import { CloudBook, RecipeBook } from '@/types/recipe';
 import { fetchCloudCatalog, downloadBook, deleteLocalBook } from '@/services/cloudService';
 import { getAllBooks, exportBookToJson, toggleBookActive } from '@/services/database';
 import { isSupabaseConfigured } from '@/config/supabase';
+import { useAuth } from '@/context/AuthContext';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 
 export default function CatalogueScreen() {
+  const { isAdmin, isSolo } = useAuth();
+  const canManageBooks = isAdmin || isSolo; // seul l'admin peut changer les livres actifs en famille
   const [cloudBooks, setCloudBooks] = useState<CloudBook[]>([]);
   const [localBooks, setLocalBooks] = useState<RecipeBook[]>([]);
   const [loading, setLoading] = useState(false);
@@ -173,12 +176,18 @@ export default function CatalogueScreen() {
               <>
                 <View style={styles.useRow}>
                   <Text style={styles.useLabel}>Utiliser</Text>
-                  <Switch
-                    value={local?.isActive ?? true}
-                    onValueChange={v => handleToggleActive(item.id, v)}
-                    trackColor={{ false: Colors.border, true: Colors.primary + '88' }}
-                    thumbColor={local?.isActive ? Colors.primaryDark : Colors.textLight}
-                  />
+                  {canManageBooks ? (
+                    <Switch
+                      value={local?.isActive ?? true}
+                      onValueChange={v => handleToggleActive(item.id, v)}
+                      trackColor={{ false: Colors.border, true: Colors.primary + '88' }}
+                      thumbColor={local?.isActive ? Colors.primaryDark : Colors.textLight}
+                    />
+                  ) : (
+                    <Text style={styles.useLabel}>
+                      {local?.isActive ? '✅' : '⏸️'}
+                    </Text>
+                  )}
                 </View>
                 <TouchableOpacity
                   style={styles.actionBtnSmall}

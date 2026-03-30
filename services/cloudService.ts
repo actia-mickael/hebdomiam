@@ -1,4 +1,4 @@
-import { supabaseGet } from '@/config/supabase';
+import { supabase } from '@/config/supabase';
 import { CloudBook, CloudBookRecipe } from '@/types/recipe';
 import {
   getBookByCloudId,
@@ -10,11 +10,15 @@ import {
 } from '@/services/database';
 
 export async function fetchCloudCatalog(): Promise<CloudBook[]> {
-  return supabaseGet<CloudBook>('books', 'order=name.asc');
+  const { data, error } = await supabase.from('books').select('*').order('name');
+  if (error) throw error;
+  return data ?? [];
 }
 
 export async function fetchCloudBookRecipes(bookId: string): Promise<CloudBookRecipe[]> {
-  return supabaseGet<CloudBookRecipe>('book_recipes', `book_id=eq.${bookId}`);
+  const { data, error } = await supabase.from('book_recipes').select('*').eq('book_id', bookId);
+  if (error) throw error;
+  return data ?? [];
 }
 
 /**

@@ -76,11 +76,14 @@ export async function initDatabase(): Promise<void> {
     CREATE INDEX IF NOT EXISTS idx_book_assign_book ON recipe_book_assignments(book_id);
   `);
 
-  // Migration : ajouter is_active si la colonne n'existe pas encore (installations existantes)
-  try {
-    await db.execAsync('ALTER TABLE recipe_books ADD COLUMN is_active INTEGER DEFAULT 1');
-  } catch {
-    // Colonne déjà présente, on ignore
+  // Migrations colonnes (safe sur installations existantes)
+  const migrations = [
+    'ALTER TABLE recipe_books ADD COLUMN is_active INTEGER DEFAULT 1',
+    'ALTER TABLE recipes ADD COLUMN cloud_id TEXT',
+    'ALTER TABLE recipes ADD COLUMN is_dirty INTEGER DEFAULT 0',
+  ];
+  for (const sql of migrations) {
+    try { await db.execAsync(sql); } catch { /* colonne déjà présente */ }
   }
 }
 
@@ -560,6 +563,85 @@ export async function getRecipesByBook(bookId: number): Promise<Recipe[]> {
     [bookId]
   );
   return rows.map(mapRowToRecipe);
+}
+
+// ── Sync cloud ────────────────────────────────────────────────────────────
+
+export async function setRecipeCloudId(localId: number, cloudId: string): Promise<void> {
+  await getDb().runAsync(
+    'UPDATE recipes SET cloud_id = ?, is_dirty = 0 WHERE id = ?',
+    [cloudId, localId]
+  );
+}
+
+export async function clearDirtyFlag(localId: number): Promise<void> {
+  await getDb().runAsync('UPDATE recipes SET is_dirty = 0 WHERE id = ?', [localId]);
+}
+
+export async function getUnsyncedRecipes(): Promise<Recipe[]> {
+  const rows = await getDb().getAllAsync<any>(
+    'SELECT * FROM recipes WHERE is_dirty = 1'
+  );
+  return rows.map(r => ({ ...mapRowToRecipe(r), cloudId: r.cloud_id } as any));
+}
+
+/** Crée ou met à jour une recette locale à partir d'une recette cloud. */
+export async function upsertRecipeFromCloud(data: {
+  cloudId: string;
+  name: string;
+  season: Season;
+  type: RecipeType;
+  frequency: Frequency;
+  mainIngredient: string;
+  ingredients: string[];
+  comment: string;
+  recipeLink: string;
+  timesUsed: number;
+  lastSelected: string | null;
+  rating: number | null;
+  isFavorite: boolean;
+}): Promise<void> {
+  const db = getDb();
+  const existing = await db.getFirstAsync<{ id: number }>(
+    'SELECT id FROM recipes WHERE cloud_id = ?',
+    [data.cloudId]
+  );
+
+  if (existing) {
+    await db.runAsync(
+      `UPDATE recipes SET
+        name=?, season=?, type=?, frequency=?, main_ingredient=?, ingredients=?,
+        comment=?, recipe_link=?, times_used=?, last_selected=?, rating=?,
+        is_favorite=?, is_dirty=0, updated_at=datetime('now')
+       WHERE cloud_id=?`,
+      [
+        data.name, data.season, data.type, data.frequency, data.mainIngredient,
+        JSON.stringify(data.ingredients), data.comment, data.recipeLink,
+        data.timesUsed, data.lastSelected, data.rating,
+        data.isFavorite ? 1 : 0, data.cloudId,
+      ]
+    );
+  } else {
+    const result = await db.runAsync(
+      `INSERT INTO recipes
+        (name, season, type, frequency, main_ingredient, ingredients, comment,
+         recipe_link, times_used, last_selected, rating, is_favorite, cloud_id, is_dirty)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,0)`,
+      [
+        data.name, data.season, data.type, data.frequency, data.mainIngredient,
+        JSON.stringify(data.ingredients), data.comment, data.recipeLink,
+        data.timesUsed, data.lastSelected, data.rating,
+        data.isFavorite ? 1 : 0, data.cloudId,
+      ]
+    );
+    // Associer aux livres si nécessaire — géré par le catalogue
+    void result;
+  }
+}
+
+/** Marque une recette comme modifiée offline (admin). */
+export async function markRecipeDirty(localId: number): Promise<void> {
+  await getDb().runAsync('UPDATE recipes SET is_dirty = 1 WHERE id = ?', [localId]);
 }
 
 // ── Export livre personnalisé ─────────────────────────────────────────────

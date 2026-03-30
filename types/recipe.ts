@@ -88,6 +88,33 @@ export interface WeekHistory {
   recipes: Recipe[];
 }
 
+// ── Compte utilisateur & famille ───────────────────────────────────────────
+
+export type UserRole = 'solo' | 'admin' | 'member';
+
+export interface UserProfile {
+  id: string;
+  displayName: string;
+  familyId: string | null;
+  role: UserRole;
+  createdAt: string;
+}
+
+export interface Family {
+  id: string;
+  name: string;
+  inviteCode: string;
+  ownerId: string;
+  createdAt: string;
+}
+
+export interface FamilyMember {
+  id: string;
+  display_name: string;
+  role: UserRole;
+  created_at: string;
+}
+
 // ── Livres de recettes ──────────────────────────────────────────────────────
 
 /** Livre stocké localement (copie d'un livre cloud ou créé par l'utilisateur) */
