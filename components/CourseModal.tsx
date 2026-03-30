@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import {
   Modal,
   View,
@@ -8,6 +8,9 @@ import {
   TouchableOpacity,
   Alert,
   ActivityIndicator,
+  TextInput,
+  KeyboardAvoidingView,
+  Platform,
 } from 'react-native';
 import * as Print from 'expo-print';
 import * as Sharing from 'expo-sharing';
@@ -18,6 +21,7 @@ interface ShoppingItem {
   name: string;
   count: number;
   checked: boolean;
+  manual: boolean;  // true = ajouté manuellement par l'utilisateur
 }
 
 function buildShoppingList(recipes: Recipe[]): ShoppingItem[] {
@@ -40,6 +44,7 @@ function buildShoppingList(recipes: Recipe[]): ShoppingItem[] {
       name: name.charAt(0).toUpperCase() + name.slice(1),
       count,
       checked: true,
+      manual: false,
     }))
     .sort((a, b) => a.name.localeCompare(b, 'fr'));
 }
@@ -52,8 +57,8 @@ function buildPdfHtml(items: ShoppingItem[], recipeNames: string[]): string {
   const rows = items
     .map(
       item => `
-      <tr>
-        <td>${item.name}</td>
+      <tr${item.manual ? ' class="manual"' : ''}>
+        <td>${item.name}${item.manual ? ' <span class="tag">+</span>' : ''}</td>
         <td class="qty">${item.count > 1 ? `×${item.count}` : ''}</td>
         <td class="check">☐</td>
       </tr>`
@@ -82,9 +87,11 @@ function buildPdfHtml(items: ShoppingItem[], recipeNames: string[]): string {
     thead th.check { width: 50px; text-align: center; }
     tbody tr:nth-child(even) { background: #F5FBFF; }
     tbody tr:nth-child(odd) { background: #FFFFFF; }
+    tbody tr.manual td { font-style: italic; color: #0277BD; }
     tbody td { padding: 9px 14px; font-size: 14px; border-bottom: 1px solid #B3E5FC; }
     tbody td.qty { text-align: center; color: #5C6BC0; font-size: 12px; }
     tbody td.check { text-align: center; font-size: 16px; }
+    .tag { background: #E3F2FD; color: #0288D1; font-size: 10px; padding: 1px 5px; border-radius: 4px; font-style: normal; }
     footer { margin-top: 24px; text-align: center; font-size: 11px; color: #90A4AE; }
   </style>
 </head>
@@ -126,10 +133,12 @@ interface Props {
 export default function CourseModal({ visible, recipes, onClose }: Props) {
   const [items, setItems] = useState<ShoppingItem[]>([]);
   const [isPrinting, setIsPrinting] = useState(false);
+  const [inputValue, setInputValue] = useState('');
+  const inputRef = useRef<TextInput>(null);
 
-  // Recalculer la liste à chaque ouverture
   const handleShow = () => {
     setItems(buildShoppingList(recipes));
+    setInputValue('');
   };
 
   const toggleItem = (index: number) => {
@@ -138,6 +147,41 @@ export default function CourseModal({ visible, recipes, onClose }: Props) {
         i === index ? { ...item, checked: !item.checked } : item
       )
     );
+  };
+
+  const removeItem = (index: number) => {
+    setItems(prev => prev.filter((_, i) => i !== index));
+  };
+
+  const addManualItem = () => {
+    const name = inputValue.trim();
+    if (!name) return;
+
+    const key = name.toLowerCase();
+    const existing = items.findIndex(i => i.name.toLowerCase() === key);
+
+    if (existing >= 0) {
+      // Ingrédient déjà présent : incrémenter la quantité
+      setItems(prev =>
+        prev.map((item, i) =>
+          i === existing ? { ...item, count: item.count + 1, checked: true } : item
+        )
+      );
+    } else {
+      const newItem: ShoppingItem = {
+        name: name.charAt(0).toUpperCase() + name.slice(1),
+        count: 1,
+        checked: true,
+        manual: true,
+      };
+      setItems(prev => {
+        const updated = [...prev, newItem];
+        return updated.sort((a, b) => a.name.localeCompare(b, 'fr'));
+      });
+    }
+
+    setInputValue('');
+    inputRef.current?.focus();
   };
 
   const handlePrint = async () => {
@@ -171,7 +215,10 @@ export default function CourseModal({ visible, recipes, onClose }: Props) {
       onShow={handleShow}
       onRequestClose={onClose}
     >
-      <View style={styles.overlay}>
+      <KeyboardAvoidingView
+        style={styles.overlay}
+        behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+      >
         <View style={styles.sheet}>
           {/* En-tête */}
           <View style={styles.header}>
@@ -199,14 +246,37 @@ export default function CourseModal({ visible, recipes, onClose }: Props) {
             </View>
           </View>
 
+          {/* Saisie manuelle */}
+          <View style={styles.addRow}>
+            <TextInput
+              ref={inputRef}
+              style={styles.addInput}
+              value={inputValue}
+              onChangeText={setInputValue}
+              placeholder="Ajouter un ingrédient..."
+              placeholderTextColor={Colors.textLight}
+              returnKeyType="done"
+              onSubmitEditing={addManualItem}
+              autoCapitalize="sentences"
+            />
+            <TouchableOpacity
+              style={[styles.addBtn, !inputValue.trim() && styles.addBtnDisabled]}
+              onPress={addManualItem}
+              disabled={!inputValue.trim()}
+            >
+              <Text style={styles.addBtnText}>＋</Text>
+            </TouchableOpacity>
+          </View>
+
           {/* Tableau */}
           <View style={styles.tableHeader}>
             <Text style={[styles.colIngredient, styles.colHeaderText]}>Ingrédient</Text>
             <Text style={[styles.colQty, styles.colHeaderText]}>Qté</Text>
             <Text style={[styles.colCheck, styles.colHeaderText]}>✓</Text>
+            <View style={styles.colDelete} />
           </View>
 
-          <ScrollView style={styles.list} showsVerticalScrollIndicator={false}>
+          <ScrollView style={styles.list} showsVerticalScrollIndicator={false} keyboardShouldPersistTaps="handled">
             {items.length === 0 ? (
               <View style={styles.emptyState}>
                 <Text style={styles.emptyEmoji}>📭</Text>
@@ -215,8 +285,12 @@ export default function CourseModal({ visible, recipes, onClose }: Props) {
             ) : (
               items.map((item, index) => (
                 <TouchableOpacity
-                  key={index}
-                  style={[styles.row, index % 2 === 0 ? styles.rowEven : styles.rowOdd]}
+                  key={`${item.name}-${index}`}
+                  style={[
+                    styles.row,
+                    index % 2 === 0 ? styles.rowEven : styles.rowOdd,
+                    item.manual && styles.rowManual,
+                  ]}
                   onPress={() => toggleItem(index)}
                   activeOpacity={0.7}
                 >
@@ -224,11 +298,12 @@ export default function CourseModal({ visible, recipes, onClose }: Props) {
                     style={[
                       styles.colIngredient,
                       styles.rowText,
+                      item.manual && styles.rowTextManual,
                       !item.checked && styles.textStriken,
                     ]}
                     numberOfLines={1}
                   >
-                    {item.name}
+                    {item.manual ? '+ ' : ''}{item.name}
                   </Text>
                   <Text style={[styles.colQty, styles.qtyText]}>
                     {item.count > 1 ? `×${item.count}` : ''}
@@ -238,6 +313,17 @@ export default function CourseModal({ visible, recipes, onClose }: Props) {
                       {item.checked && <Text style={styles.checkmark}>✓</Text>}
                     </View>
                   </View>
+                  {item.manual ? (
+                    <TouchableOpacity
+                      style={styles.colDelete}
+                      onPress={() => removeItem(index)}
+                      hitSlop={{ top: 8, bottom: 8, left: 8, right: 8 }}
+                    >
+                      <Text style={styles.deleteText}>✕</Text>
+                    </TouchableOpacity>
+                  ) : (
+                    <View style={styles.colDelete} />
+                  )}
                 </TouchableOpacity>
               ))
             )}
@@ -254,7 +340,7 @@ export default function CourseModal({ visible, recipes, onClose }: Props) {
             </View>
           )}
         </View>
-      </View>
+      </KeyboardAvoidingView>
     </Modal>
   );
 }
@@ -324,6 +410,44 @@ const styles = StyleSheet.create({
     color: Colors.textSecondary,
     fontWeight: '600',
   },
+  addRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: Spacing.md,
+    paddingVertical: Spacing.sm,
+    gap: Spacing.sm,
+    borderBottomWidth: 1,
+    borderBottomColor: Colors.border,
+    backgroundColor: Colors.backgroundAlt,
+  },
+  addInput: {
+    flex: 1,
+    backgroundColor: Colors.surface,
+    borderRadius: BorderRadius.md,
+    paddingVertical: 8,
+    paddingHorizontal: Spacing.md,
+    fontSize: 15,
+    color: Colors.text,
+    borderWidth: 1,
+    borderColor: Colors.border,
+  },
+  addBtn: {
+    width: 40,
+    height: 40,
+    borderRadius: BorderRadius.md,
+    backgroundColor: Colors.primaryDark,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  addBtnDisabled: {
+    backgroundColor: Colors.border,
+  },
+  addBtnText: {
+    color: '#fff',
+    fontSize: 22,
+    fontWeight: 'bold',
+    lineHeight: 26,
+  },
   tableHeader: {
     flexDirection: 'row',
     backgroundColor: Colors.primaryDark,
@@ -339,13 +463,23 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   colQty: {
-    width: 48,
+    width: 44,
     textAlign: 'center',
   },
   colCheck: {
-    width: 44,
+    width: 40,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  colDelete: {
+    width: 32,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  deleteText: {
+    fontSize: 13,
+    color: Colors.error,
+    fontWeight: '600',
   },
   list: {
     flexGrow: 0,
@@ -365,9 +499,17 @@ const styles = StyleSheet.create({
   rowOdd: {
     backgroundColor: Colors.surfaceAlt,
   },
+  rowManual: {
+    borderLeftWidth: 3,
+    borderLeftColor: Colors.accent,
+  },
   rowText: {
     fontSize: 15,
     color: Colors.text,
+  },
+  rowTextManual: {
+    color: Colors.primaryDark,
+    fontStyle: 'italic',
   },
   textStriken: {
     textDecorationLine: 'line-through',
@@ -414,8 +556,6 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderTopColor: Colors.border,
     backgroundColor: Colors.backgroundAlt,
-    borderBottomLeftRadius: 0,
-    borderBottomRightRadius: 0,
   },
   footerLabel: {
     fontSize: 11,
