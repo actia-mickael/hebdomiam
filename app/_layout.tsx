@@ -152,6 +152,7 @@ function RootLayoutNav() {
         }}
       />
       <Stack.Screen name="recette/[id]" options={{ title: 'Recette' }} />
+      <Stack.Screen name="recette/fiche" options={{ title: 'Fiche complète' }} />
       <Stack.Screen name="parametres" options={{ title: 'Paramètres' }} />
       <Stack.Screen name="catalogue" options={{ title: '📚 Catalogue' }} />
       <Stack.Screen name="famille" options={{ title: '👨‍👩‍👧 Famille' }} />

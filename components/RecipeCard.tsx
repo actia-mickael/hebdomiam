@@ -7,6 +7,7 @@ interface RecipeCardProps {
   recipe: Recipe;
   index?: number;
   onPress: () => void;
+  onLongPress?: () => void;
   compact?: boolean;
 }
 
@@ -28,7 +29,7 @@ const typeEmoji: Record<string, string> = {
   dessert: '🍰',
 };
 
-export default function RecipeCard({ recipe, index, onPress, compact = false }: RecipeCardProps) {
+export default function RecipeCard({ recipe, index, onPress, onLongPress, compact = false }: RecipeCardProps) {
   const hasImage = recipe.imagePath && recipe.imagePath.length > 0;
 
   if (compact) {
@@ -47,7 +48,7 @@ export default function RecipeCard({ recipe, index, onPress, compact = false }: 
   }
 
   return (
-    <TouchableOpacity style={styles.card} onPress={onPress} activeOpacity={0.8}>
+    <TouchableOpacity style={styles.card} onPress={onPress} onLongPress={onLongPress} activeOpacity={0.8}>
       {/* Barre d'accent saison */}
       <View style={[styles.accentBar, { backgroundColor: seasonAccent[recipe.season] }]} />
 

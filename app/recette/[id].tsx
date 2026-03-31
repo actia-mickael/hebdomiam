@@ -24,7 +24,7 @@ import {
   FrequencyLabels,
   RecipeBook,
 } from '@/types/recipe';
-import { getRecipeById, createRecipe, updateRecipe, deleteRecipe, getAllBooks, getBookIdsForRecipe, setRecipeBooks } from '@/services/database';
+import { getRecipeById, createRecipe, updateRecipe, deleteRecipe, getAllBooks, getBookIdsForRecipe, setRecipeBooks, getBookRecipeCloudId } from '@/services/database';
 import { takePhoto, pickImage, deleteImage } from '@/services/imageService';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import StarRating from '@/components/StarRating';
@@ -54,6 +54,7 @@ export default function RecipeDetailScreen() {
   const [isSaving, setIsSaving] = useState(false);
   const [books, setBooks] = useState<RecipeBook[]>([]);
   const [selectedBookIds, setSelectedBookIds] = useState<number[]>([]);
+  const [bookRecipeCloudId, setBookRecipeCloudId] = useState<number | null>(null);
 
   useEffect(() => {
     getAllBooks().then(setBooks).catch(() => {});
@@ -64,15 +65,17 @@ export default function RecipeDetailScreen() {
 
   const loadRecipe = async () => {
     try {
-      const [data, bookIds] = await Promise.all([
+      const [data, bookIds, cloudId] = await Promise.all([
         getRecipeById(Number(id)),
         getBookIdsForRecipe(Number(id)),
+        getBookRecipeCloudId(Number(id)),
       ]);
       if (data) {
         const ingredients = [...(data.ingredients || [])];
         while (ingredients.length < 9) ingredients.push('');
         setRecipe({ ...data, ingredients });
         setSelectedBookIds(bookIds);
+        setBookRecipeCloudId(cloudId);
       } else {
         Alert.alert('Erreur', 'Recette introuvable');
         router.back();
@@ -499,6 +502,17 @@ export default function RecipeDetailScreen() {
               </>
             ) : (
               <>
+                {bookRecipeCloudId !== null && (
+                  <TouchableOpacity
+                    style={[styles.btn, styles.btnFiche]}
+                    onPress={() => router.push({
+                      pathname: '/recette/fiche',
+                      params: { bookRecipeId: String(bookRecipeCloudId), name: recipe.name ?? '' },
+                    })}
+                  >
+                    <Text style={styles.btnFicheText}>📖 Fiche complète</Text>
+                  </TouchableOpacity>
+                )}
                 <TouchableOpacity
                   style={[styles.btn, styles.btnPrimary]}
                   onPress={() => setIsEditing(true)}
@@ -690,5 +704,15 @@ const styles = StyleSheet.create({
   btnDangerText: {
     color: Colors.error,
     fontSize: 16,
+  },
+  btnFiche: {
+    backgroundColor: Colors.primarySurface,
+    borderWidth: 1.5,
+    borderColor: Colors.primaryDark,
+  },
+  btnFicheText: {
+    color: Colors.primaryDark,
+    fontSize: 16,
+    fontWeight: '700',
   },
 });

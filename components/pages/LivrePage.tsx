@@ -15,7 +15,7 @@ import * as FileSystem from 'expo-file-system/legacy';
 import * as Sharing from 'expo-sharing';
 import * as DocumentPicker from 'expo-document-picker';
 import { Recipe, Season, RecipeType, RecipeBook } from '@/types/recipe';
-import { getAllRecipes, getDisplayRecipes, exportToJson, importFromJson, getSetting, getAllBooks, getRecipesByBook } from '@/services/database';
+import { getAllRecipes, getDisplayRecipes, exportToJson, importFromJson, getSetting, getAllBooks, getRecipesByBook, markRecipesSelected } from '@/services/database';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import RecipeCard from '@/components/RecipeCard';
 import FilterBar from '@/components/FilterBar';
@@ -193,6 +193,27 @@ export default function LivrePage({ isActive, preload }: Props) {
     router.push(`/recette/${recipe.id}`);
   };
 
+  const handleRecipeLongPress = (recipe: Recipe) => {
+    Alert.alert(
+      '📅 Ajouter à la semaine ?',
+      `Ajouter "${recipe.name}" à la semaine en cours ?`,
+      [
+        { text: 'Annuler', style: 'cancel' },
+        {
+          text: 'Valider',
+          onPress: async () => {
+            try {
+              await markRecipesSelected([recipe.id]);
+              Alert.alert('✅ Ajouté', `"${recipe.name}" ajoutée à la semaine en cours.`);
+            } catch {
+              Alert.alert('Erreur', "Impossible d'ajouter la recette à la semaine.");
+            }
+          },
+        },
+      ]
+    );
+  };
+
   return (
     <View style={styles.container}>
       {/* Barre de recherche */}
@@ -318,7 +339,11 @@ export default function LivrePage({ isActive, preload }: Props) {
         data={filteredRecipes}
         keyExtractor={(item) => item.id.toString()}
         renderItem={({ item }) => (
-          <RecipeCard recipe={item} onPress={() => handleRecipePress(item)} />
+          <RecipeCard
+            recipe={item}
+            onPress={() => handleRecipePress(item)}
+            onLongPress={() => handleRecipeLongPress(item)}
+          />
         )}
         contentContainerStyle={styles.listContent}
         refreshControl={

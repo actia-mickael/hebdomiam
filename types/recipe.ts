@@ -159,4 +159,42 @@ export interface CloudBookRecipe {
   ingredients: string;   // JSON string
   comment: string;
   recipe_link: string;
+  has_detail: boolean;
+}
+
+// ── Fiche détaillée recette (cloud) ────────────────────────────────────────
+
+export interface RecipeDetailIngredient {
+  qty: string;
+  unit: string;
+  label: string;
+  group?: string;
+}
+
+export interface RecipeDetailStep {
+  order: number;
+  title?: string;
+  text: string;
+}
+
+export interface RecipeDetail {
+  id: string;
+  book_recipe_id: number;
+  prep_time: number | null;
+  cook_time: number | null;
+  rest_time: number | null;
+  servings: number | null;
+  difficulty: 'facile' | 'moyen' | 'difficile' | null;
+  ingredients: RecipeDetailIngredient[];
+  steps: RecipeDetailStep[];
+  photos: string[];
+  tips: string | null;
+  source_url: string | null;
+  nutrition: {
+    calories?: number;
+    proteines?: number;
+    glucides?: number;
+    lipides?: number;
+  } | null;
+  updated_at: string;
 }

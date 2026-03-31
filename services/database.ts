@@ -1,5 +1,5 @@
 import * as SQLite from 'expo-sqlite';
-import { Recipe, NewRecipe, UpdateRecipe, SelectionHistory, RecipeStats, Season, RecipeType, WeekHistory, RecipeBook } from '@/types/recipe';
+import { Recipe, NewRecipe, UpdateRecipe, SelectionHistory, RecipeStats, Season, RecipeType, WeekHistory, RecipeBook, RecipeDetail } from '@/types/recipe';
 
 export type { WeekHistory };
 
@@ -74,6 +74,12 @@ export async function initDatabase(): Promise<void> {
 
     CREATE INDEX IF NOT EXISTS idx_book_assign_recipe ON recipe_book_assignments(recipe_id);
     CREATE INDEX IF NOT EXISTS idx_book_assign_book ON recipe_book_assignments(book_id);
+
+    CREATE TABLE IF NOT EXISTS recipe_detail_cache (
+      book_recipe_id INTEGER PRIMARY KEY,
+      data           TEXT NOT NULL,
+      cached_at      TEXT NOT NULL
+    );
   `);
 
   // Migrations colonnes (safe sur installations existantes)
@@ -81,6 +87,7 @@ export async function initDatabase(): Promise<void> {
     'ALTER TABLE recipe_books ADD COLUMN is_active INTEGER DEFAULT 1',
     'ALTER TABLE recipes ADD COLUMN cloud_id TEXT',
     'ALTER TABLE recipes ADD COLUMN is_dirty INTEGER DEFAULT 0',
+    'ALTER TABLE recipes ADD COLUMN book_recipe_cloud_id INTEGER',
   ];
   for (const sql of migrations) {
     try { await db.execAsync(sql); } catch { /* colonne déjà présente */ }
@@ -189,9 +196,7 @@ export async function getRandomRecipes(
   types: RecipeType[],
   ingredient: string = ''
 ): Promise<Recipe[]> {
-  const twoWeeksAgo = new Date();
-  twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
-  const excludeDate = twoWeeksAgo.toISOString().split('T')[0];
+  const hasIngredientFilter = ingredient.trim().length > 0;
 
   // Vérifier si des livres actifs existent
   const activeCount = await getDb().getFirstAsync<{ count: number }>(
@@ -199,11 +204,18 @@ export async function getRandomRecipes(
   );
   const hasActiveBooks = (activeCount?.count ?? 0) > 0;
 
-  let query = `
-    SELECT * FROM recipes
-    WHERE (last_selected IS NULL OR last_selected < ?)
-  `;
-  const params: any[] = [excludeDate];
+  let query = `SELECT * FROM recipes WHERE 1=1`;
+  const params: any[] = [];
+
+  // Exclusion 2 semaines désactivée quand un filtre ingrédient est actif
+  // (l'utilisateur veut voir TOUTES les recettes avec cet ingrédient)
+  if (!hasIngredientFilter) {
+    const twoWeeksAgo = new Date();
+    twoWeeksAgo.setDate(twoWeeksAgo.getDate() - 14);
+    const excludeDate = twoWeeksAgo.toISOString().split('T')[0];
+    query += ` AND (last_selected IS NULL OR last_selected < ?)`;
+    params.push(excludeDate);
+  }
 
   // Filtrer par livres actifs si applicable
   if (hasActiveBooks) {
@@ -231,10 +243,20 @@ export async function getRandomRecipes(
     params.push(...types);
   }
 
-  if (ingredient.trim()) {
-    const like = `%${ingredient.trim().toLowerCase()}%`;
-    query += ` AND (LOWER(main_ingredient) LIKE ? OR LOWER(ingredients) LIKE ?)`;
-    params.push(like, like);
+  if (hasIngredientFilter) {
+    // Recherche dans main_ingredient ET dans chaque ingrédient du tableau JSON
+    // LOWER() + LIKE pour insensibilité à la casse (ASCII)
+    // On cherche aussi le nom de la recette pour couvrir les cas évidents
+    const term = ingredient.trim().toLowerCase();
+    const like = `%${term}%`;
+    query += `
+      AND (
+        LOWER(main_ingredient) LIKE ?
+        OR LOWER(ingredients) LIKE ?
+        OR LOWER(name) LIKE ?
+      )
+    `;
+    params.push(like, like, like);
   }
 
   query += `
@@ -246,7 +268,8 @@ export async function getRandomRecipes(
       END DESC
     LIMIT ?
   `;
-  params.push(count);
+  // Avec filtre ingrédient : afficher jusqu'à 30 résultats pour voir toutes les options
+  params.push(hasIngredientFilter ? 30 : count);
 
   const rows = await getDb().getAllAsync<any>(query, params);
   return rows.map(mapRowToRecipe);
@@ -764,4 +787,34 @@ export async function getCurrentWeekRecipes(): Promise<Recipe[]> {
   );
   
   return recipes.map(mapRowToRecipe);
+}
+
+// ── Fiche détaillée — cache local ─────────────────────────────────────────
+
+export async function getBookRecipeCloudId(recipeId: number): Promise<number | null> {
+  const row = await getDb().getFirstAsync<{ book_recipe_cloud_id: number | null }>(
+    'SELECT book_recipe_cloud_id FROM recipes WHERE id = ?',
+    [recipeId]
+  );
+  return row?.book_recipe_cloud_id ?? null;
+}
+
+export async function getCachedRecipeDetail(
+  bookRecipeId: number
+): Promise<{ data: string; cached_at: string } | null> {
+  const row = await getDb().getFirstAsync<{ data: string; cached_at: string }>(
+    'SELECT data, cached_at FROM recipe_detail_cache WHERE book_recipe_id = ?',
+    [bookRecipeId]
+  );
+  return row ?? null;
+}
+
+export async function setCachedRecipeDetail(
+  bookRecipeId: number,
+  detail: RecipeDetail
+): Promise<void> {
+  await getDb().runAsync(
+    'INSERT OR REPLACE INTO recipe_detail_cache (book_recipe_id, data, cached_at) VALUES (?, ?, ?)',
+    [bookRecipeId, JSON.stringify(detail), new Date().toISOString()]
+  );
 }

@@ -1,5 +1,5 @@
 import { supabase } from '@/config/supabase';
-import { CloudBook, CloudBookRecipe } from '@/types/recipe';
+import { CloudBook, CloudBookRecipe, RecipeDetail } from '@/types/recipe';
 import {
   getBookByCloudId,
   createBook,
@@ -7,7 +7,11 @@ import {
   getRecipesByBook,
   createRecipe,
   getDb,
+  getCachedRecipeDetail,
+  setCachedRecipeDetail,
 } from '@/services/database';
+
+const CACHE_TTL_MS = 7 * 24 * 60 * 60 * 1000; // 7 jours
 
 export async function fetchCloudCatalog(): Promise<CloudBook[]> {
   const { data, error } = await supabase.from('books').select('*').order('name');
@@ -79,6 +83,12 @@ export async function downloadBook(cloudBook: CloudBook): Promise<number> {
       created++;
     }
 
+    // Stocker l'ID Supabase de la book_recipe pour accéder à la fiche détaillée
+    await db.runAsync(
+      'UPDATE recipes SET book_recipe_cloud_id = ? WHERE id = ?',
+      [cr.id, recipeId]
+    );
+
     // Créer l'assignation
     await db.runAsync(
       'INSERT OR IGNORE INTO recipe_book_assignments (recipe_id, book_id) VALUES (?, ?)',
@@ -87,6 +97,31 @@ export async function downloadBook(cloudBook: CloudBook): Promise<number> {
   }
 
   return created;
+}
+
+// ── Fiche détaillée ───────────────────────────────────────────────────────
+
+export async function fetchRecipeDetail(bookRecipeId: number): Promise<RecipeDetail | null> {
+  const { data, error } = await supabase
+    .from('recipe_details')
+    .select('*')
+    .eq('book_recipe_id', bookRecipeId)
+    .single();
+  if (error || !data) return null;
+  return data as RecipeDetail;
+}
+
+export async function getRecipeDetailWithCache(bookRecipeId: number): Promise<RecipeDetail | null> {
+  const cached = await getCachedRecipeDetail(bookRecipeId);
+  if (cached) {
+    const ageMs = Date.now() - new Date(cached.cached_at).getTime();
+    if (ageMs < CACHE_TTL_MS) {
+      return JSON.parse(cached.data) as RecipeDetail;
+    }
+  }
+  const detail = await fetchRecipeDetail(bookRecipeId);
+  if (detail) await setCachedRecipeDetail(bookRecipeId, detail);
+  return detail;
 }
 
 /**

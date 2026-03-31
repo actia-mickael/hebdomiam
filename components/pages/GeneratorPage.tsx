@@ -234,7 +234,9 @@ export default function GeneratorPage({ count }: Props) {
           onLayout={e => { resultsY.current = e.nativeEvent.layout.y; }}
         >
           <Text style={styles.sectionTitle}>
-            🍽️ Recettes proposées ({generatedRecipes.length})
+            {ingredientFilter.trim()
+              ? `🔍 ${generatedRecipes.length} recette(s) avec "${ingredientFilter.trim()}"`
+              : `🍽️ Recettes proposées (${generatedRecipes.length})`}
           </Text>
           <Text style={styles.selectionHint}>
             Cochez les recettes à valider ({selectedIds.size} sélectionnée{selectedIds.size > 1 ? 's' : ''})
@@ -287,7 +289,9 @@ export default function GeneratorPage({ count }: Props) {
       {/* Footer décoratif */}
       <View style={styles.footer}>
         <Text style={styles.footerText}>
-          🍴 Les recettes utilisées récemment (2 semaines) sont exclues
+          {ingredientFilter.trim()
+            ? '🔍 Toutes les recettes avec cet ingrédient sont affichées'
+            : '🍴 Les recettes utilisées récemment (2 semaines) sont exclues'}
         </Text>
       </View>
     </ScrollView>
