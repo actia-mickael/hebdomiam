@@ -1,0 +1,2016 @@
+[
+  {
+    "book_recipe_id": 201,
+    "prep_time": 30,
+    "cook_time": 180,
+    "rest_time": null,
+    "servings": 6,
+    "difficulty": "moyen",
+    "ingredients": [
+      {
+        "qty": "1.2",
+        "unit": "kg",
+        "label": "bœuf à braiser (paleron ou macreuse)",
+        "group": "viande"
+      },
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "lardons fumés",
+        "group": "viande"
+      },
+      {
+        "qty": "75",
+        "unit": "cl",
+        "label": "vin rouge Bourgogne",
+        "group": "liquides"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "carottes",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "oignons",
+        "group": "légumes"
+      },
+      {
+        "qty": "250",
+        "unit": "g",
+        "label": "champignons de Paris",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "gousses d'ail",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "concentré de tomates",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "bouquet garni (thym, laurier, persil)",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "25",
+        "unit": "cl",
+        "label": "bouillon de bœuf",
+        "group": "liquides"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "farine",
+        "group": "autres"
+      },
+      {
+        "qty": "3",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "autres"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préparation de la viande",
+        "text": "Couper le bœuf en cubes de 4-5 cm. Sécher avec du papier absorbant."
+      },
+      {
+        "order": 2,
+        "title": "Rissolage",
+        "text": "Dans une cocotte, faire revenir les lardons. Réserver. Faire dorer les cubes de viande sur toutes les faces dans la graisse des lardons. Réserver."
+      },
+      {
+        "order": 3,
+        "title": "Légumes",
+        "text": "Éplucher et couper les carottes en rondelles, émincer les oignons. Les faire revenir dans la cocotte 5 min."
+      },
+      {
+        "order": 4,
+        "title": "Sauce",
+        "text": "Saupoudrer de farine, mélanger. Ajouter le concentré de tomates, le vin rouge et le bouillon. Bien remuer."
+      },
+      {
+        "order": 5,
+        "title": "Mijotage",
+        "text": "Remettre la viande et les lardons. Ajouter l'ail écrasé et le bouquet garni. Couvrir et laisser mijoter 2h30 à feu doux."
+      },
+      {
+        "order": 6,
+        "title": "Champignons",
+        "text": "30 min avant la fin, ajouter les champignons émincés. Rectifier l'assaisonnement."
+      }
+    ],
+    "photos": [
+      "au-quotidien/boeuf-bourguignon/main.jpg"
+    ],
+    "tips": "Préparer la veille pour que les saveurs se développent. Servir avec des pommes de terre vapeur ou des tagliatelles fraîches.",
+    "source_url": "https://www.cookomix.com/recettes/boeuf-bourguignon-thermomix/",
+    "nutrition": {
+      "calories": 485,
+      "proteines": 42,
+      "glucides": 12,
+      "lipides": 28
+    }
+  },
+  {
+    "book_recipe_id": 202,
+    "prep_time": 25,
+    "cook_time": 15,
+    "rest_time": null,
+    "servings": 4,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "thon au naturel (ou frais)",
+        "group": "poisson"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "œufs",
+        "group": "autres"
+      },
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "haricots verts",
+        "group": "légumes"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "tomates",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "concombre",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "poivron vert",
+        "group": "légumes"
+      },
+      {
+        "qty": "8",
+        "unit": "",
+        "label": "filets d'anchois",
+        "group": "poisson"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "olives noires de Nice",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "oignon rouge",
+        "group": "légumes"
+      },
+      {
+        "qty": "4",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "vinaigrette"
+      },
+      {
+        "qty": "1",
+        "unit": "càs",
+        "label": "vinaigre balsamique",
+        "group": "vinaigrette"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "basilic frais",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Cuisson des œufs",
+        "text": "Faire cuire les œufs 10 min dans l'eau bouillante. Les refroidir sous l'eau froide, écaler et couper en quartiers."
+      },
+      {
+        "order": 2,
+        "title": "Haricots verts",
+        "text": "Cuire les haricots verts 8 min à l'eau bouillante salée. Les refroidir dans l'eau glacée pour garder la couleur."
+      },
+      {
+        "order": 3,
+        "title": "Préparation des légumes",
+        "text": "Couper les tomates en quartiers, le concombre en rondelles, émincer l'oignon rouge et le poivron."
+      },
+      {
+        "order": 4,
+        "title": "Vinaigrette",
+        "text": "Mélanger l'huile d'olive et le vinaigre balsamique. Saler et poivrer."
+      },
+      {
+        "order": 5,
+        "title": "Assemblage",
+        "text": "Disposer tous les légumes dans un plat. Ajouter le thon émietté, les œufs, les anchois et les olives. Arroser de vinaigrette."
+      }
+    ],
+    "photos": [
+      "au-quotidien/salade-nicoise/main.jpg"
+    ],
+    "tips": "Pour une version plus authentique, ne pas cuire les légumes. Servir très frais avec du pain de campagne grillé.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 320,
+      "proteines": 24,
+      "glucides": 10,
+      "lipides": 22
+    }
+  },
+  {
+    "book_recipe_id": 203,
+    "prep_time": 20,
+    "cook_time": 40,
+    "rest_time": 10,
+    "servings": 6,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "pâte brisée",
+        "group": "pâte"
+      },
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "lardons fumés",
+        "group": "viande"
+      },
+      {
+        "qty": "20",
+        "unit": "cl",
+        "label": "crème fraîche épaisse",
+        "group": "crémerie"
+      },
+      {
+        "qty": "20",
+        "unit": "cl",
+        "label": "lait",
+        "group": "crémerie"
+      },
+      {
+        "qty": "3",
+        "unit": "",
+        "label": "œufs entiers",
+        "group": "crémerie"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "gruyère râpé",
+        "group": "crémerie"
+      },
+      {
+        "qty": "1",
+        "unit": "pincée",
+        "label": "muscade",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préchauffage",
+        "text": "Préchauffer le four à 180°C (th.6)."
+      },
+      {
+        "order": 2,
+        "title": "Fond de tarte",
+        "text": "Étaler la pâte dans un moule à tarte. Piquer le fond avec une fourchette. Précuire 10 min à blanc."
+      },
+      {
+        "order": 3,
+        "title": "Lardons",
+        "text": "Faire revenir les lardons à la poêle sans matière grasse jusqu'à ce qu'ils soient dorés. Égoutter."
+      },
+      {
+        "order": 4,
+        "title": "Appareil",
+        "text": "Dans un saladier, battre les œufs avec la crème et le lait. Ajouter la muscade, saler légèrement et poivrer."
+      },
+      {
+        "order": 5,
+        "title": "Garniture",
+        "text": "Répartir les lardons sur le fond de tarte précuit. Verser l'appareil. Parsemer de gruyère râpé."
+      },
+      {
+        "order": 6,
+        "title": "Cuisson",
+        "text": "Enfourner 30 min jusqu'à ce que la quiche soit dorée et gonflée. Laisser tiédir 10 min avant de servir."
+      }
+    ],
+    "photos": [
+      "au-quotidien/quiche-lorraine/main.jpg"
+    ],
+    "tips": "La vraie quiche lorraine ne contient pas de fromage, mais c'est tellement meilleur avec ! Servir tiède avec une salade verte.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 420,
+      "proteines": 18,
+      "glucides": 22,
+      "lipides": 30
+    }
+  },
+  {
+    "book_recipe_id": 204,
+    "prep_time": 30,
+    "cook_time": 45,
+    "rest_time": null,
+    "servings": 6,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "3",
+        "unit": "",
+        "label": "courgettes",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "aubergines",
+        "group": "légumes"
+      },
+      {
+        "qty": "3",
+        "unit": "",
+        "label": "poivrons (rouge, jaune, vert)",
+        "group": "légumes"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "tomates bien mûres",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "oignons",
+        "group": "légumes"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "gousses d'ail",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "càc",
+        "label": "herbes de Provence",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "bouquet garni",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "5",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "autres"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "basilic frais",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préparation",
+        "text": "Laver et couper tous les légumes en cubes de taille similaire (2-3 cm). Émincer les oignons et l'ail."
+      },
+      {
+        "order": 2,
+        "title": "Cuisson des aubergines",
+        "text": "Dans une grande poêle, faire revenir les aubergines dans 2 càs d'huile d'olive 5-7 min. Réserver."
+      },
+      {
+        "order": 3,
+        "title": "Cuisson des courgettes",
+        "text": "Faire revenir les courgettes 5 min. Réserver."
+      },
+      {
+        "order": 4,
+        "title": "Poivrons et oignons",
+        "text": "Faire revenir les poivrons et oignons 5 min. Ajouter l'ail en fin de cuisson."
+      },
+      {
+        "order": 5,
+        "title": "Assemblage",
+        "text": "Remettre tous les légumes dans la cocotte. Ajouter les tomates coupées, le bouquet garni et les herbes de Provence."
+      },
+      {
+        "order": 6,
+        "title": "Mijotage",
+        "text": "Couvrir et laisser mijoter 30 min à feu doux. Rectifier l'assaisonnement. Servir parsemé de basilic frais."
+      }
+    ],
+    "photos": [
+      "au-quotidien/ratatouille/main.jpg"
+    ],
+    "tips": "Encore meilleure réchauffée le lendemain. Peut accompagner des grillades, du riz, ou se déguster seule avec du pain.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 145,
+      "proteines": 3,
+      "glucides": 14,
+      "lipides": 9
+    }
+  },
+  {
+    "book_recipe_id": 205,
+    "prep_time": 25,
+    "cook_time": 120,
+    "rest_time": null,
+    "servings": 6,
+    "difficulty": "moyen",
+    "ingredients": [
+      {
+        "qty": "1.2",
+        "unit": "kg",
+        "label": "veau à blanquette (épaule, tendron)",
+        "group": "viande"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "carottes",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "poireaux",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "oignon piqué de 2 clous de girofle",
+        "group": "légumes"
+      },
+      {
+        "qty": "250",
+        "unit": "g",
+        "label": "champignons de Paris",
+        "group": "légumes"
+      },
+      {
+        "qty": "25",
+        "unit": "cl",
+        "label": "crème fraîche",
+        "group": "sauce"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "jaunes d'œufs",
+        "group": "sauce"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "citron (jus)",
+        "group": "sauce"
+      },
+      {
+        "qty": "50",
+        "unit": "g",
+        "label": "beurre",
+        "group": "sauce"
+      },
+      {
+        "qty": "50",
+        "unit": "g",
+        "label": "farine",
+        "group": "sauce"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "bouquet garni",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre blanc",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Blanchiment",
+        "text": "Mettre la viande dans une grande casserole d'eau froide. Porter à ébullition, écumer, puis égoutter et rincer la viande."
+      },
+      {
+        "order": 2,
+        "title": "Cuisson",
+        "text": "Remettre la viande dans la casserole avec 2L d'eau, le bouquet garni, l'oignon piqué, sel et poivre. Cuire 1h30 à frémissement."
+      },
+      {
+        "order": 3,
+        "title": "Légumes",
+        "text": "Ajouter les carottes et poireaux coupés. Poursuivre la cuisson 30 min."
+      },
+      {
+        "order": 4,
+        "title": "Champignons",
+        "text": "Faire revenir les champignons dans un peu de beurre avec le jus de citron. Réserver."
+      },
+      {
+        "order": 5,
+        "title": "Sauce",
+        "text": "Préparer un roux avec le reste du beurre et la farine. Mouiller avec 50 cl de bouillon de cuisson. Cuire 10 min."
+      },
+      {
+        "order": 6,
+        "title": "Liaison",
+        "text": "Hors du feu, ajouter les jaunes d'œufs mélangés à la crème. Ne plus faire bouillir. Incorporer la viande, légumes et champignons."
+      }
+    ],
+    "photos": [
+      "au-quotidien/blanquette-veau/main.jpg"
+    ],
+    "tips": "Servir avec du riz basmati. La sauce ne doit jamais bouillir après l'ajout de la liaison pour éviter qu'elle ne tranche.",
+    "source_url": "https://www.marmiton.org/recettes/recette_blanquette-de-veau-facile_192",
+    "nutrition": {
+      "calories": 520,
+      "proteines": 38,
+      "glucides": 15,
+      "lipides": 35
+    }
+  },
+  {
+    "book_recipe_id": 206,
+    "prep_time": 20,
+    "cook_time": 0,
+    "rest_time": 120,
+    "servings": 4,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "1",
+        "unit": "kg",
+        "label": "tomates bien mûres",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "poivron rouge",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "concombre",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "gousses d'ail",
+        "group": "légumes"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "pain rassis (mie)",
+        "group": "autres"
+      },
+      {
+        "qty": "5",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "vinaigre de Xérès",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "croûtons pour servir",
+        "group": "garniture"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préparation",
+        "text": "Laver les légumes. Épépiner les tomates et le poivron. Peler le concombre et l'ail."
+      },
+      {
+        "order": 2,
+        "title": "Trempage",
+        "text": "Faire tremper le pain dans un peu d'eau froide."
+      },
+      {
+        "order": 3,
+        "title": "Mixage",
+        "text": "Mixer tous les légumes avec le pain essoré, l'huile d'olive et le vinaigre jusqu'à obtenir une texture lisse."
+      },
+      {
+        "order": 4,
+        "title": "Assaisonnement",
+        "text": "Saler, poivrer. Ajouter de l'eau froide si trop épais. Réfrigérer au moins 2h."
+      },
+      {
+        "order": 5,
+        "title": "Service",
+        "text": "Servir très frais dans des bols avec des croûtons, des dés de concombre et poivron."
+      }
+    ],
+    "photos": [
+      "au-quotidien/gaspacho/main.jpg"
+    ],
+    "tips": "Plus les tomates sont mûres et parfumées, meilleur sera le gaspacho. Peut se conserver 2-3 jours au réfrigérateur.",
+    "source_url": "https://www.marmiton.org/recettes/recette_gaspacho-andalousie_16193.aspx",
+    "nutrition": {
+      "calories": 180,
+      "proteines": 4,
+      "glucides": 18,
+      "lipides": 11
+    }
+  },
+  {
+    "book_recipe_id": 207,
+    "prep_time": 15,
+    "cook_time": 15,
+    "rest_time": 30,
+    "servings": 4,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "quinoa",
+        "group": "féculents"
+      },
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "tomates cerises",
+        "group": "légumes"
+      },
+      {
+        "qty": "150",
+        "unit": "g",
+        "label": "feta",
+        "group": "fromage"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "olives noires",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "concombre",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "oignon rouge",
+        "group": "légumes"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "menthe fraîche",
+        "group": "herbes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "citron (jus)",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "4",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Cuisson quinoa",
+        "text": "Rincer le quinoa sous l'eau froide. Le cuire dans 2 fois son volume d'eau salée pendant 12-15 min. Égoutter et laisser refroidir."
+      },
+      {
+        "order": 2,
+        "title": "Préparation légumes",
+        "text": "Couper les tomates cerises en deux, le concombre en dés, émincer l'oignon rouge. Émietter la feta."
+      },
+      {
+        "order": 3,
+        "title": "Vinaigrette",
+        "text": "Mélanger le jus de citron avec l'huile d'olive. Saler et poivrer."
+      },
+      {
+        "order": 4,
+        "title": "Assemblage",
+        "text": "Dans un saladier, mélanger le quinoa refroidi avec tous les légumes, la feta et les olives."
+      },
+      {
+        "order": 5,
+        "title": "Finition",
+        "text": "Arroser de vinaigrette, parsemer de menthe ciselée. Réfrigérer 30 min avant de servir."
+      }
+    ],
+    "photos": [
+      "au-quotidien/salade-quinoa/main.jpg"
+    ],
+    "tips": "Se conserve 2 jours au réfrigérateur. Parfaite pour les lunch box !",
+    "source_url": "",
+    "nutrition": {
+      "calories": 380,
+      "proteines": 14,
+      "glucides": 35,
+      "lipides": 20
+    }
+  },
+  {
+    "book_recipe_id": 208,
+    "prep_time": 15,
+    "cook_time": 0,
+    "rest_time": null,
+    "servings": 4,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "melon bien mûr",
+        "group": "fruits"
+      },
+      {
+        "qty": "8",
+        "unit": "tranches",
+        "label": "jambon de Parme",
+        "group": "charcuterie"
+      },
+      {
+        "qty": "50",
+        "unit": "g",
+        "label": "roquette",
+        "group": "légumes"
+      },
+      {
+        "qty": "30",
+        "unit": "g",
+        "label": "copeaux de parmesan",
+        "group": "fromage"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "poivre noir du moulin",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "quelques feuilles de basilic",
+        "group": "herbes"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préparation melon",
+        "text": "Couper le melon en deux, retirer les graines. Détailler en tranches très fines à l'aide d'une mandoline ou d'un couteau bien aiguisé."
+      },
+      {
+        "order": 2,
+        "title": "Dressage",
+        "text": "Disposer les tranches de melon en rosace sur les assiettes. Alterner avec les tranches de jambon de Parme."
+      },
+      {
+        "order": 3,
+        "title": "Garniture",
+        "text": "Parsemer de roquette et de copeaux de parmesan."
+      },
+      {
+        "order": 4,
+        "title": "Finition",
+        "text": "Arroser d'un filet d'huile d'olive, poivrer généreusement. Décorer de feuilles de basilic."
+      }
+    ],
+    "photos": [
+      "au-quotidien/carpaccio-melon/main.jpg"
+    ],
+    "tips": "Choisir un melon bien parfumé. Servir immédiatement après le dressage pour garder la fraîcheur.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 220,
+      "proteines": 14,
+      "glucides": 12,
+      "lipides": 14
+    }
+  },
+  {
+    "book_recipe_id": 209,
+    "prep_time": 25,
+    "cook_time": 0,
+    "rest_time": 120,
+    "servings": 4,
+    "difficulty": "moyen",
+    "ingredients": [
+      {
+        "qty": "500",
+        "unit": "g",
+        "label": "poisson blanc très frais (bar, daurade)",
+        "group": "poisson"
+      },
+      {
+        "qty": "6",
+        "unit": "",
+        "label": "citrons verts",
+        "group": "agrumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "oignon rouge",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "piment rouge",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "avocat",
+        "group": "légumes"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "coriandre fraîche",
+        "group": "herbes"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préparation poisson",
+        "text": "Couper le poisson en petits cubes de 1-2 cm. S'assurer qu'il n'y a pas d'arêtes."
+      },
+      {
+        "order": 2,
+        "title": "Marinade",
+        "text": "Presser les citrons verts. Mettre le poisson dans un plat, couvrir de jus de citron. Le poisson doit être immergé."
+      },
+      {
+        "order": 3,
+        "title": "Repos",
+        "text": "Couvrir et réfrigérer 2h minimum. Le poisson va \"cuire\" dans l'acidité du citron (il devient opaque)."
+      },
+      {
+        "order": 4,
+        "title": "Garniture",
+        "text": "Émincer finement l'oignon rouge et le piment (épépiné). Couper l'avocat en dés. Ciseler la coriandre."
+      },
+      {
+        "order": 5,
+        "title": "Finition",
+        "text": "Égoutter le poisson. Mélanger avec l'oignon, le piment, l'avocat et la coriandre. Arroser d'huile d'olive, saler et poivrer."
+      }
+    ],
+    "photos": [
+      "au-quotidien/ceviche/main.jpg"
+    ],
+    "tips": "Utiliser du poisson ultra-frais, de qualité sushi. Servir avec des chips de maïs ou des tostadas.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 240,
+      "proteines": 28,
+      "glucides": 8,
+      "lipides": 12
+    }
+  },
+  {
+    "book_recipe_id": 210,
+    "prep_time": 15,
+    "cook_time": 35,
+    "rest_time": null,
+    "servings": 6,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "pâte feuilletée",
+        "group": "pâte"
+      },
+      {
+        "qty": "6",
+        "unit": "",
+        "label": "tomates",
+        "group": "légumes"
+      },
+      {
+        "qty": "3",
+        "unit": "càs",
+        "label": "moutarde de Dijon",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "gruyère râpé",
+        "group": "fromage"
+      },
+      {
+        "qty": "1",
+        "unit": "càc",
+        "label": "herbes de Provence",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "autres"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préchauffage",
+        "text": "Préchauffer le four à 200°C (th.6-7)."
+      },
+      {
+        "order": 2,
+        "title": "Fond de tarte",
+        "text": "Étaler la pâte dans un moule à tarte. Piquer le fond avec une fourchette."
+      },
+      {
+        "order": 3,
+        "title": "Moutarde",
+        "text": "Badigeonner le fond de tarte avec la moutarde de Dijon."
+      },
+      {
+        "order": 4,
+        "title": "Tomates",
+        "text": "Couper les tomates en rondelles. Les disposer en rosace sur la moutarde. Saler, poivrer, parsemer d'herbes de Provence."
+      },
+      {
+        "order": 5,
+        "title": "Fromage et cuisson",
+        "text": "Saupoudrer de gruyère râpé, arroser d'huile d'olive. Enfourner 35 min jusqu'à ce que la tarte soit dorée."
+      }
+    ],
+    "photos": [
+      "au-quotidien/tarte-tomates-moutarde/main.jpg"
+    ],
+    "tips": "Égoutter légèrement les tomates si elles sont très juteuses pour éviter que la pâte ne détrempe.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 320,
+      "proteines": 10,
+      "glucides": 24,
+      "lipides": 21
+    }
+  },
+  {
+    "book_recipe_id": 252,
+    "prep_time": 15,
+    "cook_time": 75,
+    "rest_time": 10,
+    "servings": 4,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "poulet fermier (1,5 kg)",
+        "group": "volaille"
+      },
+      {
+        "qty": "50",
+        "unit": "g",
+        "label": "beurre mou",
+        "group": "autres"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "gousses d'ail",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "citron",
+        "group": "agrumes"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "thym frais",
+        "group": "herbes"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "romarin",
+        "group": "herbes"
+      },
+      {
+        "qty": "4",
+        "unit": "càs",
+        "label": "huile d'olive",
+        "group": "autres"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préchauffage",
+        "text": "Préchauffer le four à 200°C. Sortir le poulet 30 min avant pour qu'il soit à température ambiante."
+      },
+      {
+        "order": 2,
+        "title": "Beurre aux herbes",
+        "text": "Mélanger le beurre mou avec les herbes ciselées, l'ail haché, sel et poivre."
+      },
+      {
+        "order": 3,
+        "title": "Préparation poulet",
+        "text": "Glisser le beurre aux herbes sous la peau du poulet en décollant délicatement. Mettre le citron coupé en deux à l'intérieur."
+      },
+      {
+        "order": 4,
+        "title": "Assaisonnement",
+        "text": "Badigeonner le poulet d'huile d'olive. Saler et poivrer généreusement l'extérieur."
+      },
+      {
+        "order": 5,
+        "title": "Cuisson",
+        "text": "Enfourner 1h15 en arrosant régulièrement. Le poulet est cuit quand le jus de cuisson est clair."
+      },
+      {
+        "order": 6,
+        "title": "Repos",
+        "text": "Laisser reposer 10 min sous aluminium avant de découper."
+      }
+    ],
+    "photos": [
+      "au-quotidien/poulet-roti/main.jpg"
+    ],
+    "tips": "Pour une peau extra-croustillante, augmenter la température à 220°C les 10 dernières minutes.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 380,
+      "proteines": 45,
+      "glucides": 2,
+      "lipides": 22
+    }
+  },
+  {
+    "book_recipe_id": 352,
+    "prep_time": 20,
+    "cook_time": 60,
+    "rest_time": null,
+    "servings": 6,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "1.2",
+        "unit": "kg",
+        "label": "pommes de terre (type Bintje)",
+        "group": "légumes"
+      },
+      {
+        "qty": "40",
+        "unit": "cl",
+        "label": "crème fraîche liquide",
+        "group": "crémerie"
+      },
+      {
+        "qty": "30",
+        "unit": "cl",
+        "label": "lait entier",
+        "group": "crémerie"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "gousses d'ail",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "pincée",
+        "label": "muscade",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "30",
+        "unit": "g",
+        "label": "beurre",
+        "group": "autres"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préchauffage",
+        "text": "Préchauffer le four à 160°C (th.5-6)."
+      },
+      {
+        "order": 2,
+        "title": "Préparation",
+        "text": "Éplucher les pommes de terre et les couper en rondelles fines (3 mm). Ne pas les rincer pour garder l'amidon."
+      },
+      {
+        "order": 3,
+        "title": "Plat",
+        "text": "Frotter un plat à gratin avec l'ail coupé en deux. Beurrer généreusement."
+      },
+      {
+        "order": 4,
+        "title": "Montage",
+        "text": "Disposer les pommes de terre en couches en salant, poivrant et saupoudrant de muscade chaque couche."
+      },
+      {
+        "order": 5,
+        "title": "Crème",
+        "text": "Mélanger le lait et la crème. Verser sur les pommes de terre. Le liquide doit affleurer."
+      },
+      {
+        "order": 6,
+        "title": "Cuisson",
+        "text": "Enfourner 1h. Le gratin est prêt quand il est doré et qu'une lame de couteau s'enfonce facilement."
+      }
+    ],
+    "photos": [
+      "au-quotidien/gratin-dauphinois/main.jpg"
+    ],
+    "tips": "Le vrai gratin dauphinois n'a pas de fromage ! Pour une version gratinée, ajouter du gruyère 15 min avant la fin.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 380,
+      "proteines": 8,
+      "glucides": 35,
+      "lipides": 24
+    }
+  },
+  {
+    "book_recipe_id": 493,
+    "prep_time": 20,
+    "cook_time": 15,
+    "rest_time": null,
+    "servings": 4,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "2",
+        "unit": "kg",
+        "label": "moules de bouchot",
+        "group": "fruits de mer"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "échalotes",
+        "group": "légumes"
+      },
+      {
+        "qty": "25",
+        "unit": "cl",
+        "label": "vin blanc sec",
+        "group": "liquides"
+      },
+      {
+        "qty": "50",
+        "unit": "g",
+        "label": "beurre",
+        "group": "autres"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "persil plat",
+        "group": "herbes"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Nettoyage",
+        "text": "Gratter les moules, retirer les barbes. Jeter celles qui sont ouvertes ou cassées. Rincer abondamment."
+      },
+      {
+        "order": 2,
+        "title": "Préparation",
+        "text": "Émincer finement les échalotes. Ciseler le persil."
+      },
+      {
+        "order": 3,
+        "title": "Cuisson",
+        "text": "Dans une grande cocotte, faire fondre le beurre. Faire revenir les échalotes 2-3 min sans colorer."
+      },
+      {
+        "order": 4,
+        "title": "Moules",
+        "text": "Ajouter les moules et le vin blanc. Couvrir et cuire à feu vif 5-7 min en remuant à mi-cuisson."
+      },
+      {
+        "order": 5,
+        "title": "Service",
+        "text": "Quand toutes les moules sont ouvertes, parsemer de persil, poivrer. Servir immédiatement avec des frites."
+      }
+    ],
+    "photos": [
+      "au-quotidien/moules-marinieres/main.jpg"
+    ],
+    "tips": "Ne jamais ajouter de sel, les moules sont naturellement salées. Jeter les moules qui restent fermées après cuisson.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 290,
+      "proteines": 24,
+      "glucides": 8,
+      "lipides": 14
+    }
+  },
+  {
+    "book_recipe_id": 582,
+    "prep_time": 40,
+    "cook_time": 90,
+    "rest_time": 10,
+    "servings": 8,
+    "difficulty": "moyen",
+    "ingredients": [
+      {
+        "qty": "500",
+        "unit": "g",
+        "label": "bœuf haché",
+        "group": "viande"
+      },
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "chair à saucisse",
+        "group": "viande"
+      },
+      {
+        "qty": "400",
+        "unit": "g",
+        "label": "tomates concassées",
+        "group": "sauce"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "concentré de tomates",
+        "group": "sauce"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "oignon",
+        "group": "légumes"
+      },
+      {
+        "qty": "2",
+        "unit": "",
+        "label": "gousses d'ail",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "carotte",
+        "group": "légumes"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "branche de céleri",
+        "group": "légumes"
+      },
+      {
+        "qty": "15",
+        "unit": "cl",
+        "label": "vin rouge",
+        "group": "sauce"
+      },
+      {
+        "qty": "12",
+        "unit": "",
+        "label": "feuilles de lasagnes",
+        "group": "pâtes"
+      },
+      {
+        "qty": "80",
+        "unit": "g",
+        "label": "beurre",
+        "group": "béchamel"
+      },
+      {
+        "qty": "80",
+        "unit": "g",
+        "label": "farine",
+        "group": "béchamel"
+      },
+      {
+        "qty": "75",
+        "unit": "cl",
+        "label": "lait",
+        "group": "béchamel"
+      },
+      {
+        "qty": "150",
+        "unit": "g",
+        "label": "parmesan râpé",
+        "group": "fromage"
+      },
+      {
+        "qty": "",
+        "unit": "",
+        "label": "muscade, sel, poivre",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Bolognaise",
+        "text": "Faire revenir l'oignon, la carotte et le céleri émincés. Ajouter les viandes, faire dorer. Verser le vin, laisser évaporer."
+      },
+      {
+        "order": 2,
+        "title": "Mijotage",
+        "text": "Ajouter les tomates et le concentré. Saler, poivrer. Laisser mijoter 45 min à feu doux."
+      },
+      {
+        "order": 3,
+        "title": "Béchamel",
+        "text": "Faire fondre le beurre, ajouter la farine, cuire 2 min. Verser le lait progressivement en fouettant. Cuire 10 min. Assaisonner de muscade."
+      },
+      {
+        "order": 4,
+        "title": "Montage",
+        "text": "Dans un plat, alterner : béchamel, lasagnes, bolognaise, parmesan. Terminer par béchamel et parmesan."
+      },
+      {
+        "order": 5,
+        "title": "Cuisson",
+        "text": "Enfourner à 180°C pendant 40 min. Laisser reposer 10 min avant de servir."
+      }
+    ],
+    "photos": [
+      "au-quotidien/lasagnes-bolognaise/main.jpg"
+    ],
+    "tips": "Préparer la bolognaise la veille pour plus de saveur. Ne pas précuire les lasagnes sèches si la sauce est assez liquide.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 520,
+      "proteines": 32,
+      "glucides": 38,
+      "lipides": 26
+    }
+  },
+  {
+    "book_recipe_id": 382,
+    "prep_time": 15,
+    "cook_time": 30,
+    "rest_time": 60,
+    "servings": 8,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "250",
+        "unit": "g",
+        "label": "farine",
+        "group": "base"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "œufs",
+        "group": "base"
+      },
+      {
+        "qty": "50",
+        "unit": "cl",
+        "label": "lait",
+        "group": "base"
+      },
+      {
+        "qty": "25",
+        "unit": "cl",
+        "label": "eau",
+        "group": "base"
+      },
+      {
+        "qty": "50",
+        "unit": "g",
+        "label": "beurre fondu",
+        "group": "base"
+      },
+      {
+        "qty": "1",
+        "unit": "pincée",
+        "label": "sel",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "1",
+        "unit": "càs",
+        "label": "sucre (optionnel)",
+        "group": "base"
+      },
+      {
+        "qty": "1",
+        "unit": "càs",
+        "label": "rhum (optionnel)",
+        "group": "base"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Pâte",
+        "text": "Mettre la farine et le sel dans un saladier. Former un puits, y ajouter les œufs battus."
+      },
+      {
+        "order": 2,
+        "title": "Mélange",
+        "text": "Incorporer progressivement le lait et l'eau en fouettant pour éviter les grumeaux. Ajouter le beurre fondu."
+      },
+      {
+        "order": 3,
+        "title": "Repos",
+        "text": "Couvrir et laisser reposer 1h à température ambiante. La pâte doit avoir la consistance d'une crème liquide."
+      },
+      {
+        "order": 4,
+        "title": "Cuisson",
+        "text": "Huiler légèrement une poêle à crêpes. Verser une louche de pâte, faire tourner pour répartir. Cuire 1-2 min de chaque côté."
+      },
+      {
+        "order": 5,
+        "title": "Conservation",
+        "text": "Empiler les crêpes dans une assiette couverte d'un torchon pour les garder moelleuses."
+      }
+    ],
+    "photos": [
+      "au-quotidien/crepes/main.jpg"
+    ],
+    "tips": "Pour des crêpes plus légères, remplacer la moitié du lait par de la bière. Le repos est essentiel pour des crêpes souples.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 180,
+      "proteines": 6,
+      "glucides": 24,
+      "lipides": 7
+    }
+  },
+  {
+    "book_recipe_id": 545,
+    "prep_time": 25,
+    "cook_time": 45,
+    "rest_time": 10,
+    "servings": 8,
+    "difficulty": "moyen",
+    "ingredients": [
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "pâte feuilletée",
+        "group": "pâte"
+      },
+      {
+        "qty": "8",
+        "unit": "",
+        "label": "pommes (Golden, Reinette)",
+        "group": "fruits"
+      },
+      {
+        "qty": "150",
+        "unit": "g",
+        "label": "sucre",
+        "group": "caramel"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "beurre",
+        "group": "caramel"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "gousse de vanille (optionnel)",
+        "group": "arôme"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Caramel",
+        "text": "Dans un moule à manqué allant sur le feu, faire un caramel avec le sucre et 3 càs d'eau. Quand il est ambré, ajouter le beurre en morceaux."
+      },
+      {
+        "order": 2,
+        "title": "Pommes",
+        "text": "Éplucher les pommes, les couper en quartiers épais. Les disposer serrées sur le caramel, côté bombé vers le bas."
+      },
+      {
+        "order": 3,
+        "title": "Précuisson",
+        "text": "Cuire 15 min à feu moyen. Les pommes doivent commencer à caraméliser."
+      },
+      {
+        "order": 4,
+        "title": "Pâte",
+        "text": "Préchauffer le four à 200°C. Recouvrir les pommes avec la pâte feuilletée en rentrant les bords à l'intérieur du moule."
+      },
+      {
+        "order": 5,
+        "title": "Cuisson",
+        "text": "Enfourner 25-30 min jusqu'à ce que la pâte soit bien dorée."
+      },
+      {
+        "order": 6,
+        "title": "Démoulage",
+        "text": "Laisser tiédir 10 min. Retourner sur un plat de service d'un geste vif."
+      }
+    ],
+    "photos": [
+      "au-quotidien/tarte-tatin/main.jpg"
+    ],
+    "tips": "Servir tiède avec une boule de glace vanille ou de la crème fraîche. Attention au caramel très chaud au démoulage !",
+    "source_url": "",
+    "nutrition": {
+      "calories": 340,
+      "proteines": 3,
+      "glucides": 45,
+      "lipides": 17
+    }
+  },
+  {
+    "book_recipe_id": 383,
+    "prep_time": 25,
+    "cook_time": 5,
+    "rest_time": 240,
+    "servings": 6,
+    "difficulty": "moyen",
+    "ingredients": [
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "chocolat noir 70%",
+        "group": "chocolat"
+      },
+      {
+        "qty": "6",
+        "unit": "",
+        "label": "œufs",
+        "group": "base"
+      },
+      {
+        "qty": "1",
+        "unit": "pincée",
+        "label": "sel",
+        "group": "assaisonnement"
+      },
+      {
+        "qty": "30",
+        "unit": "g",
+        "label": "sucre (optionnel)",
+        "group": "base"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Chocolat",
+        "text": "Faire fondre le chocolat au bain-marie ou au micro-ondes. Laisser tiédir."
+      },
+      {
+        "order": 2,
+        "title": "Séparation œufs",
+        "text": "Séparer les blancs des jaunes. Incorporer les jaunes un à un dans le chocolat fondu."
+      },
+      {
+        "order": 3,
+        "title": "Blancs en neige",
+        "text": "Monter les blancs en neige ferme avec une pincée de sel. Ajouter le sucre en fin de montage si souhaité."
+      },
+      {
+        "order": 4,
+        "title": "Mélange",
+        "text": "Incorporer délicatement 1/3 des blancs au chocolat pour détendre. Puis ajouter le reste en soulevant la masse pour ne pas casser les blancs."
+      },
+      {
+        "order": 5,
+        "title": "Réfrigération",
+        "text": "Verser dans des verrines ou un saladier. Réfrigérer au minimum 4h, idéalement une nuit."
+      }
+    ],
+    "photos": [
+      "au-quotidien/mousse-chocolat/main.jpg"
+    ],
+    "tips": "Utiliser des œufs extra-frais. Le secret est de ne pas trop mélanger pour garder la légèreté des blancs.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 280,
+      "proteines": 8,
+      "glucides": 18,
+      "lipides": 20
+    }
+  },
+  {
+    "book_recipe_id": 386,
+    "prep_time": 30,
+    "cook_time": 0,
+    "rest_time": 360,
+    "servings": 8,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "500",
+        "unit": "g",
+        "label": "mascarpone",
+        "group": "crémerie"
+      },
+      {
+        "qty": "4",
+        "unit": "",
+        "label": "œufs",
+        "group": "base"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "sucre",
+        "group": "base"
+      },
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "biscuits à la cuillère",
+        "group": "biscuits"
+      },
+      {
+        "qty": "30",
+        "unit": "cl",
+        "label": "café espresso froid",
+        "group": "café"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "Amaretto (optionnel)",
+        "group": "alcool"
+      },
+      {
+        "qty": "2",
+        "unit": "càs",
+        "label": "cacao amer",
+        "group": "décor"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Crème",
+        "text": "Séparer les blancs des jaunes. Fouetter les jaunes avec le sucre jusqu'à blanchiment."
+      },
+      {
+        "order": 2,
+        "title": "Mascarpone",
+        "text": "Incorporer le mascarpone à la préparation jaunes-sucre. Mélanger jusqu'à obtenir une crème lisse."
+      },
+      {
+        "order": 3,
+        "title": "Blancs",
+        "text": "Monter les blancs en neige ferme. Les incorporer délicatement à la crème au mascarpone."
+      },
+      {
+        "order": 4,
+        "title": "Café",
+        "text": "Mélanger le café froid avec l'Amaretto si utilisé. Tremper rapidement les biscuits (ils ne doivent pas être trop imbibés)."
+      },
+      {
+        "order": 5,
+        "title": "Montage",
+        "text": "Alterner une couche de biscuits imbibés et une couche de crème. Terminer par la crème."
+      },
+      {
+        "order": 6,
+        "title": "Repos",
+        "text": "Réfrigérer au minimum 6h (idéalement une nuit). Saupoudrer de cacao avant de servir."
+      }
+    ],
+    "photos": [
+      "au-quotidien/tiramisu/main.jpg"
+    ],
+    "tips": "Le tiramisu est meilleur après 24h de repos. Ne pas tremper les biscuits trop longtemps sinon ils deviennent pâteux.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 420,
+      "proteines": 10,
+      "glucides": 38,
+      "lipides": 26
+    }
+  },
+  {
+    "book_recipe_id": 389,
+    "prep_time": 15,
+    "cook_time": 45,
+    "rest_time": 240,
+    "servings": 6,
+    "difficulty": "moyen",
+    "ingredients": [
+      {
+        "qty": "50",
+        "unit": "cl",
+        "label": "crème liquide entière",
+        "group": "crémerie"
+      },
+      {
+        "qty": "6",
+        "unit": "",
+        "label": "jaunes d'œufs",
+        "group": "base"
+      },
+      {
+        "qty": "80",
+        "unit": "g",
+        "label": "sucre",
+        "group": "base"
+      },
+      {
+        "qty": "1",
+        "unit": "",
+        "label": "gousse de vanille",
+        "group": "arôme"
+      },
+      {
+        "qty": "6",
+        "unit": "càs",
+        "label": "cassonade",
+        "group": "caramel"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Infusion",
+        "text": "Fendre la gousse de vanille, gratter les graines. Faire chauffer la crème avec la gousse et les graines. Stopper avant ébullition."
+      },
+      {
+        "order": 2,
+        "title": "Appareil",
+        "text": "Fouetter les jaunes avec le sucre jusqu'à blanchiment. Verser la crème chaude en filet en fouettant."
+      },
+      {
+        "order": 3,
+        "title": "Cuisson",
+        "text": "Verser dans des ramequins. Enfourner au bain-marie à 150°C pendant 40-45 min. La crème doit être prise mais tremblotante."
+      },
+      {
+        "order": 4,
+        "title": "Refroidissement",
+        "text": "Laisser refroidir, puis réfrigérer au moins 4h."
+      },
+      {
+        "order": 5,
+        "title": "Caramélisation",
+        "text": "Avant de servir, saupoudrer de cassonade. Caraméliser au chalumeau ou sous le gril du four."
+      }
+    ],
+    "photos": [
+      "au-quotidien/creme-brulee/main.jpg"
+    ],
+    "tips": "Caraméliser juste avant de servir pour garder le contraste entre la croûte craquante et la crème froide.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 380,
+      "proteines": 6,
+      "glucides": 28,
+      "lipides": 28
+    }
+  },
+  {
+    "book_recipe_id": 387,
+    "prep_time": 15,
+    "cook_time": 12,
+    "rest_time": null,
+    "servings": 6,
+    "difficulty": "facile",
+    "ingredients": [
+      {
+        "qty": "200",
+        "unit": "g",
+        "label": "chocolat noir",
+        "group": "chocolat"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "beurre",
+        "group": "base"
+      },
+      {
+        "qty": "3",
+        "unit": "",
+        "label": "œufs",
+        "group": "base"
+      },
+      {
+        "qty": "100",
+        "unit": "g",
+        "label": "sucre",
+        "group": "base"
+      },
+      {
+        "qty": "50",
+        "unit": "g",
+        "label": "farine",
+        "group": "base"
+      },
+      {
+        "qty": "1",
+        "unit": "pincée",
+        "label": "sel",
+        "group": "assaisonnement"
+      }
+    ],
+    "steps": [
+      {
+        "order": 1,
+        "title": "Préchauffage",
+        "text": "Préchauffer le four à 200°C. Beurrer et fariner 6 ramequins."
+      },
+      {
+        "order": 2,
+        "title": "Chocolat",
+        "text": "Faire fondre le chocolat avec le beurre au bain-marie ou au micro-ondes. Mélanger jusqu'à obtenir une texture lisse."
+      },
+      {
+        "order": 3,
+        "title": "Appareil",
+        "text": "Battre les œufs avec le sucre jusqu'à blanchiment. Incorporer le chocolat fondu, puis la farine tamisée et le sel."
+      },
+      {
+        "order": 4,
+        "title": "Moulage",
+        "text": "Répartir la pâte dans les ramequins (aux 3/4)."
+      },
+      {
+        "order": 5,
+        "title": "Cuisson",
+        "text": "Enfourner 10-12 min. Le dessus doit être juste pris, le cœur encore coulant."
+      },
+      {
+        "order": 6,
+        "title": "Service",
+        "text": "Démouler immédiatement sur les assiettes. Servir sans attendre."
+      }
+    ],
+    "photos": [
+      "au-quotidien/fondant-chocolat/main.jpg"
+    ],
+    "tips": "Le temps de cuisson est crucial : 1 min de trop et le cœur n'est plus coulant ! Servir avec de la crème anglaise.",
+    "source_url": "",
+    "nutrition": {
+      "calories": 420,
+      "proteines": 7,
+      "glucides": 38,
+      "lipides": 28
+    }
+  }
+]
