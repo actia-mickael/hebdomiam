@@ -3,6 +3,8 @@ import { Family, FamilyMember } from '@/types/recipe';
 
 // ── Authentification ──────────────────────────────────────────────────────
 
+const EMAIL_REDIRECT = 'recettes://auth/callback';
+
 export async function signUp(
   email: string,
   password: string,
@@ -11,7 +13,10 @@ export async function signUp(
   const { error } = await supabase.auth.signUp({
     email,
     password,
-    options: { data: { display_name: displayName } },
+    options: {
+      data: { display_name: displayName },
+      emailRedirectTo: EMAIL_REDIRECT,
+    },
   });
   if (error) throw error;
 }
@@ -35,7 +40,11 @@ export async function signOut(): Promise<void> {
 }
 
 export async function resendVerificationEmail(email: string): Promise<void> {
-  const { error } = await supabase.auth.resend({ type: 'signup', email });
+  const { error } = await supabase.auth.resend({
+    type: 'signup',
+    email,
+    options: { emailRedirectTo: EMAIL_REDIRECT },
+  });
   if (error) throw error;
 }
 

@@ -1,0 +1,4012 @@
+{
+  "bookName": "Cuisine d'Asie",
+  "bookDescription": "Recettes d'Asie : Chine, Japon, Thaïlande, Vietnam, Inde, Corée, Indonésie...",
+  "recipes": [
+    {
+      "name": "Soupe Won Ton",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Crevettes",
+        "Pâte à won ton",
+        "Bouillon",
+        "Ciboulette",
+        "Gingembre"
+      ],
+      "comment": "Raviolis chinois en bouillon clair.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Pékinoise",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Champignons noirs",
+        "Œuf",
+        "Vinaigre",
+        "Sauce soja",
+        "Bambou"
+      ],
+      "comment": "Aigre-douce et épicée. Hot and sour soup.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Raviolis Vapeur au Porc",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Gingembre",
+        "Ciboulette",
+        "Sauce soja",
+        "Huile de sésame"
+      ],
+      "comment": "Dim sum classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Raviolis Grillés",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Chou",
+        "Gingembre",
+        "Ail",
+        "Sauce soja"
+      ],
+      "comment": "Guo tie, grillés d'un côté.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bouchées Vapeur aux Crevettes",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Pâte à har gow",
+        "Bambou",
+        "Gingembre"
+      ],
+      "comment": "Har gow, pâte translucide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rouleaux de Printemps Frits",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Vermicelles",
+        "Chou",
+        "Carottes",
+        "Champignons noirs"
+      ],
+      "comment": "Croustillants et dorés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Méduse",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Méduse",
+      "ingredients": [
+        "Concombre",
+        "Sésame",
+        "Vinaigre",
+        "Huile pimentée"
+      ],
+      "comment": "Texture croquante, spécialité chinoise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs de Cent Ans",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Gingembre",
+        "Sauce soja",
+        "Vinaigre"
+      ],
+      "comment": "Pi dan, saveur unique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Miso",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Miso",
+      "ingredients": [
+        "Tofu",
+        "Algues wakame",
+        "Oignons verts",
+        "Dashi"
+      ],
+      "comment": "Incontournable japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Edamame",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Edamame",
+      "ingredients": [
+        "Fleur de sel"
+      ],
+      "comment": "Fèves de soja, snack protéiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gyozas",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Chou",
+        "Gingembre",
+        "Ail",
+        "Sauce soja"
+      ],
+      "comment": "Raviolis japonais grillés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tempura de Légumes",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Patate douce",
+        "Aubergine",
+        "Courgette",
+        "Pâte à tempura"
+      ],
+      "comment": "Beignets légers et croustillants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tempura de Crevettes",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Pâte à tempura",
+        "Sauce tentsuyu",
+        "Radis râpé"
+      ],
+      "comment": "Ebi tempura classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade d'Algues Wakame",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Algue wakame",
+      "ingredients": [
+        "Sésame",
+        "Vinaigre de riz",
+        "Huile de sésame",
+        "Gingembre"
+      ],
+      "comment": "Iodée et croquante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tataki de Bœuf",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Sauce ponzu",
+        "Oignons verts",
+        "Gingembre",
+        "Ail"
+      ],
+      "comment": "Saisie et tranché fin.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Thon à la Japonaise",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Thon",
+      "ingredients": [
+        "Avocat",
+        "Sauce soja",
+        "Sésame",
+        "Wasabi"
+      ],
+      "comment": "Frais et élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chawanmushi",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Dashi",
+        "Crevettes",
+        "Champignons shiitake",
+        "Mitsuba"
+      ],
+      "comment": "Flan salé japonais vapeur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rouleaux de Printemps Frais",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Vermicelles",
+        "Salade",
+        "Menthe",
+        "Feuilles de riz"
+      ],
+      "comment": "Gỏi cuốn, frais et légers.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nems au Porc",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Vermicelles",
+        "Carottes",
+        "Champignons noirs",
+        "Feuilles de riz"
+      ],
+      "comment": "Chả giò, frits et croustillants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nems aux Crevettes",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Porc",
+        "Vermicelles",
+        "Carottes",
+        "Taro"
+      ],
+      "comment": "Version aux fruits de mer.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Papaye Verte",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Papaye verte",
+      "ingredients": [
+        "Crevettes séchées",
+        "Cacahuètes",
+        "Nuoc mam",
+        "Citron vert"
+      ],
+      "comment": "Gỏi đu đủ, croquante et acidulée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Banh Cuon",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Farine de riz",
+      "ingredients": [
+        "Porc",
+        "Champignons",
+        "Échalotes",
+        "Nuoc mam"
+      ],
+      "comment": "Crêpes de riz farcies vapeur.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tom Yum",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citronnelle",
+        "Galanga",
+        "Feuilles de combava",
+        "Piment",
+        "Champignons"
+      ],
+      "comment": "Soupe thaï épicée et aigre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tom Kha Kai",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco",
+        "Galanga",
+        "Citronnelle",
+        "Champignons"
+      ],
+      "comment": "Soupe crémeuse au coco.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Satay de Poulet",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce cacahuète",
+        "Lait de coco",
+        "Curcuma",
+        "Citronnelle"
+      ],
+      "comment": "Brochettes marinées, sauce cacahuète.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Bœuf Thaï",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Menthe",
+        "Coriandre",
+        "Oignons",
+        "Piment",
+        "Citron vert"
+      ],
+      "comment": "Yam Nua, fraîche et épicée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tod Mun Pla",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Pâte de curry rouge",
+        "Haricots verts",
+        "Feuilles de combava"
+      ],
+      "comment": "Galettes de poisson thaï.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Samossas",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Petits pois",
+        "Cumin",
+        "Coriandre",
+        "Garam masala"
+      ],
+      "comment": "Beignets triangulaires épicés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pakoras",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Farine de pois chiches",
+        "Oignons",
+        "Épinards",
+        "Épices"
+      ],
+      "comment": "Beignets de légumes croustillants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Raita",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Yaourt",
+      "ingredients": [
+        "Concombre",
+        "Menthe",
+        "Cumin",
+        "Coriandre"
+      ],
+      "comment": "Sauce rafraîchissante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Papadum",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Farine de lentilles",
+      "ingredients": [
+        "Cumin",
+        "Poivre",
+        "Piment"
+      ],
+      "comment": "Galettes croustillantes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aloo Tikki",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Petits pois",
+        "Épices",
+        "Coriandre",
+        "Chutney"
+      ],
+      "comment": "Galettes de pommes de terre épicées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Kimchi",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "frequent",
+      "mainIngredient": "Chou",
+      "ingredients": [
+        "Piment",
+        "Ail",
+        "Gingembre",
+        "Nuoc mam"
+      ],
+      "comment": "Chou fermenté, probiotique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pajeon",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Oignons verts",
+      "ingredients": [
+        "Farine",
+        "Œufs",
+        "Fruits de mer",
+        "Piment"
+      ],
+      "comment": "Crêpe coréenne aux oignons.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mandu",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Tofu",
+        "Kimchi",
+        "Oignons verts",
+        "Gingembre"
+      ],
+      "comment": "Raviolis coréens.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Japchae en Entrée",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Vermicelles de patate douce",
+      "ingredients": [
+        "Légumes",
+        "Bœuf",
+        "Sauce soja",
+        "Sésame"
+      ],
+      "comment": "Petite portion en entrée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Satay de Bœuf",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Sauce cacahuète",
+        "Kecap manis",
+        "Curcuma",
+        "Coriandre"
+      ],
+      "comment": "Brochettes indonésiennes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gado Gado",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Tofu",
+        "Œufs",
+        "Sauce cacahuète",
+        "Tempeh"
+      ],
+      "comment": "Salade indonésienne, sauce cacahuète.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Kerupuk",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Tapioca"
+      ],
+      "comment": "Chips de crevettes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe Laksa",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte laksa",
+        "Crevettes",
+        "Tofu"
+      ],
+      "comment": "Soupe malaisienne parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bao Buns Nature",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Levure",
+        "Sucre",
+        "Lait"
+      ],
+      "comment": "Petits pains vapeur moelleux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Nouilles au Canard",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Nouilles",
+        "Bouillon",
+        "Anis étoilé",
+        "Gingembre"
+      ],
+      "comment": "Réconfortante et parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet du Général Tao",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce soja",
+        "Miel",
+        "Gingembre",
+        "Ail",
+        "Piment",
+        "Sésame"
+      ],
+      "comment": "Poulet croustillant, sauce sucrée-épicée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canard Laqué",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Miel",
+        "Sauce soja",
+        "Cinq épices",
+        "Crêpes chinoises"
+      ],
+      "comment": "Plat de fête pékinois.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Porc Aigre-Doux",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Ananas",
+        "Poivrons",
+        "Sauce tomate",
+        "Vinaigre",
+        "Sucre"
+      ],
+      "comment": "Sweet and sour pork.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Porc au Caramel Chinois",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Sauce soja",
+        "Sucre",
+        "Gingembre",
+        "Anis étoilé"
+      ],
+      "comment": "Hong shao rou, poitrine braisée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Travers de Porc Caramélisés",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Miel",
+        "Sauce soja",
+        "Cinq épices",
+        "Ail"
+      ],
+      "comment": "Ribs chinois laqués.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf aux Oignons",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Oignons",
+        "Sauce soja",
+        "Sauce huître",
+        "Gingembre"
+      ],
+      "comment": "Classique du restaurant chinois.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf aux Brocolis",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Brocoli",
+        "Sauce soja",
+        "Sauce huître",
+        "Ail"
+      ],
+      "comment": "Sauté au wok rapide.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Sauté au Poivre Noir",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Poivre noir",
+        "Oignons",
+        "Poivrons",
+        "Sauce soja"
+      ],
+      "comment": "Parfumé et épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet aux Noix de Cajou",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Noix de cajou",
+        "Poivrons",
+        "Sauce soja",
+        "Gingembre"
+      ],
+      "comment": "Gong bao style.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Kung Pao",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Cacahuètes",
+        "Piments séchés",
+        "Poivre Sichuan",
+        "Sauce soja"
+      ],
+      "comment": "Classique du Sichuan, épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet au Citron",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Citron",
+        "Miel",
+        "Sauce soja",
+        "Gingembre"
+      ],
+      "comment": "Pané, sauce citronnée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ma Po Tofu",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Porc haché",
+        "Pâte de piment",
+        "Poivre Sichuan",
+        "Oignons verts"
+      ],
+      "comment": "Plat du Sichuan, très épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Cantonais",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Œufs",
+        "Petits pois",
+        "Jambon",
+        "Crevettes",
+        "Oignons"
+      ],
+      "comment": "Utiliser du riz de la veille.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nouilles Sautées au Bœuf",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Nouilles",
+        "Sauce soja",
+        "Légumes",
+        "Sésame"
+      ],
+      "comment": "Chow mein au bœuf.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nouilles Sautées au Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Nouilles",
+        "Chou",
+        "Carottes",
+        "Sauce soja"
+      ],
+      "comment": "Chow mein classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nouilles Dan Dan",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Porc haché",
+        "Pâte de sésame",
+        "Piment",
+        "Sauce soja"
+      ],
+      "comment": "Sichuan, sauce crémeuse épicée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lo Mein aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Chou",
+        "Carottes",
+        "Champignons",
+        "Sauce soja"
+      ],
+      "comment": "Nouilles sautées végétariennes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chop Suey",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Légumes",
+      "ingredients": [
+        "Poulet",
+        "Germes de soja",
+        "Céleri",
+        "Champignons",
+        "Sauce soja"
+      ],
+      "comment": "Sauté sino-américain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes à la Sauce Piquante",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Piment",
+        "Ail",
+        "Gingembre",
+        "Sauce tomate",
+        "Ketchup"
+      ],
+      "comment": "Sichuan style.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes Sel et Poivre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Sel",
+        "Poivre Sichuan",
+        "Piment",
+        "Ail",
+        "Oignons verts"
+      ],
+      "comment": "Croustillantes et parfumées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson Vapeur au Gingembre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson blanc",
+      "ingredients": [
+        "Gingembre",
+        "Oignons verts",
+        "Sauce soja",
+        "Huile de sésame"
+      ],
+      "comment": "Cuisson douce cantonaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aubergines à la Sichuanaise",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Aubergines",
+      "ingredients": [
+        "Porc haché",
+        "Pâte de piment",
+        "Ail",
+        "Sauce soja"
+      ],
+      "comment": "Yu xiang qie zi.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Haricots Verts Sautés",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Haricots verts",
+      "ingredients": [
+        "Porc haché",
+        "Ail",
+        "Piment",
+        "Sauce soja"
+      ],
+      "comment": "Dry-fried style.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tofu Sauté aux Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Légumes variés",
+        "Sauce soja",
+        "Gingembre",
+        "Ail"
+      ],
+      "comment": "Végétarien et protéiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ramen au Porc",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Nouilles ramen",
+        "Bouillon tonkotsu",
+        "Œuf mollet",
+        "Nori",
+        "Oignons verts"
+      ],
+      "comment": "Bouillon crémeux au porc.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ramen au Miso",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Miso",
+        "Porc",
+        "Maïs",
+        "Beurre",
+        "Oignons verts"
+      ],
+      "comment": "Style Sapporo.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ramen Shoyu",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Sauce soja",
+        "Poulet",
+        "Œuf",
+        "Nori",
+        "Menma"
+      ],
+      "comment": "Bouillon clair à la sauce soja.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sushis Assortis",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz à sushi",
+      "ingredients": [
+        "Saumon",
+        "Thon",
+        "Crevettes",
+        "Wasabi",
+        "Gingembre"
+      ],
+      "comment": "Assortiment de nigiri.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Makis Saumon",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Riz à sushi",
+        "Nori",
+        "Avocat",
+        "Concombre"
+      ],
+      "comment": "Rouleaux classiques.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Makis California",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crabe",
+      "ingredients": [
+        "Riz à sushi",
+        "Avocat",
+        "Concombre",
+        "Sésame"
+      ],
+      "comment": "Uramaki inversé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chirashi",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson cru",
+      "ingredients": [
+        "Riz à sushi",
+        "Saumon",
+        "Thon",
+        "Œufs de saumon",
+        "Avocat"
+      ],
+      "comment": "Bol de sushi décomposé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Donburi au Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Riz",
+        "Œuf",
+        "Oignons",
+        "Sauce soja",
+        "Mirin"
+      ],
+      "comment": "Oyakodon, poulet et œuf.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Katsudon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Riz",
+        "Œuf",
+        "Panko",
+        "Sauce tonkatsu"
+      ],
+      "comment": "Porc pané sur riz.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gyudon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Riz",
+        "Oignons",
+        "Sauce soja",
+        "Mirin",
+        "Gingembre"
+      ],
+      "comment": "Bœuf émincé sur riz.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Yakitori",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce yakitori",
+        "Oignons verts",
+        "Sésame"
+      ],
+      "comment": "Brochettes grillées japonaises.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tonkatsu",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Panko",
+        "Chou",
+        "Sauce tonkatsu",
+        "Moutarde"
+      ],
+      "comment": "Escalope panée croustillante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chicken Katsu",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Panko",
+        "Sauce tonkatsu",
+        "Chou"
+      ],
+      "comment": "Version poulet du tonkatsu.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Teriyaki de Saumon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Sauce teriyaki",
+        "Sésame",
+        "Gingembre"
+      ],
+      "comment": "Laqué et caramélisé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Teriyaki de Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce teriyaki",
+        "Sésame",
+        "Riz"
+      ],
+      "comment": "Classique japonais sucré-salé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Teriyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Sauce teriyaki",
+        "Sésame",
+        "Oignons verts"
+      ],
+      "comment": "Émincé laqué.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Udon au Bœuf",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Udon",
+      "ingredients": [
+        "Bœuf",
+        "Bouillon dashi",
+        "Oignons verts",
+        "Tempura"
+      ],
+      "comment": "Nouilles épaisses en bouillon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Udon Sautés",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Udon",
+      "ingredients": [
+        "Légumes",
+        "Sauce soja",
+        "Mirin",
+        "Sésame"
+      ],
+      "comment": "Yaki udon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soba Froides",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Soba",
+      "ingredients": [
+        "Sauce tsuyu",
+        "Oignons verts",
+        "Wasabi",
+        "Nori"
+      ],
+      "comment": "Zaru soba, rafraîchissant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Okonomiyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Chou",
+      "ingredients": [
+        "Farine",
+        "Œufs",
+        "Porc",
+        "Sauce okonomiyaki",
+        "Mayonnaise"
+      ],
+      "comment": "Crêpe japonaise d'Osaka.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Takoyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulpe",
+      "ingredients": [
+        "Pâte",
+        "Sauce takoyaki",
+        "Mayonnaise",
+        "Bonite"
+      ],
+      "comment": "Boulettes de poulpe d'Osaka.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Japonais",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Curry japonais",
+        "Carottes",
+        "Pommes de terre",
+        "Oignons"
+      ],
+      "comment": "Kare raisu, doux et réconfortant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Katsu",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Curry japonais",
+        "Riz",
+        "Panko"
+      ],
+      "comment": "Tonkatsu sur curry.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nikujaga",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Pommes de terre",
+        "Oignons",
+        "Sauce soja",
+        "Mirin"
+      ],
+      "comment": "Ragoût japonais familial.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Shabu Shabu",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Légumes",
+        "Tofu",
+        "Nouilles",
+        "Sauce ponzu",
+        "Sauce sésame"
+      ],
+      "comment": "Fondue japonaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sukiyaki",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Tofu",
+        "Champignons",
+        "Chou chinois",
+        "Œuf cru",
+        "Sauce sukiyaki"
+      ],
+      "comment": "Hotpot sucré-salé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pho Bœuf",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Nouilles de riz",
+        "Bouillon",
+        "Anis étoilé",
+        "Cannelle",
+        "Herbes fraîches"
+      ],
+      "comment": "Soupe vietnamienne emblématique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pho Poulet",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Nouilles de riz",
+        "Bouillon",
+        "Gingembre",
+        "Oignons",
+        "Herbes"
+      ],
+      "comment": "Phở gà, plus léger.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bo Bun",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Vermicelles",
+        "Nems",
+        "Cacahuètes",
+        "Menthe",
+        "Nuoc mam"
+      ],
+      "comment": "Salade vietnamienne fraîche.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bun Cha",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Vermicelles",
+        "Boulettes",
+        "Nuoc mam",
+        "Herbes"
+      ],
+      "comment": "Spécialité de Hanoi.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Banh Mi",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Baguette",
+        "Pickles",
+        "Coriandre",
+        "Pâté",
+        "Mayonnaise"
+      ],
+      "comment": "Sandwich vietnamien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Banh Xeo",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Farine de riz",
+      "ingredients": [
+        "Crevettes",
+        "Porc",
+        "Germes de soja",
+        "Curcuma"
+      ],
+      "comment": "Crêpe croustillante jaune.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Porc au Caramel Vietnamien",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Nuoc mam",
+        "Sucre",
+        "Œufs durs",
+        "Oignons"
+      ],
+      "comment": "Thịt kho, mijoté fondant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet au Gingembre",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Gingembre",
+        "Nuoc mam",
+        "Citronnelle",
+        "Oignons"
+      ],
+      "comment": "Gà xào gừng.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Luc Lac",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Poivre",
+        "Ail",
+        "Sauce soja",
+        "Tomates",
+        "Oignons"
+      ],
+      "comment": "Bœuf sauté aux dés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes à la Citronnelle",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Citronnelle",
+        "Piment",
+        "Ail",
+        "Nuoc mam"
+      ],
+      "comment": "Tôm rang sả, parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson Caramélisé en Claypot",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Nuoc mam",
+        "Sucre",
+        "Poivre",
+        "Gingembre"
+      ],
+      "comment": "Cá kho tộ.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Com Tam",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz brisé",
+      "ingredients": [
+        "Porc grillé",
+        "Œuf",
+        "Pickles",
+        "Nuoc mam"
+      ],
+      "comment": "Riz brisé de Saigon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pad Thaï",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles de riz",
+      "ingredients": [
+        "Crevettes",
+        "Œufs",
+        "Cacahuètes",
+        "Germes de soja",
+        "Citron vert"
+      ],
+      "comment": "Classique de la street food.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pad Thaï au Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Nouilles de riz",
+        "Œufs",
+        "Cacahuètes",
+        "Citron vert"
+      ],
+      "comment": "Version au poulet.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Vert au Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte curry vert",
+        "Aubergines thaï",
+        "Basilic thaï"
+      ],
+      "comment": "Kaeng khiao wan, épicé et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Rouge au Bœuf",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte curry rouge",
+        "Bambou",
+        "Basilic"
+      ],
+      "comment": "Kaeng phet, relevé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Massaman",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte massaman",
+        "Pommes de terre",
+        "Cacahuètes"
+      ],
+      "comment": "Curry doux d'influence indienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Panang",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte panang",
+        "Feuilles de combava",
+        "Cacahuètes"
+      ],
+      "comment": "Curry épais et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Jaune au Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte curry jaune",
+        "Pommes de terre",
+        "Oignons"
+      ],
+      "comment": "Kaeng kari, plus doux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pad Kra Pao",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc haché",
+      "ingredients": [
+        "Basilic thaï",
+        "Piment",
+        "Ail",
+        "Sauce soja",
+        "Œuf frit"
+      ],
+      "comment": "Sauté au basilic sacré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pad See Ew",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles larges",
+      "ingredients": [
+        "Bœuf",
+        "Brocoli chinois",
+        "Sauce soja épaisse",
+        "Œufs"
+      ],
+      "comment": "Nouilles sautées sucrées-salées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Khao Pad",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "frequent",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Œufs",
+        "Oignons",
+        "Sauce soja",
+        "Citron vert"
+      ],
+      "comment": "Riz sauté thaï.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Khao Pad aux Crevettes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Crevettes",
+        "Œufs",
+        "Oignons verts",
+        "Citron vert"
+      ],
+      "comment": "Riz sauté aux crevettes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet au Basilic Thaï",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Basilic thaï",
+        "Piment",
+        "Ail",
+        "Sauce poisson"
+      ],
+      "comment": "Parfumé et épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Larb Gai",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Menthe",
+        "Échalotes",
+        "Poudre de riz",
+        "Citron vert",
+        "Piment"
+      ],
+      "comment": "Salade de poulet haché épicée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Sauté au Basilic",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Basilic thaï",
+        "Piment",
+        "Ail",
+        "Sauce huître"
+      ],
+      "comment": "Neua pad krapao.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson Frit Sauce Trois Saveurs",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Sauce poisson",
+        "Sucre de palme",
+        "Piment",
+        "Ail"
+      ],
+      "comment": "Pla rad prik, sucré-salé-épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Tikka Masala",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce tomate",
+        "Crème",
+        "Épices tandoori",
+        "Gingembre",
+        "Ail"
+      ],
+      "comment": "Populaire dans le monde entier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Tandoori",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Yaourt",
+        "Épices tandoori",
+        "Citron",
+        "Gingembre"
+      ],
+      "comment": "Mariné et grillé, coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Butter Chicken",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Beurre",
+        "Tomates",
+        "Crème",
+        "Garam masala",
+        "Fenugrec"
+      ],
+      "comment": "Murgh makhani, onctueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Korma",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Noix de cajou",
+        "Crème",
+        "Yaourt",
+        "Épices douces"
+      ],
+      "comment": "Curry doux et crémeux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Vindaloo",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Vinaigre",
+        "Piments",
+        "Ail",
+        "Épices"
+      ],
+      "comment": "Curry très épicé de Goa.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry d'Agneau",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Tomates",
+        "Oignons",
+        "Garam masala",
+        "Yaourt"
+      ],
+      "comment": "Rogan josh style.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Biryani au Poulet",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Riz basmati",
+        "Épices biryani",
+        "Oignons frits",
+        "Safran"
+      ],
+      "comment": "Riz parfumé festif.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Biryani à l'Agneau",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Riz basmati",
+        "Épices",
+        "Safran",
+        "Oignons frits"
+      ],
+      "comment": "Version royale.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dahl de Lentilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lentilles corail",
+      "ingredients": [
+        "Curcuma",
+        "Cumin",
+        "Tomates",
+        "Coriandre"
+      ],
+      "comment": "Basique végétarien indien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chana Masala",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pois chiches",
+      "ingredients": [
+        "Tomates",
+        "Oignons",
+        "Garam masala",
+        "Coriandre"
+      ],
+      "comment": "Curry de pois chiches.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Palak Paneer",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Paneer",
+      "ingredients": [
+        "Épinards",
+        "Crème",
+        "Gingembre",
+        "Garam masala"
+      ],
+      "comment": "Fromage aux épinards.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aloo Gobi",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Chou-fleur",
+        "Curcuma",
+        "Cumin",
+        "Coriandre"
+      ],
+      "comment": "Curry végétarien sec.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saag Aloo",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Épinards",
+      "ingredients": [
+        "Pommes de terre",
+        "Cumin",
+        "Garam masala",
+        "Ail"
+      ],
+      "comment": "Épinards aux pommes de terre.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Malai Kofta",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Paneer",
+      "ingredients": [
+        "Pommes de terre",
+        "Sauce tomate crémeuse",
+        "Noix de cajou"
+      ],
+      "comment": "Boulettes en sauce.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Naan au Fromage",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Farine",
+      "ingredients": [
+        "Fromage",
+        "Yaourt",
+        "Levure",
+        "Beurre"
+      ],
+      "comment": "Pain indien fourré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bibimbap",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Bœuf",
+        "Légumes marinés",
+        "Œuf",
+        "Gochujang",
+        "Sésame"
+      ],
+      "comment": "Bol coréen coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bulgogi",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Sauce soja",
+        "Sucre",
+        "Sésame",
+        "Poire",
+        "Ail"
+      ],
+      "comment": "Bœuf mariné grillé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dakgalbi",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Gochujang",
+        "Chou",
+        "Patate douce",
+        "Tteok"
+      ],
+      "comment": "Poulet épicé sauté.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Samgyeopsal",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Poitrine",
+        "Laitue",
+        "Ssamjang",
+        "Ail",
+        "Kimchi"
+      ],
+      "comment": "Barbecue coréen.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Jjajangmyeon",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Pâte de haricots noirs",
+        "Porc",
+        "Courgettes",
+        "Oignons"
+      ],
+      "comment": "Nouilles sauce noire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Kimchi Jjigae",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Kimchi",
+      "ingredients": [
+        "Porc",
+        "Tofu",
+        "Oignons verts",
+        "Gochugaru"
+      ],
+      "comment": "Ragoût de kimchi épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sundubu Jjigae",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tofu soyeux",
+      "ingredients": [
+        "Fruits de mer",
+        "Œuf",
+        "Gochugaru",
+        "Oignons verts"
+      ],
+      "comment": "Ragoût de tofu épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Japchae",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Vermicelles de patate douce",
+      "ingredients": [
+        "Bœuf",
+        "Légumes",
+        "Sauce soja",
+        "Sésame",
+        "Sucre"
+      ],
+      "comment": "Nouilles sautées coréennes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tteokbokki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tteok",
+      "ingredients": [
+        "Gochujang",
+        "Sucre",
+        "Fish cakes",
+        "Oignons verts"
+      ],
+      "comment": "Gâteaux de riz épicés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Kimbap",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Nori",
+        "Légumes",
+        "Œuf",
+        "Bœuf",
+        "Pickles"
+      ],
+      "comment": "Rouleau coréen, cousin du maki.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nasi Goreng",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Kecap manis",
+        "Œuf",
+        "Crevettes",
+        "Poulet",
+        "Cacahuètes"
+      ],
+      "comment": "Riz frit indonésien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mie Goreng",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Kecap manis",
+        "Légumes",
+        "Œuf",
+        "Poulet"
+      ],
+      "comment": "Nouilles sautées indonésiennes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rendang de Bœuf",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Lait de coco",
+        "Épices rendang",
+        "Citronnelle",
+        "Galanga"
+      ],
+      "comment": "Curry sec indonésien, intense.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Satay Ayam",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce cacahuète",
+        "Kecap manis",
+        "Curcuma",
+        "Citronnelle"
+      ],
+      "comment": "Brochettes sauce cacahuète.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nasi Lemak",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Lait de coco",
+        "Sambal",
+        "Anchois",
+        "Œuf",
+        "Concombre"
+      ],
+      "comment": "Petit-déjeuner malaisien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Laksa",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte laksa",
+        "Crevettes",
+        "Tofu puffs"
+      ],
+      "comment": "Soupe épicée malaisienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Char Kway Teow",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles plates",
+      "ingredients": [
+        "Crevettes",
+        "Saucisse chinoise",
+        "Œufs",
+        "Germes de soja"
+      ],
+      "comment": "Nouilles sautées de Penang.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bun Bo Hue",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Nouilles épaisses",
+        "Bouillon épicé",
+        "Citronnelle",
+        "Pâte de crevettes"
+      ],
+      "comment": "Soupe vietnamienne de Hue.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet au Gingembre Singapourien",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Gingembre",
+        "Sauce soja",
+        "Vin de Shaoxing",
+        "Oignons verts"
+      ],
+      "comment": "Poulet Hainanais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz au Poulet Hainanais",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Riz au bouillon",
+        "Gingembre",
+        "Sauce soja",
+        "Huile de sésame"
+      ],
+      "comment": "Classique singapourien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Singapourien aux Nouilles",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Curry",
+        "Crevettes",
+        "Porc",
+        "Œufs",
+        "Germes de soja"
+      ],
+      "comment": "Singapore noodles.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bao Buns au Porc",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Pain bao",
+        "Porc braisé",
+        "Pickles",
+        "Coriandre",
+        "Cacahuètes"
+      ],
+      "comment": "Gua bao taiwanais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Rendang Malaisien",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Noix de coco râpée",
+        "Épices",
+        "Citronnelle",
+        "Feuilles de combava"
+      ],
+      "comment": "Version malaisienne du rendang.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mee Siam",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Vermicelles",
+      "ingredients": [
+        "Sauce épicée sucrée",
+        "Crevettes",
+        "Tofu",
+        "Œuf dur"
+      ],
+      "comment": "Nouilles singapouriennes aigres-douces.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Khao Soi",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Poulet",
+        "Lait de coco",
+        "Curry",
+        "Échalotes frites"
+      ],
+      "comment": "Curry de nouilles du Nord Thaïlande.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mochi",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Riz gluant",
+      "ingredients": [
+        "Sucre",
+        "Fécule",
+        "Pâte de haricots rouges"
+      ],
+      "comment": "Gâteau de riz japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Mochi Glacé",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Glace",
+      "ingredients": [
+        "Pâte de riz",
+        "Matcha",
+        "Fraise",
+        "Mangue"
+      ],
+      "comment": "Glace enrobée de mochi.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dorayaki",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à pancake",
+      "ingredients": [
+        "Pâte de haricots rouges",
+        "Miel"
+      ],
+      "comment": "Pancakes japonais fourrés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Taiyaki",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pâte à gaufre",
+      "ingredients": [
+        "Pâte de haricots rouges",
+        "Crème pâtissière"
+      ],
+      "comment": "Gaufre en forme de poisson.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Perles de Coco",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Lait de coco",
+      "ingredients": [
+        "Fécule de tapioca",
+        "Sucre",
+        "Eau de rose"
+      ],
+      "comment": "Dessert thaï en bouchées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Gluant à la Mangue",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Riz gluant",
+      "ingredients": [
+        "Lait de coco",
+        "Mangue",
+        "Sucre",
+        "Sésame"
+      ],
+      "comment": "Khao niao mamuang, classique thaï.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Che Ba Mau",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Haricots",
+      "ingredients": [
+        "Lait de coco",
+        "Gelée",
+        "Glace pilée"
+      ],
+      "comment": "Dessert vietnamien tricolore.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Banana Fritters",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Bananes",
+      "ingredients": [
+        "Pâte à beignet",
+        "Sucre",
+        "Sésame"
+      ],
+      "comment": "Beignets de banane asiatiques.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gulab Jamun",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Lait en poudre",
+      "ingredients": [
+        "Sirop de sucre",
+        "Cardamome",
+        "Eau de rose"
+      ],
+      "comment": "Beignets indiens au sirop.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Kulfi",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Lait",
+      "ingredients": [
+        "Cardamome",
+        "Pistaches",
+        "Safran",
+        "Sucre"
+      ],
+      "comment": "Glace indienne dense.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rasgulla",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Paneer",
+      "ingredients": [
+        "Sirop de sucre",
+        "Eau de rose",
+        "Cardamome"
+      ],
+      "comment": "Boulettes de fromage au sirop.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Kheer",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Lait",
+        "Cardamome",
+        "Pistaches",
+        "Raisins secs"
+      ],
+      "comment": "Riz au lait indien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bingsu",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Glace pilée",
+      "ingredients": [
+        "Lait concentré",
+        "Fruits",
+        "Tteok",
+        "Haricots rouges"
+      ],
+      "comment": "Dessert glacé coréen.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tang Yuan",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Riz gluant",
+      "ingredients": [
+        "Sésame noir",
+        "Cacahuètes",
+        "Bouillon sucré au gingembre"
+      ],
+      "comment": "Boulettes chinoises sucrées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Taro Balls",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Taro",
+      "ingredients": [
+        "Patate douce",
+        "Fécule",
+        "Sirop sucré"
+      ],
+      "comment": "Dessert taiwanais coloré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Banh Mi Nem",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Baguette",
+      "ingredients": [
+        "Nems",
+        "Pickles",
+        "Coriandre",
+        "Piment"
+      ],
+      "comment": "Mini sandwich au nem.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Salade de Poulet Chinoise",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Chou",
+        "Carottes",
+        "Sésame",
+        "Sauce soja",
+        "Gingembre"
+      ],
+      "comment": "Croquante et parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochettes Yakitori en Entrée",
+      "season": "mixte",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce yakitori",
+        "Oignons verts"
+      ],
+      "comment": "2-3 brochettes en entrée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canard à l'Orange Asiatique",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Orange",
+        "Sauce soja",
+        "Miel",
+        "Gingembre",
+        "Anis étoilé"
+      ],
+      "comment": "Fusion franco-asiatique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Porc Char Siu",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Miel",
+        "Sauce hoisin",
+        "Sauce soja",
+        "Cinq épices"
+      ],
+      "comment": "Porc laqué cantonais rouge.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crevettes au Miel et Sésame",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Miel",
+        "Sésame",
+        "Ail",
+        "Sauce soja"
+      ],
+      "comment": "Crevettes caramélisées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet au Sésame",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sésame",
+        "Sauce soja",
+        "Miel",
+        "Gingembre"
+      ],
+      "comment": "Croustillant et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Rendang Sec",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Lait de coco",
+        "Galanga",
+        "Citronnelle",
+        "Noix de coco râpée"
+      ],
+      "comment": "Mijoté jusqu'à absorption.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Lemongrass",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Citronnelle",
+        "Piment",
+        "Ail",
+        "Nuoc mam"
+      ],
+      "comment": "Parfumé à la citronnelle.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon Teriyaki",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Sauce teriyaki",
+        "Sésame",
+        "Riz"
+      ],
+      "comment": "Poisson laqué japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Karaage",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Sauce soja",
+        "Gingembre",
+        "Ail",
+        "Fécule"
+      ],
+      "comment": "Poulet frit japonais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tofu Général Tao",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tofu",
+      "ingredients": [
+        "Sauce soja",
+        "Miel",
+        "Piment",
+        "Sésame"
+      ],
+      "comment": "Version végétarienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry de Crevettes Thaï",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Lait de coco",
+        "Pâte curry rouge",
+        "Basilic thaï"
+      ],
+      "comment": "Rapide et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Nouilles Singapour",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Vermicelles",
+      "ingredients": [
+        "Curry",
+        "Crevettes",
+        "Porc",
+        "Poivrons"
+      ],
+      "comment": "Vermicelles au curry.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Porc Tonkatsu Curry",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Panko",
+        "Curry japonais",
+        "Riz"
+      ],
+      "comment": "Porc pané au curry.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Lok Lak",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Poivre Kampot",
+        "Citron vert",
+        "Sauce soja",
+        "Oignons"
+      ],
+      "comment": "Spécialité cambodgienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet Hainan",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Riz parfumé",
+        "Gingembre",
+        "Sauce soja",
+        "Huile de sésame"
+      ],
+      "comment": "Poulet poché, riz au bouillon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Riz Frit au Kimchi",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz",
+      "ingredients": [
+        "Kimchi",
+        "Œuf",
+        "Porc",
+        "Gochujang"
+      ],
+      "comment": "Kimchi bokkeumbap coréen.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Curry Katsu Poulet",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Panko",
+        "Curry japonais",
+        "Riz"
+      ],
+      "comment": "Poulet pané au curry.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Yakisoba",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Porc",
+        "Chou",
+        "Carottes",
+        "Sauce yakisoba"
+      ],
+      "comment": "Nouilles sautées japonaises.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soupe de Nouilles au Porc",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Nouilles",
+      "ingredients": [
+        "Porc",
+        "Bouillon",
+        "Légumes",
+        "Oignons verts"
+      ],
+      "comment": "Réconfortante et simple.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet aux Champignons Chinois",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Champignons shiitake",
+        "Sauce soja",
+        "Gingembre",
+        "Oignons verts"
+      ],
+      "comment": "Saveurs umami.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poisson à la Vapeur Chinois",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Gingembre",
+        "Oignons verts",
+        "Sauce soja",
+        "Huile chaude"
+      ],
+      "comment": "Délicat et sain.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dak Galbi",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Gochujang",
+        "Chou",
+        "Patate douce",
+        "Oignons"
+      ],
+      "comment": "Poulet épicé sauté coréen.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Calamars Sautés au Basilic",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Calamars",
+      "ingredients": [
+        "Basilic thaï",
+        "Piment",
+        "Ail",
+        "Sauce poisson"
+      ],
+      "comment": "Pad krapao pla meuk.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bœuf Sauté Thaï au Piment",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Piment",
+        "Ail",
+        "Sauce huître",
+        "Haricots verts"
+      ],
+      "comment": "Neua pad prik, épicé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    }
+  ],
+  "exportedAt": "2026-03-30T15:45:13.892Z"
+}

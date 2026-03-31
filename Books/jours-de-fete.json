@@ -1,0 +1,3940 @@
+{
+  "bookName": "Jour de fête",
+  "bookDescription": "Recettes festives pour les grandes occasions : Noël, Nouvel An, Pâques, mariages...",
+  "recipes": [
+    {
+      "name": "Foie Gras Mi-Cuit",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Sel",
+        "Poivre",
+        "Porto",
+        "Armagnac"
+      ],
+      "comment": "Terrine maison pour les fêtes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Foie Gras Poêlé aux Figues",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Figues",
+        "Vinaigre balsamique",
+        "Miel",
+        "Fleur de sel"
+      ],
+      "comment": "Chaud et caramélisé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Foie Gras aux Pommes",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Pommes",
+        "Calvados",
+        "Beurre",
+        "Pain d'épices"
+      ],
+      "comment": "Accord sucré-salé normand.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Foie Gras au Torchon",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Sauternes",
+        "Sel",
+        "Poivre blanc"
+      ],
+      "comment": "Poché au torchon, texture soyeuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Médaillons de Foie Gras au Sauternes",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Sauternes",
+        "Gelée",
+        "Pain brioché"
+      ],
+      "comment": "Élégant et raffiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crème Brûlée au Foie Gras",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Crème",
+        "Œufs",
+        "Porto",
+        "Sucre"
+      ],
+      "comment": "Entrée originale et festive.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Plateau de Fruits de Mer",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Fruits de mer",
+      "ingredients": [
+        "Huîtres",
+        "Crevettes",
+        "Bulots",
+        "Langoustines",
+        "Tourteau"
+      ],
+      "comment": "Grand classique des réveillons.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Huîtres Gratinées",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Huîtres",
+      "ingredients": [
+        "Beurre",
+        "Échalotes",
+        "Crème",
+        "Chapelure"
+      ],
+      "comment": "Chaudes et fondantes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Huîtres au Champagne",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Huîtres",
+      "ingredients": [
+        "Champagne",
+        "Échalotes",
+        "Crème"
+      ],
+      "comment": "Sauce au champagne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Huîtres Chaudes au Sabayon",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Huîtres",
+      "ingredients": [
+        "Œufs",
+        "Vin blanc",
+        "Ciboulette"
+      ],
+      "comment": "Gratinées au sabayon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Coquilles Saint-Jacques Gratinées",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Beurre",
+        "Ail",
+        "Persil",
+        "Chapelure",
+        "Gruyère"
+      ],
+      "comment": "Dans leur coquille.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Jacques à la Truffe",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Truffe",
+        "Beurre",
+        "Crème",
+        "Ciboulette"
+      ],
+      "comment": "Luxe absolu.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carpaccio de Saint-Jacques",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Huile de truffe",
+        "Citron",
+        "Fleur de sel"
+      ],
+      "comment": "Crues et délicates.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Saint-Jacques",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Agrumes",
+        "Aneth",
+        "Huile d'olive"
+      ],
+      "comment": "Fraîcheur marine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Langoustines Rôties",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Langoustines",
+      "ingredients": [
+        "Beurre",
+        "Ail",
+        "Persil",
+        "Citron"
+      ],
+      "comment": "Simplement parfaites.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bisque de Homard",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Homard",
+      "ingredients": [
+        "Crème",
+        "Cognac",
+        "Tomates",
+        "Aromates"
+      ],
+      "comment": "Velouté intense.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cassolette de Fruits de Mer",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Fruits de mer",
+      "ingredients": [
+        "Crevettes",
+        "Moules",
+        "Saint-Jacques",
+        "Crème",
+        "Vin blanc"
+      ],
+      "comment": "Sauce crémeuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cocktail de Crevettes",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crevettes",
+      "ingredients": [
+        "Sauce cocktail",
+        "Avocat",
+        "Salade"
+      ],
+      "comment": "Rétro et efficace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Verrines de Crabe",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Crabe",
+      "ingredients": [
+        "Avocat",
+        "Pamplemousse",
+        "Mayonnaise",
+        "Ciboulette"
+      ],
+      "comment": "Élégantes et fraîches.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Saumon à l'Aneth",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Aneth",
+        "Citron",
+        "Câpres",
+        "Échalotes"
+      ],
+      "comment": "Frais et raffiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon Fumé et ses Blinis",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon fumé",
+      "ingredients": [
+        "Blinis",
+        "Crème fraîche",
+        "Aneth",
+        "Citron"
+      ],
+      "comment": "Classique des fêtes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gravlax de Saumon",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Aneth",
+        "Sucre",
+        "Sel",
+        "Vodka"
+      ],
+      "comment": "Mariné 48h, saveur intense.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Millefeuille de Saumon",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon fumé",
+      "ingredients": [
+        "Cream cheese",
+        "Avocat",
+        "Citron"
+      ],
+      "comment": "En couches élégantes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Verrines aux Deux Saumons",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Saumon frais",
+        "Saumon fumé",
+        "Crème",
+        "Aneth"
+      ],
+      "comment": "Bicolore et savoureuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Verrines de Betterave au Chèvre",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Betterave",
+      "ingredients": [
+        "Chèvre frais",
+        "Noix",
+        "Miel"
+      ],
+      "comment": "Colorée et festive.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Verrines de Mousse d'Avocat",
+      "season": "ete",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Avocat",
+      "ingredients": [
+        "Crevettes",
+        "Pamplemousse",
+        "Crème"
+      ],
+      "comment": "Fraîche et onctueuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aspic de Volaille",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Gelée",
+        "Légumes",
+        "Herbes"
+      ],
+      "comment": "Classique rétro élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Terrine de Saumon",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Crème",
+        "Œufs",
+        "Aneth",
+        "Citron"
+      ],
+      "comment": "Froide avec salade.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Terrine de Saint-Jacques",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Crème",
+        "Poireaux",
+        "Safran"
+      ],
+      "comment": "Délicate et raffinée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soufflé au Fromage",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Fromage",
+      "ingredients": [
+        "Gruyère",
+        "Œufs",
+        "Beurre",
+        "Farine"
+      ],
+      "comment": "Servir immédiatement !",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soufflé au Homard",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Homard",
+      "ingredients": [
+        "Œufs",
+        "Béchamel",
+        "Cognac"
+      ],
+      "comment": "Luxueux et aérien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Châtaignes au Foie Gras",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Châtaignes",
+      "ingredients": [
+        "Foie gras",
+        "Crème",
+        "Bouillon"
+      ],
+      "comment": "Onctueux et festif.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cappuccino de Champignons",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Champignons",
+      "ingredients": [
+        "Crème",
+        "Mousse de lait",
+        "Truffe"
+      ],
+      "comment": "Présentation spectaculaire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Velouté de Potiron au Foie Gras",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Potiron",
+      "ingredients": [
+        "Foie gras",
+        "Crème",
+        "Noisettes"
+      ],
+      "comment": "Douceur automnale.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Consommé de Volaille aux Quenelles",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Volaille",
+      "ingredients": [
+        "Bouillon",
+        "Quenelles",
+        "Légumes",
+        "Herbes"
+      ],
+      "comment": "Clair et élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Feuilletés aux Escargots",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Escargots",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Beurre persillé",
+        "Ail"
+      ],
+      "comment": "En croûte dorée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Vol-au-Vent aux Fruits de Mer",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Fruits de mer",
+      "ingredients": [
+        "Vol-au-vent",
+        "Crevettes",
+        "Champignons",
+        "Sauce crème"
+      ],
+      "comment": "Classique élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bouchées à la Reine",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Vol-au-vent",
+        "Champignons",
+        "Quenelles",
+        "Sauce blanche"
+      ],
+      "comment": "Tradition française.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Aumônières au Saumon",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Crêpe",
+        "Crème",
+        "Aneth",
+        "Ciboulette"
+      ],
+      "comment": "Petits balluchons élégants.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cromesquis de Foie Gras",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Panure",
+        "Chutney de figues"
+      ],
+      "comment": "Foie gras pané chaud.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Médaillons de Langouste",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Langouste",
+      "ingredients": [
+        "Mayonnaise",
+        "Avocat",
+        "Agrumes"
+      ],
+      "comment": "Queue de langouste en médaillons.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Œufs Brouillés à la Truffe",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Truffe",
+        "Beurre",
+        "Crème"
+      ],
+      "comment": "Luxe simple et efficace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Caviar sur Blinis",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Caviar",
+      "ingredients": [
+        "Blinis",
+        "Crème fraîche",
+        "Ciboulette"
+      ],
+      "comment": "Le summum du luxe.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tartare de Bœuf au Caviar",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Caviar",
+        "Échalotes",
+        "Câpres",
+        "Huile de truffe"
+      ],
+      "comment": "Accord terre-mer luxueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chapon Rôti aux Marrons",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Chapon",
+      "ingredients": [
+        "Marrons",
+        "Beurre",
+        "Thym",
+        "Jus"
+      ],
+      "comment": "Roi du repas de Noël.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chapon Farci",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Chapon",
+      "ingredients": [
+        "Farce",
+        "Marrons",
+        "Foie gras",
+        "Truffe"
+      ],
+      "comment": "Farce luxueuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dinde aux Marrons",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Marrons",
+        "Chair à saucisse",
+        "Oignons",
+        "Herbes"
+      ],
+      "comment": "Thanksgiving et Noël.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dinde Farcie aux Fruits Secs",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Pruneaux",
+        "Abricots",
+        "Amandes",
+        "Farce"
+      ],
+      "comment": "Sucré-salé festif.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poularde aux Morilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poularde",
+      "ingredients": [
+        "Morilles",
+        "Crème",
+        "Vin jaune",
+        "Échalotes"
+      ],
+      "comment": "Sauce crémée aux champignons nobles.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poularde Demi-Deuil",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poularde",
+      "ingredients": [
+        "Truffe",
+        "Beurre",
+        "Bouillon",
+        "Légumes"
+      ],
+      "comment": "Truffe sous la peau.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pintade aux Cèpes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pintade",
+      "ingredients": [
+        "Cèpes",
+        "Crème",
+        "Persil",
+        "Échalotes"
+      ],
+      "comment": "Saveurs d'automne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pintade au Chou",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pintade",
+      "ingredients": [
+        "Chou",
+        "Lardons",
+        "Carottes",
+        "Vin blanc"
+      ],
+      "comment": "Braisée et fondante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canard à l'Orange",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Oranges",
+        "Grand Marnier",
+        "Miel",
+        "Vinaigre"
+      ],
+      "comment": "Classique français.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canard aux Cerises",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Cerises",
+        "Porto",
+        "Vinaigre",
+        "Poivre"
+      ],
+      "comment": "Sucré-salé fruité.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canard aux Navets",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Navets",
+        "Miel",
+        "Bouillon",
+        "Thym"
+      ],
+      "comment": "Légumes confits.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Magret de Canard au Foie Gras",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Foie gras",
+        "Porto",
+        "Figues"
+      ],
+      "comment": "Deux fois canard.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Magret en Croûte de Sel",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Gros sel",
+        "Herbes",
+        "Épices"
+      ],
+      "comment": "Cuisson spectaculaire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Oie Rôtie",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Oie",
+      "ingredients": [
+        "Pommes",
+        "Marrons",
+        "Pruneaux",
+        "Graisse d'oie"
+      ],
+      "comment": "Traditionnelle alsacienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cailles aux Raisins",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cailles",
+      "ingredients": [
+        "Raisins",
+        "Cognac",
+        "Crème",
+        "Lardons"
+      ],
+      "comment": "Gibier délicat.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cailles Farcies au Foie Gras",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Cailles",
+      "ingredients": [
+        "Foie gras",
+        "Raisins",
+        "Armagnac"
+      ],
+      "comment": "Luxe et finesse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Faisan aux Pommes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Faisan",
+      "ingredients": [
+        "Pommes",
+        "Calvados",
+        "Crème",
+        "Lardons"
+      ],
+      "comment": "Gibier à plumes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Perdrix aux Choux",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Perdrix",
+      "ingredients": [
+        "Chou",
+        "Lardons",
+        "Carottes",
+        "Genièvre"
+      ],
+      "comment": "Gibier traditionnel.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Suprême de Volaille aux Écrevisses",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Écrevisses",
+        "Sauce Nantua",
+        "Crème"
+      ],
+      "comment": "Élégance classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Bœuf en Croûte",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Duxelles",
+        "Foie gras",
+        "Moutarde"
+      ],
+      "comment": "Bœuf Wellington.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Bœuf Rossini",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Foie gras",
+        "Truffe",
+        "Madère",
+        "Croûtons"
+      ],
+      "comment": "Tournedos luxueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Bœuf aux Morilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Morilles",
+        "Crème",
+        "Cognac",
+        "Échalotes"
+      ],
+      "comment": "Sauce forestière noble.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Côte de Bœuf Grillée",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Beurre",
+        "Thym",
+        "Ail",
+        "Fleur de sel"
+      ],
+      "comment": "À partager, rosée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chateaubriand Sauce Béarnaise",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Sauce béarnaise",
+        "Estragon",
+        "Échalotes"
+      ],
+      "comment": "Pièce noble.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rôti de Bœuf aux Légumes Anciens",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Panais",
+        "Topinambours",
+        "Carottes",
+        "Jus"
+      ],
+      "comment": "Rôti traditionnel.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carré d'Agneau en Croûte d'Herbes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Herbes",
+        "Chapelure",
+        "Moutarde",
+        "Ail"
+      ],
+      "comment": "Croûte parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carré d'Agneau Rôti",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Thym",
+        "Romarin",
+        "Ail",
+        "Jus"
+      ],
+      "comment": "Rosé et juteux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gigot d'Agneau de 7 Heures",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Ail",
+        "Thym",
+        "Vin blanc",
+        "Légumes"
+      ],
+      "comment": "Confit et fondant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gigot d'Agneau Pascal",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Ail",
+        "Romarin",
+        "Flageolets",
+        "Jus"
+      ],
+      "comment": "Tradition de Pâques.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Selle d'Agneau",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Herbes",
+        "Ail",
+        "Huile d'olive",
+        "Jus"
+      ],
+      "comment": "Morceau noble.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Épaule d'Agneau Confite",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Ail",
+        "Citron confit",
+        "Épices",
+        "Légumes"
+      ],
+      "comment": "Fondante et parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Souris d'Agneau Braisée",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Vin rouge",
+        "Romarin",
+        "Légumes",
+        "Bouillon"
+      ],
+      "comment": "Se détache à la fourchette.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ris de Veau aux Morilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Morilles",
+        "Crème",
+        "Vin jaune",
+        "Porto"
+      ],
+      "comment": "Gastronomie française.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ris de Veau Braisé",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Beurre",
+        "Jus",
+        "Légumes",
+        "Herbes"
+      ],
+      "comment": "Morceau d'exception.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Carré de Veau aux Girolles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Girolles",
+        "Crème",
+        "Persil",
+        "Échalotes"
+      ],
+      "comment": "Viande tendre, champignons.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rôti de Veau Orloff",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Champignons",
+        "Jambon",
+        "Béchamel",
+        "Gruyère"
+      ],
+      "comment": "Farci et gratiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Grenadins de Veau",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Crème",
+        "Champignons",
+        "Vin blanc"
+      ],
+      "comment": "Médaillons tendres.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet Mignon en Croûte",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Champignons",
+        "Moutarde"
+      ],
+      "comment": "Wellington version porc.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cochon de Lait Rôti",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Herbes",
+        "Ail",
+        "Huile",
+        "Jus"
+      ],
+      "comment": "Spectaculaire, peau croustillante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Rôti de Porc Farci aux Pruneaux",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Porc",
+      "ingredients": [
+        "Pruneaux",
+        "Armagnac",
+        "Crème"
+      ],
+      "comment": "Sud-Ouest gourmand.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Homard Thermidor",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Homard",
+      "ingredients": [
+        "Crème",
+        "Moutarde",
+        "Gruyère",
+        "Cognac"
+      ],
+      "comment": "Gratiné luxueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Homard Grillé au Beurre",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Homard",
+      "ingredients": [
+        "Beurre",
+        "Ail",
+        "Persil",
+        "Citron"
+      ],
+      "comment": "Simple et sublime.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Homard à l'Américaine",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Homard",
+      "ingredients": [
+        "Tomates",
+        "Cognac",
+        "Estragon",
+        "Vin blanc"
+      ],
+      "comment": "Sauce tomate parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Langouste Grillée",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Langouste",
+      "ingredients": [
+        "Beurre",
+        "Citron",
+        "Herbes"
+      ],
+      "comment": "Queue grillée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Langouste à la Vanille",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Langouste",
+      "ingredients": [
+        "Vanille",
+        "Beurre",
+        "Crème",
+        "Champagne"
+      ],
+      "comment": "Accord original.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tourteau Farci",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Tourteau",
+      "ingredients": [
+        "Chair de crabe",
+        "Chapelure",
+        "Herbes",
+        "Crème"
+      ],
+      "comment": "Gratiné dans sa carapace.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Jacques au Champagne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Champagne",
+        "Crème",
+        "Échalotes",
+        "Ciboulette"
+      ],
+      "comment": "Sauce festive.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Jacques aux Truffes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Truffe",
+        "Beurre",
+        "Crème"
+      ],
+      "comment": "Le luxe absolu.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Coquilles Saint-Jacques à la Provençale",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Ail",
+        "Persil",
+        "Tomates",
+        "Huile d'olive"
+      ],
+      "comment": "Saveurs du Sud.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Noix de Saint-Jacques Rôties",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Beurre",
+        "Citron",
+        "Ciboulette"
+      ],
+      "comment": "Simplement snackées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bar en Croûte de Sel",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bar",
+      "ingredients": [
+        "Gros sel",
+        "Blanc d'œuf",
+        "Herbes"
+      ],
+      "comment": "Spectaculaire à table.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bar Grillé Fenouil",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bar",
+      "ingredients": [
+        "Fenouil",
+        "Pastis",
+        "Huile d'olive"
+      ],
+      "comment": "Flambé au pastis.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Turbot Rôti",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Turbot",
+      "ingredients": [
+        "Beurre",
+        "Citron",
+        "Câpres",
+        "Herbes"
+      ],
+      "comment": "Poisson noble par excellence.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Turbot Sauce Hollandaise",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Turbot",
+      "ingredients": [
+        "Sauce hollandaise",
+        "Citron",
+        "Asperges"
+      ],
+      "comment": "Accord classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sole Meunière",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Sole",
+      "ingredients": [
+        "Beurre",
+        "Citron",
+        "Persil"
+      ],
+      "comment": "Classique indémodable.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filets de Sole aux Crevettes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Sole",
+      "ingredients": [
+        "Crevettes",
+        "Crème",
+        "Vin blanc",
+        "Champignons"
+      ],
+      "comment": "Sauce Normande.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon en Croûte Feuilletée",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Épinards",
+        "Riz",
+        "Œufs"
+      ],
+      "comment": "Koulibiac russe.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon au Champagne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Champagne",
+        "Crème",
+        "Échalotes"
+      ],
+      "comment": "Sauce festive.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saumon à l'Oseille",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Oseille",
+        "Crème",
+        "Beurre"
+      ],
+      "comment": "Classique Troisgros.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lotte à l'Armoricaine",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Tomates",
+        "Cognac",
+        "Échalotes",
+        "Estragon"
+      ],
+      "comment": "Queue de lotte en sauce.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lotte aux Petits Légumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Légumes primeurs",
+        "Beurre blanc",
+        "Herbes"
+      ],
+      "comment": "Printanier et élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bouillabaisse",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Poissons",
+      "ingredients": [
+        "Rascasse",
+        "Congre",
+        "Safran",
+        "Rouille",
+        "Croûtons"
+      ],
+      "comment": "Marseillaise authentique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Choucroute de la Mer",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poissons",
+      "ingredients": [
+        "Choucroute",
+        "Saumon",
+        "Haddock",
+        "Beurre blanc"
+      ],
+      "comment": "Version marine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Blanquette de Lotte",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Crème",
+        "Champignons",
+        "Carottes",
+        "Vin blanc"
+      ],
+      "comment": "Façon blanquette.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pâté en Croûte",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Viandes",
+      "ingredients": [
+        "Porc",
+        "Veau",
+        "Foie gras",
+        "Pistaches",
+        "Pâte"
+      ],
+      "comment": "Charcuterie noble.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tourte au Foie Gras",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Champignons",
+        "Truffe"
+      ],
+      "comment": "Luxueuse et croustillante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tourte aux Ris de Veau",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Ris de veau",
+        "Morilles",
+        "Crème",
+        "Pâte feuilletée"
+      ],
+      "comment": "Gastronomique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Feuilleté de Bœuf aux Champignons",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Pâte feuilletée",
+        "Champignons",
+        "Oignons",
+        "Crème"
+      ],
+      "comment": "Beef pie à la française.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Croûte aux Morilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Morilles",
+      "ingredients": [
+        "Vol-au-vent",
+        "Crème",
+        "Vin jaune"
+      ],
+      "comment": "Spécialité jurassienne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto au Champagne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Champagne",
+        "Parmesan",
+        "Échalotes",
+        "Beurre"
+      ],
+      "comment": "Festif et élégant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto à la Truffe",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Truffe",
+        "Parmesan",
+        "Beurre",
+        "Bouillon"
+      ],
+      "comment": "Luxe italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto au Safran",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Safran",
+        "Parmesan",
+        "Vin blanc",
+        "Bouillon"
+      ],
+      "comment": "Risotto alla milanese.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto aux Saint-Jacques",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Saint-Jacques",
+        "Parmesan",
+        "Vin blanc",
+        "Ciboulette"
+      ],
+      "comment": "Marin et crémeux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Risotto au Homard",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Riz arborio",
+      "ingredients": [
+        "Homard",
+        "Bisque",
+        "Parmesan",
+        "Cognac"
+      ],
+      "comment": "Très grand.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Cardons à la Moelle",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Cardons",
+      "ingredients": [
+        "Moelle",
+        "Parmesan",
+        "Béchamel"
+      ],
+      "comment": "Spécialité lyonnaise de Noël.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin de Queues d'Écrevisses",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Écrevisses",
+      "ingredients": [
+        "Sauce Nantua",
+        "Crème",
+        "Gruyère"
+      ],
+      "comment": "Luxe crustacé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gratin Dauphinois à la Truffe",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Truffe",
+        "Crème",
+        "Lait",
+        "Ail"
+      ],
+      "comment": "Version luxueuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pommes de Terre Sarladaises",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Graisse de canard",
+        "Ail",
+        "Persil"
+      ],
+      "comment": "Accompagnement du Sud-Ouest.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Purée de Pommes de Terre Truffée",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pommes de terre",
+      "ingredients": [
+        "Truffe",
+        "Beurre",
+        "Crème"
+      ],
+      "comment": "Purée Robuchon aux truffes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cassoulet de Fête",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Haricots blancs",
+      "ingredients": [
+        "Confit de canard",
+        "Saucisses de Toulouse",
+        "Agneau"
+      ],
+      "comment": "Version généreuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Choucroute Royale",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Choucroute",
+      "ingredients": [
+        "Foie gras",
+        "Saucisses",
+        "Lard",
+        "Vin blanc"
+      ],
+      "comment": "Avec foie gras.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pot-au-Feu de Fête",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Os à moelle",
+        "Légumes",
+        "Queue de bœuf",
+        "Bouquet garni"
+      ],
+      "comment": "Version luxueuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poule au Pot Henri IV",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poule",
+      "ingredients": [
+        "Légumes",
+        "Farce",
+        "Bouillon",
+        "Riz"
+      ],
+      "comment": "Farcie et pochée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Baeckeoffe de Fête",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Viandes",
+      "ingredients": [
+        "Bœuf",
+        "Agneau",
+        "Porc",
+        "Pommes de terre",
+        "Riesling"
+      ],
+      "comment": "Potée alsacienne au four.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Tagliatelles aux Truffes",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Tagliatelles",
+      "ingredients": [
+        "Truffe",
+        "Beurre",
+        "Parmesan",
+        "Crème"
+      ],
+      "comment": "Luxe italien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Ravioles aux Saint-Jacques",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Ravioles",
+      "ingredients": [
+        "Saint-Jacques",
+        "Crème",
+        "Ciboulette"
+      ],
+      "comment": "Savoureuses et délicates.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lasagnes au Homard",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pâtes",
+      "ingredients": [
+        "Homard",
+        "Bisque",
+        "Crème",
+        "Parmesan"
+      ],
+      "comment": "Festives et luxueuses.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Raviolis au Foie Gras",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pâtes fraîches",
+      "ingredients": [
+        "Foie gras",
+        "Bouillon",
+        "Truffe"
+      ],
+      "comment": "En bouillon clair.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lentilles aux Cotechino",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Lentilles",
+      "ingredients": [
+        "Cotechino",
+        "Carottes",
+        "Oignons"
+      ],
+      "comment": "Tradition italienne du Nouvel An.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Osso Buco alla Milanese",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Jarret",
+        "Tomates",
+        "Gremolata",
+        "Risotto"
+      ],
+      "comment": "Avec risotto safran.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Timbale de Macaroni",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Macaroni",
+      "ingredients": [
+        "Foie gras",
+        "Truffe",
+        "Champignons",
+        "Pâte"
+      ],
+      "comment": "Classique Belle Époque.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Vol-au-Vent Financière",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Vol-au-vent",
+      "ingredients": [
+        "Ris de veau",
+        "Champignons",
+        "Quenelles",
+        "Crêtes"
+      ],
+      "comment": "Garniture riche.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Chou Farci",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Chou",
+      "ingredients": [
+        "Farce",
+        "Lardons",
+        "Carottes",
+        "Bouillon"
+      ],
+      "comment": "Tradition rustique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Civet de Marcassin",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Marcassin",
+      "ingredients": [
+        "Vin rouge",
+        "Lardons",
+        "Champignons",
+        "Oignons"
+      ],
+      "comment": "Gibier noble.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Civet de Chevreuil",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Chevreuil",
+      "ingredients": [
+        "Vin rouge",
+        "Genièvre",
+        "Lardons",
+        "Champignons"
+      ],
+      "comment": "Grand gibier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Gigue de Chevreuil Grand Veneur",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Chevreuil",
+      "ingredients": [
+        "Sauce Grand Veneur",
+        "Groseilles",
+        "Crème"
+      ],
+      "comment": "Sauce aux fruits rouges.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Selle de Chevreuil",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Chevreuil",
+      "ingredients": [
+        "Sauce poivrade",
+        "Airelles",
+        "Champignons"
+      ],
+      "comment": "Morceau noble du gibier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sanglier en Daube",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Sanglier",
+      "ingredients": [
+        "Vin rouge",
+        "Carottes",
+        "Oignons",
+        "Herbes"
+      ],
+      "comment": "Mijoté longuement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lièvre à la Royale",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Lièvre",
+      "ingredients": [
+        "Foie gras",
+        "Truffe",
+        "Sang",
+        "Vin rouge"
+      ],
+      "comment": "Plat mythique, très élaboré.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bûche de Noël Chocolat",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Génoise",
+        "Ganache",
+        "Crème au beurre",
+        "Décors"
+      ],
+      "comment": "Traditionnelle des fêtes.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bûche de Noël Café",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Café",
+      "ingredients": [
+        "Génoise",
+        "Crème au beurre café",
+        "Décors"
+      ],
+      "comment": "Variante classique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bûche Glacée",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Glace",
+      "ingredients": [
+        "Glace vanille",
+        "Sorbet fruit",
+        "Meringue"
+      ],
+      "comment": "Légère et fraîche.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bûche Fruits Rouges",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Fruits rouges",
+      "ingredients": [
+        "Mousse",
+        "Biscuit",
+        "Gelée de fruits"
+      ],
+      "comment": "Acidulée et festive.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galette des Rois Frangipane",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pâte feuilletée",
+      "ingredients": [
+        "Frangipane",
+        "Amandes",
+        "Beurre",
+        "Fève"
+      ],
+      "comment": "Épiphanie traditionnelle.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Galette des Rois Pommes",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pâte feuilletée",
+      "ingredients": [
+        "Compote de pommes",
+        "Frangipane"
+      ],
+      "comment": "Variante fruitée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Vacherin Glacé",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Meringue",
+      "ingredients": [
+        "Glace vanille",
+        "Sorbet framboise",
+        "Chantilly"
+      ],
+      "comment": "Léger et festif.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Charlotte aux Poires",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Poires",
+      "ingredients": [
+        "Biscuits",
+        "Mousse",
+        "Chocolat"
+      ],
+      "comment": "Élégante et gourmande.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Charlotte aux Framboises",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Framboises",
+      "ingredients": [
+        "Biscuits à la cuillère",
+        "Mousse",
+        "Crème"
+      ],
+      "comment": "Fraîche et fruitée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pièce Montée Choux",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pâte à choux",
+      "ingredients": [
+        "Crème pâtissière",
+        "Caramel",
+        "Nougatine"
+      ],
+      "comment": "Croquembouche traditionnel.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Honoré",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Pâte à choux",
+      "ingredients": [
+        "Crème chiboust",
+        "Caramel",
+        "Chantilly"
+      ],
+      "comment": "Pâtisserie d'exception.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poires Belle-Hélène",
+      "season": "hiver",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Poires",
+      "ingredients": [
+        "Chocolat",
+        "Glace vanille",
+        "Amandes"
+      ],
+      "comment": "Classique revisité.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Soufflé au Grand Marnier",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Œufs",
+      "ingredients": [
+        "Grand Marnier",
+        "Sucre",
+        "Beurre"
+      ],
+      "comment": "À servir immédiatement.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Millefeuille aux Fruits",
+      "season": "ete",
+      "type": "dessert",
+      "frequency": "normal",
+      "mainIngredient": "Pâte feuilletée",
+      "ingredients": [
+        "Crème pâtissière",
+        "Fruits rouges",
+        "Fondant"
+      ],
+      "comment": "Croustillant et fruité.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Opéra",
+      "season": "mixte",
+      "type": "dessert",
+      "frequency": "rare",
+      "mainIngredient": "Chocolat",
+      "ingredients": [
+        "Biscuit Joconde",
+        "Ganache",
+        "Crème café"
+      ],
+      "comment": "Gâteau parisien mythique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pressé de Foie Gras aux Artichauts",
+      "season": "hiver",
+      "type": "entree",
+      "frequency": "rare",
+      "mainIngredient": "Foie gras",
+      "ingredients": [
+        "Artichauts",
+        "Gelée",
+        "Truffe"
+      ],
+      "comment": "Terrine élégante.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Suprême de Pintade aux Marrons",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Pintade",
+      "ingredients": [
+        "Marrons",
+        "Crème",
+        "Cognac",
+        "Thym"
+      ],
+      "comment": "Festif et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canard aux Épices",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canard",
+      "ingredients": [
+        "Cinq épices",
+        "Miel",
+        "Sauce soja",
+        "Gingembre"
+      ],
+      "comment": "Influence asiatique.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Faisan en Cocotte",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Faisan",
+      "ingredients": [
+        "Champignons",
+        "Crème",
+        "Cognac",
+        "Lardons"
+      ],
+      "comment": "Gibier en sauce.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pigeon en Crapaudine",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pigeon",
+      "ingredients": [
+        "Beurre",
+        "Herbes",
+        "Ail",
+        "Jus"
+      ],
+      "comment": "Aplati et grillé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pigeon aux Petits Pois",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Pigeon",
+      "ingredients": [
+        "Petits pois",
+        "Lardons",
+        "Oignons",
+        "Laitue"
+      ],
+      "comment": "Braisé à la française.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bécasse Rôtie",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bécasse",
+      "ingredients": [
+        "Foie gras",
+        "Croûtons",
+        "Armagnac"
+      ],
+      "comment": "Roi des gibiers.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Canette aux Pêches",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Canette",
+      "ingredients": [
+        "Pêches",
+        "Miel",
+        "Vinaigre",
+        "Thym"
+      ],
+      "comment": "Sucré-salé estival.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dinde de Thanksgiving",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Dinde",
+      "ingredients": [
+        "Farce",
+        "Sauce gravy",
+        "Cranberries",
+        "Patates douces"
+      ],
+      "comment": "À l'américaine.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Poulet aux Écrevisses",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poulet",
+      "ingredients": [
+        "Écrevisses",
+        "Sauce Nantua",
+        "Crème",
+        "Cognac"
+      ],
+      "comment": "Classique lyonnais.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Bœuf au Poivre Vert",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Poivre vert",
+        "Crème",
+        "Cognac",
+        "Échalotes"
+      ],
+      "comment": "Sauce crémeuse poivrée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Bœuf Prince Albert",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Foie gras",
+        "Truffe",
+        "Madère",
+        "Pâte feuilletée"
+      ],
+      "comment": "En croûte luxueux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Entrecôte Marchand de Vin",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Vin rouge",
+        "Échalotes",
+        "Beurre",
+        "Persil"
+      ],
+      "comment": "Sauce au vin.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Pavé de Bœuf Sauce Morilles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Bœuf",
+      "ingredients": [
+        "Morilles",
+        "Crème",
+        "Vin jaune",
+        "Échalotes"
+      ],
+      "comment": "Luxe forestier.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Côte de Veau aux Champignons",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Champignons",
+        "Crème",
+        "Vin blanc",
+        "Estragon"
+      ],
+      "comment": "Tendre et parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Médaillons de Veau au Porto",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Porto",
+        "Crème",
+        "Champignons"
+      ],
+      "comment": "Sauce suave au Porto.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Noisettes d'Agneau aux Herbes",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Herbes de Provence",
+        "Ail",
+        "Huile d'olive",
+        "Jus"
+      ],
+      "comment": "Médaillons rosés.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Agneau de Pauillac Rôti",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Ail",
+        "Thym",
+        "Romarin",
+        "Jus"
+      ],
+      "comment": "AOC d'excellence.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Côtes d'Agneau Panées",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Chapelure",
+        "Herbes",
+        "Moutarde",
+        "Ail"
+      ],
+      "comment": "Croûte parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Baron d'Agneau",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Agneau",
+      "ingredients": [
+        "Ail",
+        "Romarin",
+        "Flageolets",
+        "Jus"
+      ],
+      "comment": "Pièce noble pour grande tablée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Jarret de Veau Braisé",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Légumes",
+        "Vin blanc",
+        "Tomates",
+        "Bouquet garni"
+      ],
+      "comment": "Fondant et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Paupiettes de Veau",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Veau",
+      "ingredients": [
+        "Farce",
+        "Lardons",
+        "Champignons",
+        "Crème"
+      ],
+      "comment": "Roulées et braisées.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filet de Chevreuil Sauce Airelles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Chevreuil",
+      "ingredients": [
+        "Airelles",
+        "Crème",
+        "Vin rouge",
+        "Genièvre"
+      ],
+      "comment": "Gibier noble.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Noisettes de Biche",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Biche",
+      "ingredients": [
+        "Sauce Grand Veneur",
+        "Marrons",
+        "Céleri"
+      ],
+      "comment": "Gibier délicat.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Daube de Sanglier",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Sanglier",
+      "ingredients": [
+        "Vin rouge",
+        "Lardons",
+        "Champignons",
+        "Oignons"
+      ],
+      "comment": "Mijoté puissant.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Saint-Pierre au Beurre Blanc",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saint-Pierre",
+      "ingredients": [
+        "Beurre",
+        "Échalotes",
+        "Vin blanc",
+        "Crème"
+      ],
+      "comment": "Poisson noble, sauce nantaise.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Dorade Royale au Fenouil",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Dorade",
+      "ingredients": [
+        "Fenouil",
+        "Pastis",
+        "Citron",
+        "Huile d'olive"
+      ],
+      "comment": "Méditerranéenne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Turbot au Champagne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Turbot",
+      "ingredients": [
+        "Champagne",
+        "Crème",
+        "Échalotes",
+        "Champignons"
+      ],
+      "comment": "Grand poisson, grande sauce.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Sandre au Beurre Blanc",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Sandre",
+      "ingredients": [
+        "Beurre",
+        "Échalotes",
+        "Vin blanc"
+      ],
+      "comment": "Poisson de Loire.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Brochet au Beurre Blanc",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Brochet",
+      "ingredients": [
+        "Beurre blanc",
+        "Échalotes",
+        "Vin blanc"
+      ],
+      "comment": "Classique ligérien.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Cabillaud aux Palourdes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Cabillaud",
+      "ingredients": [
+        "Palourdes",
+        "Vin blanc",
+        "Persil",
+        "Ail"
+      ],
+      "comment": "Marin et savoureux.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Lotte aux Girolles",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Lotte",
+      "ingredients": [
+        "Girolles",
+        "Crème",
+        "Persil",
+        "Échalotes"
+      ],
+      "comment": "Champignons d'automne.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Filets de Sole Normande",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Sole",
+      "ingredients": [
+        "Crevettes",
+        "Moules",
+        "Champignons",
+        "Crème"
+      ],
+      "comment": "Garniture généreuse.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Bourride Sétoise",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poisson",
+      "ingredients": [
+        "Aïoli",
+        "Pommes de terre",
+        "Bouillon",
+        "Safran"
+      ],
+      "comment": "Spécialité de Sète.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Marmite Dieppoise",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Poissons",
+      "ingredients": [
+        "Crevettes",
+        "Moules",
+        "Crème",
+        "Cidre"
+      ],
+      "comment": "Fruits de mer normands.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Écrevisses à la Nage",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Écrevisses",
+      "ingredients": [
+        "Vin blanc",
+        "Carottes",
+        "Oignons",
+        "Bouquet garni"
+      ],
+      "comment": "En court-bouillon.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Queues de Langoustines Rôties",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Langoustines",
+      "ingredients": [
+        "Beurre",
+        "Ail",
+        "Citron",
+        "Herbes"
+      ],
+      "comment": "Simplement parfaites.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Crabe Farci Antillais",
+      "season": "ete",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Crabe",
+      "ingredients": [
+        "Chair de crabe",
+        "Piment",
+        "Herbes",
+        "Citron vert"
+      ],
+      "comment": "Épicé et parfumé.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Noix de Coquilles Saint-Jacques au Curry",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Curry",
+        "Lait de coco",
+        "Coriandre"
+      ],
+      "comment": "Exotique et raffiné.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Papillote de Saumon aux Agrumes",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saumon",
+      "ingredients": [
+        "Orange",
+        "Pamplemousse",
+        "Citron",
+        "Aneth"
+      ],
+      "comment": "Légère et parfumée.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Médaillons de Langouste au Curry",
+      "season": "mixte",
+      "type": "plat",
+      "frequency": "rare",
+      "mainIngredient": "Langouste",
+      "ingredients": [
+        "Curry",
+        "Lait de coco",
+        "Riz basmati"
+      ],
+      "comment": "Créole de luxe.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    },
+    {
+      "name": "Coquilles Saint-Jacques à la Parisienne",
+      "season": "hiver",
+      "type": "plat",
+      "frequency": "normal",
+      "mainIngredient": "Saint-Jacques",
+      "ingredients": [
+        "Champignons",
+        "Vin blanc",
+        "Crème",
+        "Gruyère",
+        "Persil"
+      ],
+      "comment": "Gratinées dans leur coquille.",
+      "recipeLink": "",
+      "rating": null,
+      "isFavorite": false,
+      "imagePath": null,
+      "timesUsed": 0,
+      "lastSelected": null
+    }
+  ],
+  "exportedAt": "2026-03-30T18:15:08.353Z"
+}

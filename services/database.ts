@@ -88,7 +88,7 @@ export async function initDatabase(): Promise<void> {
 }
 
 // Obtenir l'instance de la DB
-function getDb(): SQLite.SQLiteDatabase {
+export function getDb(): SQLite.SQLiteDatabase {
   if (!db) throw new Error('Database not initialized. Call initDatabase() first.');
   return db;
 }

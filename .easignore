@@ -1,0 +1,14 @@
+# Fichiers d'import local — inutiles pour le build EAS
+Books/
+APK/
+
+# Fichiers Windows
+desktop.ini
+Thumbs.db
+
+# Idem que .gitignore
+node_modules/
+.expo/
+.env
+.env.local
+.claude/

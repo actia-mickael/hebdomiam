@@ -9,7 +9,39 @@ import { AuthProvider, useAuth } from '@/context/AuthContext';
 import { initDatabase, getUsedImagePaths } from '@/services/database';
 import { syncDown, syncDirty } from '@/services/syncService';
 import { initImageDirectory, cleanOrphanImages } from '@/services/imageService';
-import { Colors } from '@/constants/colors';
+import { Colors, BorderRadius } from '@/constants/colors';
+
+// ── Avatar utilisateur (initiale dans un cercle) ──────────────────────────
+function UserAvatar({ onPress }: { onPress: () => void }) {
+  const { profile } = useAuth();
+  const initial = profile?.displayName?.[0]?.toUpperCase() ?? '?';
+  return (
+    <TouchableOpacity onPress={onPress} style={avatarStyles.btn}>
+      <View style={avatarStyles.circle}>
+        <Text style={avatarStyles.initial}>{initial}</Text>
+      </View>
+    </TouchableOpacity>
+  );
+}
+
+const avatarStyles = StyleSheet.create({
+  btn: { marginRight: 8, padding: 2 },
+  circle: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    backgroundColor: 'rgba(255,255,255,0.25)',
+    borderWidth: 1.5,
+    borderColor: 'rgba(255,255,255,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  initial: {
+    fontSize: 14,
+    fontWeight: '700',
+    color: '#fff',
+  },
+});
 
 // ── Gate auth + sync ──────────────────────────────────────────────────────
 
@@ -99,6 +131,7 @@ function RootLayoutNav() {
         headerStyle: { backgroundColor: Colors.primary },
         headerTintColor: '#fff',
         headerTitleStyle: { fontWeight: 'bold' },
+        headerRight: () => <UserAvatar onPress={() => router.push('/parametres')} />,
       }}
     >
       <Stack.Screen
@@ -106,12 +139,15 @@ function RootLayoutNav() {
         options={{
           title: '🍽️ HebdoMiam',
           headerRight: () => (
-            <TouchableOpacity
-              style={{ marginRight: 8, padding: 4 }}
-              onPress={() => router.push('/famille')}
-            >
-              <Text style={{ fontSize: 22 }}>👨‍👩‍👧</Text>
-            </TouchableOpacity>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+              <TouchableOpacity
+                style={{ padding: 4 }}
+                onPress={() => router.push('/famille')}
+              >
+                <Text style={{ fontSize: 22 }}>👨‍👩‍👧</Text>
+              </TouchableOpacity>
+              <UserAvatar onPress={() => router.push('/parametres')} />
+            </View>
           ),
         }}
       />
@@ -122,6 +158,7 @@ function RootLayoutNav() {
       <Stack.Screen name="auth/login" options={{ headerShown: false }} />
       <Stack.Screen name="auth/register" options={{ headerShown: false }} />
       <Stack.Screen name="auth/verify-email" options={{ headerShown: false }} />
+      <Stack.Screen name="auth/callback" options={{ headerShown: false }} />
     </Stack>
   );
 }

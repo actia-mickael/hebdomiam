@@ -2,20 +2,21 @@ import { useState } from 'react';
 import {
   View, Text, TouchableOpacity, StyleSheet, ActivityIndicator, Alert,
 } from 'react-native';
-import { Stack } from 'expo-router';
+import { Stack, useLocalSearchParams } from 'expo-router';
 import { supabase } from '@/config/supabase';
 import { resendVerificationEmail } from '@/services/authService';
 import { Colors, Spacing, BorderRadius, Shadows } from '@/constants/colors';
 
 export default function VerifyEmailScreen() {
+  const { email: emailParam } = useLocalSearchParams<{ email?: string }>();
   const [resending, setResending] = useState(false);
   const [checking, setChecking] = useState(false);
 
   const handleResend = async () => {
     setResending(true);
     try {
-      const { data } = await supabase.auth.getSession();
-      const email = data.session?.user?.email;
+      // L'e-mail vient du paramètre de route (session inactive avant confirmation)
+      const email = emailParam || (await supabase.auth.getSession()).data.session?.user?.email;
       if (!email) throw new Error('E-mail introuvable');
       await resendVerificationEmail(email);
       Alert.alert('✅ E-mail envoyé', 'Vérifiez votre boîte mail.');

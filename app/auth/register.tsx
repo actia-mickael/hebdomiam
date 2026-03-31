@@ -30,7 +30,7 @@ export default function RegisterScreen() {
     setLoading(true);
     try {
       await signUp(email.trim(), password, displayName.trim());
-      router.replace('/auth/verify-email');
+      router.replace(`/auth/verify-email?email=${encodeURIComponent(email.trim())}`);
     } catch (e) {
       Alert.alert('Inscription impossible', e instanceof Error ? e.message : 'Erreur inconnue');
     } finally {
