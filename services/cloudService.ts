@@ -99,6 +99,49 @@ export async function downloadBook(cloudBook: CloudBook): Promise<number> {
   return created;
 }
 
+/**
+ * Répare book_recipe_cloud_id pour les recettes téléchargées avant l'ajout de cette feature.
+ * S'exécute en arrière-plan au démarrage.
+ */
+export async function repairBookRecipeCloudIds(): Promise<void> {
+  const db = getDb();
+
+  // Recettes sans cloud_id mais liées à un livre cloud
+  const rows = await db.getAllAsync<{ id: number; name: string; book_cloud_id: string }>(
+    `SELECT r.id, r.name, rb.cloud_id as book_cloud_id
+     FROM recipes r
+     JOIN recipe_book_assignments rba ON rba.recipe_id = r.id
+     JOIN recipe_books rb ON rb.id = rba.book_id
+     WHERE r.book_recipe_cloud_id IS NULL AND rb.cloud_id IS NOT NULL`
+  );
+
+  if (rows.length === 0) return;
+
+  // Récupérer tous les book_recipes concernés en un seul appel
+  const bookCloudIds = [...new Set(rows.map(r => r.book_cloud_id))];
+  const names = rows.map(r => r.name);
+
+  const { data: cloudRows } = await supabase
+    .from('book_recipes')
+    .select('id, name, book_id')
+    .in('book_id', bookCloudIds)
+    .in('name', names);
+
+  if (!cloudRows?.length) return;
+
+  const cloudMap = new Map(cloudRows.map(cr => [`${cr.book_id}||${cr.name}`, cr.id] as [string, number]));
+
+  for (const row of rows) {
+    const cloudId = cloudMap.get(`${row.book_cloud_id}||${row.name}`);
+    if (cloudId) {
+      await db.runAsync(
+        'UPDATE recipes SET book_recipe_cloud_id = ? WHERE id = ?',
+        [cloudId, row.id]
+      );
+    }
+  }
+}
+
 // ── Fiche détaillée ───────────────────────────────────────────────────────
 
 export async function fetchRecipeDetail(bookRecipeId: number): Promise<RecipeDetail | null> {

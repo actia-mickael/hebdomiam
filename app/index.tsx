@@ -43,12 +43,20 @@ export default function MainScreen() {
         options={{
           title: '🍽️ HebdoMiam',
           headerRight: () => (
-            <TouchableOpacity
-              onPress={() => router.push('/parametres')}
-              style={styles.settingsBtn}
-            >
-              <Text style={styles.settingsIcon}>⚙️</Text>
-            </TouchableOpacity>
+            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
+              <TouchableOpacity
+                onPress={() => router.push('/famille')}
+                style={styles.settingsBtn}
+              >
+                <Text style={styles.settingsIcon}>👨‍👩‍👧</Text>
+              </TouchableOpacity>
+              <TouchableOpacity
+                onPress={() => router.push('/parametres')}
+                style={styles.settingsBtn}
+              >
+                <Text style={styles.settingsIcon}>⚙️</Text>
+              </TouchableOpacity>
+            </View>
           ),
         }}
       />

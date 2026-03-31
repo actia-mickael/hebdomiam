@@ -68,6 +68,9 @@ export default function LivrePage({ isActive, preload }: Props) {
     }
   };
 
+  const normalize = (s: string) =>
+    (s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/œ/gi, 'oe').replace(/æ/gi, 'ae').toLowerCase();
+
   const applyFilters = async (
     all: Recipe[],
     search: string,
@@ -85,12 +88,12 @@ export default function LivrePage({ isActive, preload }: Props) {
     }
 
     if (search.trim()) {
-      const query = search.toLowerCase();
+      const query = normalize(search);
       filtered = filtered.filter(
         (r) =>
-          r.name.toLowerCase().includes(query) ||
-          r.mainIngredient.toLowerCase().includes(query) ||
-          r.ingredients.some((i) => i.toLowerCase().includes(query))
+          normalize(r.name).includes(query) ||
+          normalize(r.mainIngredient).includes(query) ||
+          r.ingredients.some((i) => normalize(i).includes(query))
       );
     }
 
@@ -103,11 +106,11 @@ export default function LivrePage({ isActive, preload }: Props) {
     }
 
     if (ingredient.trim()) {
-      const ing = ingredient.trim().toLowerCase();
+      const ing = normalize(ingredient);
       filtered = filtered.filter(
         (r) =>
-          r.mainIngredient.toLowerCase().includes(ing) ||
-          r.ingredients.some((i) => i.toLowerCase().includes(ing))
+          normalize(r.mainIngredient).includes(ing) ||
+          r.ingredients.some((i) => normalize(i).includes(ing))
       );
     }
 

@@ -64,11 +64,6 @@ export default function RecipeCard({ recipe, index, onPress, onLongPress, compac
             <Text style={styles.favoriteText}>❤️</Text>
           </View>
         )}
-        {typeof index === 'number' && (
-          <View style={styles.indexBadge}>
-            <Text style={styles.indexText}>#{index + 1}</Text>
-          </View>
-        )}
       </View>
 
       {/* Contenu */}
@@ -142,20 +137,6 @@ const styles = StyleSheet.create({
   },
   favoriteText: {
     fontSize: 12,
-  },
-  indexBadge: {
-    position: 'absolute',
-    bottom: Spacing.xs,
-    left: Spacing.xs,
-    backgroundColor: Colors.primaryDark,
-    borderRadius: BorderRadius.sm,
-    paddingHorizontal: Spacing.sm,
-    paddingVertical: 2,
-  },
-  indexText: {
-    color: '#fff',
-    fontSize: 11,
-    fontWeight: '700',
   },
   content: {
     flex: 1,

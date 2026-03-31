@@ -269,8 +269,13 @@ export default function RecipeDetailScreen() {
           {/* Image */}
           <TouchableOpacity
             style={styles.imageContainer}
-            onPress={isEditing ? handleImageAction : undefined}
-            disabled={!isEditing}
+            onPress={isEditing
+              ? handleImageAction
+              : bookRecipeCloudId !== null
+                ? () => router.push({ pathname: '/recette/fiche', params: { bookRecipeId: String(bookRecipeCloudId), name: recipe.name ?? '' } })
+                : undefined}
+            disabled={!isEditing && bookRecipeCloudId === null}
+            activeOpacity={!isEditing && bookRecipeCloudId !== null ? 0.75 : 1}
           >
             {recipe.imagePath ? (
               <Image source={{ uri: recipe.imagePath }} style={styles.image} />
@@ -289,13 +294,23 @@ export default function RecipeDetailScreen() {
                 <Text style={styles.imageEditBadgeText}>📷</Text>
               </View>
             )}
+            {!isEditing && bookRecipeCloudId !== null && (
+              <View style={styles.ficheBadge}>
+                <Text style={styles.ficheBadgeText}>📖 Recette détaillée</Text>
+              </View>
+            )}
           </TouchableOpacity>
 
           {/* Favori */}
           <TouchableOpacity
             style={styles.favoriteRow}
-            onPress={() => setRecipe({ ...recipe, isFavorite: !recipe.isFavorite })}
-            disabled={!isEditing}
+            onPress={async () => {
+              const newVal = !recipe.isFavorite;
+              setRecipe({ ...recipe, isFavorite: newVal });
+              if (!isNew && !isEditing) {
+                try { await updateRecipe(Number(id), { isFavorite: newVal }); } catch {}
+              }
+            }}
           >
             <Text style={styles.favoriteText}>
               {recipe.isFavorite ? '❤️ Favori' : '🤍 Ajouter aux favoris'}
@@ -502,17 +517,6 @@ export default function RecipeDetailScreen() {
               </>
             ) : (
               <>
-                {bookRecipeCloudId !== null && (
-                  <TouchableOpacity
-                    style={[styles.btn, styles.btnFiche]}
-                    onPress={() => router.push({
-                      pathname: '/recette/fiche',
-                      params: { bookRecipeId: String(bookRecipeCloudId), name: recipe.name ?? '' },
-                    })}
-                  >
-                    <Text style={styles.btnFicheText}>📖 Fiche complète</Text>
-                  </TouchableOpacity>
-                )}
                 <TouchableOpacity
                   style={[styles.btn, styles.btnPrimary]}
                   onPress={() => setIsEditing(true)}
@@ -579,6 +583,20 @@ const styles = StyleSheet.create({
   },
   imageEditBadgeText: {
     fontSize: 20,
+  },
+  ficheBadge: {
+    position: 'absolute',
+    bottom: Spacing.sm,
+    right: Spacing.sm,
+    backgroundColor: 'rgba(0,0,0,0.55)',
+    borderRadius: BorderRadius.md,
+    paddingVertical: 4,
+    paddingHorizontal: Spacing.sm,
+  },
+  ficheBadgeText: {
+    color: '#fff',
+    fontSize: 12,
+    fontWeight: '700',
   },
   favoriteRow: {
     alignItems: 'center',
@@ -704,15 +722,5 @@ const styles = StyleSheet.create({
   btnDangerText: {
     color: Colors.error,
     fontSize: 16,
-  },
-  btnFiche: {
-    backgroundColor: Colors.primarySurface,
-    borderWidth: 1.5,
-    borderColor: Colors.primaryDark,
-  },
-  btnFicheText: {
-    color: Colors.primaryDark,
-    fontSize: 16,
-    fontWeight: '700',
   },
 });

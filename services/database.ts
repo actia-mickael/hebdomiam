@@ -243,22 +243,6 @@ export async function getRandomRecipes(
     params.push(...types);
   }
 
-  if (hasIngredientFilter) {
-    // Recherche dans main_ingredient ET dans chaque ingrédient du tableau JSON
-    // LOWER() + LIKE pour insensibilité à la casse (ASCII)
-    // On cherche aussi le nom de la recette pour couvrir les cas évidents
-    const term = ingredient.trim().toLowerCase();
-    const like = `%${term}%`;
-    query += `
-      AND (
-        LOWER(main_ingredient) LIKE ?
-        OR LOWER(ingredients) LIKE ?
-        OR LOWER(name) LIKE ?
-      )
-    `;
-    params.push(like, like, like);
-  }
-
   query += `
     ORDER BY
       CASE frequency
@@ -266,13 +250,22 @@ export async function getRandomRecipes(
         WHEN 'normal' THEN RANDOM() * 2
         WHEN 'rare' THEN RANDOM()
       END DESC
-    LIMIT ?
   `;
-  // Avec filtre ingrédient : afficher jusqu'à 30 résultats pour voir toutes les options
-  params.push(hasIngredientFilter ? 30 : count);
 
-  const rows = await getDb().getAllAsync<any>(query, params);
-  return rows.map(mapRowToRecipe);
+  let rows = await getDb().getAllAsync<any>(query, params);
+
+  if (hasIngredientFilter) {
+    const normalize = (s: string) =>
+      (s ?? '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/œ/gi, 'oe').replace(/æ/gi, 'ae').toLowerCase();
+    const term = normalize(ingredient.trim());
+    rows = rows.filter(r =>
+      normalize(r.name).includes(term) ||
+      normalize(r.main_ingredient).includes(term) ||
+      normalize(r.ingredients).includes(term)
+    );
+  }
+
+  return rows.slice(0, count).map(mapRowToRecipe);
 }
 
 // Marquer des recettes comme sélectionnées

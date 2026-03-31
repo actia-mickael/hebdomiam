@@ -46,10 +46,10 @@ export default function FamilleScreen() {
     setActionLoading(true);
     try {
       const fam = await createFamily(familyName.trim(), userId);
-      await uploadLocalRecipes(fam.id, userId);
-      await refreshProfile();
-      await loadFamily();
+      // Afficher le code immédiatement, uploader les recettes en arrière-plan
+      await Promise.all([refreshProfile(), loadFamily()]);
       Alert.alert('✅ Famille créée', `Code d'invitation : ${fam.inviteCode}`);
+      uploadLocalRecipes(fam.id, userId).catch(() => {});
     } catch (e) {
       Alert.alert('Erreur', e instanceof Error ? e.message : 'Impossible de créer');
     } finally {
@@ -62,13 +62,11 @@ export default function FamilleScreen() {
     setActionLoading(true);
     try {
       const fam = await joinFamily(inviteCode.trim(), userId);
-      // Télécharger les recettes famille en local
-      await syncDown(fam.id);
-      // Uploader les recettes locales dans la famille
-      await uploadLocalRecipes(fam.id, userId);
-      await refreshProfile();
-      await loadFamily();
+      await Promise.all([refreshProfile(), loadFamily()]);
       Alert.alert('✅ Famille rejointe', `Bienvenue dans "${fam.name}" !`);
+      // Sync en arrière-plan
+      syncDown(fam.id).catch(() => {});
+      uploadLocalRecipes(fam.id, userId).catch(() => {});
     } catch (e) {
       Alert.alert('Erreur', e instanceof Error ? e.message : 'Impossible de rejoindre');
     } finally {

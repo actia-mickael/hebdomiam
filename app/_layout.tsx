@@ -8,6 +8,7 @@ import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-c
 import { AuthProvider, useAuth } from '@/context/AuthContext';
 import { initDatabase, getUsedImagePaths } from '@/services/database';
 import { syncDown, syncDirty } from '@/services/syncService';
+import { repairBookRecipeCloudIds } from '@/services/cloudService';
 import { initImageDirectory, cleanOrphanImages } from '@/services/imageService';
 import { Colors, BorderRadius } from '@/constants/colors';
 
@@ -71,6 +72,7 @@ function RootLayoutNav() {
         await initDatabase();
         await initImageDirectory();
         getUsedImagePaths().then(cleanOrphanImages).catch(() => {});
+        repairBookRecipeCloudIds().catch(() => {});
       })(),
       new Promise(resolve => setTimeout(resolve, 1500)),
     ]).then(() => setDbReady(true)).catch(() => setDbReady(true));
@@ -134,28 +136,12 @@ function RootLayoutNav() {
         headerRight: () => <UserAvatar onPress={() => router.push('/parametres')} />,
       }}
     >
-      <Stack.Screen
-        name="index"
-        options={{
-          title: '🍽️ HebdoMiam',
-          headerRight: () => (
-            <View style={{ flexDirection: 'row', alignItems: 'center', gap: 4 }}>
-              <TouchableOpacity
-                style={{ padding: 4 }}
-                onPress={() => router.push('/famille')}
-              >
-                <Text style={{ fontSize: 22 }}>👨‍👩‍👧</Text>
-              </TouchableOpacity>
-              <UserAvatar onPress={() => router.push('/parametres')} />
-            </View>
-          ),
-        }}
-      />
+      <Stack.Screen name="index" options={{ title: '🍽️ HebdoMiam' }} />
       <Stack.Screen name="recette/[id]" options={{ title: 'Recette' }} />
       <Stack.Screen name="recette/fiche" options={{ title: 'Fiche complète' }} />
-      <Stack.Screen name="parametres" options={{ title: 'Paramètres' }} />
+      <Stack.Screen name="parametres" options={{ title: 'Paramètres', headerRight: undefined }} />
       <Stack.Screen name="catalogue" options={{ title: '📚 Catalogue' }} />
-      <Stack.Screen name="famille" options={{ title: '👨‍👩‍👧 Famille' }} />
+      <Stack.Screen name="famille" options={{ title: '👨‍👩‍👧 Famille', headerRight: undefined }} />
       <Stack.Screen name="auth/login" options={{ headerShown: false }} />
       <Stack.Screen name="auth/register" options={{ headerShown: false }} />
       <Stack.Screen name="auth/verify-email" options={{ headerShown: false }} />
