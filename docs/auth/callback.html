@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HebdoMiam – Confirmation</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #1B3B6F;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+    .emoji { font-size: 64px; margin-bottom: 16px; }
+    h1 { font-size: 24px; font-weight: 800; margin: 0 0 8px; }
+    p { font-size: 15px; color: rgba(255,255,255,0.7); margin: 0 0 32px; }
+    a.btn {
+      background: rgba(255,255,255,0.2);
+      border: 2px solid rgba(255,255,255,0.5);
+      color: #fff;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 999px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <div class="emoji">🍽️</div>
+  <h1>Compte confirmé !</h1>
+  <p>Redirection vers HebdoMiam…</p>
+  <a class="btn" id="openBtn">Ouvrir l'application</a>
+
+  <script>
+    // Transfère query params ET hash vers le deep link
+    var target = 'recettes://auth/callback' + window.location.search + window.location.hash;
+    document.getElementById('openBtn').href = target;
+    // Tentative de redirection automatique
+    setTimeout(function() {
+      window.location.replace(target);
+    }, 500);
+  </script>
+</body>
+</html>

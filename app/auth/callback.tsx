@@ -5,16 +5,24 @@ import * as Linking from 'expo-linking';
 import { supabase } from '@/config/supabase';
 import { Colors, BorderRadius } from '@/constants/colors';
 
-function parseHashParams(url: string): Record<string, string> {
-  const hash = url.split('#')[1];
-  if (!hash) return {};
+function parseParams(url: string): Record<string, string> {
   const result: Record<string, string> = {};
-  hash.split('&').forEach(pair => {
-    const idx = pair.indexOf('=');
-    if (idx > 0) {
-      result[pair.slice(0, idx)] = decodeURIComponent(pair.slice(idx + 1));
-    }
-  });
+  // Query params (?code=... ou ?access_token=...)
+  const queryStr = url.split('?')[1]?.split('#')[0];
+  if (queryStr) {
+    queryStr.split('&').forEach(pair => {
+      const idx = pair.indexOf('=');
+      if (idx > 0) result[pair.slice(0, idx)] = decodeURIComponent(pair.slice(idx + 1));
+    });
+  }
+  // Hash params (#access_token=...)
+  const hashStr = url.split('#')[1];
+  if (hashStr) {
+    hashStr.split('&').forEach(pair => {
+      const idx = pair.indexOf('=');
+      if (idx > 0) result[pair.slice(0, idx)] = decodeURIComponent(pair.slice(idx + 1));
+    });
+  }
   return result;
 }
 
@@ -24,20 +32,30 @@ export default function AuthCallbackScreen() {
 
   useEffect(() => {
     const handle = async (url: string) => {
-      const params = parseHashParams(url);
+      const params = parseParams(url);
+      const code = params['code'];
       const accessToken = params['access_token'];
       const refreshToken = params['refresh_token'];
 
-      if (accessToken && refreshToken) {
-        await supabase.auth.setSession({
-          access_token: accessToken,
-          refresh_token: refreshToken,
-        });
-        setSuccess(true);
-        setTimeout(() => router.replace('/'), 2500);
-      } else {
-        router.replace('/');
-      }
+      try {
+        if (code) {
+          // PKCE flow
+          const { error } = await supabase.auth.exchangeCodeForSession(code);
+          if (!error) {
+            setSuccess(true);
+            setTimeout(() => router.replace('/'), 2500);
+            return;
+          }
+        }
+        if (accessToken && refreshToken) {
+          // Implicit flow
+          await supabase.auth.setSession({ access_token: accessToken, refresh_token: refreshToken });
+          setSuccess(true);
+          setTimeout(() => router.replace('/'), 2500);
+          return;
+        }
+      } catch {}
+      router.replace('/');
     };
 
     Linking.getInitialURL().then(url => {

@@ -3,7 +3,7 @@ import { Family, FamilyMember } from '@/types/recipe';
 
 // ── Authentification ──────────────────────────────────────────────────────
 
-const EMAIL_REDIRECT = 'recettes://auth/callback';
+const EMAIL_REDIRECT = 'https://actia-mickael.github.io/hebdomiam/auth/callback';
 
 export async function signUp(
   email: string,
