@@ -539,6 +539,11 @@ export async function getAllBooks(): Promise<RecipeBook[]> {
   return rows.map(mapRowToBook);
 }
 
+export async function getActiveBooks(): Promise<RecipeBook[]> {
+  const rows = await getDb().getAllAsync<any>('SELECT * FROM recipe_books WHERE is_active = 1 ORDER BY name');
+  return rows.map(mapRowToBook);
+}
+
 export async function getBookByCloudId(cloudId: string): Promise<RecipeBook | null> {
   const row = await getDb().getFirstAsync<any>(
     'SELECT * FROM recipe_books WHERE cloud_id = ?',

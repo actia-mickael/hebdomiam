@@ -253,7 +253,35 @@ export default function GeneratorPage({ count }: Props) {
           <Text style={styles.sectionTitle}>
             {ingredientFilter.trim()
               ? `🔍 ${generatedRecipes.length} recette(s) avec "${ingredientFilter.trim()}"`
-              : `🎩 Tada ! ${count} idée${count > 1 ? 's' : ''} rien que pour vous !`}
+              : (() => {
+                const n = generatedRecipes.length;
+                const s = n > 1 ? 's' : '';
+                const phrases = [
+                  `🎩 ${n} recette${s} piochée${s} rien que pour vous !`,
+                  `✨ Le chef a tranché ! ${n} idée${s} du jour`,
+                  `🍽️ ${n} proposition${s} du chef, bon appétit !`,
+                  `🎲 Les dés ont parlé : ${n} recette${s} au menu !`,
+                  `🌟 Inspiration du jour : ${n} idée${s} pour se régaler`,
+                  `👨‍🍳 Le chef recommande ces ${n} recette${s} !`,
+                  `🎉 Et voilà ! ${n} recette${s} pour cette semaine`,
+                  `🍀 La chance a souri : ${n} idée${s} pour vous régaler`,
+                  `🔮 La boule de cristal a parlé : ${n} recette${s} !`,
+                  `🎯 ${n} recette${s} dans le mille !`,
+                  `🚀 Décollage gourmand : ${n} idée${s} au programme !`,
+                  `🎪 Mesdames et messieurs, voici ${n} recette${s} !`,
+                  `🪄 Abracadabra ! ${n} recette${s} sortie${s} du chapeau !`,
+                  `🔥 Chaud devant ! ${n} idée${s} servie${s} sur un plateau !`,
+                  `💡 Eurêka ! Le Chef a trouvé ${n} recette${s} parfaite${s} !`,
+                  `🎁 Surprise ! Voici ${n} idée${s} fraîchement sélectionnée${s} !`,
+                  `🏆 Bingo ! ${n} recette${s} gagnante${s} pour votre menu !`,
+                  `💎 Mission accomplie : le Chef a déniché ${n} pépite${s} pour vous !`,
+                  `🧭 Cap sur la gourmandise : ${n} recette${s} au radar !`,
+                  `⚡ Bam ! ${n} proposition${s} prête${s} à être cuisinée${s} !`,
+                  `🎨 La touche du Chef : ${n} recette${s} pour vous inspirer !`,
+                  `🔎 Affaire classée : ${n} idée${s} trouvée${s} pour le repas !`,
+                ];
+                return phrases[Math.floor(Math.random() * phrases.length)];
+              })()}
           </Text>
           {selectedIds.size === 0 && (
             <Text style={styles.selectionHint}>👆 Touchez les recettes qui vous inspirent !</Text>

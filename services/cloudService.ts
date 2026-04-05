@@ -23,7 +23,6 @@ export async function fetchCloudBookRecipes(bookId: string): Promise<CloudBookRe
     .from('book_recipe')
     .select('recipes(*)')
     .eq('book_id', bookId);
-  console.log('[fetchCloudBookRecipes] bookId:', bookId, 'rows:', data?.length ?? 0, 'error:', error?.message);
   if (error) throw error;
   return (data ?? []).map((row: any) => row.recipes as CloudBookRecipe);
 }
@@ -35,8 +34,6 @@ export async function fetchCloudBookRecipes(bookId: string): Promise<CloudBookRe
 export async function downloadBook(cloudBook: CloudBook): Promise<number> {
   const db = getDb();
   const cloudRecipes = await fetchCloudBookRecipes(cloudBook.id);
-  console.log('[downloadBook] cloudRecipes count:', cloudRecipes.length, '| first:', cloudRecipes[0]?.name ?? 'none');
-
   const bookId = await createBook({
     cloudId: cloudBook.id,
     name: cloudBook.name,
@@ -60,7 +57,6 @@ export async function downloadBook(cloudBook: CloudBook): Promise<number> {
     );
 
     if (existing) {
-      console.log('[downloadBook] existing recipe found:', cr.name, '→ id', existing.id);
       recipeId = existing.id;
     } else {
       let ingredients: string[] = [];
@@ -98,7 +94,6 @@ export async function downloadBook(cloudBook: CloudBook): Promise<number> {
     );
   }
 
-  console.log('[downloadBook] done. created:', created, '| bookId:', bookId);
   return created;
 }
 
