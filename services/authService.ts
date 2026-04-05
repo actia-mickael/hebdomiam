@@ -10,7 +10,7 @@ export async function signUp(
   password: string,
   displayName: string
 ): Promise<void> {
-  const { error } = await supabase.auth.signUp({
+  const { data, error } = await supabase.auth.signUp({
     email,
     password,
     options: {
@@ -18,6 +18,11 @@ export async function signUp(
       emailRedirectTo: EMAIL_REDIRECT,
     },
   });
+  const { Alert } = require('react-native');
+  Alert.alert(
+    'Debug signUp',
+    `error: ${error?.message ?? 'none'}\nuser: ${data?.user?.id ?? 'none'}\nsentAt: ${data?.user?.confirmation_sent_at ?? 'none'}`
+  );
   if (error) throw error;
 }
 
