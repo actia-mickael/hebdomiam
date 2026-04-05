@@ -30,17 +30,10 @@ export default function TabBar({ currentIndex, onTabPress }: TabBarProps) {
           >
             <View style={[styles.pill, active && styles.pillActive]}>
               <Text style={styles.icon}>{tab.icon}</Text>
-              {active && (
-                <Text style={styles.pillLabel} numberOfLines={1}>
-                  {tab.label}
-                </Text>
-              )}
             </View>
-            {!active && (
-              <Text style={styles.label} numberOfLines={1}>
-                {tab.label}
-              </Text>
-            )}
+            <Text style={[styles.label, active && styles.labelActive]} numberOfLines={1}>
+              {tab.label}
+            </Text>
           </TouchableOpacity>
         );
       })}
@@ -70,11 +63,10 @@ const styles = StyleSheet.create({
     paddingVertical: 2,
   },
   pill: {
-    flexDirection: 'row',
     alignItems: 'center',
-    gap: 6,
-    paddingVertical: 7,
-    paddingHorizontal: 10,
+    justifyContent: 'center',
+    paddingVertical: 6,
+    paddingHorizontal: 14,
     borderRadius: BorderRadius.full,
     marginBottom: 3,
   },
@@ -84,16 +76,13 @@ const styles = StyleSheet.create({
   icon: {
     fontSize: 20,
   },
-  pillLabel: {
-    fontSize: 12,
-    color: Colors.primaryDark,
-    fontWeight: '700',
-    letterSpacing: 0.1,
-  },
   label: {
     fontSize: 10,
     color: Colors.textLight,
     fontWeight: '500',
-    marginTop: 2,
+  },
+  labelActive: {
+    color: Colors.primaryDark,
+    fontWeight: '700',
   },
 });

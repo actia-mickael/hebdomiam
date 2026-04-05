@@ -77,10 +77,14 @@ export async function joinFamily(inviteCode: string, userId: string): Promise<Fa
   const { data: family, error: familyError } = await supabase
     .from('families')
     .select('*')
-    .eq('invite_code', inviteCode.trim().toUpperCase())
+    .ilike('invite_code', inviteCode.trim())
     .single();
 
   if (familyError || !family) {
+    if (familyError) console.error('[joinFamily] Supabase error:', familyError.code, familyError.message);
+    if (familyError?.code === '42501' || familyError?.message?.includes('permission')) {
+      throw new Error('Accès refusé. Vérifiez les permissions Supabase (RLS) sur la table families.');
+    }
     throw new Error('Code famille invalide. Vérifiez le code et réessayez.');
   }
 

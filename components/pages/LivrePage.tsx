@@ -15,7 +15,9 @@ import * as FileSystem from 'expo-file-system/legacy';
 import * as Sharing from 'expo-sharing';
 import * as DocumentPicker from 'expo-document-picker';
 import { Recipe, Season, RecipeType, RecipeBook } from '@/types/recipe';
-import { getAllRecipes, getDisplayRecipes, exportToJson, importFromJson, getSetting, getAllBooks, getRecipesByBook, markRecipesSelected } from '@/services/database';
+import { getAllRecipes, getDisplayRecipes, exportToJson, importFromJson, getSetting, getAllBooks, getRecipesByBook, markRecipesSelected, updateRecipesStats, getRecipesCloudIds } from '@/services/database';
+import { useAuth } from '@/context/AuthContext';
+import { pushSelection } from '@/services/syncService';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import RecipeCard from '@/components/RecipeCard';
 import FilterBar from '@/components/FilterBar';
@@ -23,9 +25,11 @@ import FilterBar from '@/components/FilterBar';
 interface Props {
   isActive: boolean;
   preload?: boolean;
+  refreshKey?: number;
 }
 
-export default function LivrePage({ isActive, preload }: Props) {
+export default function LivrePage({ isActive, preload, refreshKey }: Props) {
+  const { session, profile } = useAuth();
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [filteredRecipes, setFilteredRecipes] = useState<Recipe[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -53,6 +57,10 @@ export default function LivrePage({ isActive, preload }: Props) {
       getSetting('persist_filters', 'false').then(v => setPersistFilters(v === 'true'));
     }
   }, [preload]);
+
+  useEffect(() => {
+    if (refreshKey !== undefined && refreshKey > 0) loadRecipes();
+  }, [refreshKey]);
 
   const loadRecipes = async () => {
     setIsLoading(true);
@@ -206,7 +214,22 @@ export default function LivrePage({ isActive, preload }: Props) {
           text: 'Valider',
           onPress: async () => {
             try {
-              await markRecipesSelected([recipe.id]);
+              const today = new Date().toISOString().split('T')[0];
+
+              // 1. Cloud en premier (famille)
+              if (profile?.familyId && session?.user?.id) {
+                const cloudIds = await getRecipesCloudIds([recipe.id]);
+                await Promise.all([...cloudIds.values()].map(cloudId =>
+                  pushSelection(profile.familyId!, cloudId, today, session.user.id).catch(() => {})
+                ));
+              }
+
+              // 2. Local ensuite (cache immédiat)
+              if (profile?.familyId) {
+                await updateRecipesStats([recipe.id]).catch(() => {});
+              } else {
+                await markRecipesSelected([recipe.id]);
+              }
               Alert.alert('✅ Ajouté', `"${recipe.name}" ajoutée à la semaine en cours.`);
             } catch {
               Alert.alert('Erreur', "Impossible d'ajouter la recette à la semaine.");

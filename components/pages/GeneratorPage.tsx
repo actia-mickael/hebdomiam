@@ -8,10 +8,13 @@ import {
   RefreshControl,
   Alert,
   TextInput,
+  Animated,
 } from 'react-native';
 import { useFocusEffect, router } from 'expo-router';
 import { Recipe, Season, RecipeType, SeasonLabels, TypeLabels } from '@/types/recipe';
-import { getRandomRecipes, markRecipesSelected, getAllRecipes } from '@/services/database';
+import { getRandomRecipes, markRecipesSelected, updateRecipesStats, getAllRecipes, getRecipesCloudIds } from '@/services/database';
+import { useAuth } from '@/context/AuthContext';
+import { pushSelection } from '@/services/syncService';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import RecipeCard from '@/components/RecipeCard';
 import FilterBar from '@/components/FilterBar';
@@ -21,8 +24,10 @@ interface Props {
 }
 
 export default function GeneratorPage({ count }: Props) {
+  const { session, profile } = useAuth();
   const scrollRef = useRef<ScrollView>(null);
   const resultsY = useRef(0);
+  const toastAnim = useRef(new Animated.Value(0)).current;
 
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [generatedRecipes, setGeneratedRecipes] = useState<Recipe[]>([]);
@@ -111,17 +116,31 @@ export default function GeneratorPage({ count }: Props) {
 
     try {
       const ids = Array.from(selectedIds);
-      await markRecipesSelected(ids);
+      const today = new Date().toISOString().split('T')[0];
+
+      // 1. Cloud en premier (famille)
+      if (profile?.familyId && session?.user?.id) {
+        const cloudIds = await getRecipesCloudIds(ids);
+        await Promise.all([...cloudIds.values()].map(cloudId =>
+          pushSelection(profile.familyId!, cloudId, today, session.user.id).catch(() => {})
+        ));
+      }
+
+      // 2. Local ensuite (cache immédiat)
+      if (profile?.familyId) {
+        await updateRecipesStats(ids).catch(() => {});
+      } else {
+        await markRecipesSelected(ids);
+      }
       
-      Alert.alert(
-        '✅ Validé !',
-        `${ids.length} recette(s) enregistrée(s) pour cette semaine.`,
-        [{ text: 'OK', onPress: () => {
-          setGeneratedRecipes([]);
-          setSelectedIds(new Set());
-          setHasGenerated(false);
-        }}]
-      );
+      setGeneratedRecipes([]);
+      setSelectedIds(new Set());
+      setHasGenerated(false);
+      Animated.sequence([
+        Animated.timing(toastAnim, { toValue: 1, duration: 350, useNativeDriver: true }),
+        Animated.delay(1400),
+        Animated.timing(toastAnim, { toValue: 0, duration: 600, useNativeDriver: true }),
+      ]).start();
     } catch (error) {
       Alert.alert('Erreur', 'Impossible de valider les recettes');
     }
@@ -132,9 +151,13 @@ export default function GeneratorPage({ count }: Props) {
   };
 
   return (
+    <View style={styles.container}>
+    <Animated.View style={[styles.toast, { opacity: toastAnim }]} pointerEvents="none">
+      <Text style={styles.toastText}>🎉  C'est noté, bon appétit !</Text>
+    </Animated.View>
     <ScrollView
       ref={scrollRef}
-      style={styles.container}
+      style={styles.scroll}
       contentContainerStyle={styles.content}
       refreshControl={
         <RefreshControl refreshing={isLoading} onRefresh={loadRecipes} />
@@ -208,12 +231,6 @@ export default function GeneratorPage({ count }: Props) {
           </View>
         </View>
 
-        <View style={styles.countSection}>
-          <Text style={styles.countLabel}>
-            Nombre de recettes : <Text style={styles.countValue}>{count}</Text>
-          </Text>
-          <Text style={styles.countHint}>Modifiable dans les paramètres ⚙️</Text>
-        </View>
       </View>
 
       {/* Bouton générer */}
@@ -223,7 +240,7 @@ export default function GeneratorPage({ count }: Props) {
         disabled={isLoading}
       >
         <Text style={styles.generateBtnText}>
-          {isLoading ? '⏳ Génération...' : '🎲 Générer les recettes'}
+          {isLoading ? '⏳ Génération...' : '🎲   Chef, une idée ?'}
         </Text>
       </TouchableOpacity>
 
@@ -236,11 +253,11 @@ export default function GeneratorPage({ count }: Props) {
           <Text style={styles.sectionTitle}>
             {ingredientFilter.trim()
               ? `🔍 ${generatedRecipes.length} recette(s) avec "${ingredientFilter.trim()}"`
-              : `🍽️ Recettes proposées (${generatedRecipes.length})`}
+              : `🎩 Tada ! ${count} idée${count > 1 ? 's' : ''} rien que pour vous !`}
           </Text>
-          <Text style={styles.selectionHint}>
-            Cochez les recettes à valider ({selectedIds.size} sélectionnée{selectedIds.size > 1 ? 's' : ''})
-          </Text>
+          {selectedIds.size === 0 && (
+            <Text style={styles.selectionHint}>👆 Touchez les recettes qui vous inspirent !</Text>
+          )}
 
           {generatedRecipes.length === 0 ? (
             <Text style={styles.noResults}>Aucune recette trouvée avec ces critères</Text>
@@ -278,7 +295,7 @@ export default function GeneratorPage({ count }: Props) {
                 disabled={selectedIds.size === 0}
               >
                 <Text style={styles.validateBtnText}>
-                  ✅ Valider la sélection ({selectedIds.size})
+                  🙏     Je valide !
                 </Text>
               </TouchableOpacity>
             </>
@@ -295,6 +312,7 @@ export default function GeneratorPage({ count }: Props) {
         </Text>
       </View>
     </ScrollView>
+    </View>
   );
 }
 
@@ -302,6 +320,33 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.background,
+  },
+  scroll: {
+    flex: 1,
+  },
+  toast: {
+    position: 'absolute',
+    top: '40%',
+    left: '10%',
+    right: '10%',
+    backgroundColor: Colors.primaryDark,
+    paddingHorizontal: 32,
+    paddingVertical: 28,
+    borderRadius: 20,
+    zIndex: 999,
+    elevation: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    alignItems: 'center',
+  },
+  toastText: {
+    color: '#fff',
+    fontSize: 22,
+    fontWeight: '700',
+    textAlign: 'center',
+    lineHeight: 32,
   },
   content: {
     padding: Spacing.md,
@@ -401,6 +446,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.lg,
     borderRadius: BorderRadius.xl,
     alignItems: 'center',
+    marginTop: Spacing.md,
     marginBottom: Spacing.lg,
     shadowColor: Colors.primaryDark,
     shadowOffset: { width: 0, height: 4 },
@@ -487,7 +533,9 @@ const styles = StyleSheet.create({
   },
   footer: {
     padding: Spacing.md,
+    paddingBottom: 0,
     alignItems: 'center',
+    marginBottom: -Spacing.sm,
   },
   footerText: {
     fontSize: 12,

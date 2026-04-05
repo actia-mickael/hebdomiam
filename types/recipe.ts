@@ -96,6 +96,7 @@ export interface UserProfile {
   id: string;
   displayName: string;
   familyId: string | null;
+  familyName: string | null;
   role: UserRole;
   createdAt: string;
 }
@@ -147,10 +148,9 @@ export interface CloudBook {
   created_at: string;
 }
 
-/** Recette telle que stockée dans Supabase (book_recipes) */
+/** Recette telle que stockée dans Supabase (table recipes) */
 export interface CloudBookRecipe {
   id: number;
-  book_id: string;
   name: string;
   season: Season;
   type: RecipeType;

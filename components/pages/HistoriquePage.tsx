@@ -10,7 +10,9 @@ import {
 } from 'react-native';
 import { router } from 'expo-router';
 import { Recipe, WeekHistory } from '@/types/recipe';
-import { getCurrentWeekRecipes, getHistoryByWeek, removeRecipeFromCurrentWeek, getSetting } from '@/services/database';
+import { getCurrentWeekRecipes, getHistoryByWeek, removeRecipeFromCurrentWeek, getRecipesCloudIds } from '@/services/database';
+import { useAuth } from '@/context/AuthContext';
+import { removeSelection } from '@/services/syncService';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import RecipeCard from '@/components/RecipeCard';
 import CourseModal from '@/components/CourseModal';
@@ -21,14 +23,12 @@ interface Props {
 }
 
 export default function HistoriquePage({ isActive, preload }: Props) {
+  const { session, profile } = useAuth();
   const [currentWeek, setCurrentWeek] = useState<Recipe[]>([]);
   const [history, setHistory] = useState<WeekHistory[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const [expandedWeeks, setExpandedWeeks] = useState<Set<string>>(new Set());
   const [showCourses, setShowCourses] = useState(false);
-  const [deleteFromHistory, setDeleteFromHistory] = useState(false);
-  // IDs retirés visuellement cette session (option OFF : sans toucher à la DB)
-  const removedIds = useRef<Set<number>>(new Set());
   const hasPreloaded = useRef(false);
 
   useEffect(() => {
@@ -45,15 +45,14 @@ export default function HistoriquePage({ isActive, preload }: Props) {
   const loadData = async () => {
     setIsLoading(true);
     try {
-      const [current, hist, deleteSetting] = await Promise.all([
+      const [current, hist] = await Promise.all([
         getCurrentWeekRecipes(),
         getHistoryByWeek(12),
-        getSetting('delete_from_history', 'false'),
       ]);
-      setCurrentWeek(current.filter(r => !removedIds.current.has(r.id)));
+      setCurrentWeek(current);
       setHistory(hist);
-      setDeleteFromHistory(deleteSetting === 'true');
     } catch (error) {
+      console.error('[HistoriquePage] loadData error:', error);
       Alert.alert('Erreur', "Impossible de charger l'historique");
     } finally {
       setIsLoading(false);
@@ -77,26 +76,27 @@ export default function HistoriquePage({ isActive, preload }: Props) {
   };
 
   const handleRemoveFromWeek = (recipe: Recipe) => {
-    const message = deleteFromHistory
-      ? `"${recipe.name}" sera retirée de cette semaine et de l'historique de la semaine en cours.`
-      : `"${recipe.name}" sera retirée de cette semaine mais restera dans l'historique.`;
-
-    Alert.alert('Retirer de la semaine ?', message, [
+    Alert.alert('Retirer de la semaine ?', `"${recipe.name}" sera retirée du menu de cette semaine.`, [
       { text: 'Annuler', style: 'cancel' },
       {
         text: 'Retirer',
         style: 'destructive',
         onPress: async () => {
           try {
-            if (deleteFromHistory) {
-              // Supprime l'entrée de selection_history pour cette semaine
+            if (profile?.familyId) {
+              // Famille : supprime du cloud, le local sera resync au prochain démarrage
+              const monday = getCurrentWeekStart();
+              const cloudIds = await getRecipesCloudIds([recipe.id]);
+              cloudIds.forEach((cloudId) => {
+                removeSelection(profile.familyId!, cloudId, monday).catch(() => {});
+              });
+              // Mise à jour locale immédiate pour l'UI
               await removeRecipeFromCurrentWeek(recipe.id);
-              loadData();
             } else {
-              // Retrait visuel uniquement — reste dans l'historique de cette semaine
-              removedIds.current.add(recipe.id);
-              setCurrentWeek(prev => prev.filter(r => r.id !== recipe.id));
+              // Solo : supprime uniquement du local
+              await removeRecipeFromCurrentWeek(recipe.id);
             }
+            loadData();
           } catch {
             Alert.alert('Erreur', 'Impossible de retirer la recette');
           }

@@ -8,7 +8,7 @@ import { SafeAreaProvider, initialWindowMetrics } from 'react-native-safe-area-c
 import { AuthProvider, useAuth } from '@/context/AuthContext';
 import { initDatabase, getUsedImagePaths } from '@/services/database';
 import { syncDown, syncDirty } from '@/services/syncService';
-import { repairBookRecipeCloudIds } from '@/services/cloudService';
+import { syncBookRecipeAssignments } from '@/services/cloudService';
 import { initImageDirectory, cleanOrphanImages } from '@/services/imageService';
 import { Colors, BorderRadius } from '@/constants/colors';
 
@@ -53,6 +53,9 @@ function RootLayoutNav() {
   const [dbReady, setDbReady] = useState(false);
   const fadeAnim = useState(() => new Animated.Value(0))[0];
   const scaleAnim = useState(() => new Animated.Value(0.8))[0];
+  const [familyToast, setFamilyToast] = useState<string | null>(null);
+  const toastAnim = useState(() => new Animated.Value(0))[0];
+  const toastShown = useState(() => ({ shown: false }))[0];
 
   // Init DB locale
   useEffect(() => {
@@ -72,11 +75,24 @@ function RootLayoutNav() {
         await initDatabase();
         await initImageDirectory();
         getUsedImagePaths().then(cleanOrphanImages).catch(() => {});
-        repairBookRecipeCloudIds().catch(() => {});
+        await syncBookRecipeAssignments().catch(() => {});
       })(),
       new Promise(resolve => setTimeout(resolve, 1500)),
     ]).then(() => setDbReady(true)).catch(() => setDbReady(true));
   }, []);
+
+  // Toast famille au démarrage
+  useEffect(() => {
+    if (!dbReady || isLoading || !profile?.familyId || toastShown.shown) return;
+    toastShown.shown = true;
+    const name = profile.familyName ?? 'votre famille';
+    setFamilyToast(`👨‍👩‍👧 Connecté à "${name}"`);
+    Animated.sequence([
+      Animated.timing(toastAnim, { toValue: 1, duration: 350, useNativeDriver: true }),
+      Animated.delay(1400),
+      Animated.timing(toastAnim, { toValue: 0, duration: 600, useNativeDriver: true }),
+    ]).start(() => setFamilyToast(null));
+  }, [dbReady, isLoading, profile?.familyId]);
 
   // Sync famille au démarrage
   useEffect(() => {
@@ -128,6 +144,12 @@ function RootLayoutNav() {
   }
 
   return (
+    <>
+    {familyToast && (
+      <Animated.View style={[toastStyles.toast, { opacity: toastAnim, transform: [{ translateY: toastAnim.interpolate({ inputRange: [0, 1], outputRange: [-20, 0] }) }] }]}>
+        <Text style={toastStyles.text}>{familyToast}</Text>
+      </Animated.View>
+    )}
     <Stack
       screenOptions={{
         headerStyle: { backgroundColor: Colors.primary },
@@ -147,6 +169,7 @@ function RootLayoutNav() {
       <Stack.Screen name="auth/verify-email" options={{ headerShown: false }} />
       <Stack.Screen name="auth/callback" options={{ headerShown: false }} />
     </Stack>
+    </>
   );
 }
 
@@ -161,6 +184,33 @@ export default function RootLayout() {
     </SafeAreaProvider>
   );
 }
+
+const toastStyles = StyleSheet.create({
+  toast: {
+    position: 'absolute',
+    top: '40%',
+    left: '10%',
+    right: '10%',
+    backgroundColor: Colors.primaryDark,
+    paddingHorizontal: 32,
+    paddingVertical: 28,
+    borderRadius: 20,
+    zIndex: 9999,
+    elevation: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 10,
+    alignItems: 'center',
+  },
+  text: {
+    color: '#fff',
+    fontSize: 22,
+    fontWeight: '700',
+    textAlign: 'center',
+    lineHeight: 32,
+  },
+});
 
 const styles = StyleSheet.create({
   splashContainer: {

@@ -4,7 +4,6 @@ import {
   getBookByCloudId,
   createBook,
   deleteBook,
-  getRecipesByBook,
   createRecipe,
   getDb,
   getCachedRecipeDetail,
@@ -20,9 +19,13 @@ export async function fetchCloudCatalog(): Promise<CloudBook[]> {
 }
 
 export async function fetchCloudBookRecipes(bookId: string): Promise<CloudBookRecipe[]> {
-  const { data, error } = await supabase.from('book_recipes').select('*').eq('book_id', bookId);
+  const { data, error } = await supabase
+    .from('book_recipe')
+    .select('recipes(*)')
+    .eq('book_id', bookId);
+  console.log('[fetchCloudBookRecipes] bookId:', bookId, 'rows:', data?.length ?? 0, 'error:', error?.message);
   if (error) throw error;
-  return data ?? [];
+  return (data ?? []).map((row: any) => row.recipes as CloudBookRecipe);
 }
 
 /**
@@ -32,8 +35,8 @@ export async function fetchCloudBookRecipes(bookId: string): Promise<CloudBookRe
 export async function downloadBook(cloudBook: CloudBook): Promise<number> {
   const db = getDb();
   const cloudRecipes = await fetchCloudBookRecipes(cloudBook.id);
+  console.log('[downloadBook] cloudRecipes count:', cloudRecipes.length, '| first:', cloudRecipes[0]?.name ?? 'none');
 
-  // Créer l'entrée du livre local
   const bookId = await createBook({
     cloudId: cloudBook.id,
     name: cloudBook.name,
@@ -51,13 +54,13 @@ export async function downloadBook(cloudBook: CloudBook): Promise<number> {
   for (const cr of cloudRecipes) {
     let recipeId: number;
 
-    // Vérifier si la recette existe déjà par nom
     const existing = await db.getFirstAsync<{ id: number }>(
-      'SELECT id FROM recipes WHERE name = ?',
+      "SELECT id FROM recipes WHERE lower(replace(replace(name, 'œ', 'oe'), 'æ', 'ae')) = lower(replace(replace(?, 'œ', 'oe'), 'æ', 'ae'))",
       [cr.name]
     );
 
     if (existing) {
+      console.log('[downloadBook] existing recipe found:', cr.name, '→ id', existing.id);
       recipeId = existing.id;
     } else {
       let ingredients: string[] = [];
@@ -83,62 +86,109 @@ export async function downloadBook(cloudBook: CloudBook): Promise<number> {
       created++;
     }
 
-    // Stocker l'ID Supabase de la book_recipe pour accéder à la fiche détaillée
+    // cr.id est maintenant l'ID unique de la table recipes (plus de doublons)
     await db.runAsync(
       'UPDATE recipes SET book_recipe_cloud_id = ? WHERE id = ?',
       [cr.id, recipeId]
     );
 
-    // Créer l'assignation
     await db.runAsync(
       'INSERT OR IGNORE INTO recipe_book_assignments (recipe_id, book_id) VALUES (?, ?)',
       [recipeId, bookId]
     );
   }
 
+  console.log('[downloadBook] done. created:', created, '| bookId:', bookId);
   return created;
 }
 
 /**
- * Répare book_recipe_cloud_id pour les recettes téléchargées avant l'ajout de cette feature.
+ * Synchronise les assignations book_recipe vers Supabase depuis le SQLite local.
+ * Répare aussi les book_recipe_cloud_id locaux en cas de désalignement.
  * S'exécute en arrière-plan au démarrage.
  */
-export async function repairBookRecipeCloudIds(): Promise<void> {
+export async function syncBookRecipeAssignments(): Promise<void> {
   const db = getDb();
 
-  // Recettes sans cloud_id mais liées à un livre cloud
-  const rows = await db.getAllAsync<{ id: number; name: string; book_cloud_id: string }>(
-    `SELECT r.id, r.name, rb.cloud_id as book_cloud_id
+  const rows = await db.getAllAsync<{
+    recipe_name: string;
+    book_cloud_id: string;
+    current_cloud_id: number | null;
+  }>(
+    `SELECT r.name as recipe_name, rb.cloud_id as book_cloud_id, r.book_recipe_cloud_id as current_cloud_id
      FROM recipes r
      JOIN recipe_book_assignments rba ON rba.recipe_id = r.id
      JOIN recipe_books rb ON rb.id = rba.book_id
-     WHERE r.book_recipe_cloud_id IS NULL AND rb.cloud_id IS NOT NULL`
+     WHERE rb.cloud_id IS NOT NULL`
   );
 
   if (rows.length === 0) return;
 
-  // Récupérer tous les book_recipes concernés en un seul appel
-  const bookCloudIds = [...new Set(rows.map(r => r.book_cloud_id))];
-  const names = rows.map(r => r.name);
-
-  const { data: cloudRows } = await supabase
-    .from('book_recipes')
-    .select('id, name, book_id')
-    .in('book_id', bookCloudIds)
+  // La table recipes est maintenant unique par nom — récupérer les IDs en une seule requête
+  const names = [...new Set(rows.map(r => r.recipe_name))];
+  const { data: cloudRecipes } = await supabase
+    .from('recipes')
+    .select('id, name')
     .in('name', names);
 
-  if (!cloudRows?.length) return;
+  if (!cloudRecipes?.length) return;
 
-  const cloudMap = new Map(cloudRows.map(cr => [`${cr.book_id}||${cr.name}`, cr.id] as [string, number]));
+  const nameToId = new Map(cloudRecipes.map(r => [r.name, r.id] as [string, number]));
 
+  // Corriger les book_recipe_cloud_id locaux si désalignés (recettes avec livre)
+  const seen = new Set<string>();
   for (const row of rows) {
-    const cloudId = cloudMap.get(`${row.book_cloud_id}||${row.name}`);
-    if (cloudId) {
+    if (seen.has(row.recipe_name)) continue;
+    seen.add(row.recipe_name);
+    const cloudId = nameToId.get(row.recipe_name);
+    if (cloudId && cloudId !== row.current_cloud_id) {
       await db.runAsync(
-        'UPDATE recipes SET book_recipe_cloud_id = ? WHERE id = ?',
-        [cloudId, row.id]
+        'UPDATE recipes SET book_recipe_cloud_id = ? WHERE name = ?',
+        [cloudId, row.recipe_name]
       );
     }
+  }
+
+  // Aussi corriger les recettes locales sans book_recipe_cloud_id
+  const unlinked = await db.getAllAsync<{ id: number; name: string }>(
+    `SELECT id, name FROM recipes WHERE book_recipe_cloud_id IS NULL`
+  );
+  if (unlinked.length > 0) {
+    const unlinkedNames = unlinked.map(r => r.name);
+    const { data: cloudUnlinked } = await supabase
+      .from('recipes')
+      .select('id, name')
+      .in('name', unlinkedNames);
+    if (cloudUnlinked?.length) {
+      const cloudNameMap = new Map(cloudUnlinked.map(r => [r.name.toLowerCase(), r.id] as [string, number]));
+      for (const r of unlinked) {
+        const cloudId = cloudNameMap.get(r.name.toLowerCase());
+        if (cloudId) {
+          await db.runAsync(
+            'UPDATE recipes SET book_recipe_cloud_id = ? WHERE id = ?',
+            [cloudId, r.id]
+          );
+        }
+      }
+    }
+  }
+
+  // Peupler/synchroniser la table book_recipe dans Supabase
+  const assignments = rows
+    .map(row => {
+      const recipeId = nameToId.get(row.recipe_name);
+      if (!recipeId) return null;
+      return { book_id: row.book_cloud_id, recipe_id: recipeId };
+    })
+    .filter(Boolean) as { book_id: string; recipe_id: number }[];
+
+  if (assignments.length > 0) {
+    await supabase
+      .from('book_recipe')
+      .upsert(assignments, { onConflict: 'book_id,recipe_id', ignoreDuplicates: true })
+      .then(({ error }) => {
+        if (error) console.warn('[syncBookRecipeAssignments] upsert error:', error.message);
+      });
   }
 }
 

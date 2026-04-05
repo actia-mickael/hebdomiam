@@ -33,9 +33,9 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
 
   const fetchProfile = async (userId: string) => {
     try {
-      const { data } = await supabase
+      const { data, error } = await supabase
         .from('profiles')
-        .select('*')
+        .select('*, families(name)')
         .eq('id', userId)
         .single();
       if (data) {
@@ -43,12 +43,33 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           id: data.id,
           displayName: data.display_name ?? '',
           familyId: data.family_id ?? null,
+          familyName: (data.families as any)?.name ?? null,
           role: data.role ?? 'solo',
           createdAt: data.created_at,
         });
+      } else if (error?.code === 'PGRST116') {
+        // Profil absent (supprimé manuellement) — on le recrée
+        const user = (await supabase.auth.getUser()).data.user;
+        if (user) {
+          const displayName = user.user_metadata?.display_name ?? user.email?.split('@')[0] ?? 'Utilisateur';
+          await supabase.from('profiles').upsert({
+            id: userId,
+            display_name: displayName,
+            role: 'solo',
+          });
+          setProfile({
+            id: userId,
+            displayName: displayName,
+            familyId: null,
+            familyName: null,
+            role: 'solo',
+            createdAt: new Date().toISOString(),
+          });
+        }
       }
+      // Autres erreurs (réseau, RLS) — on ignore sans écraser le profil existant
     } catch {
-      // profil pas encore créé ou erreur réseau — on ignore
+      // erreur réseau — on ignore
     }
   };
 
@@ -59,14 +80,24 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   useEffect(() => {
+    // Timeout de sécurité — si tout plante, on débloque après 8s
+    const safetyTimeout = setTimeout(() => setIsLoading(false), 8000);
+
     // Récupérer la session existante
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session);
       if (session?.user) {
-        fetchProfile(session.user.id).finally(() => setIsLoading(false));
+        fetchProfile(session.user.id).finally(() => {
+          clearTimeout(safetyTimeout);
+          setIsLoading(false);
+        });
       } else {
+        clearTimeout(safetyTimeout);
         setIsLoading(false);
       }
+    }).catch(() => {
+      clearTimeout(safetyTimeout);
+      setIsLoading(false);
     });
 
     // Écouter les changements d'état auth

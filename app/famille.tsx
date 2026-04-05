@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react';
 import {
   View, Text, TextInput, TouchableOpacity, StyleSheet,
   ScrollView, Alert, ActivityIndicator, Clipboard,
+  KeyboardAvoidingView, Platform,
 } from 'react-native';
 import { Stack } from 'expo-router';
 import { useAuth } from '@/context/AuthContext';
@@ -144,7 +145,11 @@ export default function FamilleScreen() {
     return (
       <>
         <Stack.Screen options={{ title: '👨‍👩‍👧 Famille' }} />
-        <ScrollView style={styles.container} contentContainerStyle={styles.content}>
+        <KeyboardAvoidingView
+          style={styles.flex}
+          behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
+        >
+        <ScrollView style={styles.container} contentContainerStyle={styles.content} keyboardShouldPersistTaps="handled">
           <Text style={styles.pageTitle}>Rejoindre ou créer une famille</Text>
           <Text style={styles.pageSubtitle}>
             Partagez vos recettes et votre planning avec votre famille.
@@ -203,12 +208,14 @@ export default function FamilleScreen() {
             </TouchableOpacity>
           </View>
         </ScrollView>
+        </KeyboardAvoidingView>
       </>
     );
   }
 
   // ── Dans une famille ──────────────────────────────────────────────────
   const roleBadge = isAdmin ? '👑 Administrateur' : '👤 Membre';
+  const adminMember = members.find(m => m.role === 'admin');
 
   return (
     <>
@@ -218,12 +225,7 @@ export default function FamilleScreen() {
         {/* Infos famille */}
         <View style={styles.card}>
           <View style={styles.familyHeader}>
-            <View>
-              <Text style={styles.familyName}>{family?.name ?? '—'}</Text>
-              <View style={styles.roleBadge}>
-                <Text style={styles.roleBadgeText}>{roleBadge}</Text>
-              </View>
-            </View>
+            <Text style={styles.familyName}>{family?.name ?? '—'}</Text>
             <Text style={styles.familyEmoji}>👨‍👩‍👧</Text>
           </View>
 
@@ -285,6 +287,7 @@ export default function FamilleScreen() {
 }
 
 const styles = StyleSheet.create({
+  flex: { flex: 1 },
   container: { flex: 1, backgroundColor: Colors.background },
   content: { padding: Spacing.md, paddingBottom: Spacing.xxl },
   center: { flex: 1, justifyContent: 'center', alignItems: 'center' },
@@ -346,6 +349,7 @@ const styles = StyleSheet.create({
     marginTop: 4,
   },
   roleBadgeText: { fontSize: 12, color: Colors.primaryDark, fontWeight: '600' },
+  familyChef: { fontSize: 12, color: Colors.textSecondary, marginTop: 4 },
   codeBox: {
     flexDirection: 'row',
     justifyContent: 'space-between',

@@ -92,6 +92,39 @@ export async function initDatabase(): Promise<void> {
   for (const sql of migrations) {
     try { await db.execAsync(sql); } catch { /* colonne déjà présente */ }
   }
+
+  // Fusion des recettes en doublon (même nom normalisé, ex: "Bœuf" vs "Boeuf")
+  await deduplicateRecipesByName(db);
+}
+
+async function deduplicateRecipesByName(db: SQLite.SQLiteDatabase): Promise<void> {
+  // Trouver les groupes de doublons (même nom normalisé)
+  const duplicates = await db.getAllAsync<{ canonical_id: number; duplicate_id: number }>(
+    `SELECT MIN(a.id) as canonical_id, b.id as duplicate_id
+     FROM recipes a
+     JOIN recipes b ON (
+       lower(replace(replace(a.name, 'œ', 'oe'), 'æ', 'ae'))
+       = lower(replace(replace(b.name, 'œ', 'oe'), 'æ', 'ae'))
+       AND a.id < b.id
+     )
+     GROUP BY b.id`
+  );
+  if (duplicates.length === 0) return;
+
+  for (const { canonical_id, duplicate_id } of duplicates) {
+    // Transférer l'historique vers le canonical
+    await db.runAsync(
+      'UPDATE selection_history SET recipe_id = ? WHERE recipe_id = ?',
+      [canonical_id, duplicate_id]
+    );
+    // Copier book_recipe_cloud_id si le canonical n'en a pas
+    await db.runAsync(
+      'UPDATE recipes SET book_recipe_cloud_id = (SELECT book_recipe_cloud_id FROM recipes WHERE id = ?) WHERE id = ? AND book_recipe_cloud_id IS NULL',
+      [duplicate_id, canonical_id]
+    );
+    // Supprimer le doublon
+    await db.runAsync('DELETE FROM recipes WHERE id = ?', [duplicate_id]);
+  }
 }
 
 // Obtenir l'instance de la DB
@@ -268,22 +301,56 @@ export async function getRandomRecipes(
   return rows.slice(0, count).map(mapRowToRecipe);
 }
 
-// Marquer des recettes comme sélectionnées
+// Marquer des recettes comme sélectionnées (solo : écrit aussi dans selection_history)
 export async function markRecipesSelected(recipeIds: number[]): Promise<void> {
   const today = new Date().toISOString().split('T')[0];
   const db = getDb();
-  
   for (const id of recipeIds) {
-    // Mise à jour recette
     await db.runAsync(
       `UPDATE recipes SET times_used = times_used + 1, last_selected = ?, updated_at = datetime('now') WHERE id = ?`,
       [today, id]
     );
-    // Historique
     await db.runAsync(
       `INSERT INTO selection_history (recipe_id, selected_at) VALUES (?, ?)`,
       [id, today]
     );
+  }
+}
+
+// Mise à jour stats + cache local (famille : cloud = source de vérité, local = cache immédiat)
+export async function updateRecipesStats(recipeIds: number[]): Promise<void> {
+  const today = new Date().toISOString().split('T')[0];
+  const db = getDb();
+  for (const id of recipeIds) {
+    await db.runAsync(
+      `UPDATE recipes SET times_used = times_used + 1, last_selected = ?, updated_at = datetime('now') WHERE id = ?`,
+      [today, id]
+    );
+    // Cache local pour affichage immédiat (sera écrasé par syncDown au prochain démarrage)
+    await db.runAsync(
+      `INSERT INTO selection_history (recipe_id, selected_at) VALUES (?, ?)`,
+      [id, today]
+    );
+  }
+}
+
+// Remplace le selection_history local par les données cloud (depuis une date)
+export async function syncSelectionsLocal(
+  cloudSelections: { recipe_id: string; selected_at: string }[],
+  since: string
+): Promise<void> {
+  const db = getDb();
+  await db.runAsync('DELETE FROM selection_history WHERE selected_at >= ?', [since]);
+  for (const sel of cloudSelections) {
+    const row = await db.getFirstAsync<{ id: number }>(
+      'SELECT id FROM recipes WHERE cloud_id = ?', [sel.recipe_id]
+    );
+    if (row) {
+      await db.runAsync(
+        'INSERT INTO selection_history (recipe_id, selected_at) VALUES (?, ?)',
+        [row.id, sel.selected_at]
+      );
+    }
   }
 }
 
@@ -529,7 +596,12 @@ export async function getDisplayRecipes(): Promise<Recipe[]> {
     'SELECT COUNT(*) as count FROM recipe_books WHERE is_active = 1'
   );
   if (!activeCount || activeCount.count === 0) {
-    return getAllRecipes();
+    const rows = await db.getAllAsync<any>(`
+      SELECT r.* FROM recipes r
+      WHERE NOT EXISTS (SELECT 1 FROM recipe_book_assignments a WHERE a.recipe_id = r.id)
+      ORDER BY r.name
+    `);
+    return rows.map(mapRowToRecipe);
   }
   const rows = await db.getAllAsync<any>(`
     SELECT DISTINCT r.* FROM recipes r
@@ -619,22 +691,26 @@ export async function upsertRecipeFromCloud(data: {
 }): Promise<void> {
   const db = getDb();
   const existing = await db.getFirstAsync<{ id: number }>(
-    'SELECT id FROM recipes WHERE cloud_id = ?',
-    [data.cloudId]
+    `SELECT id FROM recipes WHERE cloud_id = ?
+     OR lower(replace(replace(name, 'œ', 'oe'), 'æ', 'ae'))
+        = lower(replace(replace(?, 'œ', 'oe'), 'æ', 'ae'))
+     LIMIT 1`,
+    [data.cloudId, data.name]
   );
 
   if (existing) {
+    // Mettre à jour cloud_id si la recette a été trouvée par nom (cloud_id était null)
     await db.runAsync(
       `UPDATE recipes SET
         name=?, season=?, type=?, frequency=?, main_ingredient=?, ingredients=?,
         comment=?, recipe_link=?, times_used=?, last_selected=?, rating=?,
-        is_favorite=?, is_dirty=0, updated_at=datetime('now')
-       WHERE cloud_id=?`,
+        is_favorite=?, is_dirty=0, cloud_id=?, updated_at=datetime('now')
+       WHERE id=?`,
       [
         data.name, data.season, data.type, data.frequency, data.mainIngredient,
         JSON.stringify(data.ingredients), data.comment, data.recipeLink,
         data.timesUsed, data.lastSelected, data.rating,
-        data.isFavorite ? 1 : 0, data.cloudId,
+        data.isFavorite ? 1 : 0, data.cloudId, existing.id,
       ]
     );
   } else {
@@ -783,6 +859,20 @@ export async function getCurrentWeekRecipes(): Promise<Recipe[]> {
 }
 
 // ── Fiche détaillée — cache local ─────────────────────────────────────────
+
+export async function getRecipesCloudIds(localIds: number[]): Promise<Map<number, string>> {
+  const result = new Map<number, string>();
+  if (localIds.length === 0) return result;
+  const placeholders = localIds.map(() => '?').join(',');
+  const rows = await getDb().getAllAsync<{ id: number; cloud_id: string | null }>(
+    `SELECT id, cloud_id FROM recipes WHERE id IN (${placeholders})`,
+    localIds
+  );
+  for (const row of rows) {
+    if (row.cloud_id) result.set(row.id, row.cloud_id);
+  }
+  return result;
+}
 
 export async function getBookRecipeCloudId(recipeId: number): Promise<number | null> {
   const row = await getDb().getFirstAsync<{ book_recipe_cloud_id: number | null }>(

@@ -1,13 +1,16 @@
 import { useState, useEffect } from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Switch } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Switch, Alert, ScrollView } from 'react-native';
 import { Stack } from 'expo-router';
 import { getSetting, setSetting } from '@/services/database';
 import { Colors, Shadows, Spacing, BorderRadius } from '@/constants/colors';
 import { Season, SeasonLabels } from '@/types/recipe';
+import { useAuth } from '@/context/AuthContext';
+import { signOut } from '@/services/authService';
 
 const ALL_SEASONS: Season[] = ['hiver', 'ete', 'mixte'];
 
 export default function ParametresScreen() {
+  const { session, profile } = useAuth();
   const [recipeCount, setRecipeCount] = useState(3);
   const [deleteFromHistory, setDeleteFromHistory] = useState(false);
   const [defaultSeasons, setDefaultSeasons] = useState<Season[]>([]);
@@ -45,6 +48,13 @@ export default function ParametresScreen() {
     await setSetting('recipe_count', String(n));
   };
 
+  const handleSignOut = () => {
+    Alert.alert('Déconnexion', 'Voulez-vous vous déconnecter ?', [
+      { text: 'Annuler', style: 'cancel' },
+      { text: 'Déconnecter', style: 'destructive', onPress: () => signOut().catch(() => {}) },
+    ]);
+  };
+
   return (
     <>
       <Stack.Screen
@@ -55,8 +65,35 @@ export default function ParametresScreen() {
           headerTitleStyle: { fontWeight: 'bold' },
         }}
       />
-      <View style={styles.container}>
+      <ScrollView style={styles.container} contentContainerStyle={styles.scrollContent}>
+
+        {/* Compte connecté */}
         <View style={styles.section}>
+          <Text style={styles.sectionTitle}>👤 Compte</Text>
+          <View style={styles.accountRow}>
+            <View style={styles.accountAvatar}>
+              <Text style={styles.accountAvatarText}>
+                {profile?.displayName?.[0]?.toUpperCase() ?? session?.user?.email?.[0]?.toUpperCase() ?? '?'}
+              </Text>
+            </View>
+            <View style={styles.accountInfo}>
+              {profile?.displayName ? (
+                <Text style={styles.accountName}>{profile.displayName}</Text>
+              ) : null}
+              <Text style={styles.accountEmail}>{session?.user?.email ?? '—'}</Text>
+              {profile?.familyId && profile?.familyName ? (
+                <Text style={styles.accountFamily}>👨‍👩‍👧 {profile.familyName}</Text>
+              ) : (
+                <Text style={styles.accountFamilySolo}>Mode solo</Text>
+              )}
+            </View>
+          </View>
+          <TouchableOpacity style={styles.signOutBtn} onPress={handleSignOut}>
+            <Text style={styles.signOutText}>🚪 Se déconnecter</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={[styles.section, styles.sectionGap]}>
           <Text style={styles.sectionTitle}>🎲 Génération</Text>
 
 
@@ -150,7 +187,7 @@ export default function ParametresScreen() {
             />
           </View>
         </View>
-      </View>
+      </ScrollView>
     </>
   );
 }
@@ -159,8 +196,43 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: Colors.background,
-    padding: Spacing.md,
   },
+  scrollContent: {
+    padding: Spacing.md,
+    paddingBottom: Spacing.xxl,
+  },
+  accountRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.md,
+    marginBottom: Spacing.md,
+  },
+  accountAvatar: {
+    width: 48,
+    height: 48,
+    borderRadius: 24,
+    backgroundColor: Colors.primaryDark,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  accountAvatarText: {
+    fontSize: 20,
+    fontWeight: '700',
+    color: '#fff',
+  },
+  accountInfo: { flex: 1 },
+  accountName: { fontSize: 16, fontWeight: '700', color: Colors.text },
+  accountEmail: { fontSize: 13, color: Colors.textSecondary, marginTop: 1 },
+  accountFamily: { fontSize: 12, color: Colors.primaryDark, fontWeight: '600', marginTop: 3 },
+  accountFamilySolo: { fontSize: 12, color: Colors.textLight, marginTop: 3 },
+  signOutBtn: {
+    borderWidth: 1,
+    borderColor: Colors.error,
+    borderRadius: BorderRadius.md,
+    padding: Spacing.sm,
+    alignItems: 'center',
+  },
+  signOutText: { color: Colors.error, fontWeight: '600', fontSize: 14 },
   section: {
     backgroundColor: Colors.surface,
     borderRadius: BorderRadius.lg,

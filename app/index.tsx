@@ -4,6 +4,7 @@ import PagerView from 'react-native-pager-view';
 import { Stack, router, useFocusEffect } from 'expo-router';
 import { Colors } from '@/constants/colors';
 import { getSetting } from '@/services/database';
+import { useAuth } from '@/context/AuthContext';
 import GeneratorPage from '@/components/pages/GeneratorPage';
 import HistoriquePage from '@/components/pages/HistoriquePage';
 import LivrePage from '@/components/pages/LivrePage';
@@ -13,8 +14,10 @@ import TabBar from '@/components/TabBar';
 export default function MainScreen() {
   const pagerRef = useRef<PagerView>(null);
   const [currentPage, setCurrentPage] = useState(0);
+  const { profile } = useAuth();
   const [recipeCount, setRecipeCount] = useState(3);
   const [preloadedUpTo, setPreloadedUpTo] = useState(-1);
+  const [booksRefreshKey, setBooksRefreshKey] = useState(0);
 
   useEffect(() => {
     const t1 = setTimeout(() => setPreloadedUpTo(1), 300);
@@ -26,6 +29,7 @@ export default function MainScreen() {
   useFocusEffect(
     useCallback(() => {
       getSetting('recipe_count', '3').then(v => setRecipeCount(Number(v)));
+      setBooksRefreshKey(k => k + 1);
     }, [])
   );
 
@@ -48,13 +52,24 @@ export default function MainScreen() {
                 onPress={() => router.push('/famille')}
                 style={styles.settingsBtn}
               >
-                <Text style={styles.settingsIcon}>👨‍👩‍👧</Text>
+                <View>
+                  <Text style={styles.settingsIcon}>👨‍👩‍👧</Text>
+                  {profile?.familyId && (
+                    <View style={styles.familyCheck}>
+                      <Text style={styles.familyCheckText}>✓</Text>
+                    </View>
+                  )}
+                </View>
               </TouchableOpacity>
               <TouchableOpacity
                 onPress={() => router.push('/parametres')}
                 style={styles.settingsBtn}
               >
-                <Text style={styles.settingsIcon}>⚙️</Text>
+                <View style={styles.avatarCircle}>
+                  <Text style={styles.avatarInitial}>
+                    {profile?.displayName?.[0]?.toUpperCase() ?? '?'}
+                  </Text>
+                </View>
               </TouchableOpacity>
             </View>
           ),
@@ -75,7 +90,7 @@ export default function MainScreen() {
           <HistoriquePage isActive={currentPage === 1} preload={preloadedUpTo >= 1} />
         </View>
         <View key="3" style={styles.page}>
-          <LivrePage isActive={currentPage === 2} preload={preloadedUpTo >= 2} />
+          <LivrePage isActive={currentPage === 2} preload={preloadedUpTo >= 2} refreshKey={booksRefreshKey} />
         </View>
         <View key="4" style={styles.page}>
           <StatsPage isActive={currentPage === 3} preload={preloadedUpTo >= 3} />
@@ -104,5 +119,39 @@ const styles = StyleSheet.create({
   },
   settingsIcon: {
     fontSize: 22,
+  },
+  avatarCircle: {
+    width: 30,
+    height: 30,
+    borderRadius: 15,
+    backgroundColor: 'rgba(255,255,255,0.25)',
+    borderWidth: 1.5,
+    borderColor: 'rgba(255,255,255,0.5)',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  avatarInitial: {
+    fontSize: 13,
+    fontWeight: '700',
+    color: '#fff',
+  },
+  familyCheck: {
+    position: 'absolute',
+    top: -5,
+    right: -6,
+    width: 17,
+    height: 17,
+    borderRadius: 9,
+    backgroundColor: '#4CAF50',
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderWidth: 1.5,
+    borderColor: Colors.primary,
+  },
+  familyCheckText: {
+    fontSize: 10,
+    fontWeight: '900',
+    color: '#fff',
+    lineHeight: 12,
   },
 });

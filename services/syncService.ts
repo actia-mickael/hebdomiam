@@ -7,6 +7,7 @@ import {
   getUnsyncedRecipes,
   clearDirtyFlag,
   upsertRecipeFromCloud,
+  syncSelectionsLocal,
 } from '@/services/database';
 
 // ── Upload local → cloud ──────────────────────────────────────────────────
@@ -89,6 +90,21 @@ export async function syncDown(familyId: string): Promise<void> {
       isFavorite: cr.is_favorite ?? false,
     });
   }
+
+  // Sync sélections : family_selections → selection_history local (28 derniers jours)
+  const since = new Date();
+  since.setDate(since.getDate() - 28);
+  const sinceStr = since.toISOString().split('T')[0];
+
+  const { data: cloudSelections } = await supabase
+    .from('family_selections')
+    .select('recipe_id, selected_at')
+    .eq('family_id', familyId)
+    .gte('selected_at', sinceStr);
+
+  if (cloudSelections) {
+    await syncSelectionsLocal(cloudSelections, sinceStr);
+  }
 }
 
 // ── Push dirty → cloud (admin offline) ───────────────────────────────────
@@ -165,6 +181,19 @@ export async function syncSelectionsDown(familyId: string): Promise<void> {
   // Les sélections sont disponibles via getAllRecipes() + getHistoryByWeek()
   // On stocke juste l'info dans selection_history local si pas déjà présente
   // (implémentation simplifiée : le pull recipes suffit pour l'affichage)
+}
+
+export async function removeSelection(
+  familyId: string,
+  recipeCloudId: string,
+  weekStart: string
+): Promise<void> {
+  await supabase
+    .from('family_selections')
+    .delete()
+    .eq('family_id', familyId)
+    .eq('recipe_id', recipeCloudId)
+    .gte('selected_at', weekStart);
 }
 
 export async function pushSelection(
